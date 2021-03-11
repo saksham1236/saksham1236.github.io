@@ -122,54 +122,6 @@ jQuery(document).ready(function($){
     return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
   }
     //window hover
-    $(document).ready(function(){
-      $("#yallo").mousemove(function(e){
-          //var x = -(e.pageX + this.offsetLeft) / 15 ;
-          //var y = -(e.pageY + this.offsetTop) / 15;
-          var x = -e.offsetX/2;
-          var y = -e.offsetY/2;
-          $('#abs_bg1').css('background-position', x + 'px ' + y + 'px');
-      }); 
-      $("#yallo").mouseleave(function(e){
-        //var x = -(e.pageX + this.offsetLeft) / 15 ;
-        //var y = -(e.pageY + this.offsetTop) / 15;
-        var t = $('.abs_bg').css('background-position');
-        var x = 0;
-        var y = 0;
-        $('#abs_bg1').css('background-position', 'center');
-       });
-
-      $("#yallo1").mousemove(function(e){
-        //var x = -(e.pageX + this.offsetLeft) / 15 ;
-        //var y = -(e.pageY + this.offsetTop) / 15;
-        var x = -e.offsetX/2;
-        var y = -e.offsetY/2;
-        $('#abs_bg2').css('background-position', x + 'px ' + y + 'px');
-      }); 
-      $("#yallo1").mouseleave(function(e){
-        //var x = -(e.pageX + this.offsetLeft) / 15 ;
-        //var y = -(e.pageY + this.offsetTop) / 15;
-        var t = $('.abs_bg').css('background-position');
-        var x = 0;
-        var y = 0;
-        $('#abs_bg2').css('background-position', 'center');
-      });
-      $("#yallo2").mousemove(function(e){
-        //var x = -(e.pageX + this.offsetLeft) / 15 ;
-        //var y = -(e.pageY + this.offsetTop) / 15;
-        var x = -e.offsetX/2;
-        var y = -e.offsetY/2;
-        $('#abs_bg3').css('background-position', x + 'px ' + y + 'px');
-      }); 
-      $("#yallo2").mouseleave(function(e){
-        //var x = -(e.pageX + this.offsetLeft) / 15 ;
-        //var y = -(e.pageY + this.offsetTop) / 15;
-        var t = $('.abs_bg').css('background-position');
-        var x = 0;
-        var y = 0;
-        $('#abs_bg3').css('background-position', 'center');
-      });
-  });
 
   // Navigation active state on scroll
   var nav_sections = $('section');
