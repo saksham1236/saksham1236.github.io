@@ -1085,7 +1085,7 @@ section {
 }
 
 .breadcrumbs ol a{
-  color: #a8a9b4;
+  color: grey;
   transition: 0.3s;
 }
 
@@ -1093,7 +1093,7 @@ section {
   border-bottom: solid 2px;
   transition: 0.3s;
   margin-right: 10px;
-  color: #f3f3f3;
+  color: #379eff;
 }
 
 .breadcrumbs ol li + li {
@@ -1103,7 +1103,7 @@ section {
 .breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #ffffff;
+  color: #0c0c0c;
   content: "/";
 }
 
