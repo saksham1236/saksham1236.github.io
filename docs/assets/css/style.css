@@ -15,7 +15,7 @@ body {
   font-weight: Normal;
   text-rendering: optimizeLegibility;
   color: #000;
-  background-color: #f3f3f3;
+  background-color: #FAFAFA;
   }
 
 a {
@@ -84,7 +84,7 @@ object {
 }
 .card{
   box-shadow: none;
-  background-color: #f3f3f3;
+  background-color: #FAFAFA;
   border: 1px solid rgb(206, 206, 206);
 }
 
@@ -129,7 +129,7 @@ object {
   right: 15px;
   bottom: 20px;
   background: #2A00FF;
-  color: #f3f3f3;
+  color: #FAFAFA;
   transition: display 0.3s ease-in-out;
   z-index: 100;
   transition: 0.2s;
@@ -143,7 +143,7 @@ object {
 }
 
 .back-to-top:hover {
-  color: #f3f3f3;
+  color: #FAFAFA;
   background: #00b2ff;
   transition: 0.2s ease-in-out;
 }
@@ -162,7 +162,7 @@ object {
   transition: 0.3s;
 }
 .logo1:hover {
-  fill: #f3f3f3;
+  fill: #FAFAFA;
   transition: 0.3s;
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
@@ -198,7 +198,7 @@ object {
 }
 
 #header .profile h1 a, #header .profile h1 a:hover {
-  color: #f3f3f3;
+  color: #FAFAFA;
   text-decoration: none;
 }
 
@@ -228,7 +228,7 @@ object {
 
 
 #header .profile .social-links a:hover {
-  background: #f3f3f3;
+  background: #FAFAFA;
   color: #000;
   text-decoration: none;
   transform: scale(1.4);
@@ -317,7 +317,7 @@ object {
   padding-left: 30px;
 }
 .nav-menu a:hover, .nav-menu li:hover > a {
-  color: #f3f3f3;
+  color: #FAFAFA;
   padding-left: 30px;
   background-size: 100% 0.1em;
   background-position-x: 0%;
@@ -326,7 +326,7 @@ object {
   text-decoration: none;
   background-color: #2A00FF;
   padding-left: 30px;
-  color: #f3f3f3;
+  color: #FAFAFA;
 }
 
 .nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
@@ -369,7 +369,7 @@ object {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: #f3f3f3;
+  color: #FAFAFA;
   transition: 0.2s;
 }
 
@@ -793,7 +793,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #f3f3f3;
+  color: #FAFAFA;
   font-size: 28px;
   text-align: center;
   background: rgba(20, 157, 221, 0.75);
@@ -891,12 +891,12 @@ section {
 }
 
 .services .icon i {
-  color: #f3f3f3;
+  color: #FAFAFA;
   font-size: 24px;
 }
 
 .services .icon-box:hover .icon {
-  background: #f3f3f3;
+  background: #FAFAFA;
 }
 
 .services .icon-box:hover .icon i {
@@ -999,7 +999,7 @@ section {
   font-style: italic;
   margin: 0 15px 15px 15px;
   padding: 20px;
-  background: #f3f3f3;
+  background: #FAFAFA;
   position: relative;
   margin-bottom: 35px;
   border-radius: 6px;
@@ -1010,7 +1010,7 @@ section {
   content: "";
   width: 0;
   height: 0;
-  border-top: 20px solid #f3f3f3;
+  border-top: 20px solid #FAFAFA;
   border-right: 20px solid transparent;
   border-left: 20px solid transparent;
   position: absolute;
@@ -1170,7 +1170,7 @@ section {
   position: absolute;
   right: 0;
   bottom: -70px;
-  background: #f3f3f3;
+  background: #FAFAFA;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   z-index: 2;
 }
@@ -1218,7 +1218,7 @@ section {
 }
 /*ko*/
 .porto{
-  background-color: #f3f3f3;
+  background-color: #FAFAFA;
 }
 .portmain{
   color: #000 !important;
@@ -1556,7 +1556,7 @@ section {
   font-size: 16px
 }
 .cd-nav .cd-contact-socials a:hover {
-  color: #f3f3f3;
+  color: #FAFAFA;
 }
 .no-js main {
   height: auto;
@@ -1582,7 +1582,7 @@ section {
   clear: both;
 }
 .projects-feed .project {
-  background: #f3f3f3;
+  background: #FAFAFA;
   opacity: 0;
   overflow: hidden;
   position: relative;
@@ -1615,7 +1615,7 @@ section {
 .projects-feed .project-content-container::before {
   border-left: 22px solid transparent;
   border-right: 22px solid transparent;
-  border-bottom: 22px solid #f3f3f3;
+  border-bottom: 22px solid #FAFAFA;
   content: '';
   display: block;
   height: 0;
@@ -1977,7 +1977,7 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
     transition: 0.5s;
 }
 .blog_item:hover h1, .blog_item:hover h5 {
-    color: #f3f3f3;
+    color: #FAFAFA;
 }
 .blog_item:hover .abs_bg {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
