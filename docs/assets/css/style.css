@@ -12,7 +12,7 @@ body {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
   font-family: "Inter", sans-serif;
-  font-weight: Normal;
+  font-weight: normal;
   text-rendering: optimizeLegibility;
   color: #000;
   background-color: #FAFAFA;
@@ -162,7 +162,7 @@ object {
   transition: 0.3s;
 }
 .logo1:hover {
-  fill: #FAFAFA;
+  fill: #2A00FF;
   transition: 0.3s;
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
@@ -270,13 +270,13 @@ object {
 }
 
 .nav-menu a {
+  border-radius: 15px 15px 15px 0px;
   padding-right: 30px;
   font-family: "Lexend Deca", sans-serif;
   display: flex;
   color: #a8a9b4;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-size: 0%;
   transition: 0.3s;
   font-size: 36px;
 }
@@ -303,7 +303,6 @@ object {
   left: 0;
   background-color: #00FFD3;
   visibility: hidden;
-  width: 0px;
   transition: all 0.3s ease-in-out;
 }
 .nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
@@ -1439,7 +1438,7 @@ section {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.95);
   visibility: hidden;
   opacity: 0;
   transition-delay: 100ms;
@@ -1507,6 +1506,7 @@ section {
 
 .cd-nav .cd-primary-nav {
   margin-top: 0px;
+  max-width: 300px;
 }
 .cd-nav .cd-primary-nav a {
   font-size: 36px;
