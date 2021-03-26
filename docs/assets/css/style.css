@@ -51,7 +51,7 @@ h1 {
   border-radius: 15px 15px 0px 0px !important;
 }
 .outline {
-  border: 2px solid rgb(206, 206, 206);
+  border: 1px solid rgb(206, 206, 206);
 }
 p {
   line-height: 1.9em;
@@ -66,7 +66,7 @@ object {
 
 .outerglow:hover {
   background: rgba(0, 119, 255, 0.247);
-  border: 2px solid #379eff !important;
+  border: 1px solid #379eff !important;
   box-shadow: 0px 0px 0px 4px #379eff;
   transition: 0.3s;
 }
@@ -86,11 +86,9 @@ object {
 .card{
   box-shadow: none;
   background-color: #FAFAFA;
-  border: 2px solid rgb(206, 206, 206);
+  border: 1px solid rgb(206, 206, 206);
 }
-.card-text{
-  font-size: 1em !important;
-}
+
 #yallo {
   background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.7)),url('../../assets/Projects/MindGames/Hero3.jpg');
   background-size: cover;
