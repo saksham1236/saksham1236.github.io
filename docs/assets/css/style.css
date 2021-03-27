@@ -12,7 +12,7 @@ body {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
   font-optical-sizing: auto;
-  font-family: "Inter", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
   color: #666;
@@ -30,7 +30,8 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Lexend", sans-serif;
+  font-weight: 500;
   color: #000;
 }
 h1 {
@@ -108,7 +109,7 @@ object {
   margin-top: 0.7em;
   margin-right: 5px;
   text-shadow: none !important;
-  font-family: "Inter", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-weight: normal !important;
   padding: 10px;
   box-shadow: none;
@@ -276,7 +277,8 @@ object {
 .nav-menu a {
   border-radius: 15px 15px 15px 0px;
   padding-right: 30px;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Lexend", sans-serif;
+  font-weight: 500;
   display: flex;
   color: #a8a9b4;
   padding-top: 15px;
@@ -420,7 +422,7 @@ object {
 #hero p {
   color: #2A00FF;
   font-size: 26px;
-  font-family: "Inter", sans-serif;
+  font-family: "Public Sans", sans-serif;
 }
 
 #hero p span {
@@ -590,7 +592,7 @@ section {
 }
 
 .servi {
-  font-family: 'Inter', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   line-height: 3.1em;
 }
@@ -735,7 +737,7 @@ section {
 
 .skilled {
   transition: 0.3s;
-  font-family: 'Inter', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   line-height: 3.1em;
 }
@@ -825,6 +827,8 @@ section {
   bottom: 0;
 }
 .portfolio .card-title{
+  font-family: "Lexend", sans-serif;
+  font-weight: 500 !important;
   color: #000;
   margin-bottom: 0px;
 }
@@ -1086,7 +1090,8 @@ section {
 }
 
 .breadcrumbs ol {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Lexend", sans-serif;
+  font-weight: 500;
   display: inline-flex;
   flex-wrap: wrap-reverse;
   padding-left: 0px;
@@ -1922,7 +1927,7 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
     transition: all 0.5s;
 }
 .blog_item h5, h6{
-  font-family: "Inter", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-weight: 400;
 }
 @media(max-width:768px) {
