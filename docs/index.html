@@ -47,7 +47,7 @@
         var mouseSX;
         var mouseSY;
         var mouseS;
-        textFont('Lexend Deca');
+        textFont('Lexend');
 				textAlign(RIGHT, TOP);
         noStroke();
       }
@@ -55,21 +55,30 @@
 			function draw(){
 				clear();
 				textAlign(RIGHT, TOP);
+        textStyle(NORMAL);
+        stroke(43, 0, 255);
+        strokeWeight(width/120);
         blendMode(BLEND);
 				if(windowWidth >= 768){
           
 					textSize(width/5);
+          stroke(43, 0, 255);
           fill(43, 0, 255);
 					text("Froto", width + width/60, -width/40);
+          stroke(95, 255, 236);
 					fill(95, 255, 236);
 					text("Design", width + width/60, width/5 - width/40);
 				}
 				else {
 					textSize(width/3.17);
+          stroke(43, 0, 255);
+          fill(43, 0, 255);
 					text("Froto", width + width/60, -width/30);
+          stroke(95, 255, 236);
 					fill(95, 255, 236);
 					text("Design", width + width/60, width/3.5 - width/30);
 				}
+        strokeWeight(0);
 				fill(183, 255, 0);
         blendMode(DIFFERENCE);
 				ellipse(mouseX, mouseY, 150, 150);
@@ -156,7 +165,7 @@
                 <h1>Lynk</h1>
                   <h5>January 2021 - Coming Soon</h5>
                   <h6>Saksham Tandon, Baber Ali, Ashutosh Khandelwal, Joe Bahgat, Sehyun Lim</h6>
-                  <h5><span class="badge rounded-pill bg-primary">UX/UI Design</span></h5>
+                  <h5><span class="badge rounded-pill bg-primary">UX/UI Design</span><span class="badge rounded-pill bg-primary">Coming Soon</span></h5>
               </div>
               <div class = "col-lg-5 main-img" style = "background-image: url('assets/Projects/Lynk/Placement.jpg');"></div>
               
