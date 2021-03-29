@@ -1,10 +1,24 @@
-/**
-* Template Name: iPortfolio - v1.4.1
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(../Font/PlusJakartaSans/PlusJakartaSans-Bold.woff) format('woff'); /* Pretty Modern Browsers */
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(../Font/PlusJakartaSans/PlusJakartaSans-Regular.woff) format('woff'); /* Pretty Modern Browsers */
+  font-weight: Normal;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(../Font/PlusJakartaSans/PlusJakartaSans-Medium.woff) format('woff'); /* Pretty Modern Browsers */
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url(../Font/PlusJakartaSans//PlusJakartaSans-Italic.woff) format('woff'); /* Pretty Modern Browsers */
+  font-weight: Normal;
+  font-style: italic;
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -12,8 +26,8 @@ body {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
   font-optical-sizing: auto;
-  font-family: "Public Sans", sans-serif;
-  font-weight: 400;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: Normal;
   text-rendering: optimizeLegibility;
   color: #666;
   background-color: #FAFAFA;
@@ -30,17 +44,14 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Lexend", sans-serif;
-  font-weight: 500;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: bold;
   color: #000;
 }
 h1 {
-  font-size: 48px;
+  font-size: 36px;
 }
 @media(max-width:768px){
-  h1{
-    font-size: 36px;
-  }
   h2{
     font-size: 24px;
   }
@@ -277,8 +288,7 @@ object {
 .nav-menu a {
   border-radius: 15px 15px 15px 0px;
   padding-right: 30px;
-  font-family: "Lexend", sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   display: flex;
   color: #a8a9b4;
   padding-top: 15px;
@@ -422,7 +432,6 @@ object {
 #hero p {
   color: #2A00FF;
   font-size: 26px;
-  font-family: "Public Sans", sans-serif;
 }
 
 #hero p span {
@@ -592,7 +601,6 @@ section {
 }
 
 .servi {
-  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   line-height: 3.1em;
 }
@@ -643,7 +651,6 @@ section {
   margin: 0 0 6px 0;
   text-transform: uppercase;
   display: block;
-  font-family: "Poppins", sans-serif;
   color: #050d18;
 }
 
@@ -737,7 +744,6 @@ section {
 
 .skilled {
   transition: 0.3s;
-  font-family: "Public Sans", sans-serif;
   font-size: 18px;
   line-height: 3.1em;
 }
@@ -827,9 +833,6 @@ section {
   bottom: 0;
 }
 .portfolio .card-title{
-  font-family: "Lexend", sans-serif;
-  font-weight: 500 !important;
-  color: #000;
   margin-bottom: 0px;
 }
 
@@ -1090,8 +1093,6 @@ section {
 }
 
 .breadcrumbs ol {
-  font-family: "Lexend", sans-serif;
-  font-weight: 500;
   display: inline-flex;
   flex-wrap: wrap-reverse;
   padding-left: 0px;
@@ -1651,7 +1652,6 @@ section {
 }
 .thumbnail-title {
   color: #2c2c2c;
-  font-family: 'Righteous',helvetica,sans-serif;
   font-size: 21px;
   margin: 0 auto 10px auto;
   text-align: left;
@@ -1695,7 +1695,6 @@ div.image img { width: 100%; }
 }
 /*===== Project Content =====*/
 .project-meta {
-  font-family: 'quicksand', Arial, sans-serif;
   font-size: 14px;
   color: #BBBBBB;
   margin-top: 28px;
@@ -1927,8 +1926,8 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
     transition: all 0.5s;
 }
 .blog_item h5, h6{
-  font-family: "Public Sans", sans-serif;
-  font-weight: 400;
+ font-weight: normal;
+ line-height: 1.8em;
 }
 @media(max-width:768px) {
   .blog_item{
