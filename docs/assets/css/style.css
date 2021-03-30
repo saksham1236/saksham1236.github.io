@@ -1245,7 +1245,9 @@ section {
 .portmain h2{
   color:#000 !important;
 }
-
+.portmain p{
+  color: #555;
+}
 .portmain .imghero{
   display: block;
   margin-left: auto;
