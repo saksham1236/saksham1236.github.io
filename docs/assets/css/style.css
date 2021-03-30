@@ -23,9 +23,13 @@
 # General
 --------------------------------------------------------------*/
 body {
+
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
   font-optical-sizing: auto;
+  font-kerning: auto;
+  letter-spacing: -0.015em;
+  word-spacing: 0.08em;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
   text-rendering: optimizeLegibility;
@@ -71,7 +75,7 @@ h1 {
   border: 1px solid rgb(206, 206, 206);
 }
 p {
-  line-height: 1.8em;
+  line-height: 1.9em;
 }
 object {
   pointer-events:none;
