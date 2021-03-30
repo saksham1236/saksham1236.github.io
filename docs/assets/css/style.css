@@ -11,7 +11,7 @@
 @font-face {
   font-family: "Plus Jakarta Sans";
   src: url(../Font/PlusJakartaSans/PlusJakartaSans-Medium.woff) format('woff'); /* Pretty Modern Browsers */
-  font-weight: 500;
+  font-weight: 600;
 }
 @font-face {
   font-family: "Plus Jakarta Sans";
@@ -27,14 +27,14 @@ body {
   -moz-osx-font-smoothing: auto;
   font-optical-sizing: auto;
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: Normal;
+  font-weight: 600;
   text-rendering: optimizeLegibility;
   color: #666;
   background-color: #FAFAFA;
   }
 
 a {
-  color: #ffffff;
+  color: #0049f5;
   display: inline;
 }
 
@@ -43,10 +43,15 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: bold;
   color: #000;
+}
+h3, h4, h5, h6{
+  color:#000;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
 }
 h1 {
   font-size: 36px;
@@ -66,7 +71,7 @@ h1 {
   border: 1px solid rgb(206, 206, 206);
 }
 p {
-  line-height: 1.9em;
+  line-height: 1.8em;
 }
 object {
   pointer-events:none;
@@ -100,7 +105,9 @@ object {
   background-color: #FAFAFA;
   border: 1px solid rgb(206, 206, 206);
 }
-
+.card .card-body h1, .card .card-body h2, .card .card-body h3, .card .card-body h4, .card .card-body h5, .card .card-body h6 {
+  font-weight: 600;
+}
 #yallo {
   background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.7)),url('../../assets/Projects/MindGames/Hero3.jpg');
   background-size: cover;
@@ -528,7 +535,7 @@ section {
 }
 
 .abt h3{
-  line-height: 1.7em;
+  line-height: 1.8em;
 }
 .abt h4{
   font-size: 18px;
@@ -701,10 +708,9 @@ section {
 
 .resume .resume-item h4 {
   position: relative;
-  line-height: 1.5em;
   font-size: 24px;
+  line-height: 1.5em;
   text-transform: capitalize;
-  margin-bottom: 20px;
 }
 
 .resume .resume-item h5 {
@@ -840,7 +846,9 @@ section {
   transition: 0.3s;
   padding-top: 3px;
 }
-
+.card-title h4{
+  font-weight: bold !important;
+}
 .portfolio .card-text{
   transition: 0.3s;
 }
