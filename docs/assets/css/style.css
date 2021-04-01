@@ -1889,7 +1889,7 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
     transition: all 0.5s;
 }
 .blog_item h5, h6{
- font-weight: normal;
+ font-weight: 600;
  line-height: 1.8em;
 }
 @media(max-width:768px) {
