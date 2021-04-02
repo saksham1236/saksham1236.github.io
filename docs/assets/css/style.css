@@ -95,7 +95,8 @@ object {
   opacity: 1;
 }
 .overlap{
-  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
   display: table;
   background: rgba(0, 0, 0, 0.6);
   height: 101%;
