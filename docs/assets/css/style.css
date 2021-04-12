@@ -134,6 +134,12 @@ object {
   margin-right: 5px;
   top: 0.2em;
 }
+.disable-select {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
 .main-img{
   margin: 0;
   padding: 0;
