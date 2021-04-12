@@ -30,7 +30,7 @@ body {
   font-kerning: auto;
   letter-spacing: -0.005em;
   word-spacing: 0.08em;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 600;
   text-rendering: optimizeLegibility;
   color: #666;
@@ -68,6 +68,9 @@ h1 {
 .rounded {
   border-radius: 15px !important;
 }
+.rounded-full{
+  border-radius: 200px !important;
+}
 .rounded-top{
   border-radius: 15px 15px 0px 0px !important;
 }
@@ -86,10 +89,16 @@ object {
 }
 
 .outerglow:hover {
+  color: #007bff !important;
   background: rgba(0, 119, 255, 0.247);
   border: 1px solid #379eff !important;
-  box-shadow: 0px 0px 0px 4px #379eff;
+  box-shadow: 8px 8px 0px 0px #379eff;
   transition: 0.3s;
+  transform: translate(-4px, -4px);
+  -webkit-transform: translate(-4px, -4px);
+}
+.outerglow:active{
+  box-shadow: 8px 8px 12px 0px #007bff;
 }
 .outerglow:hover .overlap-2{
   opacity: 1;
@@ -130,6 +139,33 @@ object {
   padding: 0;
   background-position: center;
   background-size: cover;
+}
+.btn{
+  font-size: 14px;
+  font-kerning: auto;
+  letter-spacing: -0.005em;
+  word-spacing: 0.08em;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+}
+.main-item .full_link{
+  display: block;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+}
+
+.btn i{
+  padding-left: 5px;
+  padding-right: 5px;
+  transform: scale(1.5);
+  position: relative;
+  top: 0.1em;
 }
 @media(max-width:992px) {
   .main-img{
@@ -668,18 +704,21 @@ section {
 }
 .servi .grid-item:hover{
   background-color: #fff;
+  color: #007bff;
   white-space: nowrap;
   border-radius: 10px;
   background: rgba(0, 119, 255, 0.247);
-  box-shadow: 0px 0px 0px 3px #379eff;
   border: 1px solid #379eff !important;
+  box-shadow: 8px 8px 0px 0px #379eff;
+  transition: 0.2s;
+  transform: translate(-4px, -4px);
+  -webkit-transform: translate(-4px, -4px);
   transition: 0.3s;
 }
-
-.servi .grid-item {
-  border-radius: 10px;
-  float: left;
+.servi .grid-item:active{
+  box-shadow: 8px 8px 8px 0px #379eff;
 }
+
 
 #portfolio-flters {
   list-style: none;
@@ -1937,14 +1976,7 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
     z-index: 2;
     position: relative;
 }
-.blog_item .full_link {
-    z-index: 3;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left:0;
-}
+
 .blog_item:hover {
 
     background-color: rgba(0,0,0,1);
