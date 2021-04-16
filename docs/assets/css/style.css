@@ -133,7 +133,6 @@ object {
   opacity: 1;
 }
 .overlap-text {
-  position: relative;
   padding: 15px;
   color: #fff;
   display: table-cell;
