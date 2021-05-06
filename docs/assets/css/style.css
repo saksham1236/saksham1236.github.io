@@ -694,14 +694,11 @@ section {
 }
 @media(min-width: 992px){
   .main_item{
-    height: 400px;
+    height: 500px;
   }
 
 }
 @media(max-width:768px) {
-  .main-item{
-    height: 500px;
-  }
   .main-item h1{
     font-size: 24px !important;
   }
