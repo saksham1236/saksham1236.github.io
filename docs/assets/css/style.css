@@ -1073,6 +1073,7 @@ section {
   display: inline;
   margin:0px;
   padding-left: 20px;
+  word-wrap: normal;
 }
 .contact .col-lg-4{
   margin-bottom:10px;
