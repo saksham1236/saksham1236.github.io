@@ -28,10 +28,8 @@ body {
   -moz-osx-font-smoothing: auto;
   font-optical-sizing: auto;
   font-kerning: auto;
-  letter-spacing: -0.005em;
   word-spacing: 0.08em;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: 600;
+  font-family: 'Inter', sans-serif;
   text-rendering: optimizeLegibility;
   color: #666;
   background-color: #FAFAFA;
@@ -48,14 +46,13 @@ a:hover {
 }
 
 h1, h2 {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
   color: #000;
 }
 h3, h4, h5, h6{
   color:#000;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 600;
+  font-family: 'Inter', sans-serif;
 }
 h1 {
   font-size: 36px;
@@ -173,8 +170,7 @@ object {
   font-kerning: auto;
   letter-spacing: -0.005em;
   word-spacing: 0.08em;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 600;
+  font-family: 'Inter', sans-serif;
   text-rendering: optimizeLegibility;
   text-transform: none;
 }
@@ -207,7 +203,7 @@ object {
   border: 1px solid rgb(206, 206, 206);
 }
 .card .card-body h1, .card .card-body h2, .card .card-body h3, .card .card-body h4, .card .card-body h5, .card .card-body h6 {
-  font-weight: 600;
+  font-weight: bold !important;
 }
 #yallo {
   background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.7)),url('../../assets/Projects/MindGames/Hero3.jpg');
@@ -228,7 +224,6 @@ object {
   margin-top: 0.7em;
   margin-right: 5px;
   text-shadow: none !important;
-  font-family: "Public Sans", sans-serif;
   font-weight: normal !important;
   padding: 10px;
   box-shadow: none;
@@ -1955,7 +1950,6 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
     transition: all 0.5s;
 }
 .blog_item h5, h6{
- font-weight: 600;
  line-height: 1.8em;
 }
 @media(max-width:768px) {

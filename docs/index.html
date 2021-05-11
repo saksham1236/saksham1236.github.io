@@ -43,7 +43,7 @@
 			function setup(){
         var canvasDiv = document.getElementById('sketch-div');
         var width = canvasDiv.offsetWidth;
-				var canvas = createCanvas(width, windowHeight);
+				var canvas = createCanvas(width, windowHeight, 'WEBGL');
         canvas.parent('sketch-div');
         var mouseSX;
         var mouseSY;
@@ -58,7 +58,6 @@
         blendMode(BLEND);
         strokeWeight(width/120);
 				if(windowWidth >= 768){
-          
 					textSize(width/5);
           stroke(43, 0, 255);
           fill(43, 0, 255);
