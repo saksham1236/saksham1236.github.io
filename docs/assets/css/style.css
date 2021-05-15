@@ -28,8 +28,8 @@ body {
   -moz-osx-font-smoothing: auto;
   font-optical-sizing: auto;
   font-kerning: auto;
-  word-spacing: 0.08em;
   font-family: 'Inter', sans-serif;
+  font-variation-settings: 'wght' 450;
   text-rendering: optimizeLegibility;
   color: #666;
   background-color: #FAFAFA;
@@ -46,13 +46,14 @@ a:hover {
 }
 
 h1, h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: bold;
   color: #000;
 }
 h3, h4, h5, h6{
   color:#000;
   font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
 h1 {
   font-size: 36px;
@@ -204,6 +205,12 @@ object {
 }
 .card .card-body h1, .card .card-body h2, .card .card-body h3, .card .card-body h4, .card .card-body h5, .card .card-body h6 {
   font-weight: bold !important;
+}
+.card .card-body .card-text{
+  font-size: 1rem;
+}
+.card:hover .card-body .card-text{
+  color: #0026ff;
 }
 #yallo {
   background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.7)),url('../../assets/Projects/MindGames/Hero3.jpg');
