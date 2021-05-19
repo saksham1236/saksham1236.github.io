@@ -29,7 +29,7 @@ body {
   font-optical-sizing: auto;
   font-kerning: auto;
   font-family: 'Inter', sans-serif;
-  font-variation-settings: 'wght' 450;
+  font-weight: 500;
   text-rendering: optimizeLegibility;
   color: #666;
   background-color: #FAFAFA;
@@ -204,10 +204,11 @@ object {
   border: 1px solid rgb(206, 206, 206);
 }
 .card .card-body h1, .card .card-body h2, .card .card-body h3, .card .card-body h4, .card .card-body h5, .card .card-body h6 {
-  font-weight: bold !important;
+  font-weight: 600 !important;
 }
 .card .card-body .card-text{
-  font-size: 1rem;
+  font-weight: 500;
+  font-size: 1em;
 }
 .card:hover .card-body .card-text{
   color: #0026ff;
@@ -792,6 +793,7 @@ section {
 # Resume
 --------------------------------------------------------------*/
 .resume {
+  font-weight: 500;
   margin-top: 50px;
 }
 .resume .resume-title {
@@ -958,7 +960,7 @@ section {
   padding-top: 3px;
 }
 .card-title h4{
-  font-weight: bold !important;
+  font-weight: 600 !important;
 }
 .portfolio .card-text{
   transition: 0.3s;
