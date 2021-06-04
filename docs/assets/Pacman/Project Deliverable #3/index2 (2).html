@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Orbitron|Megrim|Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+	
+<body>
+<div class = "imad">
+    <img id = "Pacman" src = "pacman.png">
+    <img id = "Block" src = "wall.png">
+    <img id = "Ghost1" src = "ghost1.png">
+    <img id = "Ghost2" src = "ghost2.png">
+    <img id = "Black" src = "bg.png">
+    <img id = "coin" src = "coin.png">
+    <img id = "Ghost3" src = "ghost3.png">
+</div>
+<h1>Pacman</h1>	
+<div id = "main">
+    <button id= 'myButton' type="button" onclick="sg()">Start Game</button> 
+    <canvas id = "myCanvas" width = "500" height = "500"></canvas>
+</div>
+<div id='world'>
+    <p><br>Press arrow keys to move<br>Collect coins<br>Avoid contact with ghosts <br>Ghosts will drop coins while moving    
+    
+    </p>
+
+</div>
+<p id="gameScore"></p>
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -19,6 +19,11 @@
   font-weight: Normal;
   font-style: italic;
 }
+@font-face {
+  font-family: "Urbanist";
+  src: url(../Font/Urbanist/Urbanist-Bold.woff2) format('woff2');
+  font-weight: bold;
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/

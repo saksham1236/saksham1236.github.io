@@ -1,0 +1,106 @@
+	.wall 
+		{
+			width: 50px;
+			height: 50px;
+			background-image: url('wall.png');
+			display: inline-block;
+		}
+	
+	.coin 
+		{
+			width: 50px;
+			height: 50px;
+			background-image: url('coin.png');
+			display: inline-block;
+		}
+	.ground 
+		{
+			width: 50px;
+			height: 50px;
+			background-image: url('bg.png');
+			display: inline-block;
+		}
+	
+	.ghost 
+		{
+			width: 50px;
+			height: 50px;
+			background-image: url('ghost1.png');
+			display: inline-block;
+		}
+
+	.ghostTwo 
+		{
+			width: 50px;
+			height: 50px;
+			background-image: url('ghost2.png');
+			display: inline-block;
+		}	
+	
+	.pacman
+		{
+			width: 50px;
+			height: 50px;
+			background-image: url('pacman.png');
+			display: inline-block;
+		}
+	
+	div 
+		{
+			line-height: 100px;
+		}
+	
+	p
+		{
+			font-size: 30px;
+			font-family: 'Press Start 2P', cursive;
+            position:fixed;
+			top: 150px;
+			left: 100px;
+			text-align: center;
+		}
+	
+	h1
+		{
+			font-size: 50px;
+			font-family: 'Megrim', cursive;
+			text-align: center;
+		}
+	
+	#world
+		{   display: block;
+			text-align: center;
+		}
+
+    .imad {
+        display: none;
+    }
+
+    #myCanvas { 
+        display: block;
+        top: 50px;
+    }
+
+
+    #myButton 
+            {   padding: 15px;
+                background-color: yellow;
+                color: blue;
+                font-size: 30px;
+                font-family: 'Press Start 2P', cursive;
+                display: inline-grid;
+                text-align: center;
+    }
+    #main {
+        text-align: center;
+    }
+    #GameOver {
+        display: block;
+        height: 450px;
+        margin: 50px;
+    }
+    #gameScore{
+        display: block;
+        position: absolute;
+        top:600px;
+    }
