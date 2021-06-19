@@ -166,8 +166,6 @@ object {
   user-select: none;
 }
 .main-img{
-  margin: 0;
-  padding: 0;
   background-position: center;
   background-size: cover;
 }
@@ -291,13 +289,18 @@ object {
 
 .logcon {
   position: fixed;
-  width: 50px;
+  width: 60px;
   height:auto;
-  left: 30px;
+  left: 40px;
   top:  40px;
   z-index: 99;
+  transition: 0.3s;
 }
-
+.logcon:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  filter:drop-shadow(4px, 4px, 4px black);
+}
 .logo1{
   fill: #00ffaa;
   transition: 0.3s;
@@ -530,24 +533,19 @@ object {
   right: 0;
   z-index:0;
 }
-#hero:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  
-}
+
 
 #hero .hero-container {
   position: relative;
+  top: 30;
   z-index: 2;
   min-width: 300px;
   margin-left: 10%;
 }
 
+.full-logo{
+  max-width: 70%;
+}
 #hero h1 {
   font-size: 64px;
   line-height: 0.8em;
@@ -565,26 +563,15 @@ object {
   border-bottom: 3px solid #00FFD3;
   transition: 0.2s;
 }
-#hero img{
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform:translate(-50%, -50%);
-  height: 80%;
-  width: auto;
-  z-index: -1;
+#hero .message p{
+  font-size: 18px;
+  color: #666;
+  padding-top: 100px;
 }
 @media (min-width: 1199px){
   #hero .hero-container {
     transition: 0.3s;
     margin-left:300px;
-  }
-  #hero img{
-    height:90%;
-    transform:translate(30%, -50%);
-    z-index: 1;
-
   }
 }
 @media (min-width: 1024px) {
