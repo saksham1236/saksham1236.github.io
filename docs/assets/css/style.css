@@ -539,12 +539,11 @@ object {
   position: relative;
   top: 30;
   z-index: 2;
-  min-width: 300px;
   margin-left: 10%;
 }
 
 .full-logo{
-  max-width: 70%;
+  max-width: 60%;
 }
 #hero h1 {
   font-size: 64px;
@@ -558,15 +557,15 @@ object {
 }
 
 #hero p span {
-  color: #2A00FF;
+  color: #ff8800;
   padding-bottom: 4px;
-  border-bottom: 3px solid #00FFD3;
+  border-bottom: 3px solid #ffae00;
   transition: 0.2s;
 }
 #hero .message p{
+  margin-top: 30px;
   font-size: 18px;
   color: #666;
-  padding-top: 100px;
 }
 @media (min-width: 1199px){
   #hero .hero-container {
@@ -599,6 +598,9 @@ object {
   }
   #hero p{
     font-size: 18px;
+  }
+  .full-logo{
+    max-width: 90%;
   }
 }
 
