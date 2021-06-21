@@ -557,9 +557,9 @@ object {
 }
 
 #hero p span {
-  color: #ff8800;
+  color: #9974ff;
   padding-bottom: 4px;
-  border-bottom: 3px solid #ffae00;
+  border-bottom: 3px solid #9974ff;
   transition: 0.2s;
 }
 #hero .message p{
