@@ -678,6 +678,7 @@ section {
   margin-bottom: 0;
 }
 .main-item{
+  margin-bottom: 20px;
   overflow: hidden;
 }
 @media(min-width: 992px){
