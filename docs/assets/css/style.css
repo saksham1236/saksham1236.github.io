@@ -514,7 +514,6 @@ object {
   position: relative;
   width: 100wh;
   height: 100vh;
-  z-index: -2;
 }
 #sketch-div{
   position:absolute;
@@ -2018,3 +2017,17 @@ transform: translateX(-50%) rotate(180deg) translateY(50px);
   transition: opacity 250ms ease-in;
 }
 
+.portfolio-new {
+  margin-top: 1rem;
+  display: flex;
+  padding: 1rem;
+  background-color: rgb(254, 73, 73);
+  width: fit-content;
+  width: -moz-fit-content;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+.portfolio-link {
+  pointer-events: all;
+}
