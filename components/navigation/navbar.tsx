@@ -1,7 +1,6 @@
 import Link from "next/link"
 import { GitHubLink, Navigations } from "@/settings/navigation"
-import { LuArrowUpRight, LuGithub } from "react-icons/lu"
-
+import { FiArrowUpRight, FiGithub } from "react-icons/fi"
 import { buttonVariants } from "@/components/ui/button"
 import { SheetClose } from "@/components/ui/sheet"
 import Anchor from "@/components/navigation/anchor"
@@ -37,7 +36,7 @@ export function Navbar() {
                 rel="noopener noreferrer"
                 aria-label="View the repository on GitHub"
               >
-                <LuGithub className="h-[1.1rem] w-[1.1rem]" />
+                <FiGithub className="h-[1.1rem] w-[1.1rem]" />
               </Link>
             )}
             <ModeToggle />
@@ -64,7 +63,7 @@ export function NavMenu({ isSheet = false }) {
           >
             {item.title}{" "}
             {item.external && (
-              <LuArrowUpRight className="h-3 w-3 align-super" strokeWidth={3} />
+              <FiArrowUpRight className="h-3 w-3 align-super" strokeWidth={3} />
             )}
           </Anchor>
         )

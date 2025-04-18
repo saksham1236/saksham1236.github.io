@@ -4,7 +4,7 @@ export const siteicon = "/icon.png"
 export const gtm = "GTM-XXXXXXX"
 export const gtmconnected = true
 
-export const sitename = "Documents"
+export const sitename = "Froto-Design"
 export const description =
   "This comprehensive documentation template, crafted with Next.js and available as open-source, delivers a sleek and responsive design, tailored to meet all your project documentation requirements."
 export const keywords = [
@@ -14,12 +14,12 @@ export const keywords = [
   "open source",
   "SEO",
 ]
-export const urlimage = "/images/og-image.png"
+export const urlimage = "icon.png"
 export const imagealt = "Rubix Studios Documentation"
 export const twitterhandle = "@RubixStudios"
 
-export const companyname = "Rubix Studios"
-export const companylink = "https://www.rubixstudios.com.au"
+export const companyname = "Made by Saksham Tandon"
+export const companylink = "https://www.linkedin.com/in/s9tandon/"
 
 export const branding = true
 export const rightsidebar = true

@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+// import {Atkinson_Hyperlegible} from "next/font/google"
 import { GoogleTagManager } from "@next/third-parties/google"
 
 import { Settings } from "@/lib/meta"
@@ -9,10 +9,10 @@ import { Providers } from "@/components/providers"
 
 import "@/styles/globals.css"
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-})
+// const inter = Atkinson_Hyperlegible({
+//   variable: "--font-inter",
+//   subsets: ["latin"],
+// })
 
 const baseUrl = Settings.metadataBase
 
@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       {Settings.gtmconnected && <GoogleTagManager gtmId={Settings.gtm} />}
-      <body className={`${inter.variable} font-regular`}>
+      <body>
         <Providers>
           <Navbar />
           <main className="h-auto px-5 sm:px-8">{children}</main>

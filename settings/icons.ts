@@ -1,6 +1,7 @@
-import { LuAlignJustify, LuArrowUpRight } from "react-icons/lu"
+import { FiAlignJustify, FiArrowRight, FiArrowUpRight, FiLinkedin} from "react-icons/fi"
 
 export const iconMap = {
-  alignJustify: LuAlignJustify,
-  arrowUpRight: LuArrowUpRight,
+  alignJustify: FiAlignJustify,
+  arrowUpRight: FiArrowUpRight,
+  arrowRight: FiArrowRight,
 }
