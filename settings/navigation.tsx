@@ -16,6 +16,7 @@ export const Navigations = [
   {
     title: "Contact Me",
     href: "https://www.rubixstudios.com.au/",
+    external: true,
   },
   
 ]
