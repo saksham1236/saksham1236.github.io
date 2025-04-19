@@ -4,10 +4,11 @@ interface splineViewprops {
 }
 export default function SplineView(props: splineViewprops) {
   return (
-    <div className = {props.className}>
-      <Spline
-        scene="https://prod.spline.design/fmNRvDbMadmfkZq1/scene.splinecode" 
+    <div className={props.className}>
+      <Spline className={props.className}
+        scene="https://prod.spline.design/fmNRvDbMadmfkZq1/scene.splinecode"
       />
     </div>
+
   );
 }
