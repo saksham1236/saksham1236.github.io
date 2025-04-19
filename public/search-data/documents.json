@@ -1,151 +1,24 @@
 [
   {
-    "slug": "/basic-setup/changelog",
-    "title": "Changelog",
-    "description": "Changelogs and improvements to the Documents projects.",
-    "content": "## Added\n\n**Linting and Formatting**:\n\n* Added `npm run lint` and `npm run lint:fix` scripts to automate linting tasks.\n* Added `npm run format` and `npm run format:check` scripts to ensure consistent code formatting.\n\n**SEO Enhancements**:\n\n* Added an SEO component to MDX pages to dynamically include `keywords` and `lastModified` metadata for improved SEO generation.\n\n## Updated\n\n**Next.js Upgrade**:\n\n* Upgraded the project from **Next.js 14** to **Next.js 15**, leveraging the latest features and performance improvements.\n\n**Codebase Improvements**:\n\n* Reordered imports across the project files for better consistency and readability.\n\n**Mermaid Component**:\n\n* Fixed an ID bug that caused rendering issues when multiple Mermaid diagrams were included in MDX pages.\n* Improved initialization and rendering logic to prevent duplicate diagram rendering.\n",
+    "slug": "/",
+    "title": "Bounce Back Coin Branding",
+    "description": "",
+    "content": "Bounce Back Coin lets users earn cryptocurrency through learning. I designed the logo, branding guidelines, and website.\n\n## Introduction\n\nWelcome to the Bounce Back Coin Branding Design Showcase. Bounce Back Coin is a learning platform that lets users earn cryptocurrency by participating in educational activities. Our goal is to make learning fun and rewarding.\n\nAs the designer for Bounce Back Coin, I created the logo and branding guidelines to ensure a consistent look and feel. I also designed the marketing website.\n\n## Research and Analysis\n\nThe logo design process began with brainstorming concepts related to bouncing and growth, as seen in the sketches exploring shapes and movements. These ideas were refined into a cohesive design that symbolizes learning and reward, encapsulating the essence of Bounce Back Coin.\n\n### Logo Mark Ideas\n\n![Sketches](image-url)\n\n### Direction #1 - Playful Gradients, minimalist while being engaging.\n\n<details>\n  <summary>Idea Mood Board</summary>\n\n  <div style={{ paddingLeft: '1rem' }}>\n    <img src=\"image-url\" alt=\"Mood Board\" />\n  </div>\n</details>\n\n<img src=\"image-url\" alt=\"Style Scape\" />\n\n### Direction #2 - Pure minimalist, simple with flat colors.\n\n<details>\n  <summary>Idea Mood Board</summary>\n\n  <div style={{ paddingLeft: '1rem' }}>\n    <img src=\"image-url\" alt=\"Mood Board\" />\n  </div>\n</details>\n\n<img src=\"image-url\" alt=\"Style Scape\" />\n\n### Direction #3 - Mix of both styles.\n\n<img src=\"image-url\" alt=\"Style Scape\" />\n\n## Final Style Guide\n\nThe team decided to move forward with the second design direction, selecting the \"B\" logo mark for its simplicity and relevance. Building on this choice, I developed a comprehensive style guide to establish a strong foundation for the brand's visual identity.\n\n<img src=\"image-url\" alt=\"Final Style Guide\" />\n\n## Website Design Mockup\n\n### Desktop Design\n\n<img src=\"image-url\" alt=\"Desktop Design\" />\n\n### Mobile Design\n\n<img src=\"image-url\" alt=\"Mobile Design\" />\n\n## Some Social Media Assets\n\n### Instagram Post Carousel\n\n<img src=\"image-url\" alt=\"Instagram Carousel\" />\n\n### Addition of Patterns\n\nTo honor the heritage of the founders, I incorporated cultural patterns inspired by African and Caribbean traditions into the design, subtly weaving a rich tapestry of heritage into the brand's visual identity. I carefully melded these cultural elements with geometric shapes, ensuring a harmonious blend that enhances the existing design aesthetic.\n\n<details>\n  <summary>Mood Board - Cultural Patterns</summary>\n\n  <div style={{ paddingLeft: '1rem' }}>\n    <img src=\"image-url\" alt=\"Cultural Patterns\" />\n  </div>\n</details>\n\n<details>\n  <summary>Mood Board - Geometric Patterns</summary>\n\n  <div style={{ paddingLeft: '1rem' }}>\n    <img src=\"image-url\" alt=\"Geometric Patterns\" />\n  </div>\n</details>\n\n<img src=\"image-url\" alt=\"Final Patterns\" />\n\n### Retractable Banner\n\n<img src=\"image-url\" alt=\"Retractable Banner\" />\n\n### Bounce Back Coin Animation\n\nAnimation illustrating the process of earning Bounce Back cryptocurrency upon completion of learning materials, crafted using Blender.\n\n<img src=\"image-url\" alt=\"Animation\" />\n",
     "_searchMeta": {
-      "cleanContent": "added linting and formatting: added npm run lint and npm run lint:fix scripts to automate linting tasks added npm run format and npm run format:check scripts to ensure consistent code formatting seo enhancements: added an seo component to mdx pages to dynamically include keywords and lastmodified metadata for improved seo generation updated next js upgrade: upgraded the project from next js 14 to next js 15 leveraging the latest features and performance improvements codebase improvements: reordered imports across the project files for better consistency and readability mermaid component: fixed an id bug that caused rendering issues when multiple mermaid diagrams were included in mdx pages improved initialization and rendering logic to prevent duplicate diagram rendering",
+      "cleanContent": "bounce back coin lets users earn cryptocurrency through learning i designed the logo branding guidelines and website introduction welcome to the bounce back coin branding design showcase bounce back coin is a learning platform that lets users earn cryptocurrency by participating in educational activities our goal is to make learning fun and rewarding as the designer for bounce back coin i created the logo and branding guidelines to ensure a consistent look and feel i also designed the marketing website research and analysis the logo design process began with brainstorming concepts related to bouncing and growth as seen in the sketches exploring shapes and movements these ideas were refined into a cohesive design that symbolizes learning and reward encapsulating the essence of bounce back coin logo mark ideas sketches direction 1 - playful gradients minimalist while being engaging details summary idea mood board summary div style paddingleft: 1rem img src image-url alt mood board div details img src image-url alt style scape direction 2 - pure minimalist simple with flat colors details summary idea mood board summary div style paddingleft: 1rem img src image-url alt mood board div details img src image-url alt style scape direction 3 - mix of both styles img src image-url alt style scape final style guide the team decided to move forward with the second design direction selecting the b logo mark for its simplicity and relevance building on this choice i developed a comprehensive style guide to establish a strong foundation for the brand s visual identity img src image-url alt final style guide website design mockup desktop design img src image-url alt desktop design mobile design img src image-url alt mobile design some social media assets instagram post carousel img src image-url alt instagram carousel addition of patterns to honor the heritage of the founders i incorporated cultural patterns inspired by african and caribbean traditions into the design subtly weaving a rich tapestry of heritage into the brand s visual identity i carefully melded these cultural elements with geometric shapes ensuring a harmonious blend that enhances the existing design aesthetic details summary mood board - cultural patterns summary div style paddingleft: 1rem img src image-url alt cultural patterns div details details summary mood board - geometric patterns summary div style paddingleft: 1rem img src image-url alt geometric patterns div details img src image-url alt final patterns retractable banner img src image-url alt retractable banner bounce back coin animation animation illustrating the process of earning bounce back cryptocurrency upon completion of learning materials crafted using blender img src image-url alt animation",
       "headings": [
-        "Added",
-        "Updated"
+        "Introduction",
+        "Research and Analysis",
+        "Final Style Guide",
+        "Website Design Mockup",
+        "Some Social Media Assets"
       ],
       "keywords": [
-        "changelog",
-        "guide",
-        "nextjs",
-        "documents",
-        "Added",
-        "Updated",
-        "Linting and Formatting",
-        "SEO Enhancements",
-        "Next.js Upgrade",
-        "Next.js 14",
-        "Next.js 15",
-        "Codebase Improvements",
-        "Mermaid Component",
-        "npm run lint",
-        "npm run lint:fix",
-        "npm run format",
-        "npm run format:check",
-        "keywords",
-        "lastModified"
-      ]
-    }
-  },
-  {
-    "slug": "/basic-setup",
-    "title": "Introduction",
-    "description": "This section provides an overview of how to get started with the Documents, Next.js Document Starter Kit.",
-    "content": "![Banner](/images/banner.png \"Documents\")\n\n## Documents\n\n**Documents** is a lightweight, modular starter kit built with **Next.js**, **React**, **Tailwind CSS**, and **TypeScript**. It’s designed to help you\r\nlaunch structured, professional documentation without spending time on boilerplate.\n\nWhether you're building product manuals, internal systems guides, or dev documentation, Documents gives you a clean foundation that’s easy to\r\nextend and maintain.\n\n## Why use Documents?\n\nThis kit was built to simplify how teams manage and publish documentation. It works across projects of all sizes—from a single\r\nreadme to enterprise knowledge bases.\n\nWith MDX, reusable components, and Tailwind styling, it keeps your workflow efficient without compromising flexibility.\n\nUse it for:\n\n* **Product Guides** – Setup, usage, and troubleshooting\n* **Internal Docs** – Processes, policies, and team references\n* **Technical Manuals** – APIs, SDKs, architecture walkthroughs\n\nCustomize the UI and structure to match your brand or workflow—no lock-in.\n\n## Core Features\n\n| Feature                              | Description                                                                 |\r\n| ------------------------------------ | --------------------------------------------------------------------------- |\r\n| **Write in Markdown/MDX**            | Combine Markdown with components and Mermaid.js for rich content.           |\r\n| **Flexible Navigation**              | Multi-level menus, page hierarchy, and auto-generated TOCs.                 |\r\n| **Code Support**                     | Syntax highlighting, code tabs, and one-click copy.                         |\r\n| **Search**                           | Fuzzy matching with highlight and instant results.                          |\r\n| **Responsive Design**                | Built-in light/dark mode with mobile support.                               |\r\n| **Math + Tables**                    | LaTeX rendering and clean table styling.                                    |\r\n| **SEO Defaults**                     | Preconfigured meta, Open Graph, and structured data.                        |\r\n| **AI Docs (Upcoming)**               | AI tools for smart search and content generation (coming soon).             |\n\n## Using This Kit\n\nNavigation is on the left. Pages flow from setup to advanced features, but you're free to jump around.\n\nUse the table of contents on the right to skip through sections.\n\nStart with the [Installation Guide](/docs/basic-setup/installation).\n\n## Community Support\n\nGot questions? Reach out via:\n\n* [GitHub](https://github.com/rubixvi/rubix-documents)\n* [Twitter](https://x.com/rubixstory)\n* [Facebook](https://www.facebook.com/rubixstudios)\n",
-    "_searchMeta": {
-      "cleanContent": "banner documents documents is a lightweight modular starter kit built with next js react tailwind css and typescript it s designed to help you launch structured professional documentation without spending time on boilerplate whether you re building product manuals internal systems guides or dev documentation documents gives you a clean foundation that s easy to extend and maintain why use documents this kit was built to simplify how teams manage and publish documentation it works across projects of all sizes from a single readme to enterprise knowledge bases with mdx reusable components and tailwind styling it keeps your workflow efficient without compromising flexibility use it for: product guides setup usage and troubleshooting internal docs processes policies and team references technical manuals apis sdks architecture walkthroughs customize the ui and structure to match your brand or workflow no lock-in core features feature description ------------------------------------ --------------------------------------------------------------------------- write in markdown mdx combine markdown with components and mermaid js for rich content flexible navigation multi-level menus page hierarchy and auto-generated tocs code support syntax highlighting code tabs and one-click copy search fuzzy matching with highlight and instant results responsive design built-in light dark mode with mobile support math tables latex rendering and clean table styling seo defaults preconfigured meta open graph and structured data ai docs upcoming ai tools for smart search and content generation coming soon using this kit navigation is on the left pages flow from setup to advanced features but you re free to jump around use the table of contents on the right to skip through sections start with the installation guide community support got questions reach out via: github twitter facebook",
-      "headings": [
-        "Documents",
-        "Why use Documents?",
-        "Core Features",
-        "Using This Kit",
-        "Community Support"
-      ],
-      "keywords": [
-        "introduction",
-        "guide",
-        "nextjs",
-        "documents",
-        "Documents",
-        "Why use Documents?",
-        "Core Features",
-        "Using This Kit",
-        "Community Support",
-        "Next.js",
-        "React",
-        "Tailwind CSS",
-        "TypeScript",
-        "Product Guides",
-        "Internal Docs",
-        "Technical Manuals",
-        "Write in Markdown/MDX",
-        "Flexible Navigation",
-        "Code Support",
-        "Search",
-        "Responsive Design",
-        "Math + Tables",
-        "SEO Defaults",
-        "AI Docs (Upcoming)"
-      ]
-    }
-  },
-  {
-    "slug": "/basic-setup/installation",
-    "title": "Installation",
-    "description": "This guide covers the installation of Documents and how to edit your new project.",
-    "content": "To install and edit the Documents, you need to have several prerequisites in place. Here's a list of all the essential pre-requisites\r\nfor setting up and working on this project.\n\n[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frubixvi%2Frubix-documents\\&project-name=my-documents\\&repository-name=my-documents\\&demo-title=Documents\\&demo-description=This%20Document%20Starter%20Kit%20is%20developed%20with%20Next.js%2C%20Tailwind%20CSS%20and%20TypeScript.%20It%20serves%20as%20a%20flexible%20and%20scalable%20foundation%20for%20building%20documentation%20websites%20or%20content-driven%20projects.\\&demo-url=https%3A%2F%2Frubix-documents.vercel.app%2F\\&demo-image=https%3A%2F%2Fgithub.com%2Frubixvi%2Frubix-documents%2Fblob%2Fmain%2Fpublic%2Fscreens%2Fscreen-1.png)\n\n## Prerequisites\n\n## Installation\n\n## Optional\n\n## Important Information\n\nThe project's search functionality relies on the Husky's automation to build `search-data/documents.json` ensure git commit is performed to generate this file.\n",
-    "_searchMeta": {
-      "cleanContent": "to install and edit the documents you need to have several prerequisites in place here s a list of all the essential pre-requisites for setting up and working on this project deploy with vercel https: vercel com new clone repository-url https 3a 2f 2fgithub com 2frubixvi 2frubix-documents project-name my-documents repository-name my-documents demo-title documents demo-description this 20document 20starter 20kit 20is 20developed 20with 20next js 2c 20tailwind 20css 20and 20typescript 20it 20serves 20as 20a 20flexible 20and 20scalable 20foundation 20for 20building 20documentation 20websites 20or 20content-driven 20projects demo-url https 3a 2f 2frubix-documents vercel app 2f demo-image https 3a 2f 2fgithub com 2frubixvi 2frubix-documents 2fblob 2fmain 2fpublic 2fscreens 2fscreen-1 png prerequisites installation optional important information the project s search functionality relies on the husky s automation to build search-data documents json ensure git commit is performed to generate this file",
-      "headings": [
-        "Prerequisites",
-        "Installation",
-        "Optional",
-        "Important Information"
-      ],
-      "keywords": [
-        "installation",
-        "github",
-        "node",
-        "guide",
-        "nextjs",
-        "documents",
-        "Prerequisites",
-        "Installation",
-        "Optional",
-        "Important Information",
-        "search-data/documents.json"
-      ]
-    }
-  },
-  {
-    "slug": "/basic-setup/setup",
-    "title": "Setup",
-    "description": "Setting up and configuring your documentation project",
-    "content": "Setting up your new documentation project is straightforward. Most of the essential project settings can be configured within the `settings` folder.\n\n## Settings\n\nThis section provides the core settings for your documentation site, such as defining the site's URL, site icon and title.\n\n```tsx showLineNumbers\nexport const url = \"\"                 // The URL for your documentation site\r\nexport const siteicon = \"\"            // Icon displayed next to the site name in the header\r\nexport const sitename = \"\"            // Title of your documentation site\n```\n\n## Google Tags\n\nThis section allows you to integrate Google Tag Manager into your documentation project. You can add your GTM code and configure whether it's connected.\n\n```tsx showLineNumbers\nexport const gtm = \"\"                 // Add your Google Tag Manager code here\r\nexport const gtmconnected = true      // Set to true if GTM is connected, otherwise set to false\n```\n\n## Search Engine\n\nConfigure essential SEO settings to ensure your documentation site is optimized for search engines. This includes meta descriptions, keywords and social media sharing details like images and alt text.\n\n```tsx showLineNumbers\nexport const description = \"\"         // Description of your documentation site for SEO\r\nexport const keywords = [\"\", \"\"]      // List of SEO keywords for your documentation site\r\nexport const urlimage = \"\"            // The URL of the image used when sharing on social media)\r\nexport const imagealt = \"\"            // Alt text for shared images, helpful for screen readers\r\nexport const twitterhandle = \"\"       // Your company’s Twitter handle for social sharing\n```\n\n## Footer Branding\n\nThe footer settings allow you to customize the company information displayed at the bottom of the site. You can add the company name and the URL that the name will link to.\n\n```tsx showLineNumbers\nexport const companyname = \"\"         // The company name displayed in the copyright section\r\nexport const companylink = \"\"         // The URL your company name should link to\n```\n\n## General Layout\n\nThe layout settings control the appearance and functionality of various elements of the documentation site, such as branding, the right sidebar, feedback options, table of contents, and scroll-to-top functionality.\n\n```tsx showLineNumbers\nexport const branding = true          // Set to true to display our branding elements\r\nexport const rightsidebar = true      // Set to true to enable the right sidebar with feedback, table of contents and scroll-to-top\r\nexport const feedbackedit = true      // Control to enable/disable feedback on GitHub\r\nexport const tableofcontent = true    // Control to enable/disable the generated table of contents\r\nexport const totopscroll = true       // Control to enable/disable scroll-to-top button\n```\n\n## Github Control\n\nIf your MDX files are hosted on GitHub, you can configure the project to load documents directly from there. This option can be useful for syncing documentation updates directly with your repository.\n\n```tsx showLineNumbers\nexport const loadfromgithub = false   // Set to true to load your MDX documents directly from GitHub\n```\n\n## Project Structure\n",
-    "_searchMeta": {
-      "cleanContent": "setting up your new documentation project is straightforward most of the essential project settings can be configured within the settings folder settings this section provides the core settings for your documentation site such as defining the site s url site icon and title google tags this section allows you to integrate google tag manager into your documentation project you can add your gtm code and configure whether it s connected search engine configure essential seo settings to ensure your documentation site is optimized for search engines this includes meta descriptions keywords and social media sharing details like images and alt text footer branding the footer settings allow you to customize the company information displayed at the bottom of the site you can add the company name and the url that the name will link to general layout the layout settings control the appearance and functionality of various elements of the documentation site such as branding the right sidebar feedback options table of contents and scroll-to-top functionality github control if your mdx files are hosted on github you can configure the project to load documents directly from there this option can be useful for syncing documentation updates directly with your repository project structure",
-      "headings": [
-        "Settings",
-        "Google Tags",
-        "Search Engine",
-        "Footer Branding",
-        "General Layout",
-        "Github Control",
-        "Project Structure"
-      ],
-      "keywords": [
-        "setup",
-        "configuration",
-        "layout",
-        "Google",
-        "SEO",
-        "nextjs",
-        "documents",
-        "Settings",
-        "Google Tags",
-        "Search Engine",
-        "Footer Branding",
-        "General Layout",
-        "Github Control",
-        "Project Structure",
-        "settings",
-        "tsx showLineNumbers\nexport const url = \"\"                 // The URL for your documentation site\r\nexport const siteicon = \"\"            // Icon displayed next to the site name in the header\r\nexport const sitename = \"\"            // Title of your documentation site",
-        "## Google Tags\n\nThis section allows you to integrate Google Tag Manager into your documentation project. You can add your GTM code and configure whether it's connected.",
-        "tsx showLineNumbers\nexport const gtm = \"\"                 // Add your Google Tag Manager code here\r\nexport const gtmconnected = true      // Set to true if GTM is connected, otherwise set to false",
-        "## Search Engine\n\nConfigure essential SEO settings to ensure your documentation site is optimized for search engines. This includes meta descriptions, keywords and social media sharing details like images and alt text.",
-        "tsx showLineNumbers\nexport const description = \"\"         // Description of your documentation site for SEO\r\nexport const keywords = [\"\", \"\"]      // List of SEO keywords for your documentation site\r\nexport const urlimage = \"\"            // The URL of the image used when sharing on social media)\r\nexport const imagealt = \"\"            // Alt text for shared images, helpful for screen readers\r\nexport const twitterhandle = \"\"       // Your company’s Twitter handle for social sharing",
-        "## Footer Branding\n\nThe footer settings allow you to customize the company information displayed at the bottom of the site. You can add the company name and the URL that the name will link to.",
-        "tsx showLineNumbers\nexport const companyname = \"\"         // The company name displayed in the copyright section\r\nexport const companylink = \"\"         // The URL your company name should link to",
-        "## General Layout\n\nThe layout settings control the appearance and functionality of various elements of the documentation site, such as branding, the right sidebar, feedback options, table of contents, and scroll-to-top functionality.",
-        "tsx showLineNumbers\nexport const branding = true          // Set to true to display our branding elements\r\nexport const rightsidebar = true      // Set to true to enable the right sidebar with feedback, table of contents and scroll-to-top\r\nexport const feedbackedit = true      // Control to enable/disable feedback on GitHub\r\nexport const tableofcontent = true    // Control to enable/disable the generated table of contents\r\nexport const totopscroll = true       // Control to enable/disable scroll-to-top button",
-        "## Github Control\n\nIf your MDX files are hosted on GitHub, you can configure the project to load documents directly from there. This option can be useful for syncing documentation updates directly with your repository.",
-        "tsx showLineNumbers\nexport const loadfromgithub = false   // Set to true to load your MDX documents directly from GitHub"
+        "Introduction",
+        "Research and Analysis",
+        "Final Style Guide",
+        "Website Design Mockup",
+        "Some Social Media Assets"
       ]
     }
   },
@@ -401,6 +274,120 @@
         "Blockquotes",
         "Code Examples with switch",
         "Conclusion"
+      ]
+    }
+  },
+  {
+    "slug": "/recent-work/bounce-back-coin-branding",
+    "title": "Bounce Back Coin Branding",
+    "description": "",
+    "content": "Bounce Back Coin lets users earn cryptocurrency through learning. I designed the logo, branding guidelines, and website.\n\n## Introduction\n\nWelcome to the Bounce Back Coin Branding Design Showcase. Bounce Back Coin is a learning platform that lets users earn cryptocurrency by participating in educational activities. Our goal is to make learning fun and rewarding.\n\nAs the designer for Bounce Back Coin, I created the logo and branding guidelines to ensure a consistent look and feel. I also designed the marketing website.\n\n## Research and Analysis\n\nThe logo design process began with brainstorming concepts related to bouncing and growth, as seen in the sketches exploring shapes and movements. These ideas were refined into a cohesive design that symbolizes learning and reward, encapsulating the essence of Bounce Back Coin.\n\n### Logo Mark Ideas\n\n![Sketches](/images/bb-coin-branding/logo-mark-ideas.png)\n\n### Direction #1 - Playful Gradients, minimalist while being engaging.\n\n<details>\n  <summary>Idea Mood Board</summary>\n\n  <div style={{ paddingLeft: '1rem' }}>\n    ![Mood Board 1](/images/bb-coin-branding/mood-board-1.png)\n  </div>\n</details>\n\n![Style Scape](/images/bb-coin-branding/style-scape-1.png)\n\n### Direction #2 - Pure minimalist, simple with flat colors.\n\n<details>\n  <summary>Idea Mood Board</summary>\n\n  <div style={{ paddingLeft: '1rem' }} />\n</details>\n\n### Direction #3 - Mix of both styles.\n\n## Final Style Guide\n\nThe team decided to move forward with the second design direction, selecting the \"B\" logo mark for its simplicity and relevance. Building on this choice, I developed a comprehensive style guide to establish a strong foundation for the brand's visual identity.\n\n## Website Design Mockup\n\n### Desktop Design\n\n### Mobile Design\n\n## Some Social Media Assets\n\n### Instagram Post Carousel\n\n### Addition of Patterns\n\nTo honor the heritage of the founders, I incorporated cultural patterns inspired by African and Caribbean traditions into the design, subtly weaving a rich tapestry of heritage into the brand's visual identity. I carefully melded these cultural elements with geometric shapes, ensuring a harmonious blend that enhances the existing design aesthetic.\n\n<details>\n  <summary>Mood Board - Cultural Patterns</summary>\n\n  <div style={{ paddingLeft: '1rem' }} />\n</details>\n\n<details>\n  <summary>Mood Board - Geometric Patterns</summary>\n\n  <div style={{ paddingLeft: '1rem' }} />\n</details>\n\n### Retractable Banner\n\n### Bounce Back Coin Animation\n\nAnimation illustrating the process of earning Bounce Back cryptocurrency upon completion of learning materials, crafted using Blender.\n",
+    "_searchMeta": {
+      "cleanContent": "bounce back coin lets users earn cryptocurrency through learning i designed the logo branding guidelines and website introduction welcome to the bounce back coin branding design showcase bounce back coin is a learning platform that lets users earn cryptocurrency by participating in educational activities our goal is to make learning fun and rewarding as the designer for bounce back coin i created the logo and branding guidelines to ensure a consistent look and feel i also designed the marketing website research and analysis the logo design process began with brainstorming concepts related to bouncing and growth as seen in the sketches exploring shapes and movements these ideas were refined into a cohesive design that symbolizes learning and reward encapsulating the essence of bounce back coin logo mark ideas sketches direction 1 - playful gradients minimalist while being engaging details summary idea mood board summary div style paddingleft: 1rem mood board 1 div details style scape direction 2 - pure minimalist simple with flat colors details summary idea mood board summary div style paddingleft: 1rem details direction 3 - mix of both styles final style guide the team decided to move forward with the second design direction selecting the b logo mark for its simplicity and relevance building on this choice i developed a comprehensive style guide to establish a strong foundation for the brand s visual identity website design mockup desktop design mobile design some social media assets instagram post carousel addition of patterns to honor the heritage of the founders i incorporated cultural patterns inspired by african and caribbean traditions into the design subtly weaving a rich tapestry of heritage into the brand s visual identity i carefully melded these cultural elements with geometric shapes ensuring a harmonious blend that enhances the existing design aesthetic details summary mood board - cultural patterns summary div style paddingleft: 1rem details details summary mood board - geometric patterns summary div style paddingleft: 1rem details retractable banner bounce back coin animation animation illustrating the process of earning bounce back cryptocurrency upon completion of learning materials crafted using blender",
+      "headings": [
+        "Introduction",
+        "Research and Analysis",
+        "Final Style Guide",
+        "Website Design Mockup",
+        "Some Social Media Assets"
+      ],
+      "keywords": [
+        "Introduction",
+        "Research and Analysis",
+        "Final Style Guide",
+        "Website Design Mockup",
+        "Some Social Media Assets"
+      ]
+    }
+  },
+  {
+    "slug": "/recent-work/changelog",
+    "title": "Changelog",
+    "description": "Changelogs and improvements to the Documents projects.",
+    "content": "## Added\n\n**Linting and Formatting**:\n\n* Added `npm run lint` and `npm run lint:fix` scripts to automate linting tasks.\n* Added `npm run format` and `npm run format:check` scripts to ensure consistent code formatting.\n\n**SEO Enhancements**:\n\n* Added an SEO component to MDX pages to dynamically include `keywords` and `lastModified` metadata for improved SEO generation.\n\n## Updated\n\n**Next.js Upgrade**:\n\n* Upgraded the project from **Next.js 14** to **Next.js 15**, leveraging the latest features and performance improvements.\n\n**Codebase Improvements**:\n\n* Reordered imports across the project files for better consistency and readability.\n\n**Mermaid Component**:\n\n* Fixed an ID bug that caused rendering issues when multiple Mermaid diagrams were included in MDX pages.\n* Improved initialization and rendering logic to prevent duplicate diagram rendering.\n",
+    "_searchMeta": {
+      "cleanContent": "added linting and formatting: added npm run lint and npm run lint:fix scripts to automate linting tasks added npm run format and npm run format:check scripts to ensure consistent code formatting seo enhancements: added an seo component to mdx pages to dynamically include keywords and lastmodified metadata for improved seo generation updated next js upgrade: upgraded the project from next js 14 to next js 15 leveraging the latest features and performance improvements codebase improvements: reordered imports across the project files for better consistency and readability mermaid component: fixed an id bug that caused rendering issues when multiple mermaid diagrams were included in mdx pages improved initialization and rendering logic to prevent duplicate diagram rendering",
+      "headings": [
+        "Added",
+        "Updated"
+      ],
+      "keywords": [
+        "changelog",
+        "guide",
+        "nextjs",
+        "documents",
+        "Added",
+        "Updated",
+        "Linting and Formatting",
+        "SEO Enhancements",
+        "Next.js Upgrade",
+        "Next.js 14",
+        "Next.js 15",
+        "Codebase Improvements",
+        "Mermaid Component",
+        "npm run lint",
+        "npm run lint:fix",
+        "npm run format",
+        "npm run format:check",
+        "keywords",
+        "lastModified"
+      ]
+    }
+  },
+  {
+    "slug": "/recent-work",
+    "title": "Recent Work",
+    "description": "",
+    "content": "",
+    "_searchMeta": {
+      "cleanContent": "",
+      "headings": [],
+      "keywords": []
+    }
+  },
+  {
+    "slug": "/recent-work/setup",
+    "title": "Setup",
+    "description": "Setting up and configuring your documentation project",
+    "content": "Setting up your new documentation project is straightforward. Most of the essential project settings can be configured within the `settings` folder.\n\n## Settings\n\nThis section provides the core settings for your documentation site, such as defining the site's URL, site icon and title.\n\n```tsx showLineNumbers\nexport const url = \"\"                 // The URL for your documentation site\r\nexport const siteicon = \"\"            // Icon displayed next to the site name in the header\r\nexport const sitename = \"\"            // Title of your documentation site\n```\n\n## Google Tags\n\nThis section allows you to integrate Google Tag Manager into your documentation project. You can add your GTM code and configure whether it's connected.\n\n```tsx showLineNumbers\nexport const gtm = \"\"                 // Add your Google Tag Manager code here\r\nexport const gtmconnected = true      // Set to true if GTM is connected, otherwise set to false\n```\n\n## Search Engine\n\nConfigure essential SEO settings to ensure your documentation site is optimized for search engines. This includes meta descriptions, keywords and social media sharing details like images and alt text.\n\n```tsx showLineNumbers\nexport const description = \"\"         // Description of your documentation site for SEO\r\nexport const keywords = [\"\", \"\"]      // List of SEO keywords for your documentation site\r\nexport const urlimage = \"\"            // The URL of the image used when sharing on social media)\r\nexport const imagealt = \"\"            // Alt text for shared images, helpful for screen readers\r\nexport const twitterhandle = \"\"       // Your company’s Twitter handle for social sharing\n```\n\n## Footer Branding\n\nThe footer settings allow you to customize the company information displayed at the bottom of the site. You can add the company name and the URL that the name will link to.\n\n```tsx showLineNumbers\nexport const companyname = \"\"         // The company name displayed in the copyright section\r\nexport const companylink = \"\"         // The URL your company name should link to\n```\n\n## General Layout\n\nThe layout settings control the appearance and functionality of various elements of the documentation site, such as branding, the right sidebar, feedback options, table of contents, and scroll-to-top functionality.\n\n```tsx showLineNumbers\nexport const branding = true          // Set to true to display our branding elements\r\nexport const rightsidebar = true      // Set to true to enable the right sidebar with feedback, table of contents and scroll-to-top\r\nexport const feedbackedit = true      // Control to enable/disable feedback on GitHub\r\nexport const tableofcontent = true    // Control to enable/disable the generated table of contents\r\nexport const totopscroll = true       // Control to enable/disable scroll-to-top button\n```\n\n## Github Control\n\nIf your MDX files are hosted on GitHub, you can configure the project to load documents directly from there. This option can be useful for syncing documentation updates directly with your repository.\n\n```tsx showLineNumbers\nexport const loadfromgithub = false   // Set to true to load your MDX documents directly from GitHub\n```\n\n## Project Structure\n",
+    "_searchMeta": {
+      "cleanContent": "setting up your new documentation project is straightforward most of the essential project settings can be configured within the settings folder settings this section provides the core settings for your documentation site such as defining the site s url site icon and title google tags this section allows you to integrate google tag manager into your documentation project you can add your gtm code and configure whether it s connected search engine configure essential seo settings to ensure your documentation site is optimized for search engines this includes meta descriptions keywords and social media sharing details like images and alt text footer branding the footer settings allow you to customize the company information displayed at the bottom of the site you can add the company name and the url that the name will link to general layout the layout settings control the appearance and functionality of various elements of the documentation site such as branding the right sidebar feedback options table of contents and scroll-to-top functionality github control if your mdx files are hosted on github you can configure the project to load documents directly from there this option can be useful for syncing documentation updates directly with your repository project structure",
+      "headings": [
+        "Settings",
+        "Google Tags",
+        "Search Engine",
+        "Footer Branding",
+        "General Layout",
+        "Github Control",
+        "Project Structure"
+      ],
+      "keywords": [
+        "setup",
+        "configuration",
+        "layout",
+        "Google",
+        "SEO",
+        "nextjs",
+        "documents",
+        "Settings",
+        "Google Tags",
+        "Search Engine",
+        "Footer Branding",
+        "General Layout",
+        "Github Control",
+        "Project Structure",
+        "settings",
+        "tsx showLineNumbers\nexport const url = \"\"                 // The URL for your documentation site\r\nexport const siteicon = \"\"            // Icon displayed next to the site name in the header\r\nexport const sitename = \"\"            // Title of your documentation site",
+        "## Google Tags\n\nThis section allows you to integrate Google Tag Manager into your documentation project. You can add your GTM code and configure whether it's connected.",
+        "tsx showLineNumbers\nexport const gtm = \"\"                 // Add your Google Tag Manager code here\r\nexport const gtmconnected = true      // Set to true if GTM is connected, otherwise set to false",
+        "## Search Engine\n\nConfigure essential SEO settings to ensure your documentation site is optimized for search engines. This includes meta descriptions, keywords and social media sharing details like images and alt text.",
+        "tsx showLineNumbers\nexport const description = \"\"         // Description of your documentation site for SEO\r\nexport const keywords = [\"\", \"\"]      // List of SEO keywords for your documentation site\r\nexport const urlimage = \"\"            // The URL of the image used when sharing on social media)\r\nexport const imagealt = \"\"            // Alt text for shared images, helpful for screen readers\r\nexport const twitterhandle = \"\"       // Your company’s Twitter handle for social sharing",
+        "## Footer Branding\n\nThe footer settings allow you to customize the company information displayed at the bottom of the site. You can add the company name and the URL that the name will link to.",
+        "tsx showLineNumbers\nexport const companyname = \"\"         // The company name displayed in the copyright section\r\nexport const companylink = \"\"         // The URL your company name should link to",
+        "## General Layout\n\nThe layout settings control the appearance and functionality of various elements of the documentation site, such as branding, the right sidebar, feedback options, table of contents, and scroll-to-top functionality.",
+        "tsx showLineNumbers\nexport const branding = true          // Set to true to display our branding elements\r\nexport const rightsidebar = true      // Set to true to enable the right sidebar with feedback, table of contents and scroll-to-top\r\nexport const feedbackedit = true      // Control to enable/disable feedback on GitHub\r\nexport const tableofcontent = true    // Control to enable/disable the generated table of contents\r\nexport const totopscroll = true       // Control to enable/disable scroll-to-top button",
+        "## Github Control\n\nIf your MDX files are hosted on GitHub, you can configure the project to load documents directly from there. This option can be useful for syncing documentation updates directly with your repository.",
+        "tsx showLineNumbers\nexport const loadfromgithub = false   // Set to true to load your MDX documents directly from GitHub"
       ]
     }
   },

@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { GitHubLink } from "@/settings/navigation"
-import { LuArrowUpRight } from "react-icons/lu"
 import { FiGithub, FiLinkedin } from "react-icons/fi" 
 import { cn } from "@/lib/utils"
 

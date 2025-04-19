@@ -1,12 +1,12 @@
 export const Documents = [
     {
-        heading: "Introduction",
-        title: "Basic Setup",
-        href: "/basic-setup",
+        heading: "My Work",
+        title: "Recent Work",
+        href: "/recent-work",
         items: [
             {
-                title: "Installation",
-                href: "/installation",
+                title: "Bounce Back Digital Branding",
+                href: "/bounce-back-coin-branding",
             },
             {
                 title: "Setup",
