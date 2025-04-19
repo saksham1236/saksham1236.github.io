@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { GitHubLink } from "@/settings/navigation"
 import { LuArrowUpRight } from "react-icons/lu"
-
+import { FiGithub, FiLinkedin } from "react-icons/fi" 
 import { cn } from "@/lib/utils"
 
 type SideBarEdit = {
@@ -15,7 +15,7 @@ export default function RightSideBar({ slug, title }: SideBarEdit) {
 
   return (
     <div className="flex flex-col gap-3 pl-2">
-      <h3 className="text-sm font-semibold">Content</h3>
+      <h3 className="text-sm font-semibold">Contact Me</h3>
       <div className="flex flex-col gap-2">
         <Link
           href={feedbackUrl}
@@ -25,7 +25,7 @@ export default function RightSideBar({ slug, title }: SideBarEdit) {
             "flex items-center text-sm text-neutral-800 no-underline dark:text-neutral-300/85"
           )}
         >
-          <LuArrowUpRight className="mr-1 inline-block h-4 w-4" /> Feedback
+          <FiGithub className="mr-1 inline-block h-4 w-4" /> My Github
         </Link>
         <Link
           href={editUrl}
@@ -35,7 +35,7 @@ export default function RightSideBar({ slug, title }: SideBarEdit) {
             "flex items-center text-sm text-neutral-800 no-underline dark:text-neutral-300/85"
           )}
         >
-          <LuArrowUpRight className="mr-1 inline-block h-4 w-4" /> Edit page
+          <FiLinkedin className="mr-1 inline-block h-4 w-4" /> Visit my Linkedin
         </Link>
       </div>
     </div>
