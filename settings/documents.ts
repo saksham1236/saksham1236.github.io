@@ -7,15 +7,15 @@ export const Documents: Paths[] = [
     href: "/recent-work",
     items: [
       {
-        title: "Bounce Back Digital Branding",
+        title: "Bounce Back Coin Branding",
         href: "/bounce-back-coin-branding",
       },
       {
-        title: "Setup",
+        title: "Bounce Back Digital Branding",
         href: "/setup",
       },
       {
-        title: "Changelog",
+        title: "Lynk",
         href: "/changelog",
       },
     ],
