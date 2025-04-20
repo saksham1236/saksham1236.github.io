@@ -1,14 +1,13 @@
 .hoverText {
-    text-decoration: underline 0.1em #fff;
+    text-decoration: underline 0.1em;
     text-underline-offset: 0.1em;
+    display: inline-block;
 }
 
-.red {
+.red:hover {
     background-color: #ff6565;
 }
 
-.red::before {
+.red:hover::before {
     background-color: #ff6565;
 }
-
-

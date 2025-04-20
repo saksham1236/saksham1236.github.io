@@ -37,7 +37,7 @@ export function Card({
   const content = (
     <div
       className={clsx(
-        "group relative flex overflow-hidden rounded-xl border-2 bg-white transition-shadow duration-300 ease-in-out dark:border-neutral-600 dark:bg-neutral-900 !transition hover:scale-103",
+        "group relative flex overflow-hidden rounded-xl border-2 border-gray-300 bg-neutral-50 transition-shadow duration-300 ease-in-out dark:border-neutral-600 dark:bg-neutral-900 !transition hover:scale-103",
         variant === "small"
           ? "items-center space-x-2 p-3"
           : variant === "image"
@@ -52,7 +52,7 @@ export function Card({
           alt={title}
           width={400}
           height={400}
-          className="!m-0 !mb-2 h-[180px] w-full !rounded-md object-cover object-center"
+          className="!m-0 !mb-2 h-[180px] w-full !border-2 !rounded-md object-cover object-center"
         />
       )}
       {external && href && variant !== "image" && (
