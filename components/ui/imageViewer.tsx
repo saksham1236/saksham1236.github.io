@@ -1,4 +1,3 @@
-import Popup from 'reactjs-popup';
 import React from 'react';
 
 type ImageViewerProps = {
