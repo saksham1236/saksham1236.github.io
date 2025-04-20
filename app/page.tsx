@@ -7,12 +7,12 @@ import { CardGrid, Card } from "@/components/markdown/card"
 const RightIcon = iconMap['arrowRight']
 export default function Home() {
   return (
-    <section className="flex h-auto md:max-h-[100dvh] flex-col items-center justify-center px-2 py-8 text-center">
+    <section className="flex grow h-auto sm:min-h-[calc(100dvh-8em)] lg:h-[calc(100dvh-8em)] flex-col items-center justify-center px-2 py-8 text-center">
       <h1 className="mb-4 text-4xl font-bold sm:text-7xl">Froto Design</h1>
       <p className="text-foreground mb-8 max-w-[600px] sm:text-base">
         A Versatile Designer and Software Developer with a passion for Data Science, bringing over 3 years of experience in UX Design, Motion Design, Scientific Illustration and expertise in Full-Stack Web Development, I help craft innovative digital solutions.
       </p>
-      <SplineView className="lg:!max-h-80 sm:h-96"/>
+      <SplineView className="flex grow md:shrink items-center max-h-full min-h-[400px] w-auto aspect-square md:aspect-auto md:min-h-0 "/>
       <div className="flex items-center gap-5">
         <Link
           href={`/docs${PageRoutes[0].href}`}
