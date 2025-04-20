@@ -12,7 +12,7 @@ export default function Home() {
       <p className="text-foreground mb-8 max-w-[600px] sm:text-base">
         A Versatile Designer and Software Developer with a passion for Data Science, bringing over 3 years of experience in UX Design, Motion Design, Scientific Illustration and expertise in Full-Stack Web Development, I help craft innovative digital solutions.
       </p>
-      <SplineView className="flex grow md:shrink items-center max-h-full min-h-[400px] w-auto aspect-square md:aspect-auto md:min-h-0 "/>
+      <SplineView className="flex grow md:shrink md:grow items-center max-h-full min-h-[400px] w-auto aspect-square  md:aspect-[inherit] md:min-h-0 md:w-full "/>
       <div className="flex items-center gap-5">
         <Link
           href={`/docs${PageRoutes[0].href}`}
