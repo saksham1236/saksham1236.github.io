@@ -303,6 +303,10 @@ span.katex-html {
   animation: slideUp 300ms ease-out;
 }
 
+:not(a) img:focus {
+  scale:1.5;
+}
+
 @keyframes slideDown {
   from {
     height: 0;

@@ -34,15 +34,24 @@ export function Card({
   const content = (
     <div
       className={clsx(
-        "group relative flex overflow-hidden rounded-lg border bg-white shadow-md transition-shadow duration-300 ease-in-out hover:shadow-lg dark:border-neutral-800 dark:bg-neutral-900 hover:dark:shadow-md",
+        "group relative flex overflow-hidden rounded-xl border bg-white shadow-md transition-shadow duration-300 ease-in-out hover:shadow-lg dark:border-neutral-800 dark:bg-neutral-900 hover:dark:shadow-md !transition hover:scale-103",
         variant === "small"
           ? "items-center space-x-2 p-3"
           : variant === "image"
-            ? "h-full flex-col justify-between p-0"
-            : "h-full flex-col justify-between p-4",
+            ? "h-full flex-col p-4"
+            : "h-full flex-col p-4",
         className
       )}
     >
+      {image && variant === "image" && (
+        <Image
+          src={image}
+          alt={title}
+          width={400}
+          height={400}
+          className="!m-0 !mb-2 h-[180px] w-full !rounded-md !border-0 object-cover object-center"
+        />
+      )}
       {external && href && variant !== "image" && (
         <div
           className={clsx(
@@ -57,19 +66,10 @@ export function Card({
         <IconComponent className="text-gray-500 dark:text-gray-300" />
       )}
       <div>
-        {subtitle && variant === "normal" && (
+        {subtitle && (variant === "normal" || variant === "image") && (
           <p className="!my-1 text-xs font-semibold text-gray-500 dark:text-gray-400">
             {subtitle}
           </p>
-        )}
-        {image && variant === "image" && (
-          <Image
-            src={image}
-            alt={title}
-            width={400}
-            height={400}
-            className="!m-0 h-[180px] w-full !rounded-none border-0 object-cover object-center"
-          />
         )}
         <div
           className={clsx(
@@ -77,15 +77,14 @@ export function Card({
             variant === "small"
               ? "text-sm"
               : variant === "image"
-                ? "p-4 text-sm"
-                : "text-lg",
-            className
+                ? "text-lg"
+                : "text-lg"
           )}
         >
           {title}
         </div>
-        {description && variant === "normal" && (
-          <p className="!my-2 text-sm font-normal text-gray-600 dark:text-gray-400">
+        {description && (variant === "normal" || variant === "image") && (
+          <p className=" !my-2 text-sm font-normal text-gray-600 dark:text-gray-400">
             {description}
           </p>
         )}
@@ -110,7 +109,7 @@ export function Card({
 
 export function CardGrid({ children }: PropsWithChildren) {
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 2xl:grid-cols-3">
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
       {children}
     </div>
   )

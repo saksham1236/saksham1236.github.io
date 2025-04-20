@@ -4,7 +4,7 @@ export const Navigations = [
   {
     title: "Home",
     // href: `/docs${PageRoutes[0].href}`,
-    href: "/docs/recent-work"
+    href: "/"
   },
   {
     title: "My Work",

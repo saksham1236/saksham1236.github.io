@@ -16,19 +16,12 @@ export function Footer() {
         </p>
         {Company.branding !== false && (
           <div className="hidden text-center md:block">
-            <Link
-              className="font-semibold"
-              href="https://www.rubixstudios.com.au"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
               <Image
                 src="/icon.png"
-                alt="Rubix Studios Logo"
+                alt="Froto Design Logo"
                 width={30}
                 height={30}
               />
-            </Link>
           </div>
         )}
       </div>
