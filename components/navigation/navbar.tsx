@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { GitHubLink, Navigations } from "@/settings/navigation"
-import { FiArrowUpRight, FiGithub } from "react-icons/fi"
+import { FiArrowUpRight, FiGithub, FiLinkedin } from "react-icons/fi"
 import { buttonVariants } from "@/components/ui/button"
 import { SheetClose } from "@/components/ui/sheet"
 import Anchor from "@/components/navigation/anchor"
@@ -38,7 +38,17 @@ export function Navbar() {
               >
                 <FiGithub className="h-[1.1rem] w-[1.1rem]" />
               </Link>
+              
             )}
+              <Link
+                href={GitHubLink.href}
+                className={buttonVariants({ variant: "outline", size: "icon" })}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View my Linkekin"
+              >
+                <FiLinkedin className="h-[1.1rem] w-[1.1rem]" />
+              </Link>
             <ModeToggle />
           </div>
         </div>

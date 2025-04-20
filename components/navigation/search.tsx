@@ -115,7 +115,7 @@ export default function Search() {
           <div className="relative max-w-md flex-1 cursor-pointer">
             <LuSearch className="absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-neutral-500 dark:text-neutral-400" />
             <Input
-              className="bg-background h-9 w-full rounded-md border pr-4 pl-10 text-sm shadow md:w-full"
+              className="bg-background h-9 w-full rounded-md border-2 border-[#536a8d50] pr-4 pl-10 text-sm md:w-full"
               placeholder="Search"
               type="search"
             />
@@ -129,7 +129,7 @@ export default function Search() {
               onChange={(e) => setSearchedInput(e.target.value)}
               placeholder="Search..."
               autoFocus
-              className="h-14 border-b bg-transparent px-4 text-[15px] outline-none"
+              className="h-14 border-2 bg-transparent px-4 text-[15px] outline-none"
             />
           </DialogHeader>
           {searchedInput.length > 0 && searchedInput.length < 3 && (
