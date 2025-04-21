@@ -20,23 +20,24 @@ export default function Hero() {
             .from(text.lines, {
                 y: '100%',
                 opacity: 0,
-                duration: 0.5,
+                duration: 0.3,
                 ease: 'sine',
-                stagger: 0.2,
+                stagger: 0.1,
+                delay: 1,
             })
             .to(`.${styles.red}`, {
                 backgroundPosition: "0 0",
-                duration: 0.4,
+                duration: 0.3,
                 ease:"sine.inOut",
             })
             .to(`.${styles.blue}`, {
                 backgroundPosition: "0 0",
-                duration: 0.4,
+                duration: 0.3,
                 ease:"sine.inOut",
             })
             .to(`.${styles.yellow}`, {
                 backgroundPosition: "0 0",
-                duration: 0.4,
+                duration: 0.3,
                 ease:"sine.inOut",
             })
     });
