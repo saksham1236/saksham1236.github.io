@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './hero.module.css';
-import { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import SplitType from 'split-type';
