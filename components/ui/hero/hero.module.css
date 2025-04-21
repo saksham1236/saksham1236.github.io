@@ -1,13 +1,27 @@
 .hoverText {
     text-decoration: underline 0.1em;
     text-underline-offset: 0.1em;
-    position: static;
+}
+.red {
+    background: linear-gradient(to left, transparent 50%, #ef476f 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: all 0.2s ease-in-out;
 }
 
-.red:hover {
-    background-color: #ff6565;
+
+.blue {
+    background: linear-gradient(to left, transparent 50%, #2696EA 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: all 0.2s ease-in-out;
 }
 
-.red:hover::before {
-    background-color: #ff6565;
+.yellow {
+    background: linear-gradient(to left, transparent 50%, #ffa528 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: all 0.2s ease-in-out;
 }
+
+
