@@ -1,7 +1,7 @@
 .hoverText {
     text-decoration: underline 0.1em;
     text-underline-offset: 0.1em;
-    display: inline-block;
+    position: static;
 }
 
 .red:hover {
