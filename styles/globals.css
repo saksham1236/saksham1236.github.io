@@ -4,6 +4,8 @@
 @plugin "@tailwindcss/typography";
 @custom-variant dark (&:is(.dark *));
 
+@custom-variant hover (&:hover);
+
 @theme {
   --font-body: "Atkinson Hyperlegible Next", sans-serif;
 }
