@@ -14,12 +14,11 @@ import {
   sitename,
   tableofcontent,
   totopscroll,
-  twitterhandle,
   url,
   urlimage,
 } from "@/settings/settings"
 
-import { OpenGraph, TwitterCard } from "@/lib/metadata"
+import { OpenGraph } from "@/lib/metadata"
 
 export const Company = {
   name: companyname,
@@ -55,17 +54,5 @@ export const Settings = {
       },
     ],
   } as OpenGraph,
-  twitter: {
-    card: "summary_large_image",
-    title: sitename,
-    description: description,
-    site: twitterhandle,
-    images: [
-      {
-        url: urlimage,
-        alt: imagealt,
-      },
-    ],
-  } as TwitterCard,
   canonical: url,
 }
