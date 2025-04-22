@@ -63,9 +63,9 @@ export default function SubLink(
   }
 
   return (
-    <div className="flex w-full flex-col gap-1">
+    <div className="flex w-full flex-col gap-1 bg-[#002A6915] dark:bg-[#ffffff11] rounded-sm p-2 ">
       <Collapsible open={isOpen} onOpenChange={setIsOpen}>
-        <div className="mr-3 flex items-center gap-2 text-sm">
+        <div className="flex items-center gap-2 text-sm">
           {titleOrLink}
           <CollapsibleTrigger asChild>
             <Button className="ml-auto h-6 w-6" variant="link" size="icon">
@@ -81,8 +81,8 @@ export default function SubLink(
         <CollapsibleContent className="CollapsibleContent">
           <div
             className={cn(
-              "mt-2.5 flex flex-col items-start gap-3 border-l pl-4 text-sm text-neutral-800 dark:text-neutral-300/85",
-              level > 0 && "ml-1 border-l pl-4"
+              "mt-2.5 flex flex-col items-start gap-3 border-l pl-3 text-sm text-neutral-800 dark:text-neutral-300/85",
+              level > 0 && "border-l pl-3"
             )}
           >
             {items?.map((innerLink) => {
