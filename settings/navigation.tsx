@@ -11,10 +11,6 @@ export const Navigations = [
     href: "/docs/recent-work",
   },
   {
-    title: "About Me",
-    href: "https://www.rubixstudios.com.au/",
-  },
-  {
     title: "Contact Me",
     href: "https://www.linkedin.com/in/s9tandon",
     external: true,
