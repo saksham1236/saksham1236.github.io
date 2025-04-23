@@ -40,7 +40,7 @@ export default async function Pages({ params }: PageProps) {
 
       {Settings.rightbar && (
         <aside
-          className="toc sticky top-16 hidden h-[94.5vh] min-w-[230px] gap-3 py-8 xl:flex xl:flex-col"
+          className="toc sticky top-16 hidden h-[94.5vh] w-[230px] gap-3 py-8 xl:flex xl:flex-col"
           aria-label="Table of contents"
         >
           {Settings.toc && <Toc tocs={tocs} />}
