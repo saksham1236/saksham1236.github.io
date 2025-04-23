@@ -1,27 +1,24 @@
 .hoverText {
-    text-decoration: underline 0.1em;
-    text-underline-offset: 0.1em;
+  text-decoration: underline 0.1em;
+  text-underline-offset: 0.1em;
 }
 .red {
-    background: linear-gradient(to left, transparent 50%, #ef476f 50%);
-    background-size: 200% 100%;
-    background-position: 100% 0;
-    transition: all 0.2s ease-in-out;
+  background: linear-gradient(to left, transparent 50%, #ef476f 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: all 0.2s ease-in-out;
 }
 
-
 .blue {
-    background: linear-gradient(to left, transparent 50%, #2696EA 50%);
-    background-size: 200% 100%;
-    background-position: 100% 0;
-    transition: all 0.2s ease-in-out;
+  background: linear-gradient(to left, transparent 50%, #2696ea 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: all 0.2s ease-in-out;
 }
 
 .yellow {
-    background: linear-gradient(to left, transparent 50%, #ffa528 50%);
-    background-size: 200% 100%;
-    background-position: 100% 0;
-    transition: all 0.2s ease-in-out;
+  background: linear-gradient(to left, transparent 50%, #ffa528 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: all 0.2s ease-in-out;
 }
-
-

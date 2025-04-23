@@ -1,14 +1,15 @@
-import Spline from '@splinetool/react-spline';
+import Spline from "@splinetool/react-spline"
+
 interface splineViewprops {
-  className?: string;
+  className?: string
 }
 export default function SplineView(props: splineViewprops) {
   return (
     <div className={props.className}>
-      <Spline className="flex shrink min-h-max xl:max-h-auto w-auto"
+      <Spline
+        className="xl:max-h-auto flex min-h-max w-auto shrink"
         scene="https://prod.spline.design/fmNRvDbMadmfkZq1/scene.splinecode"
       />
     </div>
-
-  );
+  )
 }

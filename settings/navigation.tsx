@@ -4,7 +4,7 @@ export const Navigations = [
   {
     title: "Home",
     // href: `/docs${PageRoutes[0].href}`,
-    href: "/"
+    href: "/",
   },
   {
     title: "My Work",
@@ -15,7 +15,6 @@ export const Navigations = [
     href: "https://www.linkedin.com/in/s9tandon",
     external: true,
   },
-  
 ]
 
 export const GitHubLink = {

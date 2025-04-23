@@ -20,7 +20,10 @@ export default function PageMenu({ isSheet = false }) {
           )
         }
         return (
-          <div key={item.title + index} className="mb-2 rounded-lg dark:border-neutral-600 dark:bg-[#00000033] bg-secondary p-3">
+          <div
+            key={item.title + index}
+            className="bg-secondary mb-2 rounded-lg p-3 dark:border-neutral-600 dark:bg-[#00000033]"
+          >
             {item.heading && (
               <div className="mb-2 text-sm font-bold">{item.heading}</div>
             )}

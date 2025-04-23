@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
@@ -12,19 +12,19 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #002A69;
+  --foreground: #002a69;
   --card: #ffffff;
   --card-foreground: #262626;
   --popover: #ffffff;
   --popover-foreground: #262626;
-  --primary: #002A69;
+  --primary: #002a69;
   --primary-foreground: #fafafa;
   --secondary: #f7f7f7;
-  --secondary-foreground: #002A69;
+  --secondary-foreground: #002a69;
   --muted: #f7f7f7;
   --muted-foreground: #536a8d;
   --accent: #f7f7f7;
-  --accent-foreground: #002A69;
+  --accent-foreground: #002a69;
   --destructive: #d94f4f;
   --destructive-foreground: #d94f4f;
   --border: #ebebeb;
@@ -37,7 +37,7 @@
   --chart-5: #d9d92f;
   --radius: 0.625rem;
   --sidebar: #fafafa;
-  --sidebar-foreground: #002A69;
+  --sidebar-foreground: #002a69;
   --sidebar-primary: #343434;
   --sidebar-primary-foreground: #fafafa;
   --sidebar-accent: #f7f7f7;
@@ -79,7 +79,7 @@
   --sidebar-accent-foreground: #fafafa;
   --sidebar-border: #444444;
   --sidebar-ring: #707070;
-  --tw-prose-body:var(--accent-foreground);
+  --tw-prose-body: var(--accent-foreground);
 }
 
 @theme inline {
@@ -145,7 +145,7 @@
 }
 
 .prose ul > li::marker {
-  color: #002A69;
+  color: #002a69;
 }
 
 .dark .prose ul > li::marker {
@@ -304,9 +304,8 @@ span.katex-html {
 .CollapsibleContent[data-state="closed"] {
   animation: slideUp 300ms ease-out;
 }
-
-:not(a) img:focus {
-  scale:1.5;
+video {
+  border-radius: var(--radius);
 }
 
 @keyframes slideDown {

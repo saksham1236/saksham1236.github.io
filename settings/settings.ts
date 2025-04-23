@@ -2,7 +2,7 @@ export const url = "https://www.linkedin.com/in/s9tandon/"
 export const siteicon = "/icon.png"
 
 export const gtm = "GTM-XXXXXXX"
-export const gtmconnected = true
+export const gtmconnected = false
 
 export const sitename = "Froto-Design"
 export const description =
@@ -14,7 +14,7 @@ export const keywords = [
   "Ux Design",
   "Web Design",
 ]
-export const urlimage = "icon.png"
+export const urlimage = "/icon.png"
 export const imagealt = "Froto Design"
 
 export const companyname = "Made by Saksham Tandon"

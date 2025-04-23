@@ -1,5 +1,11 @@
-import { FiAlignJustify, FiArrowRight, FiArrowUpRight, FiLinkedin, FiGithub} from "react-icons/fi";
-import { FaBehance } from "react-icons/fa";
+import { FaBehance } from "react-icons/fa"
+import {
+  FiAlignJustify,
+  FiArrowRight,
+  FiArrowUpRight,
+  FiGithub,
+  FiLinkedin,
+} from "react-icons/fi"
 
 export const iconMap = {
   alignJustify: FiAlignJustify,
@@ -7,5 +13,5 @@ export const iconMap = {
   arrowRight: FiArrowRight,
   linkedin: FiLinkedin,
   behance: FaBehance,
-  github: FiGithub
+  github: FiGithub,
 }

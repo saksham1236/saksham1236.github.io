@@ -14,7 +14,7 @@ type CardProps = PropsWithChildren & {
   external?: boolean
   icon?: keyof typeof iconMap
   variant?: "normal" | "small" | "image"
-  cta?: boolean,
+  cta?: boolean
 }
 
 export function Card({
@@ -37,7 +37,7 @@ export function Card({
   const content = (
     <div
       className={clsx(
-        "group relative flex overflow-hidden rounded-xl border-2 border-gray-300 bg-neutral-50 transition-shadow duration-300 ease-in-out dark:border-neutral-600 dark:bg-neutral-900 !transition hover:scale-103",
+        "group relative flex overflow-hidden rounded-xl border-2 border-gray-300 bg-neutral-50 !transition transition-shadow duration-300 ease-in-out hover:scale-103 dark:border-neutral-600 dark:bg-neutral-900",
         variant === "small"
           ? "items-center space-x-2 p-3"
           : variant === "image"
@@ -52,7 +52,7 @@ export function Card({
           alt={title}
           width={400}
           height={400}
-          className="!m-0 !mb-2 h-[180px] w-full !border-2 !rounded-md object-cover object-center"
+          className="!m-0 !mb-2 h-[180px] w-full !rounded-md !border-2 object-cover object-center"
         />
       )}
       {external && href && variant !== "image" && (
@@ -87,15 +87,18 @@ export function Card({
           {title}
         </div>
         {description && (variant === "normal" || variant === "image") && (
-          <p className=" !my-2 text-sm font-normal text-gray-600 dark:text-gray-400">
+          <p className="!my-2 text-sm font-normal text-gray-600 dark:text-gray-400">
             {description}
           </p>
         )}
       </div>
       {children}
-    {cta && (
-      <span className="flex flex-row items-center gap-1 text-base">View More<IconRight/></span>
-    )}
+      {cta && (
+        <span className="flex flex-row items-center gap-1 text-base">
+          View More
+          <IconRight />
+        </span>
+      )}
     </div>
   )
 
@@ -114,9 +117,5 @@ export function Card({
 }
 
 export function CardGrid({ children }: PropsWithChildren) {
-  return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-      {children}
-    </div>
-  )
+  return <div className="grid grid-cols-1 gap-6 md:grid-cols-2">{children}</div>
 }

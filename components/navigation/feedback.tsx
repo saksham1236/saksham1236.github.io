@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { GitHubLink } from "@/settings/navigation"
-import { FiGithub, FiLinkedin } from "react-icons/fi" 
+import { FiGithub, FiLinkedin } from "react-icons/fi"
+
 import { cn } from "@/lib/utils"
 
 type SideBarEdit = {

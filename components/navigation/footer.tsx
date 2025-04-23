@@ -16,12 +16,12 @@ export function Footer() {
         </p>
         {Company.branding !== false && (
           <div className="hidden text-center md:block">
-              <Image
-                src="/icon.png"
-                alt="Froto Design Logo"
-                width={30}
-                height={30}
-              />
+            <Image
+              src="/icon.png"
+              alt="Froto Design Logo"
+              width={30}
+              height={30}
+            />
           </div>
         )}
       </div>
