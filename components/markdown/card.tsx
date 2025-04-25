@@ -92,7 +92,7 @@ export function Card({
         >
           {title}
         </div>
-        <div className="tags flex gap-1 py-1">
+        <div className="tags flex flex-wrap gap-1 py-1">
           {tags && tags?.map((tag, index) => (
             <Badge key ={index} className={tag}>{tag}</Badge>
           ))}
@@ -128,5 +128,5 @@ export function Card({
 }
 
 export function CardGrid({ children }: PropsWithChildren) {
-  return <div className="grid grid-cols-1 gap-6 md:grid-cols-2">{children}</div>
+  return <div className="grid justify-center gap-6 grid-cols-1 md:grid-cols-2">{children}</div>
 }
