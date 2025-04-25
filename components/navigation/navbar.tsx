@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { GitHubLink, Navigations } from "@/settings/navigation"
+import { GitHubLink, LinkedinLink, Navigations } from "@/settings/navigation"
 import { FiArrowUpRight, FiGithub, FiLinkedin } from "react-icons/fi"
 
 import { buttonVariants } from "@/components/ui/button"
@@ -41,7 +41,7 @@ export function Navbar() {
               </Link>
             )}
             <Link
-              href={GitHubLink.href}
+              href={LinkedinLink.href}
               className={buttonVariants({ variant: "outline", size: "icon" })}
               target="_blank"
               rel="noopener noreferrer"

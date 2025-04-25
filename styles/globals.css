@@ -307,6 +307,29 @@ span.katex-html {
 video {
   border-radius: var(--radius);
 }
+.UX-Design {
+  background-color: #ef476f;
+}
+
+.Web-Design {
+  background-color: #2696ea;
+}
+
+.Branding {
+  background-color: #06D6A0;
+}
+
+.Product-Design {
+  background-color: #A099FF;
+}
+
+.Data-Science {
+  background-color: #ffa528;
+}
+
+.Web-Dev {
+  background-color: #FF814E;
+}
 
 @keyframes slideDown {
   from {

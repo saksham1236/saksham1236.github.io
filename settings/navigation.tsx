@@ -20,3 +20,7 @@ export const Navigations = [
 export const GitHubLink = {
   href: "https://github.com/saksham1236",
 }
+
+export const LinkedinLink = {
+  href:"https://www.linkedin.com/in/s9tandon/"
+}
