@@ -335,6 +335,9 @@ video {
   background-color: rgb(255, 82, 168);
 }
 
+.Animation {
+  background-color: rgb(14, 193, 225);
+}
 @keyframes slideDown {
   from {
     height: 0;

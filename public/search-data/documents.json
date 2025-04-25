@@ -338,14 +338,17 @@
     "slug": "/recent-work",
     "title": "Recent Work",
     "description": "This section provides an overview of my Recent Work.",
-    "content": "## Dev Work\n\n***\n",
+    "content": "## More Design work\n\n***\n\n## Dev Work\n\n***\n",
     "_searchMeta": {
-      "cleanContent": "dev work",
+      "cleanContent": "more design work dev work",
       "headings": [
+        "More Design work",
         "Dev Work"
       ],
       "keywords": [
-        "Dev Work"
+        "More Design work",
+        "Dev Work",
+        "## Dev Work"
       ]
     }
   },

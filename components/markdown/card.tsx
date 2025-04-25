@@ -16,6 +16,7 @@ type CardProps = PropsWithChildren & {
   icon?: keyof typeof iconMap
   variant?: "normal" | "small" | "image"
   cta?: boolean,
+  ctaContent?:string
   tags?: Array<string>
 }
 
@@ -31,6 +32,7 @@ export function Card({
   variant = "normal",
   children,
   cta,
+  ctaContent,
   tags
 }: CardProps) {
   const IconComponent = icon ? iconMap[icon] : null
@@ -105,7 +107,7 @@ export function Card({
       {children}
       {cta && (
         <span className="flex flex-row items-center gap-1 text-base">
-          View More
+          {ctaContent ? ctaContent : "View More"}
           {external ? <ExternalIcon /> : <IconRight />}
         </span>
       )}
