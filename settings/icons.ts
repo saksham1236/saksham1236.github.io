@@ -2,14 +2,14 @@ import { FaBehance } from "react-icons/fa"
 import {
   FiAlignJustify,
   FiArrowRight,
-  FiArrowUpRight,
+  FiExternalLink,
   FiGithub,
   FiLinkedin,
 } from "react-icons/fi"
 
 export const iconMap = {
   alignJustify: FiAlignJustify,
-  arrowUpRight: FiArrowUpRight,
+  arrowUpRight: FiExternalLink,
   arrowRight: FiArrowRight,
   linkedin: FiLinkedin,
   behance: FaBehance,

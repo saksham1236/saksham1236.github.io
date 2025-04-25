@@ -320,7 +320,7 @@ video {
 }
 
 .Product-Design {
-  background-color: #A099FF;
+  background-color: #877efd;
 }
 
 .Data-Science {
@@ -328,7 +328,11 @@ video {
 }
 
 .Web-Dev {
-  background-color: #FF814E;
+  background-color: #ff6a2f;
+}
+
+.Scientific-Illustration {
+  background-color: rgb(255, 82, 168);
 }
 
 @keyframes slideDown {

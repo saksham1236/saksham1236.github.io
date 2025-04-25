@@ -92,8 +92,8 @@ export function Card({
           {title}
         </div>
         <div className="tags flex gap-1 py-1">
-          {tags && tags?.map((tag) => (
-            <Badge className={tag}>{tag}</Badge>
+          {tags && tags?.map((tag, index) => (
+            <Badge key ={index} className={tag}>{tag}</Badge>
           ))}
         </div>
         {description && (variant === "normal" || variant === "image") && (
@@ -106,7 +106,7 @@ export function Card({
       {cta && (
         <span className="flex flex-row items-center gap-1 text-base">
           View More
-          <IconRight />
+          {external ? <ExternalIcon /> : <IconRight />}
         </span>
       )}
     </div>
