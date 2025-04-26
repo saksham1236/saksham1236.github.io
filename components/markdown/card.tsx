@@ -3,6 +3,7 @@ import Image from "next/image"
 import { iconMap } from "@/settings/icons"
 import clsx from "clsx"
 import { Link } from "lib/transition"
+
 import { Badge } from "@/components/ui/badge"
 
 type CardProps = PropsWithChildren & {
@@ -15,8 +16,8 @@ type CardProps = PropsWithChildren & {
   external?: boolean
   icon?: keyof typeof iconMap
   variant?: "normal" | "small" | "image"
-  cta?: boolean,
-  ctaContent?:string
+  cta?: boolean
+  ctaContent?: string
   tags?: Array<string>
 }
 
@@ -37,7 +38,7 @@ export function Card({
   children,
   cta,
   ctaContent,
-  tags
+  tags,
 }: CardProps) {
   const IconComponent = icon ? iconMap[icon] : null
   const ExternalIcon = iconMap["arrowUpRight"]
@@ -46,7 +47,7 @@ export function Card({
   const content = (
     <div
       className={clsx(
-        "group relative flex justify-between overflow-hidden rounded-xl border-2 border-gray-300 bg-neutral-50 !transition transition-shadow duration-300 ease-in-out hover:scale-103 dark:border-neutral-600 dark:bg-neutral-900 hover:bg-slate-100 dark:hover:bg-neutral-800",
+        "group relative flex justify-between overflow-hidden rounded-xl border-2 border-gray-300 bg-neutral-50 !transition transition-shadow duration-300 ease-in-out hover:scale-103 hover:bg-slate-100 dark:border-neutral-600 dark:bg-neutral-900 dark:hover:bg-neutral-800",
         variant === "small"
           ? "items-center space-x-2 p-3"
           : variant === "image"
@@ -97,9 +98,12 @@ export function Card({
           {title}
         </div>
         <div className="tags flex flex-wrap gap-1 py-1">
-          {tags && tags?.map((tag, index) => (
-            <Badge key ={index} className={tag}>{tag}</Badge>
-          ))}
+          {tags &&
+            tags?.map((tag, index) => (
+              <Badge key={index} className={tag}>
+                {tag}
+              </Badge>
+            ))}
         </div>
         {description && (variant === "normal" || variant === "image") && (
           <p className="!my-2 text-sm font-normal text-gray-600 dark:text-gray-400">
@@ -132,5 +136,14 @@ export function Card({
 }
 
 export function CardGrid({ children, className }: CardGridProps) {
-  return <div className={clsx("grid justify-center gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3", className)}>{children}</div>
+  return (
+    <div
+      className={clsx(
+        "grid grid-cols-1 justify-center gap-6 md:grid-cols-2 xl:grid-cols-3",
+        className
+      )}
+    >
+      {children}
+    </div>
+  )
 }

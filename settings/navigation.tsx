@@ -22,5 +22,5 @@ export const GitHubLink = {
 }
 
 export const LinkedinLink = {
-  href:"https://www.linkedin.com/in/s9tandon/"
+  href: "https://www.linkedin.com/in/s9tandon/",
 }

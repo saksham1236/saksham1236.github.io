@@ -3,11 +3,11 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardGrid } from "@/components/markdown/card"
 import { FileTree } from "@/components/markdown/filetree"
 import { File, Folder } from "@/components/markdown/filetree/component"
+import ImageViewer from "@/components/markdown/imageViewer"
 import RoutedLink from "@/components/markdown/link"
 import Mermaid from "@/components/markdown/mermaid"
 import Note from "@/components/markdown/note"
 import { Step, StepItem } from "@/components/markdown/step"
-import ImageViewer from "@/components/markdown/imageViewer"
 
 export const components = {
   a: RoutedLink,

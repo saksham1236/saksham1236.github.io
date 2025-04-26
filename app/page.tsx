@@ -6,7 +6,6 @@ import { buttonVariants } from "@/components/ui/button"
 import Hero from "@/components/ui/hero/hero"
 import SplineView from "@/components/ui/splineView/splineView"
 import { Card, CardGrid } from "@/components/markdown/card"
-import { FiArrowRight } from "react-icons/fi"
 
 const RightIcon = iconMap["arrowRight"]
 export default function Home() {
@@ -26,7 +25,7 @@ export default function Home() {
           <RightIcon />
         </Link>
       </div>
-      <div className="float-center py-8 items-center justify-center">
+      <div className="float-center items-center justify-center py-8">
         <CardGrid className="xl:!grid-cols-2">
           <Card
             className="transition hover:!bg-purple-200 hover:transition dark:hover:!bg-slate-800"
