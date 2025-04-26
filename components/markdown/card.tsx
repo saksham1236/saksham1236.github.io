@@ -20,6 +20,10 @@ type CardProps = PropsWithChildren & {
   tags?: Array<string>
 }
 
+type CardGridProps = PropsWithChildren & {
+  className?: string
+}
+
 export function Card({
   subtitle,
   title,
@@ -127,6 +131,6 @@ export function Card({
   )
 }
 
-export function CardGrid({ children }: PropsWithChildren) {
-  return <div className="grid justify-center gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">{children}</div>
+export function CardGrid({ children, className }: CardGridProps) {
+  return <div className={clsx("grid justify-center gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3", className)}>{children}</div>
 }
