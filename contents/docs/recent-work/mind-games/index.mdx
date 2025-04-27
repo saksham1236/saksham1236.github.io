@@ -1,80 +1,83 @@
 ---
-title: Setup
-description: Setting up and configuring your documentation project
-keywords:
-  ["setup", "configuration", "layout", "Google", "SEO", "nextjs", "documents"]
+title: Mind Games
+author: Saksham Tandon
+tags: [Recent Work, UX/UI Design, Product Design]
 ---
+## The Idea
 
-Setting up your new documentation project is straightforward. Most of the essential project settings can be configured within the `settings` folder.
+This project came about through participation in the RSA Design Awards. We had to create a product from a selection of briefs.
 
-## Settings
+## Our Brief:
+**Redistributing Health**
+*How might we design systems that provide seamless and cost-effective access to quality health services for underserved communities?*
 
-This section provides the core settings for your documentation site, such as defining the site's URL, site icon and title.
+## Our Focusing Themes:
+- Youth
+- Technology
+- COVID-19
+- Mental Health
 
-```tsx showLineNumbers
-export const url = ""                 // The URL for your documentation site
-export const siteicon = ""            // Icon displayed next to the site name in the header
-export const sitename = ""            // Title of your documentation site
-```
+## The Research Question
 
-## Google Tags
+**How does COVID-19 impact the mental health of youth and how can technology-based services improve the mental healthcare experience in 2020?**
 
-This section allows you to integrate Google Tag Manager into your documentation project. You can add your GTM code and configure whether it's connected.
+## My Roles
 
-```tsx showLineNumbers
-export const gtm = ""                 // Add your Google Tag Manager code here
-export const gtmconnected = false      // Set to true if GTM is connected, otherwise set to false
-```
+- UX Research
+- Wireframing
+- Usability Testing
+- Prototyping
 
-## Search Engine
+## About the App
 
-Configure essential SEO settings to ensure your documentation site is optimized for search engines. This includes meta descriptions, keywords and social media sharing details like images and alt text.
+The main idea of the application was to create a service that gave users access to a **library of games focused on mental wellness**.
 
-```tsx showLineNumbers
-export const description = ""         // Description of your documentation site for SEO
-export const keywords = ["", ""]      // List of SEO keywords for your documentation site
-export const urlimage = ""            // The URL of the image used when sharing on social media)
-export const imagealt = ""            // Alt text for shared images, helpful for screen readers
-export const twitterhandle = ""       // Your company’s Twitter handle for social sharing
-```
+## User Research
 
-## Footer Branding
+Based on our research, it was clear that COVID-19 created significant barriers that hinder people from getting the care they need.
+The **scarcity of mental health resources** made it harder to help these groups of people, resulting in:
 
-The footer settings allow you to customize the company information displayed at the bottom of the site. You can add the company name and the URL that the name will link to.
+- Bottling up emotions
+- Spontaneous outbursts
+- Worsening unhealthy coping mechanisms
 
-```tsx showLineNumbers
-export const companyname = ""         // The company name displayed in the copyright section
-export const companylink = ""         // The URL your company name should link to
-```
+## Main Trends
 
-## General Layout
+- Rise in screen time and gaming practices
+- Video games were found to be stress-relieving
+- Scientific research showed games were effective in managing mental health
 
-The layout settings control the appearance and functionality of various elements of the documentation site, such as branding, the right sidebar, feedback options, table of contents, and scroll-to-top functionality.
+## User Personas
 
-```tsx showLineNumbers
-export const branding = true          // Set to true to display our branding elements
-export const rightsidebar = true      // Set to true to enable the right sidebar with feedback, table of contents and scroll-to-top
-export const feedbackedit = true      // Control to enable/disable feedback on GitHub
-export const tableofcontent = true    // Control to enable/disable the generated table of contents
-export const totopscroll = true       // Control to enable/disable scroll-to-top button
-```
-
-## Github Control
-
-If your MDX files are hosted on GitHub, you can configure the project to load documents directly from there. This option can be useful for syncing documentation updates directly with your repository.
-
-```tsx showLineNumbers
-export const loadfromgithub = false   // Set to true to load your MDX documents directly from GitHub
-```
-
-## Project Structure
-
-<CardGrid>
+<CardGrid className="xl:!grid-cols-2">
   <Card
-    title="Navigation"
-    href="/docs/navigation"
-    icon="alignJustify"
-    variant="small"
-    description="Creating your navigation"
+    title="Johm Khan"
+    icon="user"
+    description="17 y/o student and avid gamer struggling with online schooling and maintaining focus during COVID-19."
+  />
+
+  <Card
+    title="Allison Griffith"
+    href="/personas/allison-griffith"
+    icon="user"
+    description="21 y/o university student managing stress, work-study balance, and limited gaming access during the pandemic."
   />
 </CardGrid>
+
+## Initial Ideas
+
+<ImageViewer src="./path/to/initial-idea.png" alt="Initial Idea" width={800} height={400} />
+
+We started prototyping for both mobile and big screens. However, based on user surveys showing preference for **personal computers** for gaming, we shifted focus to big screens for the final prototype.
+
+## The Prototype
+
+<ImageViewer src="./path/to/userflow.png" alt="Userflow" width={800} height={400} />
+
+## Design Language
+
+<ImageViewer src="./path/to/design-language.png" alt="Design Language" width={800} height={400} />
+
+## Final Prototype
+
+<ImageViewer src="./path/to/final-prototype.png" alt="Final Prototype" width={800} height={400} />

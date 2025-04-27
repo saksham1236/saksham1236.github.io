@@ -14,7 +14,7 @@ export default function RightSideBar({ slug, title }: SideBarEdit) {
   const editUrl = `${GitHubLink.href}/edit/main/contents/docs/${slug}/index.mdx`
 
   return (
-    <div className="flex flex-col gap-3 pl-2">
+    <div className="flex flex-col gap-3 rounded-lg p-3 bg-secondary dark:bg-[#00000033]">
       <h3 className="text-sm font-semibold">Contact Me</h3>
       <div className="flex flex-col gap-2">
         <Link

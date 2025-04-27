@@ -18,6 +18,10 @@ export const Documents: Paths[] = [
         title: "Lynk",
         href: "/lynk",
       },
+      {
+        title: "Mind Games",
+        href: "/mind-games",
+      }
     ],
   },
   // {
