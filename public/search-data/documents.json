@@ -306,35 +306,24 @@
   },
   {
     "slug": "/recent-work/bounce-back-digital-branding",
-    "title": "Changelog",
-    "description": "Changelogs and improvements to the Documents projects.",
-    "content": "## Added\n\n**Linting and Formatting**:\n\n* Added `npm run lint` and `npm run lint:fix` scripts to automate linting tasks.\n* Added `npm run format` and `npm run format:check` scripts to ensure consistent code formatting.\n\n**SEO Enhancements**:\n\n* Added an SEO component to MDX pages to dynamically include `keywords` and `lastModified` metadata for improved SEO generation.\n\n## Updated\n\n**Next.js Upgrade**:\n\n* Upgraded the project from **Next.js 14** to **Next.js 15**, leveraging the latest features and performance improvements.\n\n**Codebase Improvements**:\n\n* Reordered imports across the project files for better consistency and readability.\n\n**Mermaid Component**:\n\n* Fixed an ID bug that caused rendering issues when multiple Mermaid diagrams were included in MDX pages.\n* Improved initialization and rendering logic to prevent duplicate diagram rendering.\n",
+    "title": "Bounce Back Digital Branding",
+    "description": "Showcasing, branding guidelines, and marketing assets for Bounce Back Digital a Digital Agency/Fintech Startup.",
+    "content": "## Introduction\n\nBounce Back Digital parent company of Bounce Back Coin, is a digital agency and fintech startup that focuses on providing innovative solutions in the digital space. The branding project aimed to create a cohesive visual identity that reflects the company's mission and values.\n\n## Logomark\n\nDesigned by Samridh Arora, designed to convey a sense of professionalism and multi-faceted services. The logomark is a stylized representation of the letter \"B\" and \"D\" on an isometric cube to represent the brand name \"Bounce Back Digital\".\n\nSamridh Arora on [Linkedin](https://www.linkedin.com/in/samridharora42/).\n\n<ImageViewer imageUrl=\"/images/bb-digital-branding/logo-mark.png\" alt=\"Logomark\" width={800} height={400} />\n\n## Research\n\n### Direction #1 - Light Hearted, Minimalist with Stroke Outlines\n\nA playful exploration of the branding with a modified logomark to align with [Bounce Back Coin's branding](/docs/recent-work/bounce-back-coin-branding).\n\n<ImageViewer imageUrl=\"/images/bb-digital-branding/style-scape-1.png\" alt=\"Stylescapes\" width={800} height={400} />\n\n### Direction #2 - Professional, Gradients, Wireframe, Bold\n\n<ImageViewer imageUrl=\"/images/bb-digital-branding/style-scape-2.png\" alt=\"Stylescapes\" width={800} height={400} />\n\n## Final Branding\n\nFor the final branding, we decided to go with the second design direction, which was more professional and aligned with the company's vision. After a few changes like removing the green color and switching to a more blueish color palette, we finalized the branding.\n\n<ImageViewer imageUrl=\"/images/bb-digital-branding/final-branding.png\" alt=\"Final Branding\" width={800} height={400} />\n\n## Marketing Assets\n\n### Social Media Carousel\n\n<ImageViewer imageUrl=\"/images/bb-digital-branding/social-post-carousel.png\" alt=\"Social Media Assets\" width={800} height={400} />\n\n### Business Cards\n\n<ImageViewer imageUrl=\"/images/bb-digital-branding/business-cards.png\" alt=\"Business Cards\" width={800} height={400} />\n\n### Print Materials\n\nPrint materials showcasing various services offered by Bounce Back Digital.\n\n<ImageViewer imageUrl=\"/images/bb-digital-branding/print-assets.png\" alt=\"Print Materials\" width={800} height={400} />\n\n### Presentation Slides\n\n<ImageViewer imageUrl=\"/images/bb-digital-branding/slides.png\" alt=\"Presentation Slides\" width={800} height={400} />\n",
     "_searchMeta": {
-      "cleanContent": "added linting and formatting: added npm run lint and npm run lint:fix scripts to automate linting tasks added npm run format and npm run format:check scripts to ensure consistent code formatting seo enhancements: added an seo component to mdx pages to dynamically include keywords and lastmodified metadata for improved seo generation updated next js upgrade: upgraded the project from next js 14 to next js 15 leveraging the latest features and performance improvements codebase improvements: reordered imports across the project files for better consistency and readability mermaid component: fixed an id bug that caused rendering issues when multiple mermaid diagrams were included in mdx pages improved initialization and rendering logic to prevent duplicate diagram rendering",
+      "cleanContent": "introduction bounce back digital parent company of bounce back coin is a digital agency and fintech startup that focuses on providing innovative solutions in the digital space the branding project aimed to create a cohesive visual identity that reflects the company s mission and values logomark designed by samridh arora designed to convey a sense of professionalism and multi-faceted services the logomark is a stylized representation of the letter b and d on an isometric cube to represent the brand name bounce back digital samridh arora on linkedin imageviewer imageurl images bb-digital-branding logo-mark png alt logomark width 800 height 400 research direction 1 - light hearted minimalist with stroke outlines a playful exploration of the branding with a modified logomark to align with bounce back coin s branding imageviewer imageurl images bb-digital-branding style-scape-1 png alt stylescapes width 800 height 400 direction 2 - professional gradients wireframe bold imageviewer imageurl images bb-digital-branding style-scape-2 png alt stylescapes width 800 height 400 final branding for the final branding we decided to go with the second design direction which was more professional and aligned with the company s vision after a few changes like removing the green color and switching to a more blueish color palette we finalized the branding imageviewer imageurl images bb-digital-branding final-branding png alt final branding width 800 height 400 marketing assets social media carousel imageviewer imageurl images bb-digital-branding social-post-carousel png alt social media assets width 800 height 400 business cards imageviewer imageurl images bb-digital-branding business-cards png alt business cards width 800 height 400 print materials print materials showcasing various services offered by bounce back digital imageviewer imageurl images bb-digital-branding print-assets png alt print materials width 800 height 400 presentation slides imageviewer imageurl images bb-digital-branding slides png alt presentation slides width 800 height 400",
       "headings": [
-        "Added",
-        "Updated"
+        "Introduction",
+        "Logomark",
+        "Research",
+        "Final Branding",
+        "Marketing Assets"
       ],
       "keywords": [
-        "changelog",
-        "guide",
-        "nextjs",
-        "documents",
-        "Added",
-        "Updated",
-        "Linting and Formatting",
-        "SEO Enhancements",
-        "Next.js Upgrade",
-        "Next.js 14",
-        "Next.js 15",
-        "Codebase Improvements",
-        "Mermaid Component",
-        "npm run lint",
-        "npm run lint:fix",
-        "npm run format",
-        "npm run format:check",
-        "keywords",
-        "lastModified"
+        "Introduction",
+        "Logomark",
+        "Research",
+        "Final Branding",
+        "Marketing Assets"
       ]
     }
   },

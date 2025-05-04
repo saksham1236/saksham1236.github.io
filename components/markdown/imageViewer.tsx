@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogTrigger, DialogTitle } from "@/components/ui/dialog"
 
 export default function ImageViewer({
   imageUrl,
@@ -25,11 +25,16 @@ export default function ImageViewer({
             className="w-full cursor-pointer rounded-md hover:opacity-80"
             width={500}
             height={500}
+            onContextMenu={(e) => {
+              e.preventDefault()
+            }}
           />
         </DialogTrigger>
 
         {/* Dialog content */}
         <DialogContent className="w-88vh flex items-center justify-center overflow-y-auto p-0">
+          {/* Accessible title */}
+          <DialogTitle className="sr-only">{altText}</DialogTitle>
           <div className="justify-top max-h-screen w-fit overflow-auto">
             <Image
               src={imageUrl}
@@ -37,6 +42,9 @@ export default function ImageViewer({
               className="w-full overflow-y-auto rounded-md"
               width={1200}
               height={1200}
+              onContextMenu={(e) => {
+                e.preventDefault()
+              }}
             />
           </div>
         </DialogContent>
