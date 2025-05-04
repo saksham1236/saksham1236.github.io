@@ -3,14 +3,8 @@ import { GitHubLink, LinkedinLink } from "@/settings/navigation"
 import { FiGithub, FiLinkedin } from "react-icons/fi"
 
 import { cn } from "@/lib/utils"
-import { link } from "fs"
 
-type SideBarEdit = {
-  title: string
-  slug: string
-}
-
-export default function RightSideBar({ slug, title }: SideBarEdit) {
+export default function RightSideBar() {
 
   return (
     <div className="flex flex-col gap-3 rounded-lg p-3 bg-secondary dark:bg-[#00000033]">
