@@ -64,7 +64,7 @@ export function Card({
           alt={title}
           width={400}
           height={400}
-          className={clsx("!m-0 !mb-2 h-[180px] w-full !rounded-md !border-2 object-cover object-center", imgClassName)}
+          className={clsx("!m-0 !mb-2 h-[180px] w-full rounded-md !border-2 object-cover object-center", imgClassName)}
         />
       )}
       {external && href && variant !== "image" && (
