@@ -12,9 +12,6 @@ export default function Home() {
   return (
     <section className="flex h-auto grow flex-col items-center justify-center px-2 py-8 text-center sm:min-h-[calc(100dvh-8em)] 2xl:h-[calc(100dvh-8em)]">
       <Hero />
-      {/* <p className="text-foreground mb-8 max-w-[600px] sm:text-base">
-        A Versatile Designer and Software Developer with a passion for Data Science, bringing over 3 years of experience in UX Design, Motion Design, Scientific Illustration and expertise in Full-Stack Web Development, I help craft innovative digital solutions.
-      </p> */}
       <SplineView className="flex aspect-square max-h-full min-h-[300px] w-auto grow items-center md:aspect-[inherit] md:min-h-0 md:w-full md:shrink md:grow" />
       <div className="flex items-center gap-5">
         <Link
