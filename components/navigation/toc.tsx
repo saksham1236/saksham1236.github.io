@@ -31,7 +31,7 @@ export default function Toc({ tocs }: TocProps) {
     <div className="flex w-full flex-col gap-3 rounded-lg p-3 bg-secondary dark:bg-[#00000033]">
       <h3 className="text-sm font-semibold">On this page</h3>
       <ScrollArea className="pt-0.5">
-        <div className="flex flex-col gap-2.5 text-sm text-neutral-800 rounded-sm dark:text-neutral-300/85 bg-[#002A6915] p-2 dark:bg-[#ffffff11]">
+        <div className="flex flex-col gap-2.5 p-2 text-sm text-neutral-800 rounded-sm dark:text-neutral-300/85 bg-sheet-primary">
           {tocs.map(({ href, level, text }) => (
             <Link
               key={href}

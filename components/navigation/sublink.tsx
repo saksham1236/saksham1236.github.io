@@ -63,7 +63,7 @@ export default function SubLink(
   }
 
   return (
-    <div className="flex w-full flex-col gap-1 rounded-sm bg-[#002A6915] p-2 dark:bg-[#ffffff11]">
+    <div className="flex w-full flex-col gap-1 p-2 rounded-sm bg-sheet-primary">
       <Collapsible open={isOpen} onOpenChange={setIsOpen}>
         <div className="flex items-center gap-2 text-sm">
           {titleOrLink}
