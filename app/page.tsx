@@ -31,7 +31,7 @@ export default function Home() {
             className="transition hover:!bg-purple-200 hover:transition dark:hover:!bg-slate-800"
             subtitle="My Dev Projects"
             title="Visit My Github"
-            description="Get started with Documents using our quick start installation guide to get your project started."
+            description="Web Dev, Data Science, and ML projects."
             href="https://github.com/saksham1236"
             external={true}
             icon="github"
@@ -40,7 +40,7 @@ export default function Home() {
             className="transition hover:!bg-sky-100 hover:transition dark:hover:!bg-sky-800"
             subtitle="My Art Projects"
             title="Visit My Behance"
-            description="Australia's leading branding, marketing and web development company."
+            description="UX Design, Motion Design, and Scientific Illustration."
             href="https://www.behance.net/s9tandon"
             external={true}
             icon="behance"

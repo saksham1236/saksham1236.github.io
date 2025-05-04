@@ -19,6 +19,7 @@ type CardProps = PropsWithChildren & {
   cta?: boolean
   ctaContent?: string
   tags?: Array<string>
+  imgClassName?: string
 }
 
 type CardGridProps = PropsWithChildren & {
@@ -39,6 +40,7 @@ export function Card({
   cta,
   ctaContent,
   tags,
+  imgClassName
 }: CardProps) {
   const IconComponent = icon ? iconMap[icon] : null
   const ExternalIcon = iconMap["arrowUpRight"]
@@ -62,7 +64,7 @@ export function Card({
           alt={title}
           width={400}
           height={400}
-          className="!m-0 !mb-2 h-[180px] w-full !rounded-md !border-2 object-cover object-center"
+          className={clsx("!m-0 !mb-2 h-[180px] w-full !rounded-md !border-2 object-cover object-center", imgClassName)}
         />
       )}
       {external && href && variant !== "image" && (

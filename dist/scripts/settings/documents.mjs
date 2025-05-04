@@ -16,6 +16,10 @@ export const Documents = [
                 title: "Lynk",
                 href: "/lynk",
             },
+            {
+                title: "Mind Games",
+                href: "/mind-games",
+            }
         ],
     },
     // {
