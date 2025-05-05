@@ -45,7 +45,7 @@ export default async function Pages({ params }: PageProps) {
         >
           {Settings.toc && <Toc tocs={tocs} />}
           {Settings.feedback && (
-            <Feedback slug={pathName} title={frontmatter.title} />
+            <Feedback />
           )}
           {Settings.totop && (
             <BackToTop className="mt-6 self-start rounded-full border p-3 text-sm text-neutral-800 dark:text-neutral-300/85" />
