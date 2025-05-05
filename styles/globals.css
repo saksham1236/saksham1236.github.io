@@ -345,9 +345,12 @@ video {
 }
 
 .tag {
-  img{
-    height: 100%;
-    width: 100%;
+  img {
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    margin: 0;
+    object-fit: contain;
   }
 }
 @keyframes slideDown {
