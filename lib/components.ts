@@ -8,6 +8,9 @@ import RoutedLink from "@/components/markdown/link"
 import Mermaid from "@/components/markdown/mermaid"
 import Note from "@/components/markdown/note"
 import { Step, StepItem } from "@/components/markdown/step"
+import Tag from "@/components/markdown/tag"
+import Image from "next/image"
+import { Icon } from '@iconify-icon/react';
 
 export const components = {
   a: RoutedLink,
@@ -25,5 +28,8 @@ export const components = {
   TabsContent,
   TabsList,
   TabsTrigger,
+  Tag,
   ImageViewer,
+  Image,
+  Icon,
 }

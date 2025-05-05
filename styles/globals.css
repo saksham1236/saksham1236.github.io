@@ -343,6 +343,13 @@ video {
 .Animation {
   background-color: rgb(125, 215, 22);
 }
+
+.tag {
+  img{
+    height: 100%;
+    width: 100%;
+  }
+}
 @keyframes slideDown {
   from {
     height: 0;

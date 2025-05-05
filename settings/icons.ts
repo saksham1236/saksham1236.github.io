@@ -15,3 +15,6 @@ export const iconMap = {
   behance: FaBehance,
   github: FiGithub,
 }
+
+import React from 'react';
+
