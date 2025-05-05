@@ -1,6 +1,5 @@
 import { iconMap } from "@/settings/icons"
 import { Link } from "lib/transition"
-
 import { PageRoutes } from "@/lib/pageroutes"
 import { buttonVariants } from "@/components/ui/button"
 import Hero from "@/components/ui/hero/hero"
