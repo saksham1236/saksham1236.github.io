@@ -14,7 +14,7 @@ import {
 
 export default function PageBreadcrumb({ paths }: { paths: string[] }) {
   return (
-    <div className="pb-5 max-w-[calc(100vw-2rem)] sm:max-w-fit">
+    <div className="pb-5 w-fit max-w-[calc(100vw-2rem)] sm:max-w-fit">
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
