@@ -14,7 +14,7 @@ import {
 
 export default function PageBreadcrumb({ paths }: { paths: string[] }) {
   return (
-    <div className="pb-5">
+    <div className="pb-5 w-fit">
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
