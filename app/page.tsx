@@ -5,10 +5,12 @@ import { buttonVariants } from "@/components/ui/button"
 import Hero from "@/components/ui/hero/hero"
 import SplineView from "@/components/ui/splineView/splineView"
 import { Card, CardGrid } from "@/components/markdown/card"
+import { Suspense } from "react"
 
 const RightIcon = iconMap["arrowRight"]
 export default function Home() {
   return (
+    <>
     <section className="flex h-auto grow flex-col items-center justify-center px-2 py-8 text-center sm:min-h-[calc(100dvh-8em)] 2xl:h-[calc(100dvh-8em)]">
       <Hero />
       <SplineView className="flex aspect-square max-h-full min-h-[300px] w-auto grow items-center md:aspect-[inherit] md:min-h-0 md:w-full md:shrink md:grow" />
@@ -44,5 +46,7 @@ export default function Home() {
         </CardGrid>
       </div>
     </section>
+    <Suspense fallback={<div className="h-96 w-full animate-pulse rounded-lg bg-slate-200 dark:bg-slate-700" />}/>
+  </>
   )
 }
