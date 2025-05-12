@@ -32,7 +32,7 @@ export default function ImageViewer({
         </DialogTrigger>
 
         {/* Dialog content */}
-        <DialogContent className="w-88vh flex items-center justify-center overflow-y-auto p-0">
+        <DialogContent className="w-88vh flex items-center justify-center overflow-y-auto p-0 touch-auto">
           {/* Accessible title */}
           <DialogTitle className="sr-only">{altText}</DialogTitle>
           <div className="justify-top max-h-screen w-fit overflow-auto">

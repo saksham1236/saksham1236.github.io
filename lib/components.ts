@@ -11,6 +11,7 @@ import { Step, StepItem } from "@/components/markdown/step"
 import Tag from "@/components/markdown/tag"
 import Image from "next/image"
 import { Icon } from '@iconify-icon/react';
+import { Iframe } from "@/components/markdown/iframe"
 
 export const components = {
   a: RoutedLink,
@@ -32,4 +33,5 @@ export const components = {
   ImageViewer,
   Image,
   Icon,
+  Iframe
 }
