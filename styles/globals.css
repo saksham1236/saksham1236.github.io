@@ -358,6 +358,12 @@ video {
     object-fit: contain;
   }
 }
+.note {
+  *:is(h1, h2, h3, h4, h5, h6) {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
 @keyframes slideDown {
   from {
     height: 0;

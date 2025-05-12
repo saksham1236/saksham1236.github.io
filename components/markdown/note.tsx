@@ -28,7 +28,7 @@ export default function Note({
   return (
     <div
       className={cn(
-        "rounded-xl border px-4 text-sm tracking-wide",
+        "note mb-3 py-3 rounded-xl border px-4 text-sm tracking-wide",
         noteClassNames
       )}
     >
