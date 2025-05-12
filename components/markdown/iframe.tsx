@@ -11,7 +11,7 @@ export function Iframe({ src, title, className }: { src: string; title?: string;
         return (
             <iframe
                 src={src}
-                className={cn("chart-frame w-full h-256 border-1 border-border rounded-lg mb-12", className)}
+                className={cn("chart-frame w-full h-256 border-1 border-border rounded-lg mb-3", className)}
                 title={title}
                 loading="lazy"
             />
