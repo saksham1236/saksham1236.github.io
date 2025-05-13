@@ -45,6 +45,8 @@
   --sidebar-ring: #b5b5b5;
   --sheet-primary: #002A6915;
   --hover-b: #0059ff10;
+  --media-brand: 245 245 245;
+  --media-focus: 78 156 246;
 }
 
 .dark {
@@ -367,6 +369,18 @@ video {
     padding-top: 0;
   }
 }
+.video-player {
+  .play, .volume, .slider {
+    display: none;
+    transition: fade 0.3s;
+  }
+  &:hover {
+    .play, .volume, .slider {
+      display: flex;
+    }
+  }
+}
+
 @keyframes slideDown {
   from {
     height: 0;

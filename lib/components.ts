@@ -12,6 +12,7 @@ import Tag from "@/components/markdown/tag"
 import Image from "next/image"
 import { Icon } from '@iconify-icon/react';
 import { Iframe } from "@/components/markdown/iframe"
+import VideoPlayer from "@/components/markdown/videoPlayer/videoPlayer"
 
 export const components = {
   a: RoutedLink,
@@ -33,5 +34,6 @@ export const components = {
   ImageViewer,
   Image,
   Icon,
-  Iframe
+  Iframe,
+  VideoPlayer,
 }
