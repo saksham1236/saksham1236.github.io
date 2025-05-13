@@ -375,7 +375,7 @@ video {
     display: none;
     transition: fade 0.3s;
   }
-  &:hover {
+  &[data-controls] {
     .play,
     .volume,
     .slider {
