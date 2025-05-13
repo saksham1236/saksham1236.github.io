@@ -4,7 +4,7 @@ import * as Tooltip from "@radix-ui/react-tooltip"
 import { Controls } from "@vidstack/react"
 
 import * as Buttons from "../buttons"
-import * as Sliders from "../sliders"
+// import * as Sliders from "../sliders"
 import { TimeGroup } from "../time-group"
 
 // Offset tooltips/menus/slider previews in the lower controls group so they're clearly visible.
@@ -32,9 +32,9 @@ export default function VideoLayout() {
               <Buttons.Mute tooltipOffset={popupOffset} />
               {/* <div className='w-24 vol-hover:w-56 transition-all'><Sliders.Volume /></div> */}
             </div>
-            <div className="slider bg-sheet-primary flex w-full rounded-full px-5 py-1.5 shadow-md backdrop-blur-lg">
+            {/* <div className="slider bg-sheet-primary flex w-full rounded-full px-5 py-1.5 shadow-md backdrop-blur-lg">
               <Sliders.Time />
-            </div>
+            </div> */}
             <div className="flex-1" />
             <div className="bg-sheet-primary flex rounded-full p-1 shadow-md backdrop-blur-lg">
               <Buttons.Fullscreen
