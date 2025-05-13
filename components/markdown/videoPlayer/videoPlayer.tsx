@@ -41,6 +41,7 @@ export default function VideoPlayer({
       ref={player}
       autoPlay={autoplay}
       loop={loop}
+      load = "visible"
     >
       <MediaProvider />
       <VideoLayout />
