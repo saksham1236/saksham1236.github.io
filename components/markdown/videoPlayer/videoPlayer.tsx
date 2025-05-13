@@ -11,7 +11,7 @@ import {
 
 import { cn } from "@/lib/utils"
 
-import VideoLayout from "./components/layouts/video-layout"
+// import VideoLayout from "./components/layouts/video-layout"
 
 export default function VideoPlayer({
   src,
@@ -35,6 +35,7 @@ export default function VideoPlayer({
         "video-player ring-media-focus aspect-video w-full overflow-hidden rounded-lg bg-slate-900 font-sans text-white data-[focus]:ring-4",
         className
       )}
+      controls
       title={title}
       src={src}
       playsInline
@@ -44,7 +45,7 @@ export default function VideoPlayer({
       load = "visible"
     >
       <MediaProvider />
-      <VideoLayout />
+      {/* <VideoLayout /> */}
     </MediaPlayer>
   )
 }
