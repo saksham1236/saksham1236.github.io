@@ -19,11 +19,11 @@ export const Documents = [
             {
                 title: "Mind Games",
                 href: "/mind-games",
-            }
+            },
         ],
     },
     {
         title: "About Me",
         href: "/about",
-    }
+    },
 ];
