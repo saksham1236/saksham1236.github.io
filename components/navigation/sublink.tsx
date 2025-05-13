@@ -63,7 +63,7 @@ export default function SubLink(
   }
 
   return (
-    <div className="flex w-full flex-col gap-1 p-2 rounded-sm bg-sheet-primary">
+    <div className="bg-sheet-primary flex w-full flex-col gap-1 rounded-sm p-2">
       <Collapsible open={isOpen} onOpenChange={setIsOpen}>
         <div className="flex items-center gap-2 text-sm">
           {titleOrLink}
@@ -81,8 +81,8 @@ export default function SubLink(
         <CollapsibleContent className="CollapsibleContent">
           <div
             className={cn(
-              "mt-2.5 flex flex-col items-start gap-3 text-sm border-l border-ring pl-3 text-neutral-800 dark:text-neutral-300/85",
-              level > 0 && "border-l border-ring pl-3"
+              "border-ring mt-2.5 flex flex-col items-start gap-3 border-l pl-3 text-sm text-neutral-800 dark:text-neutral-300/85",
+              level > 0 && "border-ring border-l pl-3"
             )}
           >
             {items?.map((innerLink) => {

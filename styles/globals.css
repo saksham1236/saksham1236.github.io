@@ -43,7 +43,7 @@
   --sidebar-accent-foreground: #343434;
   --sidebar-border: #ebebeb;
   --sidebar-ring: #b5b5b5;
-  --sheet-primary: #002A6915;
+  --sheet-primary: #002a6915;
   --hover-b: #0059ff10;
   --media-brand: 245 245 245;
   --media-focus: 78 156 246;
@@ -144,7 +144,6 @@
 .hero {
   opacity: 0;
 }
-
 
 .typography {
   @apply prose prose-slate prose-headings:scroll-m-20 prose-code:rounded-md prose-code:p-1 prose-code:leading-6 prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:bg-neutral-100 prose-img:rounded-md prose-img:border;
@@ -370,12 +369,16 @@ video {
   }
 }
 .video-player {
-  .play, .volume, .slider {
+  .play,
+  .volume,
+  .slider {
     display: none;
     transition: fade 0.3s;
   }
   &:hover {
-    .play, .volume, .slider {
+    .play,
+    .volume,
+    .slider {
       display: flex;
     }
   }

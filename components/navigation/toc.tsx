@@ -28,10 +28,10 @@ export default function Toc({ tocs }: TocProps) {
   }
 
   return (
-    <div className="flex w-full flex-col gap-3 rounded-lg p-3 bg-secondary dark:bg-[#00000033]">
+    <div className="bg-secondary flex w-full flex-col gap-3 rounded-lg p-3 dark:bg-[#00000033]">
       <h3 className="text-sm font-semibold">On this page</h3>
       <ScrollArea className="pt-0.5">
-        <div className="flex flex-col gap-2.5 p-2 text-sm text-neutral-800 rounded-sm dark:text-neutral-300/85 bg-sheet-primary">
+        <div className="bg-sheet-primary flex flex-col gap-2.5 rounded-sm p-2 text-sm text-neutral-800 dark:text-neutral-300/85">
           {tocs.map(({ href, level, text }) => (
             <Link
               key={href}
@@ -40,8 +40,8 @@ export default function Toc({ tocs }: TocProps) {
               onClick={(e) => handleSmoothScroll(e, href)}
               className={clsx({
                 "pl-0": level == 2,
-                "border-l border-ring pl-3": level == 3,
-                "border-l border-ring pl-6": level == 4,
+                "border-ring border-l pl-3": level == 3,
+                "border-ring border-l pl-6": level == 4,
               })}
             >
               {text}

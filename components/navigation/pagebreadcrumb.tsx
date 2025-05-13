@@ -14,12 +14,14 @@ import {
 
 export default function PageBreadcrumb({ paths }: { paths: string[] }) {
   return (
-    <div className="pb-5 w-fit max-w-[calc(100vw-2rem)] sm:max-w-fit">
+    <div className="w-fit max-w-[calc(100vw-2rem)] pb-5 sm:max-w-fit">
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink asChild>
-              <Link href = "/docs/recent-work"><LuHouse className="h-4" /></Link>
+              <Link href="/docs/recent-work">
+                <LuHouse className="h-4" />
+              </Link>
             </BreadcrumbLink>
           </BreadcrumbItem>
 

@@ -1,3 +1,4 @@
+import React from "react"
 import { FaBehance } from "react-icons/fa"
 import {
   FiAlignJustify,
@@ -15,6 +16,3 @@ export const iconMap = {
   behance: FaBehance,
   github: FiGithub,
 }
-
-import React from 'react';
-

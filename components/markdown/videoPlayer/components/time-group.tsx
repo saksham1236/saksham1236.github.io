@@ -1,5 +1,6 @@
-"use client";
-import { Time } from '@vidstack/react';
+"use client"
+
+import { Time } from "@vidstack/react"
 
 export function TimeGroup() {
   return (
@@ -8,5 +9,5 @@ export function TimeGroup() {
       <div className="mx-1 text-white/80">/</div>
       <Time className="time" type="duration" />
     </div>
-  );
+  )
 }

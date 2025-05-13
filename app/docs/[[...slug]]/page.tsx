@@ -44,9 +44,7 @@ export default async function Pages({ params }: PageProps) {
           aria-label="Table of contents"
         >
           {Settings.toc && <Toc tocs={tocs} />}
-          {Settings.feedback && (
-            <Feedback />
-          )}
+          {Settings.feedback && <Feedback />}
           {Settings.totop && (
             <BackToTop className="mt-6 self-start rounded-full border p-3 text-sm text-neutral-800 dark:text-neutral-300/85" />
           )}

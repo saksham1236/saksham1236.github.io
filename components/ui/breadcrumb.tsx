@@ -6,7 +6,14 @@ import { LuChevronRight } from "react-icons/lu"
 import { cn } from "@/lib/utils"
 
 function Breadcrumb({ ...props }: React.ComponentProps<"nav">) {
-  return <nav className="overflow-auto bg-sheet-primary rounded-md" aria-label="breadcrumb" data-slot="breadcrumb" {...props} />
+  return (
+    <nav
+      className="bg-sheet-primary overflow-auto rounded-md"
+      aria-label="breadcrumb"
+      data-slot="breadcrumb"
+      {...props}
+    />
+  )
 }
 
 function BreadcrumbList({ className, ...props }: React.ComponentProps<"ol">) {
@@ -44,7 +51,10 @@ function BreadcrumbLink({
   return (
     <Comp
       data-slot="breadcrumb-link"
-      className={cn("p-2 text-nowrap hover:text-foreground hover:bg-hover-b rounded-sm transition-colors", className)}
+      className={cn(
+        "hover:text-foreground hover:bg-hover-b rounded-sm p-2 text-nowrap transition-colors",
+        className
+      )}
       {...props}
     />
   )
@@ -57,7 +67,7 @@ function BreadcrumbPage({ className, ...props }: React.ComponentProps<"span">) {
       role="link"
       aria-disabled="true"
       aria-current="page"
-      className={cn("p-2 text-nowrap text-foreground font-normal", className)}
+      className={cn("text-foreground p-2 font-normal text-nowrap", className)}
       {...props}
     />
   )

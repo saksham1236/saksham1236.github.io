@@ -4,6 +4,7 @@ import React, { useRef } from "react"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import SplitType from "split-type"
+
 import styles from "./hero.module.css"
 
 gsap.registerPlugin(useGSAP)
@@ -17,17 +18,17 @@ export default function Hero() {
     const tl = gsap.timeline({})
 
     tl.to(`.hero`, {
-       opacity: 1,
-       duration: 0.4,
-       ease: "sine",
-    })
-    .from(text.lines, {
-      y: "100%",
-      opacity: 0,
+      opacity: 1,
       duration: 0.4,
       ease: "sine",
-      stagger: 0.1,
-      delay: 1,
+    })
+      .from(text.lines, {
+        y: "100%",
+        opacity: 0,
+        duration: 0.4,
+        ease: "sine",
+        stagger: 0.1,
+        delay: 1,
       })
       .to(`.${styles.red}`, {
         backgroundPosition: "0 0",
