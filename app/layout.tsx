@@ -48,7 +48,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <Navbar />
-          <main className="h-auto px-5 sm:px-8 max-w-460 mx-auto">{children}</main>
+          <main className="h-auto px-5 sm:px-8 max-w-400 mx-auto">{children}</main>
           <Footer />
         </Providers>
       </body>

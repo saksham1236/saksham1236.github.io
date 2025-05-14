@@ -52,7 +52,7 @@ export default function Hero() {
       <h1 className="sm:text-md animate mb-4 md:text-lg">
         Made by Saksham Tandon.
       </h1>
-      <h2 className="animate mb-8 max-w-300 text-4xl/12 font-bold 2xl:text-5xl/16">
+      <h2 className="animate text-pretty max-w-320 mb-8 text-4xl/12 font-bold 2xl:text-5xl/16">
         I craft engaging experiences through{" "}
         <span
           className={`${styles.hoverText} ${styles.red} hover:text-white dark:hover:text-[#002a69]`}
