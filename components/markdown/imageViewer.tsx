@@ -2,12 +2,14 @@
 
 import { useState } from "react"
 import Image from "next/image"
+import { FiXCircle } from "react-icons/fi";
 
 import {
   Dialog,
   DialogContent,
   DialogTitle,
   DialogTrigger,
+  DialogClose,
 } from "@/components/ui/dialog"
 
 export default function ImageViewer({
@@ -52,6 +54,10 @@ export default function ImageViewer({
               }}
             />
           </div>
+          <DialogClose className="absolute top-4 right-4 rounded-full bg-primary p-1 focus:outline-none">
+            <span className="sr-only">Close</span>
+            <FiXCircle className="h-6 w-6 text-primary-foreground" />
+          </DialogClose>
         </DialogContent>
       </Dialog>
     </div>
