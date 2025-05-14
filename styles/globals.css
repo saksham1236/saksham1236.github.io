@@ -369,6 +369,9 @@ video {
   }
 }
 .video-player {
+  .media-controls-layer {
+    opacity: 0.5;
+  }
   .play,
   .volume,
   .slider {
@@ -380,6 +383,9 @@ video {
     .volume,
     .slider {
       display: flex;
+    }
+    .media-controls-layer {
+      opacity: 1;
     }
   }
 }

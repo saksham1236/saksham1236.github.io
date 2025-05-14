@@ -16,15 +16,15 @@ export default function VideoLayout() {
       <Controls.Root className="media-controls-layer !text-primary-foreground absolute inset-0 z-10 flex h-full w-full flex-col bg-gradient-to-t from-black/10 to-transparent transition-opacity">
         <Tooltip.Provider>
           <div className="flex-1" />
-          <Controls.Group className="-mt-0.5 flex w-full items-center gap-1 px-4 pb-4">
-            <div className="bg-primary/60 flex h-10 rounded-full p-1 pl-0 shadow-lg backdrop-blur-lg">
+          <Controls.Group className="-mt-0.5 flex w-full items-center justify-center gap-1 px-4 pb-4">
+            <div className="bg-primary/60 flex h-10 rounded-full shadow-lg backdrop-blur-lg">
               <div className="play items-center justify-center">
                 <Buttons.Play
                   tooltipAlign="start"
                   tooltipOffset={popupOffset}
                 />
               </div>
-              <div className="flex items-center justify-center pr-3">
+              <div className="flex w-[92px] items-center justify-center p-3 ">
                 <TimeGroup />
               </div>
             </div>
