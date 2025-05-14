@@ -13,12 +13,12 @@ const popupOffset = 30
 export default function VideoLayout() {
   return (
     <div>
-      <Controls.Root className="media-controls-layer absolute inset-0 z-10 flex h-full w-full flex-col bg-gradient-to-t from-black/10 to-transparent transition-opacity">
+      <Controls.Root className="media-controls-layer !text-primary-foreground absolute inset-0 z-10 flex h-full w-full flex-col bg-gradient-to-t from-black/10 to-transparent transition-opacity">
         <Tooltip.Provider>
           <div className="flex-1" />
-          <Controls.Group className="-mt-0.5 flex w-full items-center gap-1 px-2 pb-2">
-            <div className="bg-sheet-primary flex h-12 rounded-full p-1 shadow-lg backdrop-blur-lg">
-              <div className="play">
+          <Controls.Group className="-mt-0.5 flex w-full items-center gap-1 px-4 pb-4">
+            <div className="bg-primary/60 flex h-10 rounded-full p-1 pl-0 shadow-lg backdrop-blur-lg">
+              <div className="play items-center justify-center">
                 <Buttons.Play
                   tooltipAlign="start"
                   tooltipOffset={popupOffset}
@@ -28,7 +28,7 @@ export default function VideoLayout() {
                 <TimeGroup />
               </div>
             </div>
-            <div className="volume bg-sheet-primary flex rounded-full p-1 shadow-md backdrop-blur-lg">
+            <div className="volume bg-primary/60 flex rounded-full shadow-md backdrop-blur-lg">
               <Buttons.Mute tooltipOffset={popupOffset} />
               {/* <div className='w-24 vol-hover:w-56 transition-all'><Sliders.Volume /></div> */}
             </div>
@@ -36,7 +36,7 @@ export default function VideoLayout() {
               <Sliders.Time />
             </div> */}
             <div className="flex-1" />
-            <div className="bg-sheet-primary flex rounded-full p-1 shadow-md backdrop-blur-lg">
+            <div className="bg-primary/60 flex rounded-full shadow-md backdrop-blur-lg">
               <Buttons.Fullscreen
                 tooltipAlign="end"
                 tooltipOffset={popupOffset}

@@ -37,7 +37,7 @@ export default async function Pages({ params }: PageProps) {
           <Pagination pathname={pathName} />
         </Typography>
       </section>
-      <BackToTop className="xl:hidden bg-sheet-primary backdrop-blur-lg shadow-lg fixed bottom-4 right-4 z-40 mt-6 self-start rounded-full p-3 text-sm text-primary" />
+      <BackToTop className="xl:hidden bg-primary/60 backdrop-blur-lg shadow-lg fixed bottom-4 right-4 z-40 mt-6 self-start rounded-full p-3 text-sm text-primary-foreground" />
       {Settings.rightbar && (
         <aside
           className="toc sticky top-16 hidden h-[94.5vh] w-[230px] gap-3 py-8 xl:flex xl:flex-col"

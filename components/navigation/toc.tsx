@@ -3,7 +3,7 @@
 import Link from "next/link"
 import clsx from "clsx"
 
-import { ScrollArea } from "@/components/ui/scroll-area"
+// import { ScrollArea } from "@/components/ui/scroll-area"
 
 type TocProps = {
   tocs: { href: string; level: number; text: string }[]
@@ -28,9 +28,9 @@ export default function Toc({ tocs }: TocProps) {
   }
 
   return (
-    <div className="bg-secondary flex w-full overflow-y-auto flex-col gap-3 rounded-lg p-3 dark:bg-[#00000033]">
+    <div className="bg-secondary flex w-full overflow-y-hidden flex-col gap-3 rounded-lg p-3 dark:bg-[#00000033]">
       <h3 className="text-sm font-semibold">On this page</h3>
-      <ScrollArea className="pt-0.5">
+      <div className="pt-0.5 overflow-y-auto">
         <div className="bg-sheet-primary flex flex-col gap-2.5 rounded-sm p-2 text-sm text-neutral-800 dark:text-neutral-300/85">
           {tocs.map(({ href, level, text }) => (
             <Link
@@ -48,7 +48,7 @@ export default function Toc({ tocs }: TocProps) {
             </Link>
           ))}
         </div>
-      </ScrollArea>
+      </div>
     </div>
   )
 }

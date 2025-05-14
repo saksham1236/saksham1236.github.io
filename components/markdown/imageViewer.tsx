@@ -2,8 +2,8 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { FiXCircle } from "react-icons/fi";
-
+import { FiX } from "react-icons/fi";
+import { FiMaximize2 } from "react-icons/fi";
 import {
   Dialog,
   DialogContent,
@@ -26,20 +26,26 @@ export default function ImageViewer({
       {/* Trigger to open the dialog */}
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger asChild>
-          <Image
-            src={imageUrl}
-            alt={altText}
-            className="w-full cursor-pointer rounded-md hover:opacity-80"
-            width={500}
-            height={500}
-            onContextMenu={(e) => {
-              e.preventDefault()
-            }}
-          />
+          <div className="group relative hover:opacity-80 cursor-pointer transition-opacity duration-200">
+            <Image
+              src={imageUrl}
+              alt={altText}
+              className="w-full rounded-md"
+              width={500}
+              height={500}
+              onContextMenu={(e) => {
+                e.preventDefault()
+              }}
+            />
+            <div className="absolute bottom-4 right-4 rounded-full bg-primary/70 backdrop-blur-lg shadow-lg p-2 focus:outline-none animate-in fade-in">
+              <span className="sr-only">Open image</span>
+              <FiMaximize2 className="h-6 w-6 text-primary-foreground" />
+            </div>
+          </div>
         </DialogTrigger>
 
         {/* Dialog content */}
-        <DialogContent className="w-88vh flex touch-auto items-center justify-center overflow-y-auto p-0">
+        <DialogContent className="group w-88vh flex touch-auto items-center justify-center overflow-y-auto p-0">
           {/* Accessible title */}
           <DialogTitle className="sr-only">{altText}</DialogTitle>
           <div className="justify-top max-h-screen w-fit overflow-auto">
@@ -54,9 +60,9 @@ export default function ImageViewer({
               }}
             />
           </div>
-          <DialogClose className="absolute top-4 right-4 rounded-full bg-primary p-1 focus:outline-none">
+          <DialogClose className="absolute top-4 right-4 rounded-full bg-primary/70 backdrop-blur-lg shadow-lg p-1 cursor-pointer focus:outline-none animate-in fade-in">
             <span className="sr-only">Close</span>
-            <FiXCircle className="h-6 w-6 text-primary-foreground" />
+            <FiX className="h-6 w-6 text-primary-foreground" />
           </DialogClose>
         </DialogContent>
       </Dialog>

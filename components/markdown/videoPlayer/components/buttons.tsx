@@ -9,14 +9,13 @@ import {
 } from "@vidstack/react"
 import {
   MdZoomInMap as FullscreenExitIcon,
-  MdFullscreen as FullscreenIcon,
   MdVolumeOff as MuteIcon,
   MdPause as PauseIcon,
   MdPlayArrow as PlayIcon,
   MdVolumeUp as VolumeHighIcon,
   MdVolumeDown as VolumeLowIcon,
 } from "react-icons/md"
-
+import { FiMaximize2 as FullscreenIcon } from "react-icons/fi";
 export interface MediaButtonProps {
   tooltipSide?: Tooltip.TooltipContentProps["side"]
   tooltipAlign?: Tooltip.TooltipContentProps["align"]
@@ -40,9 +39,9 @@ export function Play({
       <Tooltip.Trigger asChild>
         <PlayButton className={buttonClass}>
           {isPaused ? (
-            <PlayIcon className="h-7 w-7 translate-x-px" />
+            <PlayIcon className="h-6 w-6 translate-x-px" />
           ) : (
-            <PauseIcon className="h-7 w-7" />
+            <PauseIcon className="h-6 w-6" />
           )}
         </PlayButton>
       </Tooltip.Trigger>
@@ -70,11 +69,11 @@ export function Mute({
       <Tooltip.Trigger asChild>
         <MuteButton className={buttonClass}>
           {isMuted || volume == 0 ? (
-            <MuteIcon className="h-7 w-7" />
+            <MuteIcon className="h-6 w-6" />
           ) : volume < 0.5 ? (
-            <VolumeLowIcon className="h-7 w-7" />
+            <VolumeLowIcon className="h-6 w-6" />
           ) : (
-            <VolumeHighIcon className="h-7 w-7" />
+            <VolumeHighIcon className="h-6 w-6" />
           )}
         </MuteButton>
       </Tooltip.Trigger>
@@ -101,9 +100,9 @@ export function Fullscreen({
       <Tooltip.Trigger asChild>
         <FullscreenButton className={buttonClass}>
           {isActive ? (
-            <FullscreenExitIcon className="h-7 w-7" />
+            <FullscreenExitIcon className="h-6 w-6" />
           ) : (
-            <FullscreenIcon className="h-7 w-7" />
+            <FullscreenIcon className="h-6 w-6" />
           )}
         </FullscreenButton>
       </Tooltip.Trigger>
