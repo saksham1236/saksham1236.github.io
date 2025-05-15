@@ -48,11 +48,11 @@ export default function ImageViewer({
         <DialogContent className="group w-88vh flex touch-auto items-center justify-center overflow-y-auto p-0">
           {/* Accessible title */}
           <DialogTitle className="sr-only">{altText}</DialogTitle>
-          <div className="justify-top max-h-screen w-fit overflow-auto">
+          <div className="justify-top max-h-[95svh] w-fit overflow-auto">
             <Image
               src={imageUrl}
               alt={altText}
-              className="w-full overflow-y-auto rounded-md"
+              className="w-full rounded-md"
               width={1200}
               height={1200}
               onContextMenu={(e) => {
