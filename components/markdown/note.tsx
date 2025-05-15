@@ -2,13 +2,15 @@ import { PropsWithChildren } from "react"
 import clsx from "clsx"
 
 import { cn } from "@/lib/utils"
+import { ClassNameValue } from "tailwind-merge"
 
 type NoteProps = PropsWithChildren & {
   title?: string
   type?: "note" | "success" | "warning" | "danger" | "info"
+  className?: ClassNameValue
 }
 
-export default function Note({ children, title, type = "note" }: NoteProps) {
+export default function Note({ children, title, type = "note", className }: NoteProps) {
   const noteClassNames = clsx({
     "dark:bg-neutral-900 bg-neutral-50": type == "note",
     "dark:bg-green-950 bg-green-100 border-green-300 dark:border-green-900":
@@ -25,7 +27,7 @@ export default function Note({ children, title, type = "note" }: NoteProps) {
     <div
       className={cn(
         "note mb-3 rounded-xl border px-4 py-3 text-sm tracking-wide",
-        noteClassNames
+        noteClassNames, className
       )}
     >
       {title && <p className="-mb-3 text-sm font-semibold">{title}:</p>}
