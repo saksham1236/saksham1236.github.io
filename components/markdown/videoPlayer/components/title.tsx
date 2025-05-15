@@ -1,4 +1,4 @@
-import { Title, type TitleProps } from '@vidstack/react'
+import { Title } from '@vidstack/react'
 
 export function VideoTitle() {
     return (
