@@ -32,7 +32,7 @@ export default async function Pages({ params }: PageProps) {
           <h1 className="!mb-2 text-3xl !font-semibold">{frontmatter.title}</h1>
           <p className="-mt-4 text-sm">{frontmatter.description}</p>
           <Separator className="my-6" />
-          <section className = "mobile-toc xl:hidden h-75" aria-label="Table of contents">{Settings.toc && <Toc tocs={tocs} />}</section>
+          <section className = "mobile-toc xl:hidden overflow-hidden [&>*]:max-h-75 [&>*]:box-border" aria-label="Table of contents">{Settings.toc && <Toc tocs={tocs} />}</section>
           <section>{content}</section>
           <Pagination pathname={pathName} />
         </Typography>

@@ -26,10 +26,9 @@ export default function Toc({ tocs }: TocProps) {
   }
 
   return (
-    <div className="bg-secondary flex w-full h-full overflow-y-hidden flex-col gap-3 rounded-lg p-3 dark:bg-[#00000033]">
+    <div className="bg-secondary flex w-full overflow-y-hidden flex-col gap-3 rounded-lg p-3 dark:bg-[#00000033]">
       <h3 className="text-sm font-semibold">On this page</h3>
-      <div className="pt-0.5 overflow-hidden">
-        <div className="link-map bg-sheet-primary flex flex-col gap-2.5 rounded-sm p-2 text-sm text-neutral-800 dark:text-neutral-300/85">
+        <div className="link-map overflow-y-auto bg-sheet-primary flex flex-col gap-2.5 rounded-sm p-2 text-sm text-neutral-800 dark:text-neutral-300/85">
           {tocs.map(({ href, level, text }, index) => (
             <Link
               key={href}
@@ -47,7 +46,6 @@ export default function Toc({ tocs }: TocProps) {
             </Link>
           ))}
         </div>
-      </div>
     </div>
   )
 }
