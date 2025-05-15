@@ -26,13 +26,13 @@ export default async function Pages({ params }: PageProps) {
 
   return (
     <div className="flex justify-between gap-14">
-      <section className="flex-[3] pt-10">
+      <section className="flex-[3] pt-10" >
         <PageBreadcrumb paths={slug} />
-
         <Typography>
           <h1 className="!mb-2 text-3xl !font-semibold">{frontmatter.title}</h1>
           <p className="-mt-4 text-sm">{frontmatter.description}</p>
           <Separator className="my-6" />
+          <section className = "mobile-toc xl:hidden h-75" aria-label="Table of contents">{Settings.toc && <Toc tocs={tocs} />}</section>
           <section>{content}</section>
           <Pagination pathname={pathName} />
         </Typography>

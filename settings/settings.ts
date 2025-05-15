@@ -4,18 +4,19 @@ export const siteicon = "/icon.png"
 export const gtm = "GTM-XXXXXXX"
 export const gtmconnected = false
 
-export const sitename = "Froto-Design"
+export const sitename = "Froto Designs"
 export const description =
   "This comprehensive documentation template, crafted with Next.js and available as open-source, delivers a sleek and responsive design, tailored to meet all your project documentation requirements."
 export const keywords = [
   "Next.js",
   "Portfolio",
-  "Froto-Design",
+  "Froto Design",
+  "Froto Designs",
   "Ux Design",
   "Web Design",
 ]
 export const urlimage = "/icon.png"
-export const imagealt = "Froto Design"
+export const imagealt = "Froto Designs"
 
 export const companyname = "Made by Saksham Tandon"
 export const companylink = "https://www.linkedin.com/in/s9tandon/"

@@ -49,9 +49,6 @@ export default function Hero() {
 
   return (
     <div className="hero mt-6" ref={container}>
-      <h1 className="sm:text-md animate mb-4 md:text-lg">
-        Made by Saksham Tandon.
-      </h1>
       <h2 className="animate text-pretty max-w-320 mb-8 text-4xl/12 font-bold 2xl:text-5xl/16">
         I craft engaging experiences through{" "}
         <span
@@ -73,6 +70,9 @@ export default function Hero() {
         </span>
         .
       </h2>
+      <h1 className="sm:text-md animate mb-4 md:text-lg">
+        Made by Froto Designs.
+      </h1>
     </div>
   )
 }
