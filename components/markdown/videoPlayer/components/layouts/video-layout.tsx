@@ -6,6 +6,7 @@ import { Controls } from "@vidstack/react"
 import * as Buttons from "../buttons"
 // import * as Sliders from "../sliders"
 import { TimeGroup } from "../time-group"
+import { VideoTitle } from "../title"
 
 // Offset tooltips/menus/slider previews in the lower controls group so they're clearly visible.
 const popupOffset = 30
@@ -15,6 +16,9 @@ export default function VideoLayout() {
     <div>
       <Controls.Root className="media-controls-layer !text-primary-foreground absolute inset-0 z-10 flex h-full w-full flex-col bg-gradient-to-t from-black/10 to-transparent transition-opacity">
         <Tooltip.Provider>
+          <Controls.Group className="text-md absolute z-10 top-4 left-4 items-center justify-center py-1.5 px-3 bg-primary/60 flex rounded-full shadow-md backdrop-blur-lg">
+            <VideoTitle />
+          </Controls.Group>
           <div className="flex-1" />
           <Controls.Group className="-mt-0.5 flex w-full items-center justify-center gap-1 px-4 pb-4">
             <div className="bg-primary/60 flex h-10 rounded-full shadow-lg backdrop-blur-lg">
