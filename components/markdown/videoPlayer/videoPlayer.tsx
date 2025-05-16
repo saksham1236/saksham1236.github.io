@@ -19,6 +19,7 @@ export default function VideoPlayer({
   className,
   autoplay,
   loop,
+  muted = true,
 }: {
   src: string
   title: string
@@ -26,6 +27,7 @@ export default function VideoPlayer({
   poster?: string
   autoplay?: boolean
   loop?: boolean
+  muted?: boolean
 }) {
   const player = useRef<MediaPlayerInstance>(null)
 
@@ -42,6 +44,8 @@ export default function VideoPlayer({
       ref={player}
       autoPlay={autoplay}
       loop={loop}
+      muted={muted}
+      load="visible"
     >
       <MediaProvider />
       <VideoLayout />

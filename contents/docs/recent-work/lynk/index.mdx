@@ -144,7 +144,6 @@ Our design process was iterative and user-centered, focusing on creating a platf
 
 In the subsequent iterations, we developed high-fidelity prototypes, incorporating user feedback to enhance the user experience and establish branding elements. Each iteration built upon the previous one, with a focus on refining the design and functionality of the platform based on user interactions and testing results. Our goal was to create a seamless and intuitive user experience that promotes mental and physical well-being, ultimately addressing the challenges of social isolation.
 
-
 ### Iteration 1: Foundation & Initial Feedback
 Our goal in iteration one was to create a solid foundation for our business idea, focusing on visual design, business, and user experience. We aimed to establish an understanding of our target audience and their needs, as well as the overall direction of our project.
 - **Methods**:
@@ -240,7 +239,7 @@ In our second iteration, our main focus was to define the identity and character
         Stress is part of life, I work then I also like to do leisure activities like gaming and going on long drives”
     </div>
   </CardGrid>
-  <span className = "text-xs"> User Persona inspired by this study here [https://www.carolinapizatto.com/reviving-personas](https://www.carolinapizatto.com/reviving-personas)</span>
+  <span className = "text-xs">The card styling was inspired by the emerging Neumorphic 3D design trend popularized in 2021. User Persona inspired by this study here [https://www.carolinapizatto.com/reviving-personas](https://www.carolinapizatto.com/reviving-personas)</span>
 </Note>
 <CardGrid className="xl:!grid-cols-2">
 <Note>
@@ -308,4 +307,124 @@ We refined the user flow based on feedback from the first iteration, ensuring th
     - Consider adding an optional tour for new users to help them navigate and understand app functions.
 </Note>
 
-### Iteration 3: Further Refinement & Feature Prioritization
+### Iteration 3: UX Testing & Interaction Refinement
+
+Our focus in iteration three was to improve the usability of key user flows based on feedback, especially the process of creating an activity. We tested a more complete desktop prototype and used structured feedback to guide design revisions.
+
+- **Methods**:
+  - Conducted one-on-one usability testing with participants using the high-fidelity desktop prototype.
+  - Used Kano Model survey to assess feature expectations and categorize them by priority.
+  - Focused testing on how users navigated and interacted with the "Create Activity" flow.
+#### Improved Creating Activity Flow
+Split the activity creation flow into multiple pages to make the information easier for users to understand and complete.
+<ImageViewer imageUrl="/images/lynk/iteration-3-user-map.png" alt = "User Flow for Creating Activities"/>
+<VideoPlayer src="/images/lynk/expanded-creating-activity-workflow.mp4" title = "Improved Creating Activities Preview" autoplay={true} loop={true}/>
+#### Kano Model Survey
+<Note>
+**Kano Model Summary**
+  - Features like the ratings system, feedback submission, and promoted events were considered mandatory by most users.
+  - Users also expected features common in similar platforms (e.g., notifications, friend invites).
+<details className='p-3 bg-sheet-primary rounded-md mb-4'>
+<summary>**Functional Questions Tally**</summary>
+<div className = "w-full overflow-auto">
+  FEATURE QUESTION | I like it that way | I expect it to be that way | I am neutral | I can live with it that way | I dislike it that way |
+ |------------------|---------------------|----------------------------|--------------|-----------------------------|-----------------------|
+ | If you received in-app offers & discounts, how would you feel? | 3 | 2 | | | |
+ | If you received app notifications, how would you feel? | 4 | 1 | | | |
+ | If you were able to send & receive friend invite offers, how would you feel? | 3 | 2 | | | |
+ | If you were able to share your experience with the app through feedback, how would you feel? | 4 | 1 | | | |
+ | If you had access to a ratings system, how would you feel? | 4 | 1 | | | |
+ | If the application was cost friendly, how would you feel? | 4 | 1 | | | |
+ | If there were new product features and updates, how would you feel? | 4 | 1 | | | |
+ | If you could create events through the app, how would you feel? | 3 | 2 | | | |
+ | If you could link your social media account(s), how would that make you feel? | 4 | 1 | | | |
+ | If you could participate in promoted events, how would you feel? | 2 | 2 | 1 | | |
+</div>
+</details>
+
+<details className='p-3 bg-sheet-primary rounded-md mb-4'>
+<summary>**Dysfunctional Questions Tally**</summary>
+<div className = "w-full overflow-auto">
+ | FEATURE QUESTION | I like it that way | I expect it to be that way | I am neutral | I can live with it that way | I dislike it that way |
+ |------------------|---------------------|----------------------------|--------------|-----------------------------|-----------------------|
+ | If you DID NOT receive in-app offers & discounts, how would you feel? | | 1 | | 2 | 2 |
+ | If you DID NOT receive app notifications, how would you feel? | | | | 3 | 2 |
+ | If you were NOT able to send & receive friend invite offers, how would you feel? | | | | 3 | 2 |
+ | If you were NOT able to share your experience with the app through feedback, how would you feel? | | 1 | | | 4 |
+ | If you had NO access to a ratings system, how would you feel? | | 2 | | 3 | |
+ | If the application was NOT cost friendly, how would you feel? | | 2 | | 3 | |
+ | If there were NO new product features and updates, how would you feel? | | 2 | | 3 | |
+ | If you could NOT create events through the app, how would you feel? | | 2 | | 3 | |
+ | If you could NOT link your social media account(s), how would that make you feel? | | 2 | | 3 | |
+ | If you could NOT participate in promoted events, how would you feel? | | 1 | | | 4 |
+</div>
+</details>
+<details className='p-3 bg-sheet-primary rounded-md mb-4'>
+<summary>**Final Results Tally**</summary>
+<div className = "w-full overflow-auto">
+ | FEATURE | Exciter | Linear | Mandatory | Indifferent | Questionable | Reverse | FINAL EVAL |
+ |---------|---------|--------|-----------|-------------|--------------|---------|------------|
+ | in-app offers & discounts | 3 (60%) | | | 2 (40%) | | | E |
+ | app notifications | 4 (80%) | | | | 1 (20%) | | E |
+ | send & receive friend invite offers | 3 (60%) | | | 2 (40%) | | | E |
+ | share your experience with the app through feedback | 1 (20%) | | 3 (60%) | 1 (20%) | | | M |
+ | access to a ratings system | | | 5 (100%) | | | | M |
+ | the application was cost friendly | 2 (40%) | 1 (20%) | 1 (20%) | 1 (20%) | | | E |
+ | new product features and updates | 3 (60%) | 1 (20%) | | 1 (20%) | | | E |
+ | create events through the app | 4 (80%) | | | 1 (20%) | | | E |
+ | link your social media account(s) | | | | 5 (100%) | | | I |
+ | participate in promoted events | | | 3 (60%) | 2 (40%) | | | M |
+</div>
+</details>
+**Final Results Summary**
+
+- **Exciter Features:** In-app offers & discounts, app notifications, send & receive friend invite offers, cost-friendly application, new product features and updates, create events through the app.
+- **Mandatory Features:** Share your experience through feedback, access to a ratings system, participate in promoted events.
+- **Indifferent Feature:** Link your social media account(s).
+</Note>
+
+#### Usability Testing
+
+<Note>
+**Testing Method**:
+  - Conducted moderated user testing using our desktop prototype.
+  - Users were observed while completing key flows, followed by a short feedback session.
+</Note>
+
+<Note>
+**User Tasks**:
+  - Create an account.
+  - Explore and join an activity.
+  - Create a new activity using the full creation flow.
+</Note>
+
+**Findings**:
+  - Users were confused by the number of steps required to create an activity.
+  - The lack of visual cues and guidance during form-filling led to hesitation.
+  - Several users struggled with horizontal scrolling, which disrupted the flow.
+  - Some UI elements lacked context, resulting in questions like "What does this button do?"
+<Note>
+  **Survey Results**:
+  <Iframe src = "https://4ozlvbihyp9.typeform.com/report/FpYMtBsT/KgExZPtBm7X7cHxj" />
+</Note>
+
+<CardGrid className="xl:!grid-cols-2">
+  <Note type="info">
+    **User Feedback**:
+    - “I wasn’t sure if I completed the activity creation process properly. It needs more guidance.”
+    - “There’s a lot going on in the form. Not sure where to start or what’s important.”
+  </Note>
+  <Note type="warning">
+    **Design Improvements**:
+    - Simplified the activity creation flow by reducing input fields and grouping them logically.
+    - Replaced horizontal scrolling with vertical sections for better clarity.
+    - Added contextual indicators (e.g., tooltips, inline hints) to improve comprehension.
+  </Note>
+</CardGrid>
+
+<Note>
+**User Suggestions**:
+  - Provide a progress indicator or guided steps during the activity creation process.
+  - Remove horizontal scroll areas and use a cleaner, stacked layout.
+  - Add brief explanations for form sections to reduce confusion.
+</Note>
