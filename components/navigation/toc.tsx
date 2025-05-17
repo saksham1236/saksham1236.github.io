@@ -37,9 +37,8 @@ export default function Toc({ tocs }: TocProps) {
               onClick={(e) => handleSmoothScroll(e, href)}
               className={clsx({
                 "pl-0 l2": level == 2,
-                "border-ring border-l pl-3 l3": level == 3,
-                "border-ring border-l pl-3 l3 l3-expanded": level == 3 && (tocs[index + 1]?.level === 4 || tocs[index - 1]?.level === 4),
-                "border-ring border-l pl-6 l4": level == 4,
+                "border-ring border-l ml-2 pl-3": level == 3,
+                "border-ring border-l ml-4 pl-3": level == 4,
               })}
             >
               {text}

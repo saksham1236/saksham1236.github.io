@@ -392,33 +392,6 @@ video {
   }
 }
 
-.toc, .mobile-toc {
-  h3 {
-    padding: 0;
-    margin: 0;
-    @apply text-sm text-primary;
-  }
-  a {
-    @apply text-sm text-primary no-underline;
-  }
-  .l1, .l2 {
-    width: 100%
-  }
-  .l3, .l4 {
-    @apply flex flex-wrap underline text-xs border-0 m-0 p-0;
-  }
-  .l3-expanded{
-      width: 100%;
-      @apply bg-secondary no-underline dark:bg-[#00000033] text-primary px-2 py-1 rounded-md text-sm;
-  }
-  .link-map {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    @apply h-full overflow-y-auto;
-  }
-}
 .note-bevel {
   @apply bg-[#f8f4f4] dark:bg-[rgb(43,43,43)];
 }
