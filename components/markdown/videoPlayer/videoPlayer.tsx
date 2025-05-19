@@ -4,6 +4,8 @@ import "@vidstack/react/player/styles/default/theme.css"
 
 import { useRef } from "react"
 import {
+  isYouTubeProvider,
+  type MediaProviderAdapter,
   MediaPlayer,
   MediaProvider,
   type MediaPlayerInstance,
@@ -12,6 +14,7 @@ import {
 import { cn } from "@/lib/utils"
 
 import VideoLayout from "./components/layouts/video-layout"
+import { on } from "events"
 
 export default function VideoPlayer({
   src,
@@ -30,13 +33,18 @@ export default function VideoPlayer({
   muted?: boolean
 }) {
   const player = useRef<MediaPlayerInstance>(null)
-
+  function onProviderChange(provider: MediaProviderAdapter | null) {
+    if(isYouTubeProvider(provider)){
+      provider.cookies = true;
+    }
+  }
   return (
     <MediaPlayer
       className={cn(
         "video-player ring-media-focus aspect-video w-full overflow-hidden rounded-lg bg-slate-900 font-sans text-white data-[focus]:ring-4",
         className
       )}
+      onProviderChange={onProviderChange}
       // controls
       title={title}
       src={src}

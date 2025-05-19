@@ -28,7 +28,7 @@ export default function Toc({ tocs }: TocProps) {
   return (
     <div className="bg-secondary flex w-full overflow-y-hidden flex-col gap-3 rounded-lg p-3 dark:bg-[#00000033]">
       <h3 className="text-sm font-semibold">On this page</h3>
-        <div className="link-map overflow-y-auto bg-sheet-primary flex flex-col gap-2.5 rounded-sm p-2 text-sm text-neutral-800 dark:text-neutral-300/85">
+        <div className="link-map overflow-y-auto bg-sheet-primary flex flex-col rounded-sm text-sm text-neutral-800 dark:text-neutral-300/85">
           {tocs.map(({ href, level, text }) => (
             <Link
               key={href}
@@ -36,12 +36,12 @@ export default function Toc({ tocs }: TocProps) {
               scroll={false}
               onClick={(e) => handleSmoothScroll(e, href)}
               className={clsx({
-                "pl-0 l2": level == 2,
-                "border-ring border-l ml-2 pl-3": level == 3,
-                "border-ring border-l ml-4 pl-3": level == 4,
+                "pl-0 pb-1 l2 border-b-1 border-ring": level == 2,
+                "text-sm pl-2 py-1.5 l3": level == 3,
+                "text-xs pl-4 l4": level == 4,
               })}
             >
-              {text}
+              <span className = "link-inner">{text}</span>
             </Link>
           ))}
         </div>

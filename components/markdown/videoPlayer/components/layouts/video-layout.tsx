@@ -1,7 +1,7 @@
 "use client"
 
 import * as Tooltip from "@radix-ui/react-tooltip"
-import { Controls } from "@vidstack/react"
+import { Controls, Gesture } from "@vidstack/react"
 
 import * as Buttons from "../buttons"
 // import * as Sliders from "../sliders"
@@ -14,6 +14,7 @@ const popupOffset = 30
 export default function VideoLayout() {
   return (
     <div>
+      <Gestures />
       <Controls.Root className="media-controls-layer !text-primary-foreground absolute inset-0 z-10 flex h-full w-full flex-col bg-gradient-to-t from-black/10 to-transparent transition-opacity">
         <Tooltip.Provider>
           <Controls.Group className="text-md absolute z-10 top-4 left-4 items-center justify-center py-1.5 px-3 bg-primary/60 flex rounded-full shadow-md backdrop-blur-lg">
@@ -53,29 +54,29 @@ export default function VideoLayout() {
   )
 }
 
-// function Gestures() {
-//   return (
-//     <>
-//       <Gesture
-//         className="absolute inset-0 z-0 block h-full w-full"
-//         event="pointerup"
-//         action="toggle:paused"
-//       />
-//       <Gesture
-//         className="absolute inset-0 z-0 block h-full w-full"
-//         event="dblpointerup"
-//         action="toggle:fullscreen"
-//       />
-//       <Gesture
-//         className="absolute top-0 left-0 z-10 block h-full w-1/5"
-//         event="dblpointerup"
-//         action="seek:-10"
-//       />
-//       <Gesture
-//         className="absolute top-0 right-0 z-10 block h-full w-1/5"
-//         event="dblpointerup"
-//         action="seek:10"
-//       />
-//     </>
-//   )
-// }
+function Gestures() {
+  return (
+    <>
+      <Gesture
+        className="absolute inset-0 z-0 block h-full w-full"
+        event="pointerup"
+        action="toggle:paused"
+      />
+      <Gesture
+        className="absolute inset-0 z-0 block h-full w-full"
+        event="dblpointerup"
+        action="toggle:fullscreen"
+      />
+      <Gesture
+        className="absolute top-0 left-0 z-10 block h-full w-1/5"
+        event="dblpointerup"
+        action="seek:-10"
+      />
+      <Gesture
+        className="absolute top-0 right-0 z-10 block h-full w-1/5"
+        event="dblpointerup"
+        action="seek:10"
+      />
+    </>
+  )
+}

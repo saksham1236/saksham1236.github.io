@@ -1,5 +1,5 @@
 ---
-title: Lynk - Connecting Communities
+title: Lynk - UX Case Study
 author: Saksham Tandon
 description: Lynk is a platform designed to combat social isolation by connecting individuals with local activities and communities.
 tags: [Capstone Project, UX/UI Design, Product Design, Mental Wellness]
@@ -77,13 +77,13 @@ Based on our initial research, we have identified our target market as individua
     Both graduates and non-graduates who are moving into new environments that are relatively unknown to them.
   </Note>
 </CardGrid>
-### Target Audience Mood Board
+#### Target Audience Mood Board
 We asked university students and working professionals from our target audience to share their thoughts and feelings about social isolation on an online mood board. It reflects their experiences and captures the essence of their emotional landscape, highlighting their struggles and aspirations.
 <ImageViewer imageUrl="/images/lynk/target-audience-mood-board-1.jpg" alt ="Target Audience Mood Board"/>
 <ImageViewer imageUrl="/images/lynk/target-audience-mood-board-2.jpg" alt ="Target Audience Mood Board"/>
 <ImageViewer imageUrl="/images/lynk/target-audience-mood-board-3.jpg" alt ="Target Audience Mood Board"/>
 
-### Summarized Insights
+#### Summarized Insights
 <CardGrid className="xl:!grid-cols-2">
   <Note type="info">
     ### Wants and Needs
@@ -239,7 +239,7 @@ In our second iteration, our main focus was to define the identity and character
         Stress is part of life, I work then I also like to do leisure activities like gaming and going on long drives”
     </div>
   </CardGrid>
-  <span className = "text-xs">The card styling was inspired by the emerging Neumorphic 3D design trend popularized in 2021. User Persona inspired by this study here [https://www.carolinapizatto.com/reviving-personas](https://www.carolinapizatto.com/reviving-personas)</span>
+  <span className = "text-xs">The card styling was inspired by the Neumorphic style trending at that time. User Persona inspired by this study here [https://www.carolinapizatto.com/reviving-personas](https://www.carolinapizatto.com/reviving-personas)</span>
 </Note>
 <CardGrid className="xl:!grid-cols-2">
 <Note>
@@ -383,7 +383,7 @@ Split the activity creation flow into multiple pages to make the information eas
 - **Indifferent Feature:** Link your social media account(s).
 </Note>
 
-#### Usability Testing
+#### Usability Testing - 3
 
 <Note>
 **Testing Method**:
@@ -427,4 +427,69 @@ Split the activity creation flow into multiple pages to make the information eas
   - Provide a progress indicator or guided steps during the activity creation process.
   - Remove horizontal scroll areas and use a cleaner, stacked layout.
   - Add brief explanations for form sections to reduce confusion.
+</Note>
+### Observations from directly observing users
+Because of the low turnout of participants from the survey, we decided to conduct a moderated usability test with another 2 participants on video-call. We observed them as they navigated through the prototype and took notes on their interactions. This provided us with valuable insights into their thought processes and decision-making.
+<Note>
+**Navigation and Accessibility**
+- Confusion on how to navigate to certain sections.
+- Missing logo navigation.
+- Need for clearer instructions on selecting thumbnails for events.
+
+**Interface and Usability**
+- Interface needs better descriptions.
+- Confusion about creating mechanics and labels.
+- Feedback indicates confusion with unclear directions.
+- Need for search history or contextual help.
+- Navigation buttons need better differentiation and input capability.
+
+**Design and Content**
+- Flavor is inconsistent and not exciting.
+- Prototype sends mixed signals.
+- App organization is confusing; needs better explanation on startup.
+- Payment confirmation should use a pop-up.
+<CardGrid className="xl:!grid-cols-2">
+<ImageViewer imageUrl="/images/lynk/final-feedback-1.png" alt="Lynk Hero Showcase"/>
+<ImageViewer imageUrl="/images/lynk/final-feedback-2.png" alt="Lynk Hero Showcase"/>
+</CardGrid>
+</Note>
+### Final Changes before MVP
+#### Updating the Navbar from Vertical to Horizontal
+Noting from the final feedback, to improve navigation, we switched the navbar to a horizontal layout with labels visible to give users a clearer understanding of the different sections of the app.
+<CardGrid className="xl:!grid-cols-2">
+  <Note>
+    ##### **Before**
+    <ImageViewer imageUrl="/images/lynk/nav-before.png" alt="Navbar Vertical"/>
+  </Note>
+  <Note>
+    ##### **After**
+    <ImageViewer imageUrl="/images/lynk/nav-after.png" alt="Navbar Horizontal"/>
+  </Note>
+</CardGrid>
+#### Adding breadcrumbs to the activity creation process
+After receiveing feedback from users, we added breadcrumbs to the activity creation process to help users understand their current step within the activity creation step and added a back button with label to navigate back to previous steps easily.
+<CardGrid className="xl:!grid-cols-2">
+  <Note>
+    ##### **Before**
+    <ImageViewer imageUrl="/images/lynk/breadcrumbs-before.png" alt="Navbar Vertical"/>
+  </Note>
+  <Note>
+    ##### **After**
+    <ImageViewer imageUrl="/images/lynk/breadcrumbs-after.png" alt="Navbar Horizontal"/>
+  </Note>
+</CardGrid>
+#### Payment Processor Pop-Up
+<Note>
+<ImageViewer imageUrl="/images/lynk/pay-popup-after.png" alt="Payment Popup"/>
+</Note>
+#### Adding tooltip information for explaining tags
+<ImageViewer imageUrl="/images/lynk/tooltip-after.png" alt="Tag Tooltip"/>
+## 🏆 Final Prototype
+<ImageViewer imageUrl="/images/lynk/lynk-hero-showcase.png" alt="Final Prototype"/>
+<ImageViewer imageUrl="/images/lynk/final-prototype.png" alt="Final Prototype"/>
+### Final Presentation
+[View the full presentation of the project on Youtube](https://www.youtube.com/watch?v=f7tOqagJp08)
+<VideoPlayer src="https://www.youtube.com/watch?v=f7tOqagJp08" title = "Lynk Full Presentation" />
+<Note>
+<span className = "text-xs">I wasn't able to implement a slider because of an existing bug with the VidStack Videoplayer and Radix-UI, please use gestures to jump in time, double clicking with mouse or touch on the rightside on the videoplayer area jumps forward 10 seconds.</span>
 </Note>
