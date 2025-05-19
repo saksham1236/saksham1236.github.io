@@ -3,6 +3,7 @@
 import "@vidstack/react/player/styles/default/theme.css"
 
 import { useRef } from "react"
+
 import {
   isYouTubeProvider,
   type MediaProviderAdapter,
@@ -12,9 +13,7 @@ import {
 } from "@vidstack/react"
 
 import { cn } from "@/lib/utils"
-
 import VideoLayout from "./components/layouts/video-layout"
-import { on } from "events"
 
 export default function VideoPlayer({
   src,
