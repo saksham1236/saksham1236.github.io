@@ -425,7 +425,7 @@ video {
     @apply bg-sheet-primary;
   }
   .l4 {
-    @apply text-xs py-1 bg-sheet-primary !font-normal;
+    @apply text-xs py-1 bg-sheet-primary !font-light tracking-wide;
   }
 }
 table {
