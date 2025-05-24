@@ -52,7 +52,7 @@
 }
 
 .dark {
-  --background: #262626;
+  --background: #000;
   --foreground: #fafafa;
   --card: #262626;
   --card-foreground: #fafafa;
@@ -85,8 +85,8 @@
   --sidebar-border: #444444;
   --sidebar-ring: #707070;
   --tw-prose-body: var(--accent-foreground);
-  --sheet-primary: #ffffff11;
-  --hover-b: #ffffff10;
+  --sheet-primary: #ffffff15;
+  --hover-b: #ffffff15;
 }
 
 @theme inline {
@@ -140,6 +140,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    @apply subpixel-antialiased;
   }
 }
 
