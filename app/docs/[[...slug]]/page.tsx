@@ -25,8 +25,8 @@ export default async function Pages({ params }: PageProps) {
   const { frontmatter, content, tocs } = res
 
   return (
-    <div className="flex justify-between gap-14">
-      <section className="flex-[3] pt-10" >
+    <div className="flex justify-between gap-6">
+      <section className="flex-[3] pt-10 md:border-l-1 md:pl-12 xl:border-x-1 xl:p-12" >
         <PageBreadcrumb paths={slug} />
         <Typography>
           <h1 className="!mb-2 text-3xl !font-semibold">{frontmatter.title}</h1>
