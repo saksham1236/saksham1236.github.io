@@ -48,15 +48,15 @@ export default function Hero() {
   })
 
   return (
-    <div className="hero mt-6" ref={container}>
-      <h2 className="animate text-pretty max-w-320 mb-8 text-4xl/12 font-bold 2xl:text-5xl/16">
+    <div className="hero" ref={container}>
+      <h2 className="animate text-pretty max-w-320 text-xl sm:text-2xl lg:text-4xl/12 font-bold">
         I craft engaging experiences through{" "}
         <span
           className={`${styles.hoverText} ${styles.red} hover:text-white dark:hover:text-[#002a69]`}
         >
           UX Design
         </span>
-        , specializing in{" "}
+        {" "}specializing in{" "}
         <span
           className={`${styles.hoverText} ${styles.blue} hover:text-white dark:hover:text-[#002a69]`}
         >
@@ -70,9 +70,6 @@ export default function Hero() {
         </span>
         .
       </h2>
-      <h1 className="sm:text-md animate mb-4 md:text-lg">
-        Made by Froto Designs.
-      </h1>
     </div>
   )
 }

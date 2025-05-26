@@ -15,11 +15,13 @@ type CardProps = PropsWithChildren & {
   className?: string
   external?: boolean
   icon?: keyof typeof iconMap
-  variant?: "normal" | "small" | "image"
+  variant?: "normal" | "small" | "image" | "bg"
   cta?: boolean
   ctaContent?: string
   tags?: Array<string>
   imgClassName?: string
+  linkClassName?: string
+  titleHidden?: boolean
 }
 
 type CardGridProps = PropsWithChildren & {
@@ -41,6 +43,8 @@ export function Card({
   ctaContent,
   tags,
   imgClassName,
+  linkClassName,
+  titleHidden
 }: CardProps) {
   const IconComponent = icon ? iconMap[icon] : null
   const ExternalIcon = iconMap["arrowUpRight"]
@@ -100,7 +104,7 @@ export function Card({
                 : "text-lg"
           )}
         >
-          {title}
+          {!titleHidden && title}
         </div>
         <div className="tags flex flex-wrap gap-1 py-1">
           {tags &&
@@ -131,7 +135,7 @@ export function Card({
       href={href}
       target={external ? "_blank" : undefined}
       rel={external ? "noopener noreferrer" : undefined}
-      className="!no-underline"
+      className={clsx("!no-underline", linkClassName)}
     >
       {content}
     </Link>

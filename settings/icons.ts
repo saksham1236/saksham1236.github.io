@@ -1,5 +1,6 @@
 import React from "react"
 import { FaBehance } from "react-icons/fa"
+import { LuBrush } from "react-icons/lu";
 import {
   FiAlignJustify,
   FiArrowRight,
@@ -15,4 +16,5 @@ export const iconMap = {
   linkedin: FiLinkedin,
   behance: FaBehance,
   github: FiGithub,
+  brush: LuBrush,
 }

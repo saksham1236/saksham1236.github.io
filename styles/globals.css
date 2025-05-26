@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
@@ -392,7 +392,24 @@ video {
     }
   }
 }
-
+.gradient-bg {
+  background:
+    radial-gradient(at 0px 0px, #fd4a5c 0px, transparent 50%),
+    radial-gradient(
+      at 63.900862068965516% 14.458325703938801%,
+      #a099ff 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 0% 0%, #ff9739 0px, transparent 50%),
+    radial-gradient(at 100% 100%, #32fcbe 0px, transparent 50%),
+    radial-gradient(
+      at 73.27586206896551% 63.62499237060547%,
+      #a84dff 0px,
+      transparent 50%
+    ),linear-gradient(90deg,rgba(160, 153, 255, 1) 0%, rgba(168, 77, 255, 1) 23%, rgba(253, 74, 92, 1) 51%, rgba(255, 151, 57, 1) 75%, rgba(255, 214, 55, 1) 100%),
+    #cd93ff;
+    
+}
 .note-bevel {
   @apply bg-[#f8f4f4] dark:bg-[rgb(43,43,43)];
 }
@@ -400,13 +417,23 @@ video {
 .bevel {
   @apply transition-all duration-300;
   background-color: #f8f4f4;
-  box-shadow: 2px 2px 6px 3px rgba(255, 255, 255, 0.7), 5px 5px 10px 2px rgba(0, 0, 0, 0.15), -2px -2px 6px 1px rgba(0, 0, 0, 0.01), -5px -5px 5px 4px rgba(255, 255, 255, 1), -4px -4px 3px 3px rgba(255, 255, 255, 1);
+  box-shadow:
+    2px 2px 6px 3px rgba(255, 255, 255, 0.7),
+    5px 5px 10px 2px rgba(0, 0, 0, 0.15),
+    -2px -2px 6px 1px rgba(0, 0, 0, 0.01),
+    -5px -5px 5px 4px rgba(255, 255, 255, 1),
+    -4px -4px 3px 3px rgba(255, 255, 255, 1);
 }
 .dark .bevel {
   background-color: #2b2b2b;
-  box-shadow: 2px 2px 5px 2px rgb(255, 255, 255, 0.09), 5px 5px 10px 2px rgba(0, 0, 0, 0.6), -2px -2px 4px 1px rgba(0, 0, 0, 0.3), -4px -4px 5px 2px rgba(255, 255, 255, 0.1);
+  box-shadow:
+    2px 2px 5px 2px rgb(255, 255, 255, 0.09),
+    5px 5px 10px 2px rgba(0, 0, 0, 0.6),
+    -2px -2px 4px 1px rgba(0, 0, 0, 0.3),
+    -4px -4px 5px 2px rgba(255, 255, 255, 0.1);
 }
-.mobile-toc, .toc {
+.mobile-toc,
+.toc {
   h3 {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -418,7 +445,9 @@ video {
   .l2:is(:last-child) {
     @apply border-b-0;
   }
-  .l2, .l3, .l4 {
+  .l2,
+  .l3,
+  .l4 {
     font-weight: 400;
     text-decoration: none;
   }
@@ -426,7 +455,7 @@ video {
     @apply bg-sheet-primary;
   }
   .l4 {
-    @apply text-xs py-1 bg-sheet-primary !font-light tracking-wide;
+    @apply bg-sheet-primary py-1 text-xs !font-light tracking-wide;
   }
 }
 table {
@@ -435,7 +464,9 @@ table {
     min-width: 10ch;
   }
 }
-
+.fade-up {
+  visibility: hidden;
+}
 @keyframes slideDown {
   from {
     height: 0;
