@@ -11,7 +11,7 @@ export const Navigations = [
   },
   {
     title: "About Me",
-    href: "/docs/about",
+    href: "/docs/about-me",
   },
   {
     title: "Contact Me",

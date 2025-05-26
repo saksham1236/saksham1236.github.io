@@ -32,7 +32,7 @@ export default function Home() {
       <section className="flex h-auto grow flex-col items-center justify-center px-2 py-8 sm:min-h-[calc(100dvh-8em)] 2xl:h-[calc(100dvh-8em)]">
         <div className="grid grid-cols-2 md:grid-cols-6 md:grid-row-6 gap-6 w-full fade-up">
           <div className="gradient-bg flex gap-6 flex-col col-span-2 md:col-span-4 justify-between p-6 sm:px-12 sm:py-8 rounded-xl">
-            <div className="text-sm sm:text-lg fade-up"><h1>Made by Froto Designs.</h1></div>
+            <div className="text-sm sm:text-lg fade-up font-semibold"><h1>Made by Froto Designs.</h1></div>
             <Hero />
             <Link
               href={`/docs${PageRoutes[0].href}`}
