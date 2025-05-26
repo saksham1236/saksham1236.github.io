@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation"
-
 import { getDocument } from "@/lib/markdown"
 import { Settings } from "@/lib/meta"
 import { PageRoutes } from "@/lib/pageroutes"

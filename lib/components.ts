@@ -37,5 +37,5 @@ export const components = {
   Icon,
   Iframe,
   VideoPlayer,
-  GiWheat
+  GiWheat,
 }
