@@ -6,7 +6,7 @@ export const gtmconnected = false
 
 export const sitename = "Froto Designs"
 export const description =
-  "This comprehensive documentation template, crafted with Next.js and available as open-source, delivers a sleek and responsive design, tailored to meet all your project documentation requirements."
+  "Froto Designs is a portfolio website showcasing the work of Saksham Tandon, focusing on UX and web design. It features a collection of projects, design insights, and a user-friendly interface to explore creative solutions."
 export const keywords = [
   "Next.js",
   "Portfolio",
