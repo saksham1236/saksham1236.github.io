@@ -1,4 +1,3 @@
-'use client'
 import { Suspense } from "react"
 import { iconMap } from "@/settings/icons"
 import { Link } from "lib/transition"
