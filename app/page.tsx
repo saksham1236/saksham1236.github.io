@@ -1,3 +1,4 @@
+'use client'
 import { Suspense } from "react"
 import { iconMap } from "@/settings/icons"
 import { Link } from "lib/transition"
@@ -8,12 +9,13 @@ import SplineView from "@/components/ui/splineView/splineView"
 import { Card } from "@/components/markdown/card"
 import { gsap } from "gsap"
 import { useGSAP } from "@gsap/react"
+import { useRef } from "react"
 gsap.registerPlugin(useGSAP)
 
 
 const RightIcon = iconMap["arrowRight"]
 export default function Home() {
-
+  const container = useRef<HTMLDivElement>(null)
   useGSAP(() => {
     gsap.from(".fade-up", {
       delay: 0.3,
@@ -29,7 +31,7 @@ export default function Home() {
   return (
     <>
       <section className="flex h-auto grow flex-col items-center justify-center px-2 py-8 sm:min-h-[calc(100dvh-8em)] 2xl:h-[calc(100dvh-8em)]">
-        <div className="grid grid-cols-2 md:grid-cols-6 md:grid-row-6 gap-6 w-full fade-up">
+        <div className="grid grid-cols-2 md:grid-cols-6 md:grid-row-6 gap-6 w-full fade-up" ref={container}>
           <div className="gradient-bg flex gap-6 flex-col col-span-2 md:col-span-4 justify-between p-6 sm:px-12 sm:py-8 rounded-xl">
             <div className="text-sm sm:text-lg fade-up font-semibold"><h1>Made by Froto Designs.</h1></div>
             <Hero />
