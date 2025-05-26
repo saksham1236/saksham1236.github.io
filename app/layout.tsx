@@ -48,7 +48,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <Navbar />
-          <main className="h-auto px-5 sm:px-6 max-w-400 mx-auto">{children}</main>
+          <main className="h-auto px-5 sm:px-6 max-w-400 mx-auto bg-gradient-to-b from-[#f2f8ff] via-white to-[#f2f8ff] dark:bg-gradient-to-b dark:from-neutral-950 dark:via-black dark:to-neutral-950">{children}</main>
           <Footer />
         </Providers>
       </body>

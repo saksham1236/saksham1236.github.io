@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 
 export default function RightSideBar() {
   return (
-    <div className="bg-secondary flex flex-col gap-3 rounded-lg p-3 dark:bg-[#00000033]">
+    <div className="flex flex-col gap-3 rounded-lg p-3">
       <h3 className="text-sm font-semibold">Contact Me</h3>
       <div className="flex flex-col gap-2">
         <Link
