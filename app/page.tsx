@@ -2,13 +2,11 @@
 import { Suspense } from "react"
 import { iconMap } from "@/settings/icons"
 import { Link } from "lib/transition"
-
 import { PageRoutes } from "@/lib/pageroutes"
 import { buttonVariants } from "@/components/ui/button"
 import Hero from "@/components/ui/hero/hero"
 import SplineView from "@/components/ui/splineView/splineView"
 import { Card } from "@/components/markdown/card"
-import { useRef } from "react"
 import { gsap } from "gsap"
 import { useGSAP } from "@gsap/react"
 gsap.registerPlugin(useGSAP)
@@ -16,7 +14,6 @@ gsap.registerPlugin(useGSAP)
 
 const RightIcon = iconMap["arrowRight"]
 export default function Home() {
-    const container = useRef<HTMLDivElement>(null)
 
   useGSAP(() => {
     gsap.from(".fade-up", {
@@ -33,46 +30,6 @@ export default function Home() {
   return (
     <>
       <section className="flex h-auto grow flex-col items-center justify-center px-2 py-8 sm:min-h-[calc(100dvh-8em)] 2xl:h-[calc(100dvh-8em)]">
-        {/* <Hero />
-        <SplineView className="flex aspect-square max-h-full min-h-[300px] w-auto grow items-center md:aspect-[inherit] md:min-h-0 md:w-full md:shrink md:grow" />
-        <div className="flex items-center gap-5">
-          <Link
-            href={`/docs${PageRoutes[0].href}`}
-            className={buttonVariants({ className: "px-6", size: "lg" })}
-          >
-            View My Work
-            <RightIcon />
-          </Link>
-        </div>
-        <div className="float-center items-center justify-center py-8">
-          <CardGrid>
-            <Card
-              className="transition hover:!bg-purple-200 hover:transition dark:hover:!bg-slate-800"
-              subtitle="My Dev Projects"
-              title="Visit My Github"
-              description="Web Dev, Data Science, and ML projects."
-              href="https://github.com/saksham1236"
-              external={true}
-              icon="github"
-            />
-            <Card
-              className="transition gradient-bg"
-              title="View My Work"
-              href="https://github.com/saksham1236"
-              icon="brush"
-              external={true}
-            />
-            <Card
-              className="transition hover:!bg-sky-100 hover:transition dark:hover:!bg-sky-800"
-              subtitle="My Art Projects"
-              title="Visit My Behance"
-              description="UX Design, Motion Design, and Scientific Illustration."
-              href="https://www.behance.net/s9tandon"
-              external={true}
-              icon="behance"
-            />
-          </CardGrid>
-        </div> */}
         <div className="grid grid-cols-2 md:grid-cols-6 md:grid-row-6 gap-6 w-full fade-up">
           <div className="gradient-bg flex gap-6 flex-col col-span-2 md:col-span-4 justify-between p-6 sm:px-12 sm:py-8 rounded-xl">
             <div className="text-sm sm:text-lg fade-up"><h1>Made by Froto Designs.</h1></div>
