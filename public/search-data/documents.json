@@ -46,6 +46,22 @@
     }
   },
   {
+    "slug": "/recent-work/about",
+    "title": "About Me",
+    "description": "Learn more about my journey, skills, and what inspires me as a designer and developer.",
+    "content": "",
+    "_searchMeta": {
+      "cleanContent": "",
+      "headings": [],
+      "keywords": [
+        "About Me",
+        "Designer",
+        "Developer",
+        "Portfolio"
+      ]
+    }
+  },
+  {
     "slug": "/recent-work/bounce-back-coin-branding",
     "title": "Bounce Back Coin Branding",
     "description": "Bounce Back Coin lets users earn cryptocurrency through learning. I designed the logo, branding guidelines, and website.",
