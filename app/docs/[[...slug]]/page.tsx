@@ -1,4 +1,4 @@
-import { notFound, usePathname } from "next/navigation"
+import { notFound } from "next/navigation"
 import { getDocument } from "@/lib/markdown"
 import { Settings } from "@/lib/meta"
 import { PageRoutes } from "@/lib/pageroutes"
