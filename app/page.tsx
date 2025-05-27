@@ -44,7 +44,7 @@ export default function Home() {
               <RightIcon />
             </Link>
           </div>
-          <div className="border-2 border-gray-300 rounded-xl col-span-2 md:col-span-2 fade-up">
+          <div className="border-none bg-sheet-primary rounded-xl col-span-2 md:col-span-2 fade-up">
             <SplineView className="flex aspect-square max-h-full" />
           </div>
            <Card

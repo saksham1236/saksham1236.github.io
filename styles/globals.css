@@ -410,7 +410,8 @@ video {
       #a84dff 0px,
       transparent 50%
     ),linear-gradient(90deg,rgba(160, 153, 255, 1) 0%, rgba(168, 77, 255, 1) 23%, rgba(253, 74, 92, 1) 51%, rgba(255, 151, 57, 1) 75%, rgba(255, 214, 55, 1) 100%),
-    #cd93ff; 
+    #cd93ff;
+    background-blend-mode: overlay, normal, normal, normal, normal, normal, normal;
 }
 
 .gradient-bg::before {
@@ -429,6 +430,7 @@ video {
 .gradient-bg:hover::before {
   filter: hue-rotate(-30deg) brightness(1.1) contrast(1.1);
 }
+
 .note-bevel {
   @apply bg-[#f8f4f4] dark:bg-[rgb(43,43,43)];
 }
