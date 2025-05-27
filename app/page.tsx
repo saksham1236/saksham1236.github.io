@@ -61,10 +61,10 @@ export default function Home() {
             variant="bg"
             className="transition bg-[url(/images/bb-coin-branding/header.png)] bg-cover bg-center hover:!bg-sky-100 hover:transition dark:hover:!bg-sky-800"
             linkClassName="aspect-square md:aspect-auto col-span-2 md:row-span-2 fade-up"
-            title="Bounce Back Digital Branding"
+            title="Bounce Back Coin Branding"
             titleHidden = {true}
-            href="/docs/recent-work/bounce-back-digital-branding"
-            image="/images/bb-digital-branding/thumb.png"
+            href="/docs/recent-work/bounce-back-coin-branding"
+            image="/images/bb-coin-branding/header.png"
             tags = {['Web-Design', 'UX-Design', 'Branding', 'Animation']}
           />
           <Card
