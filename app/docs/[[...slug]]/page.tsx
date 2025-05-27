@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation"
+import { notFound, usePathname } from "next/navigation"
 import { getDocument } from "@/lib/markdown"
 import { Settings } from "@/lib/meta"
 import { PageRoutes } from "@/lib/pageroutes"
@@ -18,7 +18,6 @@ export default async function Pages({ params }: PageProps) {
   const { slug = [] } = await params
   const pathName = slug.join("/")
   const res = await getDocument(pathName)
-
   if (!res) notFound()
 
   const { frontmatter, content, tocs } = res
@@ -31,9 +30,11 @@ export default async function Pages({ params }: PageProps) {
           <h1 className="!mb-2 text-3xl !font-semibold">{frontmatter.title}</h1>
           <p className="-mt-4 text-sm/6">{frontmatter.description}</p>
           <Separator className="my-6" />
-          <section className = "mobile-toc xl:hidden overflow-hidden [&>*]:max-h-75 [&>*]:box-border mb-4" aria-label="Table of contents">{Settings.toc && <Toc tocs={tocs} />}</section>
+          <section className="mobile-toc xl:hidden overflow-hidden [&>*]:max-h-75 [&>*]:box-border mb-4" aria-label="Table of contents">{Settings.toc && <Toc tocs={tocs} />}</section>
           <section>{content}</section>
-          <section className="flex justify-center text-2xl font-semibold mt-12"><span className="p-6 rounded-full bg-sheet-primary">Thanks for reading! 😊</span></section>
+          <section className="flex justify-center text-2xl font-semibold mt-12"><span className="p-6 rounded-full bg-sheet-primary">Thanks for visiting! 😊</span></section>
+
+
           <Pagination pathname={pathName} />
         </Typography>
       </section>
