@@ -25,6 +25,7 @@ export default function Home() {
       duration: 0.3,
       stagger: 0.1,
     }
+    
 
     )
   })
@@ -33,7 +34,7 @@ export default function Home() {
       <section className="flex h-auto grow flex-col items-center justify-center px-2 py-8 sm:min-h-[calc(100dvh-8em)] 2xl:h-[calc(100dvh-8em)]">
         <div className="grid grid-cols-2 md:grid-cols-6 md:grid-row-6 gap-6 w-full fade-up" ref={container}>
           <div className="gradient-bg flex gap-6 flex-col col-span-2 md:col-span-4 justify-between p-6 sm:px-12 sm:py-8 rounded-xl">
-            <div className="text-sm sm:text-lg fade-up font-semibold"><h1>Made by Froto Designs.</h1></div>
+            <div className="text-sm sm:text-lg fade-up"><h1>Made by Froto Designs.</h1></div>
             <Hero />
             <Link
               href={`/docs${PageRoutes[0].href}`}
@@ -43,9 +44,19 @@ export default function Home() {
               <RightIcon />
             </Link>
           </div>
-          <div className="border-2 rounded-xl col-span-2 md:col-span-2 fade-up">
+          <div className="border-2 border-gray-300 rounded-xl col-span-2 md:col-span-2 fade-up">
             <SplineView className="flex aspect-square max-h-full" />
           </div>
+           <Card
+            variant="bg"
+            className="transition bg-[url(/images/bb-learning/thumb.png)] bg-cover bg-center hover:!bg-sky-100 hover:transition dark:hover:!bg-sky-800"
+            linkClassName="aspect-square md:aspect-auto col-span-2 md:col-span-2 md:row-span-2 fade-up"
+            title="Bounce Back Digital Branding"
+            titleHidden = {true}
+            href="/docs/recent-work/bounce-back-learning"
+            image="/images/bb-learning/thumb.png"
+            tags = {['Web-Design', 'UX-Design']}
+          />
           <Card
             variant="bg"
             className="transition bg-[url(/images/bb-coin-branding/header.png)] bg-cover bg-center hover:!bg-sky-100 hover:transition dark:hover:!bg-sky-800"
@@ -54,18 +65,10 @@ export default function Home() {
             titleHidden = {true}
             href="/docs/recent-work/bounce-back-digital-branding"
             image="/images/bb-digital-branding/thumb.png"
+            tags = {['Web-Design', 'UX-Design', 'Branding', 'Animation']}
           />
           <Card
-            variant="bg"
-            className="transition bg-[url(/images/bb-digital-branding/thumb.png)] bg-cover bg-center hover:!bg-sky-100 hover:transition dark:hover:!bg-sky-800"
-            linkClassName="aspect-square md:aspect-auto col-span-2 md:col-span-2 md:row-span-2 fade-up"
-            title="Bounce Back Digital Branding"
-            titleHidden = {true}
-            href="/docs/recent-work/bounce-back-digital-branding"
-            image="/images/bb-digital-branding/thumb.png"
-          />
-          <Card
-            className="transition bg-blue-600 hover:!bg-sky-100 hover:transition dark:hover:!bg-sky-800"
+            className="transition hover:!bg-sky-100 hover:transition dark:hover:!bg-sky-800"
             linkClassName="col-span-2 md:col-span-2 md:row-span-1 fade-up"
             subtitle="My Art Projects"
             title="Visit My Behance"

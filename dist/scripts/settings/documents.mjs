@@ -34,5 +34,8 @@ export const Documents = [
                 href: "#dev-work",
             },
         ],
-    },
+    }, {
+        title: "About Me",
+        href: "/about"
+    }
 ];

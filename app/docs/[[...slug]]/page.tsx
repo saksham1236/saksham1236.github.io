@@ -25,14 +25,15 @@ export default async function Pages({ params }: PageProps) {
 
   return (
     <div className="flex justify-between gap-6">
-      <section className="flex-[3] pt-10 md:border-l-1 md:pl-12 xl:border-x-1 xl:p-12" >
+      <section className="flex-[3] pt-10 md:border-l-1 md:pl-12 xl:border-x-1 xl:px-12" >
         <PageBreadcrumb paths={slug} />
         <Typography>
           <h1 className="!mb-2 text-3xl !font-semibold">{frontmatter.title}</h1>
-          <p className="-mt-4 text-sm">{frontmatter.description}</p>
+          <p className="-mt-4 text-sm/6">{frontmatter.description}</p>
           <Separator className="my-6" />
           <section className = "mobile-toc xl:hidden overflow-hidden [&>*]:max-h-75 [&>*]:box-border mb-4" aria-label="Table of contents">{Settings.toc && <Toc tocs={tocs} />}</section>
           <section>{content}</section>
+          <section className="flex justify-center text-2xl font-semibold mt-12"><span className="p-6 rounded-full bg-sheet-primary">Thanks for reading! 😊</span></section>
           <Pagination pathname={pathName} />
         </Typography>
       </section>

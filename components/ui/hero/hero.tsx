@@ -49,7 +49,7 @@ export default function Hero() {
 
   return (
     <div className="hero" ref={container}>
-      <h2 className="animate text-pretty max-w-320 text-xl sm:text-2xl lg:text-4xl/12 font-bold">
+      <h2 className="animate text-pretty max-w-320 text-xl sm:text-2xl md:text-3xl lg:text-4xl/12 font-bold">
         I craft engaging experiences through{" "}
         <span
           className={`${styles.hoverText} ${styles.red} hover:text-white dark:hover:text-[#002a69]`}
