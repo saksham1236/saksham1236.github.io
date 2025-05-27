@@ -10,6 +10,18 @@ export const Documents: Paths[] = [
         href: "",
         items: [
           {
+            title: "Bounce Back Learning App",
+            href: "/bounce-back-learning",
+          },
+          {
+            title: "Bounce Back Learning Branding",
+            href: "/bounce-back-learning-branding",
+          },
+          {
+            title: "Bounce Back Coin",
+            href: "/bounce-back-coin",
+          },
+          {
             title: "Bounce Back Coin Branding",
             href: "/bounce-back-coin-branding",
           },

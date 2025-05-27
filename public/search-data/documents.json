@@ -49,22 +49,6 @@
     }
   },
   {
-    "slug": "/recent-work/about",
-    "title": "About Me",
-    "description": "Learn more about my journey, skills, and what inspires me as a designer and developer.",
-    "content": "",
-    "_searchMeta": {
-      "cleanContent": "",
-      "headings": [],
-      "keywords": [
-        "About Me",
-        "Designer",
-        "Developer",
-        "Portfolio"
-      ]
-    }
-  },
-  {
     "slug": "/recent-work/bounce-back-coin-branding",
     "title": "Bounce Back Coin Branding",
     "description": "Bounce Back Coin lets users earn cryptocurrency through learning. I designed the logo, branding guidelines, and website.",
@@ -111,6 +95,23 @@
         "🔍 Research",
         "✅ Final Branding",
         "📢 Marketing Assets"
+      ]
+    }
+  },
+  {
+    "slug": "/recent-work/bounce-back-learning",
+    "title": "Bounce Back Learning",
+    "description": "Bounce Back Coin Learning platform, an LMS where users earn crypto via education, manage their crypto portfolios via a wallet dashboard, and access discussion boards/messaging.",
+    "content": "<ImageViewer imageUrl=\"/images/bb-learning/hero.png\" alt=\"Bounce Back Learning App\" />\n\n## ✨ Introduction\n\nBounce Back Coin Learning Platform was a learning management system (LMS) that aimed to combine education with cryptocurrency incentives. The platform allowed users to earn crypto by watching educational videos and completing quizzes, encouraging continued learning through direct rewards. It offered a range of content, focusing on STEM subjects such as coding, mathematics, and science, as well as language learning.\n\nThe system included course-specific discussion threads to support peer interaction and community learning. Users could also manage their earned crypto through a built-in wallet dashboard. Although the startup is now defunct, the platform represented an experimental approach to blending decentralized finance and education.\n\n## 🖌️ Mockups\n\n### Login & Sign Up\n\n<ImageViewer imageUrl=\"/images/bb-learning/Login.png\" alt=\"BB Learning Login\" />\n\n### Dashboard\n\n<ImageViewer imageUrl=\"/images/bb-learning/Home.png\" alt=\"BB Learning Login\" />\n\n### Learning Dashboard\n\n<ImageViewer imageUrl=\"/images/bb-learning/Learning%20Dashboard.png\" alt=\"BB Learning Login\" />\n\n### Course Pages\n\n<ImageViewer imageUrl=\"/images/bb-learning/Learning.png\" alt=\"BB Learning Login\" />\n\n### Exchange\n\n<ImageViewer imageUrl=\"/images/bb-learning/Exchange.png\" alt=\"BB Learning Login\" />\n\n### Wallet\n\n<ImageViewer imageUrl=\"/images/bb-learning/Wallet.png\" alt=\"BB Learning Login\" />\n\n### Messenger\n\n<ImageViewer imageUrl=\"/images/bb-learning/Messenger.png\" alt=\"BB Learning Login\" />\n",
+    "_searchMeta": {
+      "cleanContent": "imageviewer imageurl images bb-learning hero png alt bounce back learning app introduction bounce back coin learning platform was a learning management system lms that aimed to combine education with cryptocurrency incentives the platform allowed users to earn crypto by watching educational videos and completing quizzes encouraging continued learning through direct rewards it offered a range of content focusing on stem subjects such as coding mathematics and science as well as language learning the system included course-specific discussion threads to support peer interaction and community learning users could also manage their earned crypto through a built-in wallet dashboard although the startup is now defunct the platform represented an experimental approach to blending decentralized finance and education mockups login sign up imageviewer imageurl images bb-learning login png alt bb learning login dashboard imageviewer imageurl images bb-learning home png alt bb learning login learning dashboard imageviewer imageurl images bb-learning learning 20dashboard png alt bb learning login course pages imageviewer imageurl images bb-learning learning png alt bb learning login exchange imageviewer imageurl images bb-learning exchange png alt bb learning login wallet imageviewer imageurl images bb-learning wallet png alt bb learning login messenger imageviewer imageurl images bb-learning messenger png alt bb learning login",
+      "headings": [
+        "✨ Introduction",
+        "🖌️ Mockups"
+      ],
+      "keywords": [
+        "✨ Introduction",
+        "🖌️ Mockups"
       ]
     }
   },
