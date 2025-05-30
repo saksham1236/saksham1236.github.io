@@ -9,7 +9,7 @@ import Feedback from "@/components/navigation/feedback"
 import PageBreadcrumb from "@/components/navigation/pagebreadcrumb"
 import Pagination from "@/components/navigation/pagination"
 import Toc from "@/components/navigation/toc"
-
+import { Badge } from "@/components/ui/badge"
 type PageProps = {
   params: Promise<{ slug: string[] }>
 }
@@ -22,19 +22,41 @@ export default async function Pages({ params }: PageProps) {
 
   const { frontmatter, content, tocs } = res
 
+  function Labels() {
+    return (
+      <div className="inline-flex gap-2">
+        {
+          frontmatter.tags?.map((tag, index) => (
+            <Badge key={index} className={tag} size="lg">
+              {tag}
+            </Badge>
+          ))
+        }
+      </div>
+    )
+  }
+
+  function Timeline() {
+    return (
+      <div className="inline-flex flex-row justify-center items-center gap-2 mt-2">
+        {frontmatter.timeline && <span className="text-sm/6 px-3 py-1 rounded-md bg-sheet-primary w-fit">{frontmatter.timeline}</span>}
+        {frontmatter.tags && <Labels />}
+      </div>
+    )
+  }
+
   return (
     <div className="flex justify-between gap-6">
       <section className="flex-[3] pt-10 md:border-l-1 md:pl-12 xl:border-x-1 xl:px-12" >
         <PageBreadcrumb paths={slug} />
         <Typography>
           <h1 className="!mb-2 text-3xl !font-semibold">{frontmatter.title}</h1>
+          {(frontmatter.timeline || frontmatter.tags) && <Timeline />}
           <p className="-mt-4 text-sm/6">{frontmatter.description}</p>
           <Separator className="my-6" />
           <section className="mobile-toc xl:hidden overflow-hidden [&>*]:max-h-75 [&>*]:box-border mb-4" aria-label="Table of contents">{Settings.toc && <Toc tocs={tocs} />}</section>
           <section>{content}</section>
           <section className="flex justify-center text-2xl font-semibold mt-12"><span className="p-6 rounded-full bg-sheet-primary">Thanks for visiting! 😊</span></section>
-
-
           <Pagination pathname={pathName} />
         </Typography>
       </section>

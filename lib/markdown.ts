@@ -24,9 +24,11 @@ declare module "hast" {
 }
 
 type BaseMdxFrontmatter = {
+  timeline: string
   title: string
   description: string
   keywords: string
+  tags: Array<string>
 }
 
 async function parseMdx<Frontmatter>(rawMdx: string) {
