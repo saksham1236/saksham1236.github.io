@@ -24,7 +24,7 @@ export default async function Pages({ params }: PageProps) {
 
   function Labels() {
     return (
-      <div className="inline-flex gap-2">
+      <>
         {
           frontmatter.tags?.map((tag, index) => (
             <Badge key={index} className={tag} size="lg">
@@ -32,13 +32,13 @@ export default async function Pages({ params }: PageProps) {
             </Badge>
           ))
         }
-      </div>
+      </>
     )
   }
 
   function Timeline() {
     return (
-      <div className="inline-flex flex-row justify-center items-center gap-2 mt-2">
+      <div className="inline-flex flex-row flex-wrap items-center gap-2 mt-2">
         {frontmatter.timeline && <span className="text-sm/6 px-3 py-1 rounded-md bg-sheet-primary w-fit">{frontmatter.timeline}</span>}
         {frontmatter.tags && <Labels />}
       </div>
