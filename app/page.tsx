@@ -10,6 +10,7 @@ import { Card } from "@/components/markdown/card"
 import { gsap } from "gsap"
 import { useGSAP } from "@gsap/react"
 import { useRef } from "react"
+import Cursor from "@/components/cursor/cursor"
 gsap.registerPlugin(useGSAP)
 
 
@@ -44,13 +45,13 @@ export default function Home() {
               <RightIcon />
             </Link>
           </div>
-          <div className="border-none bg-sheet-primary rounded-xl col-span-2 md:col-span-2 fade-up">
+          <div className="border-none bg-sheet-primary rounded-xl col-span-2 md:col-span-2 fade-up cursor-hover">
             <SplineView className="flex aspect-square max-h-full" />
           </div>
            <Card
             variant="bg"
             className="transition bg-[url(/images/bb-learning/thumb.png)] bg-cover bg-center hover:!bg-sky-100 hover:transition dark:hover:!bg-sky-800"
-            linkClassName="aspect-square md:aspect-auto col-span-2 md:col-span-2 md:row-span-2 fade-up"
+            linkClassName="cursor-hover aspect-square md:aspect-auto col-span-2 md:col-span-2 md:row-span-2 fade-up"
             title="Bounce Back Digital Branding"
             titleHidden = {true}
             href="/docs/recent-work/bounce-back-learning"

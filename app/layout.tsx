@@ -8,6 +8,7 @@ import { Navbar } from "@/components/navigation/navbar"
 import { Providers } from "@/components/providers"
 
 import "@/styles/globals.css"
+import Cursor from "@/components/cursor/cursor"
 
 // const inter = Atkinson_Hyperlegible({
 //   variable: "--font-inter",

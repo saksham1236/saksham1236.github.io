@@ -37,10 +37,10 @@ export default function ImageViewer({
                 e.preventDefault()
               }}
             />
-            <div className="absolute bottom-4 right-4 rounded-full bg-primary/70 backdrop-blur-lg shadow-lg p-2 focus:outline-none animate-in fade-in">
+            <button className="absolute bottom-4 right-4 rounded-full bg-primary/70 backdrop-blur-lg shadow-lg p-2 focus:outline-none animate-in fade-in">
               <span className="sr-only">Open image</span>
               <FiMaximize2 className="h-6 w-6 text-primary-foreground" />
-            </div>
+            </button>
           </div>
         </DialogTrigger>
 
@@ -60,10 +60,12 @@ export default function ImageViewer({
               }}
             />
           </div>
-          <DialogClose className="absolute top-4 right-4 rounded-full bg-primary/70 backdrop-blur-lg shadow-lg p-1 cursor-pointer focus:outline-none animate-in fade-in">
-            <span className="sr-only">Close</span>
-            <FiX className="h-6 w-6 text-primary-foreground" />
-          </DialogClose>
+          <button>
+            <DialogClose className="absolute top-4 right-4 rounded-full bg-primary/70 backdrop-blur-lg shadow-lg p-1 cursor-pointer focus:outline-none animate-in fade-in">
+              <span className="sr-only">Close</span>
+              <FiX className="h-6 w-6 text-primary-foreground" />
+            </DialogClose>
+          </button>
         </DialogContent>
       </Dialog>
     </div>
