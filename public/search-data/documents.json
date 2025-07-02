@@ -115,16 +115,18 @@
     "slug": "/recent-work",
     "title": "My Work",
     "description": "A showcase of my work, including UX design projects, scientific illustrations, and development work.",
-    "content": "## Featured Work\n\n## Scientific Illustration Work\n\n## Dev Work\n",
+    "content": "## Featured Work\n\n## Design Work\n\n## Scientific Illustration Work\n\n## Dev Work\n",
     "_searchMeta": {
-      "cleanContent": "featured work scientific illustration work dev work",
+      "cleanContent": "featured work design work scientific illustration work dev work",
       "headings": [
         "Featured Work",
+        "Design Work",
         "Scientific Illustration Work",
         "Dev Work"
       ],
       "keywords": [
         "Featured Work",
+        "Design Work",
         "Scientific Illustration Work",
         "Dev Work"
       ]

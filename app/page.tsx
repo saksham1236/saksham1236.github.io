@@ -10,7 +10,6 @@ import { Card } from "@/components/markdown/card"
 import { gsap } from "gsap"
 import { useGSAP } from "@gsap/react"
 import { useRef } from "react"
-import Cursor from "@/components/cursor/cursor"
 gsap.registerPlugin(useGSAP)
 
 

@@ -2,7 +2,6 @@
 
 import { cn } from '@/lib/utils';
 import { useEffect, useState } from 'react';
-import styles from "./cursor.module.css";
 
 export default function Cursor() {
     function useMouseAndHover() {
