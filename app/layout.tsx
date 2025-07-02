@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-// import {Atkinson_Hyperlegible} from "next/font/google"
 import { GoogleTagManager } from "@next/third-parties/google"
 
 import { Settings } from "@/lib/meta"
@@ -8,12 +7,6 @@ import { Navbar } from "@/components/navigation/navbar"
 import { Providers } from "@/components/providers"
 
 import "@/styles/globals.css"
-import Cursor from "@/components/cursor/cursor"
-
-// const inter = Atkinson_Hyperlegible({
-//   variable: "--font-inter",
-//   subsets: ["latin"],
-// })
 
 const baseUrl = Settings.metadataBase
 
