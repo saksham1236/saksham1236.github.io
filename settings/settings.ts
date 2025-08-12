@@ -4,7 +4,7 @@ export const siteicon = "/icon.png"
 export const gtm = "GTM-XXXXXXX"
 export const gtmconnected = false
 
-export const sitename = "Froto Designs"
+export const sitename = "Saksham Tandon"
 export const description =
   "Froto Designs is a portfolio website showcasing the work of Saksham Tandon, focusing on UX and web design. It features a collection of projects, design insights, and a user-friendly interface to explore creative solutions."
 export const keywords = [

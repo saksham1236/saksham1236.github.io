@@ -6,28 +6,20 @@ import { buttonVariants } from "@/components/ui/button"
 import { SheetClose } from "@/components/ui/sheet"
 import Anchor from "@/components/navigation/anchor"
 import { Logo } from "@/components/navigation/logo"
-import Search from "@/components/navigation/search"
 import { SheetLeft } from "@/components/navigation/sidebar"
 import { ModeToggle } from "@/components/navigation/theme-toggle"
-
 export function Navbar() {
   return (
-    <nav className="bg-opacity-5 sticky top-0 z-50 h-16 w-full border-b px-2 backdrop-blur-xl backdrop-filter md:px-4">
-      <div className="mx-auto flex max-w-392 h-full items-center justify-between p-1 sm:p-3 md:gap-2">
-        <div className="flex items-center gap-5">
-          <SheetLeft />
-          <div className="flex items-center gap-6">
-            <div className="hidden md:flex">
-              <Logo />
-            </div>
-            <div className="text-muted-foreground hidden items-center gap-2 text-sm font-medium md:flex">
-              <NavMenu />
-            </div>
-          </div>
+    <nav className="sticky top-0 z-50 h-24 w-full px-2 md:px-4">
+      <div className="mx-auto flex max-w-392 h-full items-center justify-between p-1 sm:p-3 md:gap-2 [&>*]:shadow-xl [&>*]:bg-primary-foreground/65 [&:*]:rounded-full">
+        <SheetLeft />
+        <div className="hidden rounded-full md:flex p-2 pr-4 bg-nav-noise">
+          <Logo />
         </div>
-
-        <div className="flex items-center gap-2">
-          <Search />
+        <div className="rounded-full p-2 text-muted-foreground hidden items-center gap-2 md:flex bg-nav-noise">
+          <NavMenu />
+        </div>
+        <div className="flex items-center gap-2 rounded-full p-2 bg-nav-noise">
           <div className="flex gap-2 sm:ml-0">
             {GitHubLink.href && (
               <Link
@@ -37,7 +29,7 @@ export function Navbar() {
                 rel="noopener noreferrer"
                 aria-label="View the repository on GitHub"
               >
-                <FiGithub className="h-[1.1rem] w-[1.1rem]" />
+                <FiGithub className="h-12 w-12" />
               </Link>
             )}
             <Link
@@ -64,9 +56,9 @@ export function NavMenu({ isSheet = false }) {
         const Comp = (
           <Anchor
             key={item.title + item.href}
-            activeClassName="font-bold text-primary"
+            activeClassName="font-bold text-white bg-nav-active"
             absolute
-            className="hover:bg-hover-b flex items-center gap-1 rounded-full py-2 px-4 text-sm transition-all"
+            className="hover:bg-hover-b flex items-center gap-1 rounded-full py-3 px-4 text-md transition-all"
             href={item.href}
             target={item.external ? "_blank" : undefined}
             rel={item.external ? "noopener noreferrer" : undefined}

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
@@ -7,12 +7,12 @@
 @custom-variant hover (&:hover);
 
 @theme {
-  --font-body: "Atkinson Hyperlegible Next", sans-serif;
+  --font-body: "Host Grotesk", sans-serif;
   --font-mono: "Atkinson Hyperlegible Mono", monospace;
 }
 
 :root {
-  --background: #ffffff;
+  --background: #f6f3ee;
   --foreground: #002a69;
   --card: #ffffff;
   --card-foreground: #262626;
@@ -49,17 +49,20 @@
   --hover-b: #0059ff10;
   --media-brand: 245 245 245;
   --media-focus: 78 156 246;
+  --nav-bar: #404040;
+  --nav-active: #0095e2;
+  --nav-background: url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='1' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='0.4'/></svg>"), rgba(255, 255, 255, 0.35);
 }
 
 .dark {
-  --background: #000;
+  --background: #262626;
   --foreground: #fafafa;
   --card: #262626;
   --card-foreground: #fafafa;
   --popover: #262626;
   --popover-foreground: #fafafa;
   --primary: #fafafa;
-  --primary-foreground: #343434;
+  --primary-foreground: #404040;
   --secondary: #444444;
   --secondary-foreground: #fafafa;
   --muted: #444444;
@@ -87,6 +90,7 @@
   --tw-prose-body: var(--accent-foreground);
   --sheet-primary: #ffffff15;
   --hover-b: #ffffff15;
+  --nav-background: url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='1' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='0.35'/></svg>"), rgba(0, 0, 0, 0.50);
 }
 
 @theme inline {
@@ -128,6 +132,7 @@
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sheet-primary: var(--sheet-primary);
   --color-hover-b: var(--hover-b);
+  --color-nav-active: var(--nav-active);
 }
 
 @layer base {
@@ -409,7 +414,15 @@ video {
       at 73.27586206896551% 63.62499237060547%,
       #a84dff 0px,
       transparent 50%
-    ),linear-gradient(90deg,rgba(160, 153, 255, 1) 0%, rgba(168, 77, 255, 1) 23%, rgba(253, 74, 92, 1) 51%, rgba(255, 151, 57, 1) 75%, rgba(255, 214, 55, 1) 100%),
+    ),
+    linear-gradient(
+      90deg,
+      rgba(160, 153, 255, 1) 0%,
+      rgba(168, 77, 255, 1) 23%,
+      rgba(253, 74, 92, 1) 51%,
+      rgba(255, 151, 57, 1) 75%,
+      rgba(255, 214, 55, 1) 100%
+    ),
     #cd93ff;
 }
 
@@ -418,8 +431,7 @@ video {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background:
-    inherit;
+  background: inherit;
   transition: filter 0.5s ease-in-out;
   pointer-events: none;
   content: paint;
@@ -503,4 +515,10 @@ table {
   to {
     height: 0;
   }
+}
+
+.bg-nav-noise {
+  backdrop-filter: blur(16px);
+  background: var(--nav-background);
+  background-blend-mode: plus-lighter;
 }

@@ -34,7 +34,7 @@ export function SheetLeft() {
         <Button
           variant="ghost"
           size="icon"
-          className="flex cursor-pointer md:hidden"
+          className="flex cursor-pointer md:hidden bg-primary-foreground"
         >
           <LuAlignLeft className="!size-6" />
         </Button>

@@ -1,75 +1,45 @@
-"use client"
-
-import React, { useRef } from "react"
-import { useGSAP } from "@gsap/react"
-import gsap from "gsap"
-import SplitType from "split-type"
-
-import styles from "./hero.module.css"
-
-gsap.registerPlugin(useGSAP)
-
+import { Icon } from "@iconify/react";
+import { MaterialSymbolsArrowUpwardRounded } from "../icons/icons";
 export default function Hero() {
-  const container = useRef<HTMLDivElement>(null)
-
-  useGSAP(() => {
-    const text = new SplitType(".animate", { types: "lines" })
-    // Create a timeline for span animations
-    const tl = gsap.timeline({})
-
-    tl.to(`.hero`, {
-      opacity: 1,
-      duration: 0.4,
-      ease: "sine",
-    })
-      .from(text.lines, {
-        y: "100%",
-        opacity: 0,
-        duration: 0.4,
-        ease: "sine",
-        stagger: 0.1,
-        delay: 1,
-      })
-      .to(`.${styles.red}`, {
-        backgroundPosition: "0 0",
-        duration: 0.4,
-        ease: "sine.inOut",
-      })
-      .to(`.${styles.blue}`, {
-        backgroundPosition: "0 0",
-        duration: 0.4,
-        ease: "sine.inOut",
-      })
-      .to(`.${styles.yellow}`, {
-        backgroundPosition: "0 0",
-        duration: 0.4,
-        ease: "sine.inOut",
-      })
-  })
-
   return (
-    <div className="hero" ref={container}>
-      <h2 className="animate text-pretty max-w-320 text-xl sm:text-2xl md:text-3xl lg:text-4xl/12 font-bold">
-        I craft engaging experiences through{" "}
-        <span
-          className={`${styles.hoverText} ${styles.red} hover:text-white dark:hover:text-[#002a69]`}
-        >
-          UX Design
-        </span>
-        {" "}specializing in{" "}
-        <span
-          className={`${styles.hoverText} ${styles.blue} hover:text-white dark:hover:text-[#002a69]`}
-        >
-          Web Development
-        </span>{" "}
-        to bring ideas to life, and drive results with a passion for{" "}
-        <span
-          className={`${styles.hoverText} ${styles.yellow} hover:text-white dark:hover:text-[#002a69]`}
-        >
-          Data Science
-        </span>
-        .
-      </h2>
+    <div className="flex">
+      <div className="text-6xl font-extrabold flex flex-col gap-6 text-white [&>*]:h-36 [&>*]:justify-center [&>*]:items-center">
+        <div className="flex gap-6">
+          <div className="flex bg-[#00C7A3] px-12 py-10.5 grow rounded-full items-center justify-center">
+            Doodle visions
+          </div>
+          <div className="flex bg-[#0095E2] px-12 py-10.5 grow rounded-full items-center justify-center">
+          Design with Passion
+          </div>
+          <MaterialSymbolsArrowUpwardRounded className="flex items-center justify-center rounded-full bg-[#0095E2] p-3 size-36 rotate-225" />
+        </div>
+        <div className="flex gap-6 grow">
+          <div className="flex border-10 border-[#F19A26] text-[#F19A26] h-36 px-12 py-8.5 rounded-full items-center justify-center grow">
+            Develop with precision
+          </div>
+          <div className="flex bg-[#ED602E] px-12 py-10.5 rounded-full items-center justify-center grow">
+            Deliver impact
+          </div>
+        </div>
+        <div className="flex flex-row items-center justify-center gap-6">
+          <div className="flex grow flex-row-reverse relative [&:*]:h-36 [&:>*]:rounded-full flex-2/5">
+            <span className="w-full rounded-full bg-[#1C51DD] h-36" />
+            <span className="w-[88.5%] rounded-full bg-[#F3A3AC] absolute right-0 h-36" />
+            <span className="w-[75%] rounded-full bg-[#ED602E] absolute right-0 h-36" />
+            <span className="w-[62.5%] rounded-full bg-[#F19A26] absolute right-0 h-36" />
+            <span className="w-[50%] rounded-full bg-[#00C7A3] absolute right-0 h-36" />
+            <span className="w-[37.5%] rounded-full bg-[#0095E2] absolute right-0 h-36" />
+            <MaterialSymbolsArrowUpwardRounded className="flex items-center justify-center rounded-full bg-[#262626] dark:bg-[#F6F3EE] p-3 size-36 rotate-90 dark:text-primary-foreground z-10 absolute right-0" />
+          </div>
+          <div className="flex grow">
+            <div className="flex grow bg-[#262626] dark:bg-[#F6F3EE] dark:text-[#262626] px-12 py-10.5 rounded-full items-center justify-center hover:bg-[#1C51DD] dark:hover:bg-[#1C51DD] transition-colors duration-300">
+              View My Work
+            </div>
+            <span className="h-36 w-20 rounded-l-full bg-[#00C7A3]" />
+            <span className="h-36 w-20 rounded-l-full bg-[#C267FE]" />
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

@@ -9,10 +9,11 @@ export function Logo() {
       <Image
         src={Settings.siteicon}
         alt={`${Settings.title} main logo`}
-        width={34}
-        height={34}
+        width={48}
+        height={48}
         loading="lazy"
         decoding="async"
+        className="rounded-full h-12 w-12 object-cover"
       />
       <span className="text-md font-semibold">{Settings.title}</span>
     </Link>
