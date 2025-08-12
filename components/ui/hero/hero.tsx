@@ -1,11 +1,11 @@
-import { Icon } from "@iconify/react";
 import { MaterialSymbolsArrowUpwardRounded } from "../icons/icons";
+import styles from "./hero.module.css";
 export default function Hero() {
   return (
     <div className="flex">
       <div className="text-6xl font-extrabold flex flex-col gap-6 text-white [&>*]:h-36 [&>*]:justify-center [&>*]:items-center">
         <div className="flex gap-6">
-          <div className="flex bg-[#00C7A3] px-12 py-10.5 grow rounded-full items-center justify-center">
+          <div className={`${styles.green} flex bg-[#00C7A3] px-12 py-10.5 grow rounded-full items-center justify-center`}>
             Doodle visions
           </div>
           <div className="flex bg-[#0095E2] px-12 py-10.5 grow rounded-full items-center justify-center">
