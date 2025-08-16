@@ -27,4 +27,5 @@ function customVariants({ addVariant, matchVariant }) {
   addVariant("hocus", ["&:hover", "&:focus-visible"])
   addVariant("group-hocus", [".group:hover &", ".group:focus-visible &"])
   addVariant("children", "&>*")
+  addVariant("children-secondary", "& > .secondary")
 }

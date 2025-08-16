@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { GitHubLink, LinkedinLink, Navigations } from "@/settings/navigation"
-import { FiArrowUpRight, FiGithub, FiLinkedin } from "react-icons/fi"
-
+import { FiGithub, FiLinkedin } from "react-icons/fi"
+import { MaterialSymbolsArrowOutwardRounded } from "../ui/icons/icons"
 import { buttonVariants } from "@/components/ui/button"
 import { SheetClose } from "@/components/ui/sheet"
 import Anchor from "@/components/navigation/anchor"
@@ -10,9 +10,8 @@ import { SheetLeft } from "@/components/navigation/sidebar"
 import { ModeToggle } from "@/components/navigation/theme-toggle"
 export function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 h-24 w-full px-2 md:px-4">
+    <nav className="sticky top-0 z-50 h-20 md:h-24 w-full px-2 md:px-4">
       <div className="mx-auto flex max-w-392 h-full items-center justify-between p-1 sm:p-3 md:gap-2 [&>*]:shadow-xl [&>*]:bg-primary-foreground/65 [&:*]:rounded-full">
-        <SheetLeft />
         <div className="hidden rounded-full md:flex p-2 pr-4 bg-nav-noise">
           <Logo />
         </div>
@@ -44,6 +43,7 @@ export function Navbar() {
             <ModeToggle />
           </div>
         </div>
+        <SheetLeft />
       </div>
     </nav>
   )
@@ -65,7 +65,7 @@ export function NavMenu({ isSheet = false }) {
           >
             {item.title}{" "}
             {item.external && (
-              <FiArrowUpRight className="h-3 w-3 align-super" strokeWidth={3} />
+              <MaterialSymbolsArrowOutwardRounded className="h-4 w-4"/>
             )}
           </Anchor>
         )

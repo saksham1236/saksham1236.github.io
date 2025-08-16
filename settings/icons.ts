@@ -1,8 +1,5 @@
-import React from "react"
 import { FaBehance } from "react-icons/fa"
 import { LuBrush } from "react-icons/lu";
-import type { SVGProps } from 'react';
-import Icon from "@iconify-icon/react";
 import {
   FiAlignJustify,
   FiArrowRight,
@@ -19,5 +16,4 @@ export const iconMap = {
   behance: FaBehance,
   github: FiGithub,
   brush: LuBrush,
-  iconifyIcon: Icon,
 }
