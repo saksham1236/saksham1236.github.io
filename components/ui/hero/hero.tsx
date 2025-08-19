@@ -3,7 +3,7 @@ import styles from "./hero.module.css";
 export default function Hero() {
   return (
     <div className="flex">
-      <div className={`text-2xl lg:text-6xl font-extrabold flex flex-col gap-4 lg:gap-6 text-white [&>*]:justify-center [&>*]:items-center [&>*]:flex-wrap`}>
+      <div className={`text-2xl lg:text-5xl font-extrabold flex flex-col gap-4 lg:gap-6 text-white [&>*]:justify-center [&>*]:items-center [&>*]:flex-wrap`}>
         <div className="flex gap-4 lg:gap-6">
           <h2 className={`h-text flex bg-[#00C7A3] px-3 py-4 lg:px-12 lg:py-10.5 grow rounded-full items-center justify-center order-1`}>
             Doodle visions
@@ -14,7 +14,7 @@ export default function Hero() {
           <MaterialSymbolsArrowUpwardRounded className={`flex items-center justify-center rounded-full bg-[#0095E2] p-3 size-16 lg:size-36 rotate-225 order-2 xl:order-3`} />
         </div>
         <div className="flex gap-4 lg:gap-6 grow">
-          <h2 className="h-text flex border-6 lg:border-10 border-[#F19A26] text-[#F19A26] px-3 py-3 lg:px-12 lg:py-8.5 rounded-full items-center justify-center grow">
+          <h2 className="h-text whitespace-pre-wrap flex border-6 lg:border-10 border-[#F19A26] text-[#F19A26] px-3 py-3 lg:px-12 lg:py-8.5 rounded-full items-center justify-center grow">
             Develop with precision
           </h2>
           <h2 className={`h-text flex bg-[#ED602E] px-3 py-4 lg:px-12 lg:py-10.5 rounded-full items-center justify-center grow`}>
@@ -28,7 +28,7 @@ export default function Hero() {
             <span className="w-[75%] rounded-full bg-[#ED602E] absolute right-0 h-16 lg:h-36" />
             <span className="w-[62.5%] rounded-full bg-[#F19A26] absolute right-0 h-16 lg:h-36" />
             <span className="w-[50%] rounded-full bg-[#00C7A3] absolute right-0 h-16 lg:h-36" />
-            <span className="w-[37.5%] rounded-full bg-[#0095E2] absolute right-0 h-16 lg:h-36" />
+            <span className="w-[35%] sm:w-[40%] rounded-full bg-[#0095E2] absolute right-0 h-16 lg:h-36" />
             <MaterialSymbolsArrowUpwardRounded className="flex items-center justify-center rounded-full bg-[#262626] dark:bg-[#F6F3EE] p-3 size-16 lg:size-36 rotate-90 dark:text-primary-foreground z-10 absolute right-0" />
           </div>
           <div className="flex grow">

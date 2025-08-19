@@ -1,7 +1,7 @@
 import { LuAlignLeft } from "react-icons/lu"
 
 import { Button } from "@/components/ui/button"
-import { DialogTitle } from "@/components/ui/dialog"
+import { DialogClose, DialogTitle } from "@/components/ui/dialog"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import {
   Sheet,
@@ -10,10 +10,9 @@ import {
   SheetHeader,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { Logo } from "@/components/navigation/logo"
 import { NavMenu } from "@/components/navigation/navbar"
 import PageMenu from "@/components/navigation/pagemenu"
-
+import { SocialLinks } from "@/components/navigation/navbar"
 export function Sidebar() {
   return (
     <aside
@@ -38,21 +37,19 @@ export function SheetLeft() {
           <LuAlignLeft className="!size-6" />
         </Button>
       </SheetTrigger>
-      <SheetContent className="flex flex-col gap-0 px-0 bg-nav-noise" side="right">
+      <SheetContent className="flex flex-col gap-0 px-0 bg-nav-noise pt-3 justify-between" side="right">
         <DialogTitle className="sr-only">Menu</DialogTitle>
-        <SheetHeader>
-          <SheetClose asChild>
-            <Logo />
-          </SheetClose>
-        </SheetHeader>
         <ScrollArea className="flex flex-col gap-4">
-          <div className="mx-0 mt-3 flex flex-col gap-2.5 px-5">
+          <div className="mx-4 rounded-4xl flex flex-col gap-2.5 p-4 mt-12 bg-accent-foreground/20">
             <NavMenu isSheet />
           </div>
           <div className="mx-0 px-5">
             <PageMenu isSheet />
           </div>
         </ScrollArea>
+        <div className="ml-auto mr-4 rounded-full flex flex-col items-end mb-4 p-4 bg-accent-foreground/20 w-fit">
+          <SocialLinks isSheet />
+        </div>
       </SheetContent>
     </Sheet>
   )
