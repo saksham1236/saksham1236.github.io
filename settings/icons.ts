@@ -1,5 +1,4 @@
 import { FaBehance } from "react-icons/fa"
-import { LuBrush } from "react-icons/lu";
 import {
   FiAlignJustify,
   FiArrowRight,
@@ -7,6 +6,7 @@ import {
   FiGithub,
   FiLinkedin,
 } from "react-icons/fi"
+import { LuBrush } from "react-icons/lu"
 
 export const iconMap = {
   alignJustify: FiAlignJustify,

@@ -1,24 +1,28 @@
 "use client"
 
-import Hero from "@/components/ui/hero/hero";
-import { MaterialSymbolsArrowDownwardAltRounded } from "@/components/ui/icons/icons";
-import MyWork from "@/components/ui/my-work/myWork";
-import { MeteoconsStarFill } from "@/components/ui/icons/icons";
-import UnicornView from "@/components/ui/unicornViewer";
+import Hero from "@/components/ui/hero/hero"
+import {
+  MaterialSymbolsArrowDownwardAltRounded,
+  MeteoconsStarFill,
+} from "@/components/ui/icons/icons"
+import MyWork from "@/components/ui/my-work/myWork"
+import UnicornView from "@/components/ui/unicornViewer"
+
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col items-center justify-between p-3 lg:py-16 gap-4 sm:gap-8 min-h-[calc(100svh-80px)] sm:h-[calc(100svh-96px)] sm:min-w-swh">
-        <div className="absolute top-0 left-0 w-full h-full z-[-1] opacity-40 dark:mix-blend-plus-darker">
+      <div className="sm:min-w-swh flex min-h-[calc(100svh-80px)] flex-col items-center justify-between gap-4 p-3 sm:min-h-[calc(100svh-96px)] sm:gap-8 lg:py-16">
+        <div className="absolute top-0 left-0 z-[-1] h-full w-full opacity-50">
           <UnicornView />
         </div>
-        <div className="text-2xl md:text-4xl font-extrabold flex flex-row items-center">
-          <MeteoconsStarFill className="size-16 md:size-24" /><h1>Hi I am Saksham.</h1>
+        <div className="flex flex-row items-center text-2xl font-extrabold md:text-4xl">
+          <MeteoconsStarFill className="size-16 md:size-24" />
+          <h1>Hi I am Saksham.</h1>
         </div>
         <Hero />
-        <div className="flex flex-col items-center justify-center text-lg text-muted-foreground">
+        <div className="text-muted-foreground flex flex-col items-center justify-center text-lg">
           Scroll Down
-          <MaterialSymbolsArrowDownwardAltRounded className="size-8 animate-out" />
+          <MaterialSymbolsArrowDownwardAltRounded className="animate-out size-8" />
         </div>
       </div>
       <div>

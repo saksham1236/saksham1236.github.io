@@ -1,6 +1,7 @@
-.green, .blue, .orange {
-   --noise: url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='1'/></svg>");
-
+.green,
+.blue,
+.orange {
+  --noise: url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='1'/></svg>");
 }
 .hoverText {
   text-decoration: underline 0.1em;
@@ -27,20 +28,55 @@
   transition: all 0.2s ease-in-out;
 }
 .green {
+  background: var(--noise), linear-gradient(to right, #00c7a3 0%, #00a184 100%);
+  background-blend-mode: overlay;
+}
+
+:global(.dark) .green {
   background: var(--noise), linear-gradient(to right, #00c7a3 0%, #005750 100%);
   background-blend-mode: overlay;
 }
 
 .blue {
-  background: var(--noise), linear-gradient(to right, #0095E2 0%, #025782 100%);
+  background: var(--noise), linear-gradient(to right, #0095e2 0%, #0077b2 100%);
+  background-blend-mode: overlay;
+}
+:global(.dark) .blue {
+  background: var(--noise), linear-gradient(to right, #0095e2 0%, #025782 100%);
   background-blend-mode: overlay;
 }
 
 .orange {
-  background: var(--noise), linear-gradient(to right, #ED602E 0%, #af3e15 100%);
+  background: var(--noise), linear-gradient(to right, #ed602e 0%, #c63500 100%);
   background-blend-mode: overlay;
 }
+:global(.dark) .orange {
+  background: var(--noise), linear-gradient(to right, #ed602e 0%, #9a2900 100%);
+  background-blend-mode: overlay;
+}
+.white {
+  background: var(--noise), black;
+  background-blend-mode: multiply;
+}
+
+:global(.dark) .white {
+  background: var(--noise), white;
+  background-blend-mode: multiply;
+}
+
 .noise {
   background: var(--noise);
   background-blend-mode: overlay;
+}
+
+:global(.dark) .hero {
+  & :is(h2, shadow-bg) {
+    box-shadow: 4px 4px 64px rgba(0, 0, 0, 0.5);
+  }
+}
+
+:global(.light) .hero {
+  & :is(h2, shadow-bg) {
+    box-shadow: 4px 4px 64px rgba(255, 255, 255, 0.5);
+  }
 }

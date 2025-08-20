@@ -1,9 +1,9 @@
-import { Title } from '@vidstack/react'
+import { Title } from "@vidstack/react"
 
 export function VideoTitle() {
-    return (
-        <div className="flex items-center justify-center font-body font-semibold">
-            <Title />
-        </div>
-    )
+  return (
+    <div className="font-body flex items-center justify-center font-semibold">
+      <Title />
+    </div>
+  )
 }

@@ -10,9 +10,9 @@ import {
   SheetHeader,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { NavMenu } from "@/components/navigation/navbar"
+import { NavMenu, SocialLinks } from "@/components/navigation/navbar"
 import PageMenu from "@/components/navigation/pagemenu"
-import { SocialLinks } from "@/components/navigation/navbar"
+
 export function Sidebar() {
   return (
     <aside
@@ -32,23 +32,26 @@ export function SheetLeft() {
       <SheetTrigger asChild>
         <Button
           variant="outline"
-          className="flex cursor-pointer md:hidden bg-primary-foreground size-14 bg-nav-noise"
+          className="bg-primary-foreground bg-nav-noise flex size-14 cursor-pointer md:hidden"
         >
           <LuAlignLeft className="!size-6" />
         </Button>
       </SheetTrigger>
-      <SheetContent className="flex flex-col gap-0 px-0 bg-nav-noise pt-3 justify-between" side="right">
+      <SheetContent
+        className="bg-nav-noise flex flex-col justify-between gap-0 px-0 pt-3"
+        side="right"
+      >
         <DialogTitle className="sr-only">Menu</DialogTitle>
         <ScrollArea className="flex flex-col gap-4">
-          <div className="mx-4 rounded-4xl flex flex-col gap-2.5 p-4 mt-12 bg-accent-foreground/20">
+          <div className="bg-accent-foreground/20 mx-4 mt-12 flex flex-col gap-2.5 rounded-4xl p-4">
             <NavMenu isSheet />
           </div>
           <div className="mx-0 px-5">
             <PageMenu isSheet />
           </div>
         </ScrollArea>
-        <div className="ml-auto mr-4 rounded-full flex flex-col items-end mb-4 p-4 bg-accent-foreground/20 w-fit">
-          <SocialLinks isSheet />
+        <div className="bg-accent-foreground/20 mr-4 mb-4 ml-auto flex w-fit flex-col items-end rounded-full p-4">
+          <SocialLinks />
         </div>
       </SheetContent>
     </Sheet>

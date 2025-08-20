@@ -2,14 +2,14 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { FiX } from "react-icons/fi";
-import { FiMaximize2 } from "react-icons/fi";
+import { FiMaximize2, FiX } from "react-icons/fi"
+
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogTitle,
   DialogTrigger,
-  DialogClose,
 } from "@/components/ui/dialog"
 
 export default function ImageViewer({
@@ -26,7 +26,7 @@ export default function ImageViewer({
       {/* Trigger to open the dialog */}
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger asChild>
-          <div className="group relative hover:opacity-80 cursor-pointer transition-opacity duration-200">
+          <div className="group relative cursor-pointer transition-opacity duration-200 hover:opacity-80">
             <Image
               src={imageUrl}
               alt={altText}
@@ -37,9 +37,9 @@ export default function ImageViewer({
                 e.preventDefault()
               }}
             />
-            <button className="absolute bottom-4 right-4 rounded-full bg-primary/70 backdrop-blur-lg shadow-lg p-2 focus:outline-none animate-in fade-in">
+            <button className="bg-primary/70 animate-in fade-in absolute right-4 bottom-4 rounded-full p-2 shadow-lg backdrop-blur-lg focus:outline-none">
               <span className="sr-only">Open image</span>
-              <FiMaximize2 className="h-6 w-6 text-primary-foreground" />
+              <FiMaximize2 className="text-primary-foreground h-6 w-6" />
             </button>
           </div>
         </DialogTrigger>
@@ -61,9 +61,9 @@ export default function ImageViewer({
             />
           </div>
           <button>
-            <DialogClose className="absolute top-4 right-4 rounded-full bg-primary/70 backdrop-blur-lg shadow-lg p-1 cursor-pointer focus:outline-none animate-in fade-in">
+            <DialogClose className="bg-primary/70 animate-in fade-in absolute top-4 right-4 cursor-pointer rounded-full p-1 shadow-lg backdrop-blur-lg focus:outline-none">
               <span className="sr-only">Close</span>
-              <FiX className="h-6 w-6 text-primary-foreground" />
+              <FiX className="text-primary-foreground h-6 w-6" />
             </DialogClose>
           </button>
         </DialogContent>

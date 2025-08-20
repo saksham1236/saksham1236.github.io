@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Icon } from "@iconify-icon/react"
-import { GiWheat } from "react-icons/gi";
+import { GiWheat } from "react-icons/gi"
+
 import Pre from "@/components/ui/pre"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardGrid } from "@/components/markdown/card"

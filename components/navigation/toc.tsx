@@ -26,9 +26,9 @@ export default function Toc({ tocs }: TocProps) {
   }
 
   return (
-    <div className="flex w-full overflow-y-hidden flex-col gap-3 rounded-lg dark:bg-[#00000033]">
+    <div className="flex w-full flex-col gap-3 overflow-y-hidden rounded-lg dark:bg-[#00000033]">
       <h3 className="text-sm font-semibold">On this page</h3>
-      <div className="link-map overflow-y-auto bg-sheet-primary flex flex-col rounded-sm text-sm text-neutral-800 dark:text-neutral-300/85">
+      <div className="link-map bg-sheet-primary flex flex-col overflow-y-auto rounded-sm text-sm text-neutral-800 dark:text-neutral-300/85">
         {tocs.map(({ href, level, text }) => (
           <Link
             key={href}
@@ -36,9 +36,9 @@ export default function Toc({ tocs }: TocProps) {
             scroll={false}
             onClick={(e) => handleSmoothScroll(e, href)}
             className={clsx({
-              "pl-0 pb-1 l2": level == 2,
-              "text-sm pl-2 py-1.5 l3": level == 3,
-              "pl-4 l4 opacity-80": level == 4,
+              "l2 pb-1 pl-0": level == 2,
+              "l3 py-1.5 pl-2 text-sm": level == 3,
+              "l4 pl-4 opacity-80": level == 4,
             })}
           >
             {text}

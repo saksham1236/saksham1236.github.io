@@ -44,7 +44,7 @@ export function Card({
   tags,
   imgClassName,
   linkClassName,
-  titleHidden
+  titleHidden,
 }: CardProps) {
   const IconComponent = icon ? iconMap[icon] : null
   const ExternalIcon = iconMap["arrowUpRight"]
@@ -122,7 +122,7 @@ export function Card({
       </div>
       {children}
       {cta && (
-        <span className="flex mt-auto flex-row items-center gap-1 text-base">
+        <span className="mt-auto flex flex-row items-center gap-1 text-base">
           {ctaContent ? ctaContent : "View More"}
           {external ? <ExternalIcon /> : <IconRight />}
         </span>

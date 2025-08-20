@@ -3,16 +3,16 @@
 import "@vidstack/react/player/styles/default/theme.css"
 
 import { useRef } from "react"
-
 import {
   isYouTubeProvider,
-  type MediaProviderAdapter,
   MediaPlayer,
   MediaProvider,
   type MediaPlayerInstance,
+  type MediaProviderAdapter,
 } from "@vidstack/react"
 
 import { cn } from "@/lib/utils"
+
 import VideoLayout from "./components/layouts/video-layout"
 
 export default function VideoPlayer({
@@ -33,8 +33,8 @@ export default function VideoPlayer({
 }) {
   const player = useRef<MediaPlayerInstance>(null)
   function onProviderChange(provider: MediaProviderAdapter | null) {
-    if(isYouTubeProvider(provider)){
-      provider.cookies = true;
+    if (isYouTubeProvider(provider)) {
+      provider.cookies = true
     }
   }
   return (
