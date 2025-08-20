@@ -3,7 +3,7 @@ import styles from "./hero.module.css";
 export default function Hero() {
   return (
     <div className="flex">
-      <div className={`text-2xl lg:text-5xl font-extrabold flex flex-col gap-4 lg:gap-6 text-white [&>*]:justify-center [&>*]:items-center [&>*]:flex-wrap`}>
+      <div className={`text-2xl lg:text-5xl font-extrabold flex flex-col gap-4 lg:gap-6 text-white [&>*]:justify-center [&>*]:items-center [&>*]:flex-wrap sm:dark:[&>*]:mix-blend-screen`}>
         <div className="flex gap-4 lg:gap-6">
           <h2 className={`h-text flex bg-[#00C7A3] px-3 py-4 lg:px-12 lg:py-10.5 grow rounded-full items-center justify-center order-1`}>
             Doodle visions
@@ -17,7 +17,7 @@ export default function Hero() {
           <h2 className="h-text whitespace-pre-wrap flex border-6 lg:border-10 border-[#F19A26] text-[#F19A26] px-3 py-3 lg:px-12 lg:py-8.5 rounded-full items-center justify-center grow">
             Develop with precision
           </h2>
-          <h2 className={`h-text flex bg-[#ED602E] px-3 py-4 lg:px-12 lg:py-10.5 rounded-full items-center justify-center grow`}>
+          <h2 className={`h-text flex px-3 py-4 lg:px-12 lg:py-10.5 rounded-full items-center justify-center grow bg-[#ED602E]`}>
             Deliver impact
           </h2>
         </div>
