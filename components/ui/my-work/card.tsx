@@ -18,10 +18,9 @@ export default function Card({
   className,
   imgClassName,
   cta,
-  children,
 }: cardProps) {
   return (
-    <div className="card flex flex-col gap-8 rounded-[48px] border-1 p-4 sm:flex-row sm:gap-12 md:p-8">
+    <div className={`card flex flex-col gap-8 rounded-[48px] border-1 p-4 sm:flex-row sm:gap-12 md:p-8 ${className}`}>
       {image && (
         <Image
           src={image}

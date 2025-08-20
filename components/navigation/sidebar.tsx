@@ -1,13 +1,11 @@
 import { LuAlignLeft } from "react-icons/lu"
 
 import { Button } from "@/components/ui/button"
-import { DialogClose, DialogTitle } from "@/components/ui/dialog"
+import { DialogTitle } from "@/components/ui/dialog"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import {
   Sheet,
-  SheetClose,
   SheetContent,
-  SheetHeader,
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { NavMenu, SocialLinks } from "@/components/navigation/navbar"

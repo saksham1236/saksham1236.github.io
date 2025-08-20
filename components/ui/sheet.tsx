@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import * as SheetPrimitive from "@radix-ui/react-dialog"
-import { LuX } from "react-icons/lu"
 
 import { cn } from "@/lib/utils"
 
