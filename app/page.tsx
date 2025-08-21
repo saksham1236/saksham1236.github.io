@@ -25,29 +25,16 @@ export default function Home() {
         duration: 1,
         onComplete: () => {
           gsap.to(".unicorn", {
-            opacity: 0.5,
-            display: "none",
-            ease: "power1.inOut"
-          })
-        }
-      })
-      gsap.to(".unicorn", {
-        scrollTrigger: ".header",
-        display: "flex",
-        duration: 1,
-        onComplete: () => {
-          gsap.to(".unicorn", {
-            opacity: 0.5,
-            ease: "power1.inOut"
-          })
+            visibility: "hidden",
+            duration: 0.1,
+        })
         }
       })
     }
   )
   return (
     <>
-      <div className="sm:min-w-swh flex min-h-[calc(100svh-80px)] flex-col items-center justify-between gap-4 p-3 sm:min-h-[calc(100svh-96px)] sm:gap-8 lg:py-16" ref={main}>
-
+      <div className="sm:min-w-swh flex min-h-[calc(100svh-80px)] flex-col items-center justify-between gap-4 p-3 sm:min-h-[calc(100svh-96px)] sm:gap-8 lg:py-16 mb-16" ref={main}>
         <div className="unicorn absolute top-0 left-0 z-[-1] h-[100svh] w-[100svw] opacity-50">
           <UnicornView />
         </div>
@@ -63,7 +50,7 @@ export default function Home() {
           </div>
         </Link>
       </div>
-      <div className="myWork mt-8">
+      <div className="myWork">
         <MyWork />
       </div>
     </>
