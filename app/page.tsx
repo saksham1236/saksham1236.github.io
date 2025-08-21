@@ -7,25 +7,63 @@ import {
 } from "@/components/ui/icons/icons"
 import MyWork from "@/components/ui/my-work/myWork"
 import UnicornView from "@/components/ui/unicornViewer"
+import Link from "next/link"
+import gsap from 'gsap';
+import { useRef } from 'react';
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function Home() {
+  const main = useRef<HTMLDivElement>(null);
+  useGSAP(
+    () => {
+      gsap.to(".unicorn", {
+        scrollTrigger: ".myWork",
+        opacity: 0,
+        duration: 1,
+        onComplete: () => {
+          gsap.to(".unicorn", {
+            opacity: 0.5,
+            display: "none",
+            ease: "power1.inOut"
+          })
+        }
+      })
+      gsap.to(".unicorn", {
+        scrollTrigger: ".header",
+        display: "flex",
+        duration: 1,
+        onComplete: () => {
+          gsap.to(".unicorn", {
+            opacity: 0.5,
+            ease: "power1.inOut"
+          })
+        }
+      })
+    }
+  )
   return (
     <>
-      <div className="sm:min-w-swh flex min-h-[calc(100svh-80px)] flex-col items-center justify-between gap-4 p-3 sm:min-h-[calc(100svh-96px)] sm:gap-8 lg:py-16">
-        <div className="absolute top-0 left-0 z-[-1] h-full w-full opacity-50">
+      <div className="sm:min-w-swh flex min-h-[calc(100svh-80px)] flex-col items-center justify-between gap-4 p-3 sm:min-h-[calc(100svh-96px)] sm:gap-8 lg:py-16" ref={main}>
+
+        <div className="unicorn absolute top-0 left-0 z-[-1] h-[100svh] w-[100svw] opacity-50">
           <UnicornView />
         </div>
-        <div className="flex flex-row items-center text-2xl font-extrabold md:text-4xl">
+        <div className="header flex flex-row items-center text-2xl font-extrabold md:text-4xl">
           <MeteoconsStarFill className="size-16 md:size-24" />
           <h1>Hi I am Saksham.</h1>
         </div>
         <Hero />
-        <div className="text-muted-foreground flex flex-col items-center justify-center text-lg">
-          Scroll Down
-          <MaterialSymbolsArrowDownwardAltRounded className="animate-out size-8" />
-        </div>
+        <Link href="#mywork">
+          <div className="text-muted-foreground flex flex-col items-center justify-center text-lg">
+            Scroll Down
+            <MaterialSymbolsArrowDownwardAltRounded className="animate-out size-8" />
+          </div>
+        </Link>
       </div>
-      <div>
+      <div className="myWork mt-8">
         <MyWork />
       </div>
     </>

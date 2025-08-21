@@ -9,8 +9,8 @@ export default function UnicornView() {
         jsonFilePath="/images/scene/sceneLight.json"
         width="100%"
         height="100%"
-        scale={0.8}
-        dpi={2}
+        scale={0.75}
+        dpi={1.5}
       />
     )
   } else {
@@ -19,8 +19,8 @@ export default function UnicornView() {
         jsonFilePath="/images/scene/sceneDark.json"
         width="100%"
         height="100%"
-        scale={0.8}
-        dpi={2}
+        scale={0.75}
+        dpi={1.5}
       />
     )
   }
