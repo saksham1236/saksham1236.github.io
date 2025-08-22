@@ -2,7 +2,8 @@ import { useTheme } from "next-themes"
 import UnicornScene from "unicornstudio-react"
 
 export default function UnicornView() {
-  const { theme } = useTheme();
+  let theme:string | undefined = "dark";
+  theme = useTheme().theme;
   if (theme === "dark") {
     return (
       <UnicornScene
