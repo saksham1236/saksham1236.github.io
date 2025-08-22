@@ -31,7 +31,7 @@ export default function Home() {
   )
   return (
     <>
-      <div className="sm:min-w-swh flex min-h-[calc(100svh-80px)] flex-col items-center justify-between gap-4 p-3 sm:min-h-[calc(100svh-96px)] sm:gap-8 lg:py-16 mb-16" ref={main}>
+      <div className="sm:min-w-swh flex min-h-[calc(100svh-80px)] flex-col items-center justify-between gap-4 sm:min-h-[calc(100svh-96px)] sm:gap-8 lg:py-16 mb-16" ref={main}>
         <div className="unicorn absolute top-0 left-0 z-[-1] h-[100svh] w-[100svw] opacity-50">
           <UnicornView />
         </div>
