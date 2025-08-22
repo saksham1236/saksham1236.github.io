@@ -2,12 +2,12 @@ import { useTheme } from "next-themes"
 import UnicornScene from "unicornstudio-react"
 
 export default function UnicornView() {
-  let theme:string | undefined = "dark";
+  let theme: string | undefined = "dark";
   theme = useTheme().theme;
-  if (theme === "dark") {
+  if (theme === "light") {
     return (
       <UnicornScene
-        jsonFilePath="/images/scene/sceneLight.json"
+        jsonFilePath="/images/scene/sceneDark.json"
         width="100%"
         height="100%"
         scale={0.75}
@@ -17,7 +17,7 @@ export default function UnicornView() {
   } else {
     return (
       <UnicornScene
-        jsonFilePath="/images/scene/sceneDark.json"
+        jsonFilePath="/images/scene/sceneLight.json"
         width="100%"
         height="100%"
         scale={0.75}
