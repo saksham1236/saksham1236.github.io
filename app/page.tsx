@@ -20,15 +20,12 @@ export default function Home() {
   useGSAP(
     () => {
       gsap.to(".unicorn", {
-        scrollTrigger: ".myWork",
+        scrollTrigger: {
+          trigger: ".myWork",
+          toggleActions: "play reverse play reverse"
+        },
         opacity: 0,
-        duration: 1,
-        onComplete: () => {
-          gsap.to(".unicorn", {
-            visibility: "hidden",
-            duration: 0.1,
-        })
-        }
+        duration: 0.5,
       })
     }
   )

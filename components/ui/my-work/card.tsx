@@ -2,6 +2,7 @@ import { PropsWithChildren } from "react"
 import Image from "next/image"
 
 import { Button } from "../button"
+import { LineMdArrowRight, LineMdMinus } from "../icons/icons"
 
 type cardProps = PropsWithChildren & {
   title: string
@@ -27,8 +28,12 @@ export default function Card({
           <p className="text-muted-foreground text-lg">{description}</p>
         </div>
         {cta && (
-          <Button className="w-fit" variant="default">
+          <Button className="w-fit group" variant="default">
             {cta}
+            <div className="relative flex flex-row size-6 overflow-clip">
+              <LineMdMinus className="absolute size-6 left-[0%] group-hover:left-[100%] transition-all duration-200 ease-in-out"/>
+              <LineMdArrowRight className="absolute size-6 left-[-100%] group-hover:left-[0%] transition-all duration-200 ease-in-out" />
+            </div>
           </Button>
         )}
       </div>
