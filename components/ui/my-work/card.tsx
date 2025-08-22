@@ -21,7 +21,7 @@ export default function Card({
   cta,
 }: cardProps) {
   return (
-    <div className={`card flex flex-col gap-8 rounded-[48px] border-1 px-4 py-8 sm:flex-row sm:gap-12 md:p-8 ${className}`}>
+    <div className={`card flex flex-col-reverse gap-8 rounded-[48px] border-1 px-4 py-8 sm:flex-row sm:gap-12 md:p-8 ${className}`}>
       <div className="flex w-full flex-col gap-8 sm:w-1/2 justify-between">
         <div className="flex flex-col gap-8">
           <h3 className="text-3xl font-bold md:text-5xl">{title}</h3>
