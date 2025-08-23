@@ -1,6 +1,3 @@
-import { PropsWithChildren } from "react"
-import Image from "next/image"
-
 import { Button } from "../button"
 import { LineMdArrowRight, LineMdMinus } from "../icons/icons"
 import {
@@ -10,7 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import Autoplay from "embla-carousel-autoplay"
+
 
 
 type cardProps = {
