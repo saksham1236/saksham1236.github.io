@@ -6,7 +6,7 @@ import {
   MeteoconsStarFill,
 } from "@/components/ui/icons/icons"
 import MyWork from "@/components/ui/my-work/myWork"
-import UnicornView from "@/components/ui/unicornViewer"
+// import UnicornView from "@/components/ui/unicornViewer"
 import Link from "next/link"
 import gsap from 'gsap';
 import { useRef } from 'react';
