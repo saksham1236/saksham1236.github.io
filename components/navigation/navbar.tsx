@@ -42,14 +42,16 @@ export function NavMenu({ isSheet = false }) {
             key={item.title + item.href}
             activeClassName="font-bold text-white bg-nav-active"
             absolute
-            className="hover:bg-hover-b text-md flex items-center gap-1 rounded-full px-4 py-3 transition-all"
+            className="group hover:bg-hover-b text-md flex items-center gap-1 rounded-full px-4 py-3 transition-all"
             href={item.href}
             target={item.external ? "_blank" : undefined}
             rel={item.external ? "noopener noreferrer" : undefined}
           >
             {item.title}{" "}
             {item.external && (
-              <MaterialSymbolsArrowOutwardRounded className="h-4 w-4" />
+              <div className="flex relative h-4 w-4">
+                <MaterialSymbolsArrowOutwardRounded className="absolute h-4 w-4 top-0 right-0 group-hover:top-[-15%] group-hover:right-[-15%] transition-all duration-200 ease-in-out" />
+              </div>
             )}
           </Anchor>
         )
@@ -65,7 +67,7 @@ export function NavMenu({ isSheet = false }) {
   )
 }
 
-export function SocialLinks({}) {
+export function SocialLinks({ }) {
   return (
     <div className="md:bg-nav-noise flex items-center gap-2 rounded-full md:p-2">
       <div className="flex gap-2 sm:ml-0">

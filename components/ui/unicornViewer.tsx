@@ -12,6 +12,7 @@ export default function UnicornView() {
         height="100%"
         scale={0.75}
         dpi={1.5}
+        className="overflow-clip"
       />
     )
   } else {
@@ -22,6 +23,7 @@ export default function UnicornView() {
         height="100%"
         scale={0.75}
         dpi={1.5}
+        className="overflow-clip"
       />
     )
   }
