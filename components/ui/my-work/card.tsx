@@ -80,7 +80,7 @@ export default function Card({
         >
           <CarouselContent className="h-full rounded-4xl">
             {(children ?? []).map((child, index) => (
-              <CarouselItem className="h-full basis-7/8 lg:basis-4/5 cursor-grab" key={index}>
+              <CarouselItem className="h-full lg:basis-4/5 cursor-grab" key={index}>
                 <div className="h-full w-full rounded-4xl contain-paint">
                   {child}
                 </div>
