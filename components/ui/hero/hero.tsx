@@ -1,6 +1,7 @@
 import { MaterialSymbolsArrowUpwardRounded } from "../icons/icons";
 import styles from "./hero.module.css";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 export default function Hero() {
   return (
     <div className="flex">
@@ -30,11 +31,13 @@ export default function Hero() {
             <span className="w-[62.5%] rounded-full bg-[#F19A26] absolute right-0 h-16 lg:h-36" />
             <span className="w-[50%] rounded-full bg-[#00C7A3] absolute right-0 h-16 lg:h-36" />
             <span className="w-[35%] sm:w-[40%] rounded-full bg-[#0095E2] absolute right-0 h-16 lg:h-36" />
-            <MaterialSymbolsArrowUpwardRounded className="flex items-center justify-center rounded-full bg-[#262626] dark:bg-[#F6F3EE] p-3 size-16 lg:size-36 rotate-90 dark:text-primary-foreground z-10 absolute right-0" />
+            <span className="bg-[#0095E2]">
+              <MaterialSymbolsArrowUpwardRounded className={cn("flex items-center justify-center rounded-full bg-[#262626] dark:bg-[#F6F3EE] p-3 size-16 lg:size-36 rotate-90 dark:text-primary-foreground z-10 absolute right-0", styles.white)} />
+            </span>
           </div>
           <div className="flex grow shadow-bg">
             <Link href="#mywork" className="flex grow">
-              <h2 className="h-text flex grow bg-[#262626] dark:bg-[#F6F3EE] dark:text-[#262626] px-3 py-4 lg:px-12 lg:py-10.5 rounded-full items-center justify-center hover:bg-[#1C51DD] dark:hover:bg-[#1C51DD] transition-colors duration-300">
+              <h2 className={`${styles.white} h-text flex grow dark:text-[#262626] px-3 py-4 lg:px-12 lg:py-10.5 rounded-full items-center justify-center transition-colors duration-300`}>
                 View My Work
               </h2>
             </Link>
@@ -44,5 +47,6 @@ export default function Hero() {
         </div>
       </div>
     </div>
+
   )
 }

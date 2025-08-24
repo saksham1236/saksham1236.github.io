@@ -1,7 +1,10 @@
 .green,
 .blue,
-.orange {
+.orange, 
+.white {
   --noise: url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='1'/></svg>");
+  --noise-dark: url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='0.3'/></svg>");
+
 }
 .hoverText {
   text-decoration: underline 0.1em;
@@ -55,13 +58,14 @@
   background-blend-mode: overlay;
 }
 .white {
-  background: var(--noise), black;
-  background-blend-mode: multiply;
+  background: var(--noise-dark), linear-gradient(to right, #242424 0%, #151515 100%);
+  background-blend-mode: lighten;
 }
 
 :global(.dark) .white {
-  background: var(--noise), white;
+  background: var(--noise), linear-gradient(to right, #fff 0%, #e6e6e6 100%);
   background-blend-mode: multiply;
+  filter: brightness(1.2);
 }
 
 .noise {
