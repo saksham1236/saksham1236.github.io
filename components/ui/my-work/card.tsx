@@ -48,7 +48,7 @@ export default function Card({
 
   return (
     <div className={`card lg:h-120 flex flex-col-reverse gap-4 rounded-[48px] border-1 p-4 lg:flex-row lg:gap-12 lg:p-6 ${className}`}>
-      <div className="flex w-full flex-col gap-4 lg:gap-8 lg:w-1/3 justify-center lg:p-12 text-white">
+      <div className="flex w-full flex-col gap-4 lg:gap-8 lg:w-1/3 justify-center lg:p-12">
         <div className="flex flex-col gap-4 lg:gap-8">
           <div className="flex flex-col gap-2">
             <h2 className="text-md lg:text-lg font-bold text-primary opacity-50">{subtitle}</h2>
