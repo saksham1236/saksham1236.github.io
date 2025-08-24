@@ -525,3 +525,9 @@ table {
   background: var(--nav-background);
   background-blend-mode: overlay;
 }
+
+.carousel {
+  img {
+    object-fit: cover;
+  }
+}

@@ -59,7 +59,6 @@ function Carousel({
   )
   const [canScrollPrev, setCanScrollPrev] = React.useState(false)
   const [canScrollNext, setCanScrollNext] = React.useState(false)
-
   const onSelect = React.useCallback((api: CarouselApi) => {
     if (!api) return
     setCanScrollPrev(api.canScrollPrev())
@@ -184,7 +183,7 @@ function CarouselPrevious({
       variant={variant}
       size={size}
       className={cn(
-        "size-12 rounded-full",
+        "rounded-full",
         orientation === "horizontal"
           ? "top-1/2 -left-12"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -194,7 +193,7 @@ function CarouselPrevious({
       onClick={scrollPrev}
       {...props}
     >
-      <ArrowLeft className="size-6"/>
+      <ArrowLeft className="size-fit"/>
       <span className="sr-only">Previous slide</span>
     </Button>
   )
@@ -214,7 +213,7 @@ function CarouselNext({
       variant={variant}
       size={size}
       className={cn(
-        "size-12 rounded-full",
+        "rounded-full",
         orientation === "horizontal"
           ? "top-1/2 -right-12"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -224,7 +223,7 @@ function CarouselNext({
       onClick={scrollNext}
       {...props}
     >
-      <ArrowRight className="size-6"/>
+      <ArrowRight className="size-fit"/>
       <span className="sr-only">Next slide</span>
     </Button>
   )
