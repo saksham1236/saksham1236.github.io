@@ -47,12 +47,14 @@ export default function Card({
   }, [api])
 
   return (
-    <div className={`card lg:h-120 flex flex-col-reverse gap-4 rounded-[48px] border-1 p-4 lg:flex-row lg:gap-12 lg:p-8 ${className}`}>
-      <div className="flex w-full flex-col gap-4 lg:gap-8 lg:w-1/3 justify-center lg:p-8">
+    <div className={`card lg:h-120 flex flex-col-reverse gap-4 rounded-[48px] border-1 p-4 lg:flex-row lg:gap-12 lg:p-6 ${className}`}>
+      <div className="flex w-full flex-col gap-4 lg:gap-8 lg:w-1/3 justify-center lg:p-12 text-white">
         <div className="flex flex-col gap-4 lg:gap-8">
-          <h2 className="text-md lg:text-lg font-bold text-primary opacity-50">{subtitle}</h2>
-          <h3 className="text-3xl lg:text-4xl font-bold">{title}</h3>
-          <p className="text-muted-foreground text-lg">{description}</p>
+          <div className="flex flex-col gap-2">
+            <h2 className="text-md lg:text-lg font-bold text-primary opacity-50">{subtitle}</h2>
+            <h3 className="text-3xl lg:text-4xl font-bold">{title}</h3>
+          </div>
+          <p className="text-lg opacity-75">{description}</p>
         </div>
         {cta && (
           <Button className="w-fit group" variant="default">
@@ -64,7 +66,7 @@ export default function Card({
           </Button>
         )}
       </div>
-      <div className="flex aspect-auto lg:aspect-none lg:h-100 flex-grow items-center justify-center carousel lg:w-1/3">
+      <div className="flex aspect-auto lg:aspect-none lg:h-full flex-grow items-center justify-center carousel lg:w-1/3">
         <Carousel
           className="carousel aspect-3/2 lg:aspect-auto lg:h-full"
           setApi={setApi}
@@ -78,7 +80,7 @@ export default function Card({
         >
           <CarouselContent className="h-full rounded-4xl">
             {(children ?? []).map((child, index) => (
-              <CarouselItem className="h-full lg:basis-3/4 cursor-grab" key={index}>
+              <CarouselItem className="h-full basis-7/8 lg:basis-4/5 cursor-grab" key={index}>
                 <div className="h-full w-full rounded-4xl contain-paint">
                   {child}
                 </div>
@@ -92,7 +94,7 @@ export default function Card({
                 <button
                   key={index}
                   onClick={() => api?.scrollTo(index)}
-                  className={cn("size-2 lg:size-4 rounded-full bg-primary/50 transition-all duration-150 ease-in-out", {
+                  className={cn("size-2 rounded-full bg-primary/50 transition-all duration-150 ease-in-out", {
                     "bg-primary !w-8": current === index + 1,
                   })}
                 />
