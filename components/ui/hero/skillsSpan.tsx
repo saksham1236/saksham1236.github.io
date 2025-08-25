@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react"
+import { useRef, useState } from "react"
 import gsap from 'gsap'
 import { useGSAP } from "@gsap/react"
 import SplitType from 'split-type'
@@ -13,9 +13,9 @@ export default function SkillsSpan({ className }: skillsSpanProps) {
     const words = ["These are word", "Another Word", "Hello World"]
     const [word, setWord] = useState(words[0])
     const container = useRef<HTMLDivElement>(null);
-    let index = 0
+    const index = 0
     useGSAP(()=> {
-        let tl = gsap.timeline({repeat: -1})
+        const tl = gsap.timeline({repeat: -1})
         let text = new SplitType("#skillSpan", {types: "chars"})
         tl.from(
             text.chars, {

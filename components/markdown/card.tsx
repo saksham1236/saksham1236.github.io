@@ -49,7 +49,6 @@ export function Card({
 }: CardProps) {
   const IconComponent = icon ? iconMap[icon] : null
   const ExternalIcon = iconMap["arrowUpRight"]
-  const IconRight = iconMap["arrowRight"]
 
   const content = (
     <div
