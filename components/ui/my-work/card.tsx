@@ -22,6 +22,7 @@ type cardProps = {
   cta?: string
   link: string
   children?: React.ReactNode[]
+  dark?: boolean
 }
 export default function Card({
   title,
@@ -30,9 +31,9 @@ export default function Card({
   className,
   cta,
   link,
-  children
+  children,
+  dark,
 }: cardProps) {
-
   const [api, setApi] = useState<CarouselApi>()
   const [current, setCurrent] = useState(0)
   const [count, setCount] = useState(0)
@@ -49,10 +50,10 @@ export default function Card({
   }, [api])
 
   return (
-    <div className={`card lg:h-120 flex flex-col-reverse gap-4 rounded-[48px] border-1 p-6 lg:flex-row lg:gap-12 lg:p-0 contain-paint ${className}`}>
-      <div className="flex w-full flex-col gap-4 lg:gap-8 lg:w-1/3 justify-center lg:pl-16">
-        <div className="flex flex-col gap-4 lg:gap-8">
-          <div className="flex flex-col gap-2">
+    <div className={`card lg:h-120 flex flex-col-reverse gap-4 rounded-[48px] border-1 p-4 lg:flex-row lg:gap-12 lg:p-0 contain-paint ${className}`}>
+      <div className={cn("flex w-full flex-col gap-4 lg:gap-8 lg:w-1/3 justify-center lg:pl-16", dark ? "dark" : "")}>
+        <div className={cn("flex flex-col gap-4 lg:gap-8", dark ? "text-white" : "")}>
+          <div className={cn("flex flex-col gap-2")}>
             <h2 className="text-md lg:text-lg font-bold text-primary opacity-75">{subtitle}</h2>
             <h3 className="text-3xl lg:text-4xl font-bold">{title}</h3>
           </div>
@@ -60,7 +61,7 @@ export default function Card({
         </div>
         {cta && (
           <Link href={link}>
-            <Button className="w-fit group cursor-pointer" variant="default">
+            <Button className="w-full lg:w-fit group cursor-pointer" variant="default">
               {cta}
               <div className="relative flex flex-row size-6 overflow-clip">
                 <LineMdMinus className="absolute size-6 left-[0%] group-hover:left-[100%] transition-all duration-200 ease-in-out" />
@@ -76,14 +77,14 @@ export default function Card({
             {children}
           </div>
         ) : (
-          < Carousel
-          className="carousel aspect-3/2 lg:aspect-auto lg:h-full"
+        < Carousel
+        className="carousel aspect-3/2 lg:aspect-auto lg:h-full"
         setApi={setApi}
         plugins={[
           Autoplay({
             delay: 6000,
             stopOnMouseEnter: true,
-            stopOnInteraction: false,
+            stopOnInteraction: true,
           }),
         ]}
         >

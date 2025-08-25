@@ -1,9 +1,7 @@
 import { notFound } from "next/navigation"
-
 import { getDocument } from "@/lib/markdown"
 import { Settings } from "@/lib/meta"
 import { PageRoutes } from "@/lib/pageroutes"
-import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { Typography } from "@/components/ui/typography"
 import { BackToTop } from "@/components/navigation/backtotop"
@@ -24,39 +22,27 @@ export default async function Pages({ params }: PageProps) {
 
   const { frontmatter, content, tocs } = res
 
-  function Labels() {
-    return (
-      <>
-        {frontmatter.tags?.map((tag, index) => (
-          <Badge key={index} className={tag} size="lg">
-            {tag}
-          </Badge>
-        ))}
-      </>
-    )
-  }
-
   function Timeline() {
     return (
       <div className="mt-2 inline-flex flex-row flex-wrap items-center gap-2">
         {frontmatter.timeline && (
-          <span className="bg-sheet-primary w-fit rounded-md px-3 py-1 text-sm/6">
+          <span className="w-fit md:text-2xl font-bold text-muted">
             {frontmatter.timeline}
           </span>
         )}
-        {frontmatter.tags && <Labels />}
       </div>
     )
   }
 
   return (
     <div className="flex justify-between gap-6">
-      <section className="flex-[3] pt-10 md:border-l-1 md:pl-12 xl:border-x-1 xl:px-12">
+      <section className="flex-[3] pt-4">
         <PageBreadcrumb paths={slug} />
+        <hr/>
         <Typography>
-          <h1 className="!mb-2 text-3xl !font-semibold">{frontmatter.title}</h1>
           {(frontmatter.timeline || frontmatter.tags) && <Timeline />}
-          <p className="-mt-4 text-sm/6">{frontmatter.description}</p>
+          <h1 className="!mb-2 !text-3xl sm:!text-5xl !font-bold">{frontmatter.title}</h1>
+          <p className="-mt-4 text-lg">{frontmatter.description}</p>
           <Separator className="my-6" />
           <section
             className="mobile-toc mb-4 overflow-hidden xl:hidden [&>*]:box-border [&>*]:max-h-75"
@@ -73,7 +59,7 @@ export default async function Pages({ params }: PageProps) {
           <Pagination pathname={pathName} />
         </Typography>
       </section>
-      <BackToTop className="bg-primary/60 text-primary-foreground fixed right-4 bottom-4 z-40 mt-6 self-start rounded-full p-3 text-sm shadow-lg backdrop-blur-lg xl:hidden" />
+      <BackToTop className=" bg-nav-noise text-primary fixed right-4 bottom-4 z-40 mt-6 self-start rounded-full p-3 text-md shadow-lg backdrop-blur-lg xl:hidden" />
       {Settings.rightbar && (
         <aside
           className="toc sticky top-16 hidden h-[94.5vh] w-[230px] gap-3 py-8 xl:flex xl:flex-col"
@@ -82,7 +68,7 @@ export default async function Pages({ params }: PageProps) {
           {Settings.toc && <Toc tocs={tocs} />}
           {Settings.feedback && <Feedback />}
           {Settings.totop && (
-            <BackToTop className="mt-6 self-start rounded-full border p-3 text-sm text-neutral-800 dark:text-neutral-300/85" />
+            <BackToTop className="mt-6 self-start rounded-full border p-3 text-md bg-nav-noise" />
           )}
         </aside>
       )}

@@ -30,16 +30,16 @@ export default function ImageViewer({
             <Image
               src={imageUrl}
               alt={altText}
-              className="w-full rounded-md"
+              className="w-full rounded-3xl md:rounded-4xl"
               width={500}
               height={500}
               onContextMenu={(e) => {
                 e.preventDefault()
               }}
             />
-            <button className="bg-primary/70 animate-in fade-in absolute right-4 bottom-4 rounded-full p-2 shadow-lg backdrop-blur-lg focus:outline-none">
+            <button className="bg-nav-noise animate-in fade-in absolute right-2 bottom-2 lg:right-4 lg:bottom-4 rounded-full p-2 shadow-lg backdrop-blur-lg focus:outline-none">
               <span className="sr-only">Open image</span>
-              <FiMaximize2 className="text-primary-foreground h-6 w-6" />
+              <FiMaximize2 className="h-6 w-6" />
             </button>
           </div>
         </DialogTrigger>
@@ -60,12 +60,10 @@ export default function ImageViewer({
               }}
             />
           </div>
-          <button>
-            <DialogClose className="bg-primary/70 animate-in fade-in absolute top-4 right-4 cursor-pointer rounded-full p-1 shadow-lg backdrop-blur-lg focus:outline-none">
-              <span className="sr-only">Close</span>
-              <FiX className="text-primary-foreground h-6 w-6" />
+            <DialogClose className="bg-nav-noise animate-in fade-in absolute top-4 right-4 cursor-pointer rounded-full p-1 shadow-lg backdrop-blur-lg focus:outline-none">
+              <button className="sr-only">Close</button>
+              <FiX className="h-6 w-6" />
             </DialogClose>
-          </button>
         </DialogContent>
       </Dialog>
     </div>

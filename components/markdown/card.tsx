@@ -3,7 +3,8 @@ import Image from "next/image"
 import { iconMap } from "@/settings/icons"
 import clsx from "clsx"
 import { Link } from "lib/transition"
-
+import { Button } from "../ui/button"
+import { LineMdArrowRight, LineMdMinus } from "../ui/icons/icons"
 import { Badge } from "@/components/ui/badge"
 
 type CardProps = PropsWithChildren & {
@@ -53,7 +54,7 @@ export function Card({
   const content = (
     <div
       className={clsx(
-        "card-grp group relative flex justify-start overflow-hidden rounded-xl border-2 border-gray-300 bg-neutral-50 !transition transition-shadow duration-300 ease-in-out hover:scale-103 hover:bg-slate-200 dark:border-neutral-600 dark:bg-neutral-900 dark:hover:bg-neutral-800",
+        "card-grp group relative flex justify-start overflow-hidden rounded-[48px] border-2 border-gray-300 bg-neutral-50 !transition transition-shadow duration-300 ease-in-out hover:scale-103 hover:bg-slate-200 dark:border-neutral-600 dark:bg-neutral-900 dark:hover:bg-neutral-800",
         variant === "small"
           ? "items-center space-x-2 p-3"
           : variant === "image"
@@ -69,7 +70,7 @@ export function Card({
           width={400}
           height={400}
           className={clsx(
-            "!m-0 !mb-2 h-[180px] w-full rounded-md !border-2 object-cover object-center",
+            "!m-0 !mb-2 h-[180px] w-full rounded-4xl !border-2 object-cover object-center",
             imgClassName
           )}
         />
@@ -121,12 +122,15 @@ export function Card({
         )}
       </div>
       {children}
-      {cta && (
-        <span className="mt-auto flex flex-row items-center gap-1 text-base">
-          {ctaContent ? ctaContent : "View More"}
-          {external ? <ExternalIcon /> : <IconRight />}
-        </span>
-      )}
+        {cta && (
+            <Button className="w-full lg:w-fit group cursor-pointer" variant="default">
+              {ctaContent ? ctaContent: "View Project"}
+              <div className="relative flex flex-row size-6 overflow-clip">
+                <LineMdMinus className="absolute size-6 left-[0%] group-hover:left-[100%] transition-all duration-200 ease-in-out" />
+                <LineMdArrowRight className="absolute size-6 left-[-100%] group-hover:left-[0%] transition-all duration-200 ease-in-out" />
+              </div>
+            </Button>
+        )}
     </div>
   )
 

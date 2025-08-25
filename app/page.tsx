@@ -12,6 +12,7 @@ import gsap from 'gsap';
 import { useRef } from 'react';
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react";
+// import SkillsSpan from "@/components/ui/hero/skillsSpan"
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
