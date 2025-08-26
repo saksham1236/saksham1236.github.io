@@ -46,7 +46,7 @@
   --sidebar-border: #ebebeb;
   --sidebar-ring: #b5b5b5;
   --sheet-primary: #002a6915;
-  --hover-b: #0059ff10;
+  --hover-b: #0059ff14;
   --media-brand: 245 245 245;
   --media-focus: 78 156 246;
   --nav-bar: #404040;
@@ -89,7 +89,7 @@
   --sidebar-accent-foreground: #fafafa;
   --sidebar-border: #444444;
   --sidebar-ring: #707070;
-  --tw-prose-body: var(--accent-foreground);
+  --tw-prose-body: var(--primary);
   --sheet-primary: #ffffff15;
   --hover-b: #ffffff15;
   --nav-background:
@@ -152,12 +152,8 @@
   }
 }
 
-.hero {
-  opacity: 0;
-}
-
 .typography {
-  @apply prose prose-slate prose-headings:scroll-m-20 prose-code:rounded-md prose-code:p-1 prose-code:leading-6 prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:bg-neutral-100 prose-img:border;
+  @apply prose prose-lg prose-p:text-primary prose-headings:text-primary prose-headings:scroll-m-20 prose-code:rounded-md prose-code:p-1 prose-code:leading-6 prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:bg-neutral-100;
   @apply prose-code:text-xs w-[85vw] !min-w-full pt-2 sm:mx-auto sm:w-full;
   @apply dark:prose-invert prose-code:text-neutral-800 dark:prose-code:bg-neutral-900 dark:prose-code:text-white dark:prose-pre:bg-neutral-900;
 }
@@ -474,23 +470,11 @@ video {
     margin-bottom: 0.5rem;
     @apply text-sm;
   }
-  .l2 {
-    @apply px-2 py-1.5;
-  }
-  .l2:is(:last-child) {
-    @apply border-b-0;
-  }
   .l2,
   .l3,
   .l4 {
-    font-weight: 400;
+    font-weight: 800;
     text-decoration: none;
-  }
-  .l3 {
-    @apply bg-sheet-primary;
-  }
-  .l4 {
-    @apply bg-sheet-primary py-1 text-sm !font-light tracking-wide;
   }
 }
 table {

@@ -6,6 +6,7 @@ import { Link } from "lib/transition"
 import { Button } from "../ui/button"
 import { LineMdArrowRight, LineMdMinus } from "../ui/icons/icons"
 import { Badge } from "@/components/ui/badge"
+import { cn } from "@/lib/utils"
 
 type CardProps = PropsWithChildren & {
   subtitle?: string
@@ -53,12 +54,12 @@ export function Card({
   const content = (
     <div
       className={clsx(
-        "card-grp group relative flex justify-start overflow-hidden rounded-[48px] border-2 border-gray-300 bg-neutral-50 !transition transition-shadow duration-300 ease-in-out hover:scale-103 hover:bg-slate-200 dark:border-neutral-600 dark:bg-neutral-900 dark:hover:bg-neutral-800",
+        "card-grp group relative flex gap-4 justify-start contain-paint rounded-[48px] !transition duration-300 bg-white ease-in-out hover:bg-hover-b dark:bg-zinc-900 dark:hover:bg-zinc-800",
         variant === "small"
-          ? "items-center space-x-2 p-3"
+          ? "items-center space-x-2 p-4"
           : variant === "image"
-            ? "h-full flex-col p-4"
-            : "h-full flex-col p-4",
+            ? "h-full flex-col p-6"
+            : "h-full flex-col p-6",
         className
       )}
     >
@@ -69,67 +70,59 @@ export function Card({
           width={400}
           height={400}
           className={clsx(
-            "!m-0 !mb-2 h-[180px] w-full rounded-4xl !border-2 object-cover object-center",
+            "!m-0 w-full aspect-3/2 rounded-4xl object-cover object-center",
             imgClassName
           )}
         />
       )}
-      {external && href && variant !== "image" && (
-        <div
-          className={clsx(
-            "absolute top-2 transform text-gray-500 transition-transform duration-300 ease-in-out group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-black dark:text-gray-400 dark:group-hover:text-white",
-            variant === "small" ? "right-0" : "right-2"
+      <div className={cn("flex flex-col flex-grow gap-4", image ? "" : "pt-2")}>
+        <div className="flex flex-col gap-2">
+          {subtitle && (variant === "normal" || variant === "image") && (
+            <span className={cn("flex flex-row text-md lg:text-lg font-bold text-primary opacity-75 items-center gap-2")}>
+              {subtitle}
+              {IconComponent && (
+                <IconComponent />
+              )}
+            </span>
           )}
-        >
-          <ExternalIcon className="h-4 w-4" />
-        </div>
-      )}
-      {IconComponent && (
-        <IconComponent className="text-gray-500 dark:text-gray-300" />
-      )}
-
-      <div>
-        {subtitle && (variant === "normal" || variant === "image") && (
-          <p className="!my-1 text-xs font-semibold text-gray-500 dark:text-gray-400">
-            {subtitle}
-          </p>
-        )}
-        <div
-          className={clsx(
-            "font-semibold transition-all duration-300 group-hover:font-bold",
-            variant === "small"
-              ? "text-sm"
-              : variant === "image"
+          {tags && (
+            <div className="tags flex flex-wrap gap-1 py-1">
+              {tags?.map((tag, index) => (
+                <Badge key={index} className={tag}>
+                  {tag}
+                </Badge>
+              ))}
+            </div>)}
+          <div
+            className={clsx(
+              "font-bold transition-all duration-300 text-primary",
+              variant === "small"
                 ? "text-lg"
-                : "text-lg"
-          )}
-        >
-          {!titleHidden && title}
-        </div>
-        <div className="tags flex flex-wrap gap-1 py-1">
-          {tags &&
-            tags?.map((tag, index) => (
-              <Badge key={index} className={tag}>
-                {tag}
-              </Badge>
-            ))}
+                : variant === "image"
+                  ? "text-3xl"
+                  : "text-3xl",
+              image ? "" : "pt-2",
+            )}
+          >
+            {!titleHidden && title}
+          </div>
         </div>
         {description && (variant === "normal" || variant === "image") && (
-          <p className="!my-2 text-sm font-normal text-gray-600 dark:text-gray-400">
+          <p className="!m-0 text-lg font-normal opacity-85">
             {description}
           </p>
         )}
       </div>
       {children}
-        {cta && (
-            <Button className="w-full lg:w-fit group cursor-pointer" variant="default">
-              {ctaContent ? ctaContent: "View Project"}
-              <div className="relative flex flex-row size-6 overflow-clip">
-                <LineMdMinus className="absolute size-6 left-[0%] group-hover:left-[100%] transition-all duration-200 ease-in-out" />
-                <LineMdArrowRight className="absolute size-6 left-[-100%] group-hover:left-[0%] transition-all duration-200 ease-in-out" />
-              </div>
-            </Button>
-        )}
+      {cta && (
+        <Button className="w-full lg:w-fit cursor-pointer" variant="default">
+          {ctaContent ? ctaContent : "View Project"}
+          <div className="relative flex flex-row size-6 overflow-clip">
+            <LineMdMinus className="absolute size-6 left-[0%] group-hover:left-[100%] transition-all duration-200 ease-in-out" />
+            <LineMdArrowRight className="absolute size-6 left-[-100%] group-hover:left-[0%] transition-all duration-200 ease-in-out" />
+          </div>
+        </Button>
+      )}
     </div>
   )
 

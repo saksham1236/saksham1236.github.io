@@ -44,9 +44,6 @@ export function SheetLeft() {
           <div className="bg-accent-foreground/20 mx-4 mt-12 flex flex-col gap-2.5 rounded-4xl p-4">
             <NavMenu isSheet />
           </div>
-          <div className="mx-0 px-5">
-            <PageMenu isSheet />
-          </div>
         </ScrollArea>
         <div className="bg-accent-foreground/20 mr-4 mb-4 ml-auto flex w-fit flex-col items-end rounded-full p-4">
           <SocialLinks />

@@ -50,7 +50,7 @@ export default function Card({
   }, [api])
 
   return (
-    <div className={`card lg:h-120 flex flex-col-reverse gap-4 rounded-[48px] border-1 p-4 lg:flex-row lg:gap-12 lg:p-0 contain-paint ${className}`}>
+    <div className={`card lg:h-120 flex flex-col-reverse gap-4 rounded-[48px] border-1 p-6 lg:flex-row lg:gap-12 lg:p-0 contain-paint ${className}`}>
       <div className={cn("flex w-full flex-col gap-4 lg:gap-8 lg:w-1/3 justify-center lg:pl-16", dark ? "dark" : "")}>
         <div className={cn("flex flex-col gap-4 lg:gap-8", dark ? "text-white" : "")}>
           <div className={cn("flex flex-col gap-2")}>
