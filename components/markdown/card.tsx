@@ -49,12 +49,11 @@ export function Card({
   titleHidden,
 }: CardProps) {
   const IconComponent = icon ? iconMap[icon] : null
-  const ExternalIcon = iconMap["arrowUpRight"]
 
   const content = (
     <div
       className={clsx(
-        "card-grp group relative flex gap-4 justify-start contain-paint rounded-[48px] !transition duration-300 bg-white ease-in-out hover:bg-hover-b dark:bg-zinc-900 dark:hover:bg-zinc-800",
+        "card-grp group relative flex gap-4 justify-start contain-paint rounded-[48px] !transition duration-300 bg-white ease-in-out hover:bg-hover-b dark:bg-zinc-900 dark:hover:bg-hover-b",
         variant === "small"
           ? "items-center space-x-2 p-4"
           : variant === "image"
