@@ -39,7 +39,7 @@ export default async function Pages({ params }: PageProps) {
       <section className="flex-[3] pt-4">
         <PageBreadcrumb paths={slug} />
         <hr/>
-        <Typography>
+        <Typography className = "mt-4">
           {(frontmatter.timeline || frontmatter.tags) && <Timeline />}
           <h1 className="!mb-2 !text-3xl sm:!text-5xl !font-bold">{frontmatter.title}</h1>
           <p className="-mt-4 text-lg">{frontmatter.description}</p>
@@ -66,9 +66,8 @@ export default async function Pages({ params }: PageProps) {
           aria-label="Table of contents"
         >
           {Settings.toc && <Toc tocs={tocs} />}
-          {Settings.feedback && <Feedback />}
           {Settings.totop && (
-            <BackToTop className="mt-6 self-start rounded-full border p-3 text-md bg-nav-noise" />
+            <BackToTop className="mt-6 self-start self rounded-full border p-3 text-md bg-nav-noise" />
           )}
         </aside>
       )}

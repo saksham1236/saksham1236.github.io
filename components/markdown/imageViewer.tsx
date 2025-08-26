@@ -61,7 +61,7 @@ export default function ImageViewer({
             />
           </div>
             <DialogClose className="bg-nav-noise animate-in fade-in absolute top-4 right-4 cursor-pointer rounded-full p-1 shadow-lg backdrop-blur-lg focus:outline-none">
-              <button className="sr-only">Close</button>
+              <span className="sr-only">Close</span>
               <FiX className="h-6 w-6" />
             </DialogClose>
         </DialogContent>

@@ -1,59 +1,90 @@
 "use client"
 import Link from "next/link"
 import clsx from "clsx"
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 export type TocProps = {
   tocs: { href: string; level: number; text: string }[]
 }
-
+import { cn } from "@/lib/utils"
 export default function Toc({ tocs }: TocProps) {
-  const [activeHash, setActiveHash] = useState("")
+  const [activeId, setActiveId] = useState<string | null>(null);
+  const observer = useRef<IntersectionObserver | null>(null);
 
-useEffect(() => {
-  setActiveHash(window.location.hash);
-  const onHashChange = () => setActiveHash(window.location.hash);
-  window.addEventListener("hashchange", onHashChange);
-  return () => window.removeEventListener("hashchange", onHashChange);
-}, []);
+  useEffect(() => {
+    const handleIntersect = (entries: IntersectionObserverEntry[]) => {
+      const visibleEntry = entries.find((entry) => entry.isIntersecting);
+      if (visibleEntry) {
+        setActiveId(visibleEntry.target.id);
+      }
+    };
 
-  const handleSmoothScroll = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    href: string
-  ) => {
-    e.preventDefault()
-    const id = href.startsWith("#") ? href.slice(1) : href
-    const targetElement = document.getElementById(id)
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" })
-      window.history.pushState(null, "", href)
+    observer.current = new IntersectionObserver(handleIntersect, {
+      root: null,
+      rootMargin: "-20px 0px 0px 0px",
+      threshold: 0.1,
+    });
+
+    const elements = tocs.map((item:any) =>
+      document.getElementById(item.href.slice(1))
+    );
+
+    elements.forEach((el) => {
+      if (el && observer.current) {
+        observer.current.observe(el);
+      }
+    });
+
+    return () => {
+      if (observer.current) {
+        elements.forEach((el:any) => {
+          if (el) {
+            observer.current!.unobserve(el);
+          }
+        });
+      }
+    };
+  }, [tocs]);
+
+    const handleSmoothScroll = (
+      e: React.MouseEvent<HTMLAnchorElement>,
+      href: string
+    ) => {
+      e.preventDefault()
+      const id = href.startsWith("#") ? href.slice(1) : href
+      const targetElement = document.getElementById(id)
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" })
+        window.history.pushState(null, "", href)
+      }
     }
-  }
 
-  if (!tocs.length) {
-    return null
-  }
+    if (!tocs.length) {
+      return null
+    }
 
-  return (
-    <div className="flex w-full flex-col gap-3 overflow-y-hidden rounded-2xl">
-      <h3 className="text-lg font-semibold">On this page</h3>
-      <div className="link-map bg-sheet-primary flex flex-col overflow-y-auto rounded-2xl text-lg no-underline">
-        {tocs.map(({ href, level, text }) => (
-          <Link
-            key={href}
-            href={href}
-            scroll={false}
-            onClick={(e) => handleSmoothScroll(e, href)}
-            className={clsx({
-              "l2 px-4 py-2 no-underline": level == 2,
-              "l3 py-1.5 pl-2 text-md no-underline": level == 3,
-              "l4 pl-4 opacity-80 text-md no-underline": level == 4,
-              "text-blue-400 font-bold" : activeHash === href
-            })}
-          >
-            {text}
-          </Link>
-        ))}
+    return (
+      <div className="flex w-full flex-col gap-3 overflow-y-hidden rounded-2xl">
+        <h3 className="text-lg font-semibold">On this page</h3>
+        <div className="link-map flex flex-col overflow-y-auto text-lg no-underline">
+          {tocs.map(({ href, level, text }) => (
+            <Link
+              key={href}
+              href={href}
+              scroll={false}
+              onClick={(e) => handleSmoothScroll(e, href)}
+              className={cn("flex flex-row items-center gap-2", clsx({
+                "l2 py-2 no-underline saturate-50 text-primary/50": level == 2,
+                "l3 py-1 !text-md no-underline saturate-50 text-primary/50": level == 3,
+                "l4 py-1 opacity-80 !text-sm no-underline saturate-50 text-primary/50": level == 4,
+                "text-primary/100 font-bold saturate-100": activeId === href.slice(1),
+              }))}
+            > {(level === 2 || level === 3 || level ===4) && (
+              <hr className={cn(level === 2 && "w-0", level === 3 && "w-6", level === 4 && "w-8")}/>
+            )}
+              {text}
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
-  )
-}
+    )
+  }
