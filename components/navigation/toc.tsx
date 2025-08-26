@@ -5,6 +5,9 @@ import { useEffect, useState, useRef } from "react"
 export type TocProps = {
   tocs: { href: string; level: number; text: string }[]
 }
+type tocprop = {
+  href: string; level: number; text: string
+}
 import { cn } from "@/lib/utils"
 export default function Toc({ tocs }: TocProps) {
   const [activeId, setActiveId] = useState<string | null>(null);
@@ -24,7 +27,7 @@ export default function Toc({ tocs }: TocProps) {
       threshold: 0.1,
     });
 
-    const elements = tocs.map((item:any) =>
+    const elements = tocs.map((item:tocprop) =>
       document.getElementById(item.href.slice(1))
     );
 
@@ -36,7 +39,7 @@ export default function Toc({ tocs }: TocProps) {
 
     return () => {
       if (observer.current) {
-        elements.forEach((el:any) => {
+        elements.forEach((el: HTMLElement | null) => {
           if (el) {
             observer.current!.unobserve(el);
           }
