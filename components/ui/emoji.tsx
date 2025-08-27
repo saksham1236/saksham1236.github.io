@@ -8,9 +8,20 @@ type props = {
     emoji : string
     className?: string,
 }
+type EmojiProps = FluentEmojiProps & {
+    cdn : {options: Array<string | undefined>, value: string},
+    emoji: string,
+      size: {
+        max: number,
+        min: number,
+        step: number,
+        value: number,
+      }
+}
 export default function Emoji ({ emoji, className }:props) {
   const store = useCreateStore();
-  const control: FluentEmojiProps | any = useControls(
+  //@ts-ignore
+  const control: EmojiProps  = useControls(
     {
       cdn: {
         options: ['aliyun', 'unpkg'],
