@@ -20,7 +20,7 @@ type EmojiProps = FluentEmojiProps & {
 }
 export default function Emoji ({ emoji, className }:props) {
   const store = useCreateStore();
-  //@ts-ignore
+  //@ts-expect-error
   const control: EmojiProps  = useControls(
     {
       cdn: {
