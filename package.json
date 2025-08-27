@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
+    "@lobehub/fluent-emoji": "^2.0.0",
     "@next/third-parties": "^15.3.0",
     "@radix-ui/react-accordion": "^1.2.10",
     "@radix-ui/react-collapsible": "^1.1.4",

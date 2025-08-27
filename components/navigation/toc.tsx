@@ -80,9 +80,9 @@ export default function Toc({ tocs }: TocProps) {
                 "l3 py-1 !text-md no-underline saturate-50 text-primary/50": level == 3,
                 "l4 py-1 opacity-80 !text-sm no-underline saturate-50 text-primary/50": level == 4,
                 "text-primary/100 font-bold saturate-100": activeId === href.slice(1),
-              }))}
-            > {(level === 2 || level === 3 || level ===4) && (
-              <hr className={cn(level === 2 && "w-0", level === 3 && "w-6", level === 4 && "w-8")}/>
+              }))}> 
+              {(level === 2 || level === 3 || level ===4) && (
+              <hr className={cn("hidden lg:inline-flex", level === 2 && "w-0", level === 3 && "w-6", level === 4 && "w-8")}/>
             )}
               {text}
             </Link>

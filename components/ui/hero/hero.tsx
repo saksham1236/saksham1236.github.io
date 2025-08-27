@@ -2,6 +2,7 @@ import { MaterialSymbolsArrowUpwardRounded } from "../icons/icons";
 import styles from "./hero.module.css";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+// import Emoji from "../emoji";
 export default function Hero() {
   return (
     <div className="flex">
@@ -47,6 +48,10 @@ export default function Hero() {
         </div>
       </div>
     </div>
+    // <div className="flex flex-row flex-wrap w-full gap-2 justify-center items-center text-3xl md:text-8xl">
+    //   <h2>Hi I am Saksham.<Emoji emoji = "😊" className="inline-flex size-8 md:size-24"/></h2>
+    //   <h2 className="leading-tight">Designing with Passion.<span className="font-bold"> Developing with Precision</span> to Deliver impact.</h2>
+    // </div>
 
   )
 }
