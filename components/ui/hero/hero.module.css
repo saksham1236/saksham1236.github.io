@@ -1,7 +1,8 @@
 .green,
 .blue,
 .orange, 
-.white {
+.white,
+.yellow {
   --noise: url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='1'/></svg>");
   --noise-dark: url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='0.3'/></svg>");
 
@@ -25,10 +26,8 @@
 }
 
 .yellow {
-  background: linear-gradient(to left, transparent 50%, #ffa528 50%);
-  background-size: 200% 100%;
-  background-position: 100% 0;
-  transition: all 0.2s ease-in-out;
+  background: var(--noise), linear-gradient(to right, #F19A26 0%, #d76316 100%);
+  background-blend-mode: overlay;
 }
 .green {
   background: var(--noise), linear-gradient(to right, #00c7a3 0%, #00a184 100%);

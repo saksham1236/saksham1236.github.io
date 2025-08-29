@@ -13,7 +13,6 @@ import { useRef } from 'react';
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react";
 // import SkillsSpan from "@/components/ui/hero/skillsSpan"
-import Emoji from "@/components/ui/emoji"
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function Home() {
@@ -33,11 +32,11 @@ export default function Home() {
   return (
     <>
       <div className="sm:min-w-swh flex min-h-[calc(100svh-80px)] flex-col items-center justify-around gap-4 sm:min-h-[calc(100svh-96px)] sm:gap-8 lg:pt-4 lg:pb-8 mb-16" ref={main}>
-        <div className="unicorn absolute top-0 left-0 z-[-1] h-[100svh] w-[99dvw] opacity-50">
+        <div className="unicorn absolute top-0 left-0 z-[-1] h-[100svh] w-[99dvw] opacity-50 dark:opacity-25">
           <UnicornView />
         </div>
         <div className="flex flex-row flex-wrap gap-4 justify-center items-center text-4xl">
-          <h2 className="flex gap-2">Hi I am Saksham.<Emoji emoji="😊" className="inline-flex size-12"/></h2>
+          <h2 className="flex gap-2">Hi I am Saksham.</h2>
         </div>
         <Hero />
         <Link href="#mywork">
