@@ -26,34 +26,21 @@
 }
 
 .yellow {
-  background: var(--noise), linear-gradient(to right, #F19A26 0%, #d76316 100%);
+  background: var(--noise), linear-gradient(to right, #ffc21c 0%, #dc6f0a 100%);
   background-blend-mode: overlay;
 }
 .green {
-  background: var(--noise), linear-gradient(to right, #00c7a3 0%, #00a184 100%);
-  background-blend-mode: overlay;
-}
-
-:global(.dark) .green {
-  background: var(--noise), linear-gradient(to right, #00c7a3 0%, #005750 100%);
+  background: var(--noise), linear-gradient(to right, #00c74c 0%, #00d09c 100%);
   background-blend-mode: overlay;
 }
 
 .blue {
-  background: var(--noise), linear-gradient(to right, #0095e2 0%, #0077b2 100%);
-  background-blend-mode: overlay;
-}
-:global(.dark) .blue {
-  background: var(--noise), linear-gradient(to right, #0095e2 0%, #025782 100%);
+  background: var(--noise), linear-gradient(to right, #af5eff 0%, #ff3142 100%);
   background-blend-mode: overlay;
 }
 
 .orange {
-  background: var(--noise), linear-gradient(to right, #ed602e 0%, #c63500 100%);
-  background-blend-mode: overlay;
-}
-:global(.dark) .orange {
-  background: var(--noise), linear-gradient(to right, #ed602e 0%, #9a2900 100%);
+  background: var(--noise), linear-gradient(to right, #2e5eed 0%, #8e59ce 50%, #ff581b 100%);
   background-blend-mode: overlay;
 }
 .white {

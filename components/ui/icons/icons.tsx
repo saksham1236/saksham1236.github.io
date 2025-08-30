@@ -350,10 +350,10 @@ export const Moon_13 = (props: SVGProps<SVGSVGElement>) => (
         <path d="M0 0c0 55.228 44.772 100 100 100C44.772 100 0 144.772 0 200c55.228 0 100-44.772 100-100 0 55.228 44.772 100 100 100 0-55.22-44.758-99.987-99.976-100C155.242 99.987 200 55.22 200 0c-55.228 0-100 44.772-100 100C100 44.772 55.228 0 0 0z" fill="#fff" />
       </mask>
       <g mask="url(#cs_mask_1_moon-13)">
-        <path d="M200 0H0v200h200V0z" fill="#fff" />
+        <path d="M200 0H0v200h200V0z" fill="#0ff" />
         <path d="M200 0H0v200h200V0z" fill="#FFF500" fillOpacity="0.44" />
         <g filter="url(#filter0_f_748_4444)">
-          <ellipse cx="106" cy="22.5" fill="#FF00D6" rx="88" ry="49.5" />
+          <ellipse cx="106" cy="22.5" fill="#FFaaD6" rx="88" ry="49.5" />
           <ellipse cx="64.5" cy="155" fill="#07FFE1" rx="64.5" ry="45" />
           <path d="M218 126H100v120h118V126z" fill="#06F" />
         </g>
@@ -390,7 +390,7 @@ export const Moon_9 = (props: SVGProps<SVGSVGElement>) => (
         <path d="M200 0H0v200h200V0z" fill="#fff" />
         <path d="M200 0H0v200h200V0z" fill="url(#paint0_linear_748_4479)" />
         <g filter="url(#filter0_f_748_4479)">
-          <path d="M180-41H-11v141h191V-41z" fill="#FFE500" />
+          <path d="M180-41H-11v141h191V-41z" fill="#00FFD0" />
           <path d="M256 63H113v157h143V63z" fill="#18A0FB" />
         </g>
       </g>
@@ -541,8 +541,8 @@ export const Flower_9 = (props: SVGProps<SVGSVGElement>) => (
         <path d="M200 0H0v200h200V0z" fill="#fff" />
         <path d="M200 0H0v200h200V0z" fill="url(#paint0_linear_748_4634)" fillOpacity="0.55" />
         <g filter="url(#filter0_f_748_4634)">
-          <path d="M214 0H92v132.75h122V0z" fill="#06F" />
-          <path d="M121 62H0v114h121V62z" fill="#FF58E4" />
+          <path d="M214 0H92v132.75h122V0z" fill="#FFC300" />
+          <path d="M121 62H0v114h121V62z" fill="#F16A26" />
         </g>
       </g>
     </g>
@@ -556,8 +556,8 @@ export const Flower_9 = (props: SVGProps<SVGSVGElement>) => (
         <feGaussianBlur result="effect1_foregroundBlur_748_4634" stdDeviation="35" />
       </filter>
       <linearGradient id="paint0_linear_748_4634" gradientUnits="userSpaceOnUse" x1="162" x2="49.5" y1="38" y2="150.5">
-        <stop stopColor="#FF1F00" />
-        <stop offset="1" stopColor="#FF58E4" />
+        <stop stopColor="#FFC300" />
+        <stop offset="1" stopColor="#FFC300" />
       </linearGradient>
       <clipPath id="cs_clip_1_flower-9">
         <path d="M0 0H200V200H0z" fill="#fff" />
@@ -707,6 +707,47 @@ export const Misc_8 = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
+
+export const Triangle_6 = (props: SVGProps<SVGSVGElement>) => (
+  <svg className="coolshapes triangle-8 " height="400" width="400" fill="none" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <g clipPath="url(#cs_clip_1_triangle-8)">
+      <mask height="201" id="cs_mask_1_triangle-8" style={{ "maskType": "alpha" }} width="202" x="-1" y="0" maskUnits="userSpaceOnUse">
+        <path d="M200 100L100 0 0 100h100L0 200h200L100 100h100z" fill="#fff" />
+      </mask>
+      <g mask="url(#cs_mask_1_triangle-8)">
+        <path d="M200 0H0v200h200V0z" fill="#fff" />
+        <path d="M200 0H0v200h200V0z" fill="url(#paint0_linear_748_4918)" fillOpacity="0.55" />
+        <g filter="url(#filter0_f_748_4918)">
+          <path d="M220 56H100v155h120V56z" fill="#06F" />
+        </g>
+      </g>
+    </g>
+    <g style={{ "mixBlendMode": "overlay" }} mask="url(#cs_mask_1_triangle-8)">
+      <path d="M200 0H0v200h200V0z" fill="gray" stroke="transparent" filter="url(#cs_noise_1_triangle-8)" />
+    </g>
+    <defs>
+      <filter height="315" id="filter0_f_748_4918" width="280" x="20" y="-24" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood result="BackgroundImageFix" floodOpacity="0" />
+        <feBlend result="shape" in="SourceGraphic" in2="BackgroundImageFix" />
+        <feGaussianBlur result="effect1_foregroundBlur_748_4918" stdDeviation="40" />
+      </filter>
+      <linearGradient id="paint0_linear_748_4918" gradientUnits="userSpaceOnUse" x1="162" x2="49.5" y1="38" y2="150.5">
+        <stop stopColor="#FF1F00" />
+        <stop offset="1" stopColor="#FF58E4" />
+      </linearGradient>
+      <clipPath id="cs_clip_1_triangle-8">
+        <path d="M0 0H200V200H0z" fill="#fff" />
+      </clipPath>
+    </defs>
+    <defs>
+      <filter height="100%" id="cs_noise_1_triangle-8" width="100%" x="0%" y="0%" filterUnits="objectBoundingBox">
+        <feBlend result="out3" in="SourceGraphic" in2="out2" />
+      </filter>
+    </defs>
+  </svg>
+  );
+  
+  
 
 
 
