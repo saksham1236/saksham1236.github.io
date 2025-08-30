@@ -195,6 +195,7 @@ export function MaterialSymbolsArrowBackRounded(props: SVGProps<SVGSVGElement>) 
   return (<svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" {...props}><path fill="currentColor" d="m7.825 13l4.9 4.9q.3.3.288.7t-.313.7q-.3.275-.7.288t-.7-.288l-6.6-6.6q-.15-.15-.213-.325T4.426 12t.063-.375t.212-.325l6.6-6.6q.275-.275.688-.275t.712.275q.3.3.3.713t-.3.712L7.825 11H19q.425 0 .713.288T20 12t-.288.713T19 13z"></path></svg>);
 }
 
+
 // Generated from https://coolshap.es by realvjy
 
 export const Star_4 = (props: SVGProps<SVGSVGElement>) => (
@@ -678,38 +679,38 @@ export const Misc_8 = (props: SVGProps<SVGSVGElement>) => (
 );
 
 export const Triangle_6 = (props: SVGProps<SVGSVGElement>) => (
-  <svg className="coolshapes triangle-8 " height="400" width="400" fill="none" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <g clipPath="url(#cs_clip_1_triangle-8)">
-      <mask height="201" id="cs_mask_1_triangle-8" style={{ "maskType": "alpha" }} width="202" x="-1" y="0" maskUnits="userSpaceOnUse">
+  <svg className="coolshapes triangle-6 " height="400" width="400" fill="none" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <g clipPath="url(#cs_clip_1_triangle-6)">
+      <mask height="201" id="cs_mask_1_triangle-6" style={{ "maskType": "alpha" }} width="202" x="-1" y="0" maskUnits="userSpaceOnUse">
         <path d="M200 100L100 0 0 100h100L0 200h200L100 100h100z" fill="#fff" />
       </mask>
-      <g mask="url(#cs_mask_1_triangle-8)">
+      <g mask="url(#cs_mask_1_triangle-6)">
         <path d="M200 0H0v200h200V0z" fill="#fff" />
-        <path d="M200 0H0v200h200V0z" fill="url(#paint0_linear_748_4918)" fillOpacity="0.55" />
-        <g filter="url(#filter0_f_748_4918)">
+        <path d="M200 0H0v200h200V0z" fill="url(#paint0_linear_748_4919)" fillOpacity="0.55" />
+        <g filter="url(#filter0_f_748_4919)">
           <path d="M220 56H100v155h120V56z" fill="#06F" />
         </g>
       </g>
     </g>
-    <g style={{ "mixBlendMode": "overlay" }} mask="url(#cs_mask_1_triangle-8)">
-      <path d="M200 0H0v200h200V0z" fill="gray" stroke="transparent" filter="url(#cs_noise_1_triangle-8)" />
+    <g style={{ "mixBlendMode": "overlay" }} mask="url(#cs_mask_1_triangle-6)">
+      <path d="M200 0H0v200h200V0z" fill="gray" stroke="transparent" filter="url(#cs_noise_1_triangle-6)" />
     </g>
     <defs>
-      <filter height="315" id="filter0_f_748_4918" width="280" x="20" y="-24" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+      <filter height="315" id="filter0_f_748_4919" width="280" x="20" y="-24" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
         <feFlood result="BackgroundImageFix" floodOpacity="0" />
         <feBlend result="shape" in="SourceGraphic" in2="BackgroundImageFix" />
-        <feGaussianBlur result="effect1_foregroundBlur_748_4918" stdDeviation="40" />
+        <feGaussianBlur result="effect1_foregroundBlur_748_4919" stdDeviation="40" />
       </filter>
-      <linearGradient id="paint0_linear_748_4918" gradientUnits="userSpaceOnUse" x1="162" x2="49.5" y1="38" y2="150.5">
+      <linearGradient id="paint0_linear_748_4919" gradientUnits="userSpaceOnUse" x1="162" x2="49.5" y1="38" y2="150.5">
         <stop stopColor="#FF1F00" />
         <stop offset="1" stopColor="#FF58E4" />
       </linearGradient>
-      <clipPath id="cs_clip_1_triangle-8">
+      <clipPath id="cs_clip_1_triangle-6">
         <path d="M0 0H200V200H0z" fill="#fff" />
       </clipPath>
     </defs>
     <defs>
-      <filter height="100%" id="cs_noise_1_triangle-8" width="100%" x="0%" y="0%" filterUnits="objectBoundingBox">
+      <filter height="100%" id="cs_noise_1_triangle-6" width="100%" x="0%" y="0%" filterUnits="objectBoundingBox">
         <feBlend result="out3" in="SourceGraphic" in2="out2" />
       </filter>
     </defs>

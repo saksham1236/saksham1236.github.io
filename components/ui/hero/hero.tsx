@@ -62,9 +62,9 @@ export default function Hero() {
         <Moon_13 className="size-10 lg:size-28" />
         <span>Websites</span><Triangle_6 className="flex lg:hidden size-8 rotate-90" />
         <span className="flex flex-row items-center justify-center gap-2 lg:gap-4">
-          <span className="hidden lg:flex"><Triangle_8 className="size-28 rotate-90" /></span>
-          to Deliver
-          </span>
+          <span className="hidden lg:block"><Triangle_8 className="size-28 rotate-90" /></span>
+          <span>to Deliver</span>
+        </span>
           <Flower_9 className="size-10 lg:size-28" />
           <span className={cn("text-white font-bold  px-1 py-0.5 lg:px-8 lg:py-4 rounded-full flex flex-grow justify-center", styles.blue)}>impact
             </span>
