@@ -82,7 +82,7 @@ export default function Card({
         setApi={setApi}
         plugins={[
           Autoplay({
-            delay: 6000,
+            delay: 10000,
             stopOnMouseEnter: true,
             stopOnInteraction: true,
           }),

@@ -195,36 +195,6 @@ export function MaterialSymbolsArrowBackRounded(props: SVGProps<SVGSVGElement>) 
   return (<svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" {...props}><path fill="currentColor" d="m7.825 13l4.9 4.9q.3.3.288.7t-.313.7q-.3.275-.7.288t-.7-.288l-6.6-6.6q-.15-.15-.213-.325T4.426 12t.063-.375t.212-.325l6.6-6.6q.275-.275.688-.275t.712.275q.3.3.3.713t-.3.712L7.825 11H19q.425 0 .713.288T20 12t-.288.713T19 13z"></path></svg>);
 }
 
-export const Star7 = (props: SVGProps<SVGSVGElement>) => (
-  <svg width="147" height="147" viewBox="0 0 147 147" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-    <mask id="mask0_115_77" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="147" height="147">
-      <path d="M73.0116 0C82.0826 45.5461 100.213 63.853 146.023 73.0116C100.202 82.1702 82.0716 100.477 73.0116 146.023C63.9407 100.477 45.8104 82.1593 0 73.0116C45.8206 63.853 63.9516 45.5461 73.0116 0Z" fill="white" />
-    </mask>
-    <g mask="url(#mask0_115_77)">
-      <path d="M146.023 0H0V146.023H146.023V0Z" fill="white" />
-      <g filter="url(#filter0_f_115_77)">
-        <path d="M169 23H46V162H169V23Z" fill="#0066FF" />
-      </g>
-      <g filter="url(#filter1_f_115_77)">
-        <path d="M53 12H-70V151H53V12Z" fill="#0066FF" />
-      </g>
-    </g>
-    <defs>
-      <filter id="filter0_f_115_77" x="-64.4651" y="-87.4651" width="343.93" height="359.93" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-        <feGaussianBlur stdDeviation="55.2326" result="effect1_foregroundBlur_115_77" />
-      </filter>
-      <filter id="filter1_f_115_77" x="-180.465" y="-98.4651" width="343.93" height="359.93" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-        <feGaussianBlur stdDeviation="55.2326" result="effect1_foregroundBlur_115_77" />
-      </filter>
-    </defs>
-  </svg>
-
-);
-
 // Generated from https://coolshap.es by realvjy
 
 export const Star_4 = (props: SVGProps<SVGSVGElement>) => (
