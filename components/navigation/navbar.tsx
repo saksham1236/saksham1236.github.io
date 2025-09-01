@@ -1,7 +1,10 @@
+"use client"
+
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { GitHubLink, LinkedinLink, Navigations } from "@/settings/navigation"
 import { FiLinkedin } from "react-icons/fi"
-
+import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { SheetClose } from "@/components/ui/sheet"
 import Anchor from "@/components/navigation/anchor"
@@ -15,8 +18,31 @@ import {
 } from "../ui/icons/icons"
 
 export function Navbar() {
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+      setIsVisible(false); // Hide navbar when scrolling down
+    } else {
+      setIsVisible(true); // Show navbar when scrolling up
+    }
+
+    setLastScrollY(currentScrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <nav className="sticky top-0 z-50 h-20 w-full px-2 md:h-24 md:px-4">
+    <nav id="nav" className={cn("sticky top-0 z-50 h-20 w-full px-2 md:h-24 md:px-4 transition-transform duration-300", isVisible ? "translate-y-0" : "-translate-y-full")}>
       <div className="[&>*]:bg-primary-foreground/65 mx-auto flex h-full max-w-392 items-center justify-between p-1 sm:p-3 md:gap-2 [&:*]:rounded-full [&>*]:shadow-xl">
         <div className="bg-nav-noise flex rounded-full p-2 pr-4">
           <Logo />

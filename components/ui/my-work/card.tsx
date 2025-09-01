@@ -11,7 +11,6 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel"
 import Link from "next/link"
-import Autoplay from "embla-carousel-autoplay"
 
 type cardProps = {
   title: string
@@ -45,7 +44,6 @@ export default function Card({
     setCurrent(api.selectedScrollSnap() + 1)
     api.on("select", () => {
       setCurrent(api.selectedScrollSnap() + 1)
-      api.plugins().autoplay.reset();
     })
   }, [api])
 
@@ -80,13 +78,7 @@ export default function Card({
         < Carousel
         className="carousel aspect-3/2 lg:aspect-auto lg:h-full"
         setApi={setApi}
-        plugins={[
-          Autoplay({
-            delay: 10000,
-            stopOnMouseEnter: true,
-            stopOnInteraction: true,
-          }),
-        ]}
+        plugins={[]}
         >
         <CarouselContent className="h-full rounded-4xl">
           {(children ?? []).map((child, index) => (

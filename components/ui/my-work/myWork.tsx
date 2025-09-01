@@ -6,7 +6,6 @@ import { useRef } from "react"
 import { useGSAP } from "@gsap/react"
 import Card from "./card"
 import Image from "next/image"
-
 gsap.registerPlugin(useGSAP);
 
 export default function MyWork() {
@@ -28,10 +27,12 @@ export default function MyWork() {
       });
     })
   return (
-    <div className="flex flex-col gap-6 py-12 md:p-24" ref={container}>
-      <h2 id="mywork" className="text-muted text-3xl font-medium md:text-5xl">
-        Here are some of my recent projects.
-      </h2>
+    <div className="flex flex-col gap-6" ref={container}>
+      <div className="flex justify-between border-b-1 py-4">
+        <h2 id="mywork" className="text-muted text-3xl font-medium md:text-5xl">
+          Featured Work
+        </h2>
+      </div>
       <CardGrid className="!grid-cols-1">
         <Card
           className="fade-up-card bg-gradient-to-br from-[#06D6A0] to-[#007E5D]"

@@ -52,7 +52,7 @@ export default function Hero() {
     <div className="flex flex-row flex-wrap w-full gap-2 justify-center items-center">
       <h1 className="sr-only">Hi I am Saksham. I can help you with Branding, UX Design & Web Development</h1>
       <h2 className="sr-only"> Building enganging experiences, Developing Websites to deliver impact.</h2>
-      <div className="flex flex-row flex-wrap items-center justify-start p-0 sm:p-16 md:p-24 text-[28px] sm:text-4xl lg:text-8xl gap-y-2 gap-x-2 lg:gap-x-4">
+      <div className="flex flex-row flex-wrap items-center justify-start p-0 sm:p-8 md:p-18 text-[28px] sm:text-3xl lg:text-8xl gap-y-2 gap-x-2 lg:gap-x-4">
         <span>Building</span>
         <Star_8 className="size-10 lg:size-34" />
         <span className={cn("text-white italic px-1 py-0.5 lg:px-8 lg:py-4 rounded-full flex flex-grow justify-center", styles.orange)}>Experiences</span>
