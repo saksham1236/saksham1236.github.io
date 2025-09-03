@@ -17,7 +17,7 @@ export default function MyWork() {
         gsap.from(element, {
           scrollTrigger: {
             trigger: element,
-            start: "top 80%"
+            start: "top 80%",
           },
           y: 100,
           opacity: 0,
@@ -28,7 +28,7 @@ export default function MyWork() {
     })
   return (
     <div className="flex flex-col gap-6" ref={container}>
-      <div className="flex justify-between border-b-1 py-4">
+      <div className="flex justify-between py-4">
         <h2 id="mywork" className="text-muted text-3xl font-medium md:text-5xl">
           Featured Work
         </h2>
@@ -43,10 +43,6 @@ export default function MyWork() {
           link="/docs/recent-work/bounce-back-learning"
         >
           <Image className="w-full h-full lg:object-left" alt="Bounce Back Coin" src="/images/bb-learning/thumb-new.png" width={1200} height={800} />
-          <div className="bg-blue-400 w-full h-full p-5">
-            <p className="text-lg">This is some cool text</p>
-          </div>
-          <Image className="w-full h-full" alt="Bounce Back Coin" src="/images/bb-learning/thumb.png" width={300} height={300} />
         </Card>
         <Card
           className="fade-up-card bg-gradient-to-br from-[#63b1ff] to-[#1f7cda]"
@@ -57,7 +53,6 @@ export default function MyWork() {
           link="/docs/recent-work/bounce-back-learning"
         >
           <Image className="w-full h-full lg:object-bottom-left" alt="Bounce Back Coin" src="/images/lynk/thumb-new.png" width={1200} height={800} />
-          <Image className="w-full h-full" alt="Bounce Back Coin" src="/images/bb-learning/thumb.png" width={300} height={300} />
         </Card>
         <Card
           className="fade-up-card bg-gradient-to-br from-[#000] to-[#141414]"
@@ -69,7 +64,6 @@ export default function MyWork() {
           dark
         >
           <Image className="w-full h-full lg:object-top-left" alt="Bounce Back Coin" src="/images/bb-digital-branding/thumb-new.png" width={1200} height={800} />
-          <Image className="w-full h-full" alt="Bounce Back Coin" src="/images/bb-learning/thumb.png" width={300} height={300} />
         </Card>
       </CardGrid>
     </div>

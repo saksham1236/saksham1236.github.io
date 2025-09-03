@@ -20,7 +20,7 @@ type cardProps = {
   imgClassName?: string
   cta?: string
   link: string
-  children?: React.ReactNode[]
+  children?: React.ReactNode[] | React.ReactNode
   dark?: boolean
 }
 export default function Card({
@@ -70,47 +70,47 @@ export default function Card({
         )}
       </div>
       <div className="flex aspect-auto lg:aspect-none lg:h-full flex-grow items-center justify-center carousel lg:w-1/3">
-        {(children?? []).length === 1 ? (
+        {((Array.isArray(children))) ? (
+          < Carousel
+            className="carousel aspect-3/2 lg:aspect-auto lg:h-full"
+            setApi={setApi}
+            plugins={[]}
+          >
+            <CarouselContent className="h-full rounded-4xl">
+              {(Array.isArray(children) ? children : []).map((child, index) => (
+                <CarouselItem
+                  className={cn("transition-all duration-700 ease h-full cursor-grab", index == 0 ? "lg:basis-1/1" : "lg:basis-4/5")}
+                  key={index}
+                >
+                  <div className="h-full w-full rounded-4xl contain-paint">
+                    {child}
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="flex flex-row absolute w-full justify-end px-4 bottom-[16px]">
+              <div className=" flex items-center gap-2 p-2 bg-nav-noise rounded-full contain-paint shadow-lg">
+                <CarouselPrevious className="hidden lg:flex size-8" />
+                {Array.from({ length: count }).map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => (api?.scrollTo(index))}
+                    className={cn("size-2 rounded-full bg-primary/50 transition-all duration-150 ease-in-out", {
+                      "bg-primary !w-8": current === index + 1,
+                    })}
+                  />
+                ))}
+                <CarouselNext className="hidden lg:flex size-8" />
+              </div>
+            </div>
+          </Carousel>
+        ) : (
           <div className="h-full w-full rounded-4xl contain-paint">
             {children}
           </div>
-        ) : (
-        < Carousel
-        className="carousel aspect-3/2 lg:aspect-auto lg:h-full"
-        setApi={setApi}
-        plugins={[]}
-        >
-        <CarouselContent className="h-full rounded-4xl">
-          {(children ?? []).map((child, index) => (
-            <CarouselItem
-              className={cn("transition-all duration-700 ease h-full cursor-grab", index == 0 ? "lg:basis-1/1" : "lg:basis-4/5")}
-              key={index}
-            >
-              <div className="h-full w-full rounded-4xl contain-paint">
-                {child}
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <div className="flex flex-row absolute w-full justify-end px-4 bottom-[16px]">
-          <div className=" flex items-center gap-2 p-2 bg-nav-noise rounded-full contain-paint shadow-lg">
-            <CarouselPrevious className="hidden lg:flex size-8" />
-            {Array.from({ length: count }).map((_, index) => (
-              <button
-                key={index}
-                onClick={() => (api?.scrollTo(index))}
-                className={cn("size-2 rounded-full bg-primary/50 transition-all duration-150 ease-in-out", {
-                  "bg-primary !w-8": current === index + 1,
-                })}
-              />
-            ))}
-            <CarouselNext className="hidden lg:flex size-8" />
-          </div>
-        </div>
-      </Carousel>
         )
         }
-    </div>
+      </div>
     </div >
   )
 }

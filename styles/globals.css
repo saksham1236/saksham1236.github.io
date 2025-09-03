@@ -482,9 +482,7 @@ table {
     min-width: 10ch;
   }
 }
-.fade-up {
-  visibility: hidden;
-}
+
 @keyframes slideDown {
   from {
     height: 0;
