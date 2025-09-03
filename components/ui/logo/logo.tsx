@@ -26,7 +26,7 @@ export function LogoMark(props: SVGProps<SVGSVGElement>) {
 
 export function LogoMarkHorizontal(props: SVGProps<SVGSVGElement>) {
     return (
-        <svg width="2155" height="540" viewBox="0 0 2155 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="2155" height="540" viewBox="0 0 2155 540" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
             <path d="M1350 0C1499.12 0 1620 120.883 1620 270C1620 419.117 1499.12 540 1350 540C1200.88 540 1080 419.117 1080 270C1080 120.883 1200.88 0 1350 0ZM1350 124C1269.37 124 1204 189.366 1204 270C1204 350.634 1269.37 416 1350 416C1430.63 416 1496 350.634 1496 270C1496 189.366 1430.63 124 1350 124Z" fill="#00BA97" />
             <path d="M270 0H0V270L270 0Z" fill="#F52041" />
             <path d="M270 270H0V540L270 270Z" fill="#F52041" />

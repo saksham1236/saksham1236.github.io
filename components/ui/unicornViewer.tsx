@@ -1,7 +1,7 @@
 import { useTheme } from "next-themes"
 import UnicornScene from "unicornstudio-react"
 
-export default async function UnicornView() {
+export default function UnicornView() {
   let theme: string | undefined = "dark";
   theme = useTheme().theme;
   if (theme === "light") {
@@ -12,7 +12,7 @@ export default async function UnicornView() {
         height="100%"
         scale={0.75}
         dpi={2}
-        className="overflow-clip"
+        className="contain-paint"
       />
     )
   } else {
@@ -23,7 +23,7 @@ export default async function UnicornView() {
         height="100%"
         scale={0.75}
         dpi={2}
-        className="overflow-clip"
+        className="contain-paint"
       />
     )
   }
