@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function MyExperience() {
     return (
         <div className="flex flex-col gap-12">
-            <h2 className="flex items-center gap-4 text-muted text-3xl font-medium md:text-5xl">My Design Journey<Emoji className="size-12 lg:size-18" emoji="🐣" /></h2>
+            <h2 className="flex items-center gap-4 text-muted text-3xl font-medium md:text-5xl">My Design Journey<Emoji className="size-12 lg:size-18" emoji={`🐣`}/></h2>
             <div className="experience flex flex-col gap-4 md:flex-row pb-8 border-b-1">
                 <div className="flex flex-col gap-2 md:flex-1/3">
                     <h3 className="text-4xl font-semibold">
