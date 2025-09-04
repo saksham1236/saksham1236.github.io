@@ -65,7 +65,7 @@ export default function Home() {
           </div>
         </Link>
       </div>
-      <main className="flex flex-col gap-32 py-12 md:p-24">
+      <main className="flex flex-col gap-16 md:gap-32 py-12 md:p-24">
         <div className="intro pt-24 fade-up" id="intro">
           <Introduction />
         </div>
