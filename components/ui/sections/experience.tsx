@@ -19,7 +19,7 @@ export default function MyExperience() {
                 </div>
                 <div className="flex flex-col gap-4 text-xl md:text-3xl md:flex-2/3 leading-snug">
                     <p>
-                        Experienced in creating responsive webpage layouts for CDW.ca's landing pages using Adobe Experience Manager, HubSpot, HTML, CSS, and JS.
+                        Experienced in creating responsive webpage layouts for {`CDW.ca's`} landing pages using Adobe Experience Manager, HubSpot, HTML, CSS, and JS.
                     </p>
                     <p>
                         Achieved a 193% YoY increase in Research Hub article views and a notable 93% boost in partner showcase page traffic through strategic content planning and design implementation.
@@ -63,7 +63,7 @@ export default function MyExperience() {
                         Freelance | 2021 — Present
                     </h4>
                     <h4 className="text-xl text-muted">
-                        University of Hawai'i | 2020 — 2021
+                        {`University of Hawai'i`} | 2020 — 2021
                     </h4>
                 </div>
                 <div className="flex flex-col gap-4 text-xl md:text-3xl md:flex-2/3 leading-snug">
