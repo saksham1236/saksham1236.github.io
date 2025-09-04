@@ -6,6 +6,7 @@ import { useRef } from "react"
 import { useGSAP } from "@gsap/react"
 import Card from "./card"
 import Image from "next/image"
+import { Emoji } from "../icons/icons"
 gsap.registerPlugin(useGSAP);
 
 export default function MyWork() {
@@ -28,11 +29,7 @@ export default function MyWork() {
     })
   return (
     <div className="flex flex-col gap-6" ref={container}>
-      <div className="flex justify-between py-4">
-        <h2 id="mywork" className="text-muted text-3xl font-medium md:text-5xl">
-          Featured Work
-        </h2>
-      </div>
+      <h2 className="flex items-center gap-4 text-muted text-3xl font-medium md:text-5xl">Featured Work<Emoji className="size-12 lg:size-18" emoji="🚀" /></h2>
       <CardGrid className="!grid-cols-1">
         <Card
           className="fade-up-card bg-gradient-to-br from-[#06D6A0] to-[#007E5D]"

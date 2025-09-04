@@ -12,9 +12,12 @@ import gsap from 'gsap';
 import { useRef } from 'react';
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react";
-import Introduction from "@/components/ui/intro"
+import Introduction from "@/components/ui/sections/intro"
 import { Emoji } from "@/components/ui/icons/icons"
 import SKillSection from "@/components/ui/skillSection/skillSection"
+import MyExperience from "@/components/ui/sections/experience"
+import ContactForm from "@/components/ui/sections/form"
+import FormbricksProvider from "@/components/ui/sections/form"
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function Home() {
@@ -23,7 +26,7 @@ export default function Home() {
     () => {
       gsap.to(".unicorn", {
         scrollTrigger: {
-          trigger: ".myWork",
+          trigger: ".intro",
           toggleActions: "play reverse play reverse"
         },
         opacity: 0,
@@ -49,11 +52,11 @@ export default function Home() {
   return (
     <>
       <div className="sm:min-w-swh flex min-h-[calc(100svh-80px)] flex-col items-center justify-around gap-2 sm:min-h-[calc(100svh-96px)] sm:gap-8 lg:pt-16 lg:pb-16 mb-16" ref={main}>
-        <div className="unicorn absolute top-0 left-0 z-[-1] h-[100svh] w-[99dvw] opacity-50 dark:opacity-25">
+        {/* <div className="unicorn absolute top-0 left-0 z-[-1] h-[100svh] w-[99dvw] opacity-50 dark:opacity-25">
           <UnicornView />
-        </div>
+        </div> */}
         <div className="flex flex-row flex-wrap gap-4 justify-center items-center">
-          <h2 className="flex items-center gap-2 text-md lg:text-3xl"><Emoji className="size-12 lg:size-18" emoji ="👋"/>Hi I am Saksham.</h2>
+          <h2 className="flex items-center gap-2 text-xl lg:text-3xl"><Emoji className="size-12 lg:size-18" emoji ="👋"/>Hi I am Saksham.</h2>
         </div>
         <Hero />
         <Link className="group" href="#intro">
@@ -63,7 +66,7 @@ export default function Home() {
           </div>
         </Link>
       </div>
-      <main className="flex flex-col gap-24 py-12 md:p-24">
+      <main className="flex flex-col gap-32 py-12 md:p-24">
         <div className="intro pt-24 fade-up" id="intro">
           <Introduction />
         </div>
@@ -72,6 +75,12 @@ export default function Home() {
         </div>
         <div className="myWork">
           <MyWork />
+        </div>
+        <div className="experience">
+          <MyExperience />
+        </div>
+        <div className="form">
+          <FormbricksProvider/>
         </div>
       </main>
     </>

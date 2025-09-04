@@ -1,7 +1,7 @@
 import React, { PropsWithChildren, useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
-
+import { Emoji } from '../icons/icons';
 import {
     Carousel,
     CarouselContent,
@@ -82,14 +82,14 @@ export function SkillCarousel({ children }: PropsWithChildren) {
 }
 export default function SkillSection() {
     return (
-        <div className='flex flex-col gap-12 w-full'>
-            <h2 className='text-5xl font-bold text-muted'>What I do</h2>
+        <div className='flex flex-col gap-6 w-full'>
+ <h2 className="flex items-center gap-4 text-muted text-3xl font-medium md:text-5xl">What I do...<Emoji className="size-12 lg:size-18" emoji="✍️" /></h2>
             <SkillCarousel>
-                <SkillCard text="UX Design"/>
+                <SkillCard text="UX Design" />
                 <SkillCard text="Web Development" />
                 <SkillCard text="Branding" />
                 <SkillCard text="Scientific Illustration" />
-                <SkillCard text="Motion Design" src="/images/skills/motion-design.gif"/>
+                <SkillCard text="Motion Design" src="/images/skills/motion-design.gif" />
             </SkillCarousel>
         </div>
     )

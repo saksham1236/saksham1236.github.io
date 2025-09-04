@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { TwemojiMapleLeaf } from "./icons/icons";
+import { TwemojiMapleLeaf } from "../icons/icons";
 export default function Introduction() {
     return (
         <div className="flex flex-col md:flex-row gap-4 lg:gap-16 items-center text-2xl lg:text-5xl leading-snug">
