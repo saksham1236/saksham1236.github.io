@@ -5,7 +5,7 @@ export default function MyExperience() {
     return (
         <div className="flex flex-col gap-6 md:gap-12">
             <h2 className="flex items-center gap-4 text-muted text-3xl font-medium md:text-5xl">My Design Journey<Emoji className="size-12 lg:size-18" emoji={`🐣`}/></h2>
-            <div className="experience flex flex-col gap-4 md:flex-row pb-8 border-b-1">
+            <div className="experience flex flex-col gap-4 md:flex-row pb-8 border-b-1 fade-up">
                 <div className="flex flex-col gap-2 md:flex-1/3">
                     <h3 className="text-4xl font-semibold">
                         UX/Web Designer
@@ -17,15 +17,12 @@ export default function MyExperience() {
                         Full-Time | 2022 — Present
                     </span>
                 </div>
-                <div className="flex flex-col gap-4 text-xl md:text-3xl md:flex-2/3 leading-snug">
+                <div className="flex flex-col gap-4 text-xl md:text-3xl md:flex-2/3 leading-relaxed md:leading-snug">
                     <p>
-                        Experienced in creating responsive webpage layouts for {`CDW.ca's`} landing pages using Adobe Experience Manager, HubSpot, HTML, CSS, and JS.
+                        I specialize in creating responsive webpage layouts for {`CDW.ca’s`} landing pages using Adobe Experience Manager, HubSpot, HTML, CSS, and JavaScript. My strategic approach to content planning and design implementation has driven significant results, including a 193% year-over-year increase in Research Hub article views and a 93% boost in partner showcase page traffic.
                     </p>
                     <p>
-                        Achieved a 193% YoY increase in Research Hub article views and a notable 93% boost in partner showcase page traffic through strategic content planning and design implementation.
-                    </p>
-                    <p>
-                        Created a Figma plugin that automated layer renaming with tokens and conditional rules, improving workflow efficiency for designers. Actively developing additional tools to further enhance designer workflows.
+                        To further streamline design workflows, I built a Figma plugin that automates layer renaming with tokens and conditional rules. I continue to develop innovative tools to enhance efficiency and collaboration for designers.
                     </p>
                     <Button className="bg-accent/50 hover:bg-accent text-primary" href="https://www.figma.com/community/plugin/1499494471654319987/re-layer">
                         <Image className="rounded-md size-8 mr-3" src = "/images/re-layer/icon.png" alt = "re-layer-icon" width={200} height = {300}/>
@@ -33,7 +30,7 @@ export default function MyExperience() {
                     </Button>
                 </div>
             </div>
-            <div className="experience flex flex-col gap-4 md:flex-row pb-8 border-b-1">
+            <div className="experience flex flex-col gap-4 md:flex-row pb-8 border-b-1 fade-up">
                 <div className="flex flex-col gap-2 md:flex-1/3">
                     <h3 className="text-4xl font-semibold">
                         UX Designer
@@ -45,7 +42,7 @@ export default function MyExperience() {
                         Full-Time | 2021 — 2022
                     </span>
                 </div>
-                <div className="flex flex-col gap-4 text-xl md:text-3xl md:flex-2/3 leading-snug">
+                <div className="flex flex-col gap-4 text-xl md:text-3xl md:flex-2/3 leading-relaxed md:leading-snug">
                     <p>
                         Led UX Design, branding, and visual design efforts for the EdTech and FinTech startup, including the Bounce Back Digital Learning Platform and Bounce Back Coin, establishing a distinct digital brand identity.
                     </p>
@@ -54,7 +51,7 @@ export default function MyExperience() {
                     </p>
                 </div>
             </div>
-            <div className="experience flex flex-col gap-4 md:flex-row">
+            <div className="experience flex flex-col gap-4 md:flex-row fade-up">
                 <div className="flex flex-col gap-2 md:flex-1/3">
                     <h3 className="text-4xl font-semibold">
                         Scientific Illustrator
@@ -66,7 +63,7 @@ export default function MyExperience() {
                         {`University of Hawai'i`} | 2020 — 2021
                     </h4>
                 </div>
-                <div className="flex flex-col gap-4 text-xl md:text-3xl md:flex-2/3 leading-snug">
+                <div className="flex flex-col gap-4 text-xl md:text-3xl md:flex-2/3 leading-relaxed md:leading-snug">
                     <p>
                         Designed scientific illustrations and journal covers enhancing research papers and presentations, including a published cover for the prestigious Biophysical journal..
                     </p>
