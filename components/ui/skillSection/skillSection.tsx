@@ -9,16 +9,18 @@ import {
     type CarouselApi,
 } from "@/components/ui/carousel"
 import AutoScroll from 'embla-carousel-auto-scroll'
+import LottiePlayer from '../lottiePlayer/lottiePlayer';
 
-type skillCardProps = {
+type skillCardProps = PropsWithChildren & {
     className?: string
     text: string
     src?: string
 }
-export function SkillCard({ className, text, src }: skillCardProps) {
+export function SkillCard({ className, text, src, children }: skillCardProps) {
     return (
         <div className={cn("h-full rounded-4xl bg-primary relative contain-paint", className)}>
             {src && <Image className='w-full h-full object-cover' src={src} alt={text} width={800} height={800} />}
+            {children}
             <h3 className='bg-nav-noise text-xl absolute rounded-2xl px-4 py-2 top-4 right-4 font-bold flex justify-end'>{text}</h3>
         </div>
     )
@@ -85,7 +87,7 @@ export default function SkillSection() {
         <div className='flex flex-col gap-6 w-full'>
  <h2 className="flex items-center gap-4 text-muted text-3xl font-medium md:text-5xl">What I do...<Emoji className="size-12 lg:size-18" emoji="✍️" /></h2>
             <SkillCarousel>
-                <SkillCard text="UX Design" />
+                <SkillCard text="UX Design"><LottiePlayer className="flex h-full w-auto"/></SkillCard>
                 <SkillCard text="Web Development" />
                 <SkillCard text="Branding" />
                 <SkillCard text="Scientific Illustration" />
