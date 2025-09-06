@@ -1,6 +1,6 @@
-import {Player} from "@lottiefiles/react-lottie-player"
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 export default function LottiePlayer({className}:{className:string}) {
     return(
-        <Player className={className} autoplay loop src = "/images/lottie/uxDesign.json"/>
+        <DotLottieReact className={className} autoplay loop src = "/images/lottie/uxDesign.json"/>
     )
 }
