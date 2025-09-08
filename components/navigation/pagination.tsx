@@ -1,6 +1,5 @@
 import { Link } from "lib/transition"
 import { LuChevronLeft, LuChevronRight } from "react-icons/lu"
-
 import { getPreviousNext } from "@/lib/markdown"
 
 export default function Pagination({ pathname }: { pathname: string }) {

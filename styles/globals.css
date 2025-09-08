@@ -39,14 +39,14 @@
   --radius: 0.625rem;
   --sidebar: #fafafa;
   --sidebar-foreground: #002a69;
-  --sidebar-primary: #343434;
+  --sidebar-primary: #006aff;
   --sidebar-primary-foreground: #fafafa;
   --sidebar-accent: #f7f7f7;
   --sidebar-accent-foreground: #343434;
   --sidebar-border: #ebebeb;
   --sidebar-ring: #b5b5b5;
   --sheet-primary: #002a6915;
-  --hover-b: #0059ff14;
+  --hover-b: rgba(73, 131, 225, 0.199);
   --media-brand: 245 245 245;
   --media-focus: 78 156 246;
   --nav-bar: #404040;
@@ -91,7 +91,7 @@
   --sidebar-ring: #707070;
   --tw-prose-body: var(--primary);
   --sheet-primary: #ffffff10;
-  --hover-b: #ffffff10;
+  --hover-b: oklch(37% 0.013 285.805);
   --nav-background:
     url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='1' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='0.65'/></svg>"),
     rgba(0, 0, 0, 0.5);
