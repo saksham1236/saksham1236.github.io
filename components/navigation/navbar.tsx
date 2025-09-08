@@ -1,7 +1,5 @@
 import Link from "next/link"
 import { GitHubLink, LinkedinLink, Navigations } from "@/settings/navigation"
-import { FiLinkedin } from "react-icons/fi"
-
 import { buttonVariants } from "@/components/ui/button"
 import { SheetClose } from "@/components/ui/sheet"
 import Anchor from "@/components/navigation/anchor"
@@ -11,7 +9,6 @@ import { ModeToggle } from "@/components/navigation/theme-toggle"
 
 import {
   MaterialSymbolsArrowOutwardRounded,
-  MdiGithub,
   MingcuteGithubFill,
   RiLinkedinFill,
 } from "../ui/icons/icons"

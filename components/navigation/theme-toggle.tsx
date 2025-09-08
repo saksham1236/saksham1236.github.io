@@ -3,7 +3,6 @@
 import * as React from "react"
 import { useTheme } from "next-themes"
 import { FluentEmojiSun, FluentEmojiCresentMoon } from "../ui/icons/icons"
-
 import { Button } from "@/components/ui/button"
 
 export function ModeToggle() {
