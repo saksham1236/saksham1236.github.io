@@ -1,4 +1,4 @@
-import { Sidebar } from "@/components/navigation/sidebar"
+// import { Sidebar } from "@/components/navigation/sidebar"
 
 export default function Documents({
   children,
@@ -7,7 +7,7 @@ export default function Documents({
 }>) {
   return (
     <div className="flex items-start gap-6">
-      <Sidebar />
+      {/* <Sidebar /> */}
       <div className="flex-1 md:flex-[6]">{children}</div>{" "}
     </div>
   )

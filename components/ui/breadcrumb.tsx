@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils"
 function Breadcrumb({ ...props }: React.ComponentProps<"nav">) {
   return (
     <nav
-      className="bg-sheet-primary overflow-auto rounded-md"
+      className="overflow-auto"
       aria-label="breadcrumb"
       data-slot="breadcrumb"
       {...props}
@@ -21,7 +21,7 @@ function BreadcrumbList({ className, ...props }: React.ComponentProps<"ol">) {
     <ol
       data-slot="breadcrumb-list"
       className={cn(
-        "text-muted-foreground flex items-center gap-0.5 text-sm text-pretty sm:gap-0.5",
+        "text-muted flex items-center gap-0.5 text-lg font-medium text-pretty sm:gap-0.5",
         className
       )}
       {...props}
@@ -33,7 +33,7 @@ function BreadcrumbItem({ className, ...props }: React.ComponentProps<"li">) {
   return (
     <li
       data-slot="breadcrumb-item"
-      className={cn("inline-flex items-center gap-0.5 rounded-sm", className)}
+      className={cn("inline-flex items-center gap-0.5 rounded-full", className)}
       {...props}
     />
   )
@@ -52,7 +52,7 @@ function BreadcrumbLink({
     <Comp
       data-slot="breadcrumb-link"
       className={cn(
-        "hover:text-foreground hover:bg-hover-b rounded-sm p-2 text-nowrap transition-colors",
+        "hover:text-primary/60 rounded-full p-2 text-nowrap transition-colors",
         className
       )}
       {...props}
@@ -67,7 +67,7 @@ function BreadcrumbPage({ className, ...props }: React.ComponentProps<"span">) {
       role="link"
       aria-disabled="true"
       aria-current="page"
-      className={cn("text-foreground p-2 font-normal text-nowrap", className)}
+      className={cn("text-primary/80 p-2 font-bold text-nowrap", className)}
       {...props}
     />
   )

@@ -10,7 +10,7 @@ export default function PageMenu({ isSheet = false }) {
   if (!pathname.startsWith("/docs")) return null
 
   return (
-    <div className="mt-5 flex flex-col gap-3.5 pb-6 px-4 sm:px-0">
+    <div className="mt-5 flex flex-col gap-3.5 px-4 pb-6 sm:px-0">
       {Routes.map((item, index) => {
         if ("spacer" in item) {
           return (

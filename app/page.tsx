@@ -1,29 +1,87 @@
 "use client"
 
-import Hero from "@/components/ui/hero/hero";
-import { MaterialSymbolsArrowDownwardAltRounded } from "@/components/ui/icons/icons";
-import MyWork from "@/components/ui/my-work/myWork";
-import { MeteoconsStarFill } from "@/components/ui/icons/icons";
-import UnicornView from "@/components/ui/unicornViewer";
+import Hero from "@/components/ui/hero/hero"
+import {
+  MaterialSymbolsArrowDownwardAltRounded,
+  // MeteoconsStarFill,
+} from "@/components/ui/icons/icons"
+import MyWork from "@/components/ui/my-work/myWork"
+import UnicornView from "@/components/ui/unicornViewer"
+import Link from "next/link"
+import gsap from 'gsap';
+import { useRef } from 'react';
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { useGSAP } from "@gsap/react";
+import Introduction from "@/components/ui/sections/intro"
+import { Emoji } from "@/components/ui/icons/icons"
+import SKillSection from "@/components/ui/skillSection/skillSection"
+import MyExperience from "@/components/ui/sections/experience"
+import ContactForm from "@/components/ui/sections/form"
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
 export default function Home() {
+  const main = useRef<HTMLDivElement>(null);
+  useGSAP(
+    () => {
+      gsap.to(".unicorn", {
+        scrollTrigger: {
+          trigger: ".intro",
+          toggleActions: "play reverse play reverse"
+        },
+        opacity: 0,
+        duration: 0.5,
+      })
+
+      const elements = document.querySelectorAll(".fade-up");
+      elements.forEach(element => {
+        gsap.from(element, {
+          scrollTrigger: {
+            trigger: element,
+            start: "top 80%"
+          },
+          y: 100,
+          opacity: 0,
+          duration: 0.5,
+          stagger: 0.5
+        });
+      });
+    }
+  )
+
   return (
     <>
-      <div className="absolute top-0 left-0 w-full h-full z-[-1] opacity-40 dark:mix-blend-plus-darker">
-        <UnicornView />
-      </div>
-      <div className="flex flex-col items-center justify-center lg:py-16 gap-4 sm:gap-8 min-h-[calc(100svh-80px)] sm:min-h-[calc(100svh-96px)] sm:min-w-swh">
-        <div className="text-2xl md:text-4xl font-extrabold flex flex-row items-center">
-          <MeteoconsStarFill className="size-16 md:size-24"/><h1>Hi I am Saksham.</h1>
+      <div className="sm:min-w-swh flex min-h-[calc(100svh-80px)] flex-col items-center justify-around gap-2 sm:min-h-[calc(100svh-96px)] sm:gap-8 lg:pt-16 lg:pb-16 mb-16" ref={main}>
+        <div className="unicorn absolute top-0 left-0 z-[-1] h-[100svh] w-[99dvw] opacity-50 dark:opacity-25">
+          <UnicornView />
+        </div>
+        <div className="flex flex-row flex-wrap gap-4 justify-center items-center">
+          <h2 className="flex items-center gap-2 text-xl lg:text-3xl"><Emoji className="size-12 lg:size-18" emoji ="👋"/>Hi I am Saksham.</h2>
         </div>
         <Hero />
-        <div className="flex flex-col items-center justify-center text-lg xl:mt-32 text-muted-foreground">
-          Scroll Down
-          <MaterialSymbolsArrowDownwardAltRounded className="size-8 animate-out" />
+        <Link className="group" href="#intro">
+          <div className="text-muted-foreground flex flex-col items-center justify-center text-lg">
+            Scroll Down
+            <MaterialSymbolsArrowDownwardAltRounded className="size-8 group-hover:-translate-y-1 transition-transform" />
+          </div>
+        </Link>
+      </div>
+      <main className="flex flex-col gap-16 md:gap-32 py-12 md:p-24">
+        <div className="intro pt-24 fade-up" id="intro">
+          <Introduction />
         </div>
-      </div>
-      <div>
-        <MyWork />
-      </div>
+        <div className="skills fade-up">
+          <SKillSection />
+        </div>
+        <div className="myWork">
+          <MyWork />
+        </div>
+        <div className="experience">
+          <MyExperience />
+        </div>
+        <div className="form fade-up">
+          <ContactForm/>
+        </div>
+      </main>
     </>
   )
 }

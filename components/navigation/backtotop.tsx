@@ -1,9 +1,8 @@
 "use client"
-
+import { MaterialSymbolsArrowUpwardRounded } from "../ui/icons/icons"
 import type { ReactElement } from "react"
 import { useEffect, useRef } from "react"
 import cn from "clsx"
-import { LuArrowUp } from "react-icons/lu"
 
 function ScrollUp() {
   if (typeof window !== "undefined") {
@@ -37,8 +36,8 @@ export function BackToTop({ className }: { className?: string }): ReactElement {
         className
       )}
     >
-      <LuArrowUp className="mr-1 inline-block h-4 w-4 align-middle" />
-      <span>Scroll to top</span>
+      <span className="hidden md:flex pl-2">Scroll to top</span>
+      <MaterialSymbolsArrowUpwardRounded className="md:ml-2 inline-flex h-6 w-6 align-middle" />
     </button>
   )
 }

@@ -1,25 +1,30 @@
 import Link from "next/link"
 import { GitHubLink, LinkedinLink, Navigations } from "@/settings/navigation"
-import { FiGithub, FiLinkedin } from "react-icons/fi"
-import { MdiGithub } from "../ui/icons/icons"
-import { MaterialSymbolsArrowOutwardRounded } from "../ui/icons/icons"
+import { FiLinkedin } from "react-icons/fi"
+
 import { buttonVariants } from "@/components/ui/button"
 import { SheetClose } from "@/components/ui/sheet"
 import Anchor from "@/components/navigation/anchor"
 import { Logo } from "@/components/navigation/logo"
 import { SheetLeft } from "@/components/navigation/sidebar"
 import { ModeToggle } from "@/components/navigation/theme-toggle"
+
+import {
+  MaterialSymbolsArrowOutwardRounded,
+  MdiGithub,
+} from "../ui/icons/icons"
+
 export function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 h-20 md:h-24 w-full px-2 md:px-4">
-      <div className="mx-auto flex max-w-392 h-full items-center justify-between p-1 sm:p-3 md:gap-2 [&>*]:shadow-xl [&>*]:bg-primary-foreground/65 [&:*]:rounded-full">
-        <div className="flex rounded-full p-2 pr-4 bg-nav-noise">
+    <nav className="sticky top-0 z-50 h-20 w-full px-2 md:h-24 md:px-4">
+      <div className="[&>*]:bg-primary-foreground/65 mx-auto flex h-full max-w-392 items-center justify-between p-1 sm:p-3 md:gap-2 [&:*]:rounded-full [&>*]:shadow-xl">
+        <div className="bg-nav-noise flex rounded-full p-2 pr-4">
           <Logo />
         </div>
-        <div className="rounded-full p-2 text-muted-foreground hidden items-center gap-2 md:flex bg-nav-noise">
+        <div className="text-muted-foreground bg-nav-noise hidden items-center gap-2 rounded-full p-2 md:flex">
           <NavMenu />
         </div>
-        <div className="hidden md:flex bg-nav-noise rounded-full">
+        <div className="bg-nav-noise hidden rounded-full md:flex">
           <SocialLinks />
         </div>
         <SheetLeft />
@@ -37,14 +42,16 @@ export function NavMenu({ isSheet = false }) {
             key={item.title + item.href}
             activeClassName="font-bold text-white bg-nav-active"
             absolute
-            className="hover:bg-hover-b flex items-center gap-1 rounded-full py-3 px-4 text-md transition-all"
+            className="group hover:bg-hover-b text-md flex items-center gap-1 rounded-full px-4 py-3 transition-all"
             href={item.href}
             target={item.external ? "_blank" : undefined}
             rel={item.external ? "noopener noreferrer" : undefined}
           >
             {item.title}{" "}
             {item.external && (
-              <MaterialSymbolsArrowOutwardRounded className="h-4 w-4" />
+              <div className="flex relative h-4 w-4">
+                <MaterialSymbolsArrowOutwardRounded className="absolute h-4 w-4 top-0 right-0 group-hover:top-[-15%] group-hover:right-[-15%] transition-all duration-200 ease-in-out" />
+              </div>
             )}
           </Anchor>
         )
@@ -60,9 +67,9 @@ export function NavMenu({ isSheet = false }) {
   )
 }
 
-export function SocialLinks({isSheet = false}) {
+export function SocialLinks({ }) {
   return (
-    <div className="flex items-center gap-2 rounded-full md:p-2 md:bg-nav-noise">
+    <div className="md:bg-nav-noise flex items-center gap-2 rounded-full md:p-2">
       <div className="flex gap-2 sm:ml-0">
         {GitHubLink.href && (
           <Link

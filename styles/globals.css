@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
@@ -19,12 +19,12 @@
   --popover: #ffffff;
   --popover-foreground: #262626;
   --primary: #002a69;
-  --primary-foreground: #fafafa;
+  --primary-foreground: #fff;
   --secondary: #f7f7f7;
   --secondary-foreground: #002a69;
-  --muted: #dcdcdc;
+  --muted: #bebebe;
   --muted-foreground: #536a8d;
-  --accent: #f7f7f7;
+  --accent: #fff;
   --accent-foreground: #002a69;
   --destructive: #d94f4f;
   --destructive-foreground: #d94f4f;
@@ -46,12 +46,14 @@
   --sidebar-border: #ebebeb;
   --sidebar-ring: #b5b5b5;
   --sheet-primary: #002a6915;
-  --hover-b: #0059ff10;
+  --hover-b: #0059ff14;
   --media-brand: 245 245 245;
   --media-focus: 78 156 246;
   --nav-bar: #404040;
   --nav-active: #0095e2;
-  --nav-background: url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='1' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='1'/></svg>"), rgba(255, 255, 255, 0.35);
+  --nav-background:
+    url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='1' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='1'/></svg>"),
+    rgba(255, 255, 255, 0.35);
 }
 
 .dark {
@@ -62,12 +64,12 @@
   --popover: #262626;
   --popover-foreground: #fafafa;
   --primary: #fafafa;
-  --primary-foreground: #404040;
+  --primary-foreground: #000;
   --secondary: #444444;
   --secondary-foreground: #fafafa;
-  --muted: #444444;
+  --muted: #767676;
   --muted-foreground: #b5b5b5;
-  --accent: #444444;
+  --accent: #000;
   --accent-foreground: #fafafa;
   --destructive: #a33d3d;
   --destructive-foreground: #a33d3d;
@@ -87,10 +89,12 @@
   --sidebar-accent-foreground: #fafafa;
   --sidebar-border: #444444;
   --sidebar-ring: #707070;
-  --tw-prose-body: var(--accent-foreground);
-  --sheet-primary: #ffffff15;
-  --hover-b: #ffffff15;
-  --nav-background: url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='1' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='0.65'/></svg>"), rgba(0, 0, 0, 0.50);
+  --tw-prose-body: var(--primary);
+  --sheet-primary: #ffffff10;
+  --hover-b: #ffffff10;
+  --nav-background:
+    url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='1' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='0.65'/></svg>"),
+    rgba(0, 0, 0, 0.5);
 }
 
 @theme inline {
@@ -138,6 +142,7 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    scroll-behavior: smooth;
   }
   body {
     @apply bg-background text-foreground;
@@ -147,12 +152,8 @@
   }
 }
 
-.hero {
-  opacity: 0;
-}
-
 .typography {
-  @apply prose prose-slate prose-headings:scroll-m-20 prose-code:rounded-md prose-code:p-1 prose-code:leading-6 prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:bg-neutral-100 prose-img:rounded-md prose-img:border;
+  @apply prose prose-lg prose-p:text-primary prose-headings:text-primary prose-headings:scroll-m-20 prose-code:rounded-md prose-code:p-1 prose-code:leading-6 prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:bg-neutral-100;
   @apply prose-code:text-xs w-[85vw] !min-w-full pt-2 sm:mx-auto sm:w-full;
   @apply dark:prose-invert prose-code:text-neutral-800 dark:prose-code:bg-neutral-900 dark:prose-code:text-white dark:prose-pre:bg-neutral-900;
 }
@@ -469,23 +470,10 @@ video {
     margin-bottom: 0.5rem;
     @apply text-sm;
   }
-  .l2 {
-    @apply px-2 py-1.5;
-  }
-  .l2:is(:last-child) {
-    @apply border-b-0;
-  }
   .l2,
   .l3,
   .l4 {
-    font-weight: 400;
     text-decoration: none;
-  }
-  .l3 {
-    @apply bg-sheet-primary;
-  }
-  .l4 {
-    @apply bg-sheet-primary py-1 text-xs !font-light tracking-wide;
   }
 }
 table {
@@ -494,9 +482,7 @@ table {
     min-width: 10ch;
   }
 }
-.fade-up {
-  visibility: hidden;
-}
+
 @keyframes slideDown {
   from {
     height: 0;
@@ -518,5 +504,23 @@ table {
 .bg-nav-noise {
   backdrop-filter: blur(16px);
   background: var(--nav-background);
-  background-blend-mode: overlay;;
+  background-blend-mode: overlay;
+}
+
+.carousel {
+  img {
+    object-fit: cover;
+  }
+}
+
+.form .google-form-embed {
+  .ahS2Le {
+    display: none !important;
+  }
+}
+
+.contact-bg {
+ background-color: hsla(359, 100%, 50%, 1);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1746 1746' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"), radial-gradient(circle at 0% 99%, hsla(11, 100%, 50%, 1) 0%, transparent 67%), radial-gradient(circle at 46% 94%, hsla(177, 100%, 50%, 1) 0%, transparent 81%), radial-gradient(circle at 89% 8%, rgb(52, 2, 59) 0%, transparent 150%), radial-gradient(circle at 89% 8%, rgb(50, 166, 255) 0%, transparent 150%), radial-gradient(circle at 93% 95%, hsla(236, 100%, 23%, 1) 0%, transparent 66%), radial-gradient(circle at 89% 8%, hsla(0, 100%, 99%, 1) 0%, transparent 150%), radial-gradient(circle at 89% 8%, hsla(55, 94%, 54%, 1) 0%, transparent 150%);
+    background-blend-mode: overlay, normal, normal, normal, normal, normal, normal, normal;
 }

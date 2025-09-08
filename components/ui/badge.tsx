@@ -2,6 +2,7 @@ import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
 import clsx from "clsx"
+
 import { cn } from "@/lib/utils"
 
 const badgeVariants = cva(
@@ -25,7 +26,6 @@ const badgeVariants = cva(
   }
 )
 
-
 function Badge({
   size = "sm",
   className,
@@ -33,13 +33,15 @@ function Badge({
   asChild = false,
   ...props
 }: React.ComponentProps<"span"> &
-  VariantProps<typeof badgeVariants> & { asChild?: boolean } & {size?: "sm" | "lg"}) {
+  VariantProps<typeof badgeVariants> & { asChild?: boolean } & {
+    size?: "sm" | "lg"
+  }) {
   const Comp = asChild ? Slot : "span"
-  
-const badgeSize = clsx({
-  "text-xs h-fit px-2 py-0.5": size === "sm",
-  "text-sm h-fit px-3 py-1": size === "lg"
-})
+
+  const badgeSize = clsx({
+    "text-xs h-fit px-2 py-0.5": size === "sm",
+    "text-sm h-fit px-3 py-1": size === "lg",
+  })
   return (
     <Comp
       data-slot="badge"

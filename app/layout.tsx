@@ -42,7 +42,9 @@ export default function RootLayout({
       <body className="bg-background">
         <Providers>
           <Navbar />
-          <main className="h-auto px-5 sm:px-6 max-w-400 mx-auto">{children}</main>
+          <main className="mx-auto h-auto max-w-400 px-5 sm:px-6">
+            {children}
+          </main>
           <Footer />
         </Providers>
       </body>

@@ -40,8 +40,9 @@ export const Documents: Paths[] = [
         href: "#dev-work",
       },
     ],
-  },{
+  },
+  {
     title: "About Me",
-    href: "/about"
-  }
+    href: "/about",
+  },
 ]

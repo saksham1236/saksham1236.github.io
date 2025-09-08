@@ -7,6 +7,7 @@ import {
   PlayButton,
   useMediaState,
 } from "@vidstack/react"
+import { FiMaximize2 as FullscreenIcon } from "react-icons/fi"
 import {
   MdZoomInMap as FullscreenExitIcon,
   MdVolumeOff as MuteIcon,
@@ -15,7 +16,7 @@ import {
   MdVolumeUp as VolumeHighIcon,
   MdVolumeDown as VolumeLowIcon,
 } from "react-icons/md"
-import { FiMaximize2 as FullscreenIcon } from "react-icons/fi";
+
 export interface MediaButtonProps {
   tooltipSide?: Tooltip.TooltipContentProps["side"]
   tooltipAlign?: Tooltip.TooltipContentProps["align"]

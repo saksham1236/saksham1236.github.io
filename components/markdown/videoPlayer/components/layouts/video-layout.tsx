@@ -17,7 +17,7 @@ export default function VideoLayout() {
       <Gestures />
       <Controls.Root className="media-controls-layer !text-primary-foreground absolute inset-0 z-10 flex h-full w-full flex-col bg-gradient-to-t from-black/10 to-transparent transition-opacity">
         <Tooltip.Provider>
-          <Controls.Group className="text-md absolute z-10 top-4 left-4 items-center justify-center py-1.5 px-3 bg-primary/60 flex rounded-full shadow-md backdrop-blur-lg">
+          <Controls.Group className="text-md bg-primary/60 absolute top-4 left-4 z-10 flex items-center justify-center rounded-full px-3 py-1.5 shadow-md backdrop-blur-lg">
             <VideoTitle />
           </Controls.Group>
           <div className="flex-1" />
@@ -29,7 +29,7 @@ export default function VideoLayout() {
                   tooltipOffset={popupOffset}
                 />
               </div>
-              <div className="flex w-[92px] items-center justify-center p-3 ">
+              <div className="flex w-[92px] items-center justify-center p-3">
                 <TimeGroup />
               </div>
             </div>

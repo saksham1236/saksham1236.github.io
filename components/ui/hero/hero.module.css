@@ -1,5 +1,10 @@
-.green, .blue, .orange {
-   --noise: url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='1'/></svg>");
+.green,
+.blue,
+.orange, 
+.white,
+.yellow {
+  --noise: url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='1'/></svg>");
+  --noise-dark: url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='0.3'/></svg>");
 
 }
 .hoverText {
@@ -21,26 +26,47 @@
 }
 
 .yellow {
-  background: linear-gradient(to left, transparent 50%, #ffa528 50%);
-  background-size: 200% 100%;
-  background-position: 100% 0;
-  transition: all 0.2s ease-in-out;
+  background: var(--noise), linear-gradient(to right, #ffc21c 0%, #dc6f0a 100%);
+  background-blend-mode: overlay;
 }
 .green {
-  background: var(--noise), linear-gradient(to right, #00c7a3 0%, #005750 100%);
+  background: var(--noise), linear-gradient(to right, #00c74c 0%, #00d09c 100%);
   background-blend-mode: overlay;
 }
 
 .blue {
-  background: var(--noise), linear-gradient(to right, #0095E2 0%, #025782 100%);
+  background: var(--noise), linear-gradient(to right, #af5eff 0%, #ff3142 100%);
   background-blend-mode: overlay;
 }
 
 .orange {
-  background: var(--noise), linear-gradient(to right, #ED602E 0%, #af3e15 100%);
+  background: var(--noise), linear-gradient(to right, #2e5eed 0%, #8e59ce 50%, #ff581b 100%);
   background-blend-mode: overlay;
 }
+.white {
+  background: var(--noise-dark), linear-gradient(to right, #242424 0%, #151515 100%);
+  background-blend-mode: lighten;
+}
+
+:global(.dark) .white {
+  background: var(--noise), linear-gradient(to right, #fff 0%, #e6e6e6 100%);
+  background-blend-mode: multiply;
+  filter: brightness(1.2);
+}
+
 .noise {
   background: var(--noise);
   background-blend-mode: overlay;
+}
+
+:global(.dark) .hero {
+  & :is(h2, shadow-bg) {
+    box-shadow: 4px 4px 64px rgba(0, 0, 0, 0.5);
+  }
+}
+
+:global(.light) .hero {
+  & :is(h2, shadow-bg) {
+    box-shadow: 4px 4px 64px rgba(255, 255, 255, 0.5);
+  }
 }

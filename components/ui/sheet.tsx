@@ -2,9 +2,9 @@
 
 import * as React from "react"
 import * as SheetPrimitive from "@radix-ui/react-dialog"
-import { LuX } from "react-icons/lu"
 
 import { cn } from "@/lib/utils"
+
 import { MaterialSymbolsCloseRounded } from "./icons/icons"
 
 function Sheet({ ...props }: React.ComponentProps<typeof SheetPrimitive.Root>) {
@@ -73,7 +73,7 @@ function SheetContent({
         {...props}
       >
         {children}
-        <SheetPrimitive.Close className="bg-primary rounded-full text-primary-foreground ring-offset-background focus:ring-ring data-[state=open]:bg-secondary absolute top-4 right-4 cursor-pointer transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none">
+        <SheetPrimitive.Close className="bg-primary text-primary-foreground ring-offset-background focus:ring-ring data-[state=open]:bg-secondary absolute top-4 right-4 cursor-pointer rounded-full transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none">
           <MaterialSymbolsCloseRounded className="size-8 p-1" />
           <span className="sr-only">Close</span>
         </SheetPrimitive.Close>
