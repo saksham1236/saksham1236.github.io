@@ -51,7 +51,7 @@ export default function MyWork() {
           subtitle="UX Design, Product Design"
           description="Lynk is a platform designed to combat social isolation by connecting individuals with local activities and communities."
           cta="View Project"
-          link="/docs/recent-work/bounce-back-learning"
+          link="/docs/recent-work/lynk"
         >
           <Image className="w-full h-full lg:object-bottom-left" alt="Bounce Back Coin" src="/images/lynk/thumb-new.png" width={1200} height={800} />
         </Card>
