@@ -16,7 +16,7 @@ export const Navigations = [
   {
     title: "Contact Me",
     href: "/#contact",
-    external: true,
+    external: false,
   },
 ]
 
