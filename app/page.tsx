@@ -1,5 +1,4 @@
 "use client"
-
 import Hero from "@/components/ui/hero/hero"
 import {
   MaterialSymbolsArrowDownwardAltRounded,

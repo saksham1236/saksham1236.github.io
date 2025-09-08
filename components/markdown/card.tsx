@@ -53,7 +53,7 @@ export function Card({
   const content = (
     <div
       className={clsx(
-        "card-grp group relative flex gap-4 justify-start contain-paint rounded-[48px] !transition duration-300 bg-white ease-in-out hover:bg-hover-b dark:bg-black dark:hover:bg-hover-b",
+        "card-grp fade-in group relative flex gap-4 justify-start contain-paint rounded-[48px] !transition duration-300 bg-white ease-in-out hover:bg-hover-b dark:bg-black dark:hover:bg-hover-b",
         variant === "small"
           ? "items-center space-x-2 p-4"
           : variant === "image"
