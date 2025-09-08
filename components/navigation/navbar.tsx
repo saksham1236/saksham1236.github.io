@@ -12,6 +12,8 @@ import { ModeToggle } from "@/components/navigation/theme-toggle"
 import {
   MaterialSymbolsArrowOutwardRounded,
   MdiGithub,
+  MingcuteGithubFill,
+  RiLinkedinFill,
 } from "../ui/icons/icons"
 
 export function Navbar() {
@@ -79,7 +81,7 @@ export function SocialLinks({ }) {
             rel="noopener noreferrer"
             aria-label="View the repository on GitHub"
           >
-            <MdiGithub className="h-12 w-12" />
+            <MingcuteGithubFill className="size-5" />
           </Link>
         )}
         <Link
@@ -89,7 +91,7 @@ export function SocialLinks({ }) {
           rel="noopener noreferrer"
           aria-label="View my Linkekin"
         >
-          <FiLinkedin className="h-[1.1rem] w-[1.1rem]" />
+          <RiLinkedinFill className="size-5" />
         </Link>
         <ModeToggle />
       </div>

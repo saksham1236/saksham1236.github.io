@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       {Settings.gtmconnected && <GoogleTagManager gtmId={Settings.gtm} />}
-      <body className="bg-background">
+      <body className="bg-background transition-gpu transition-colors duration-500 ease-in-out">
         <Providers>
           <Navbar />
           <main className="mx-auto h-auto max-w-400 px-5 sm:px-6">

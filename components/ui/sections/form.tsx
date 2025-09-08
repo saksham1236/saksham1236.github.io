@@ -32,7 +32,7 @@ export default function ContactForm() {
                     <UnicornContact />
                 </div>
             </div>
-            <div className='flex md:hidden items-center justify-center gap-4 pt-8 text-white/50 grow'>
+            <div className='flex md:hidden items-center justify-center gap-2 pt-8 text-white/50 grow'>
                 <span>Built with</span>
                 <span className='flex items-center gap-1'><DeviconPlainNextjs className='size-6' />Next.js</span>
                 <span className='flex items-center gap-1'><SimpleIconsGsap className='size-12' /></span>

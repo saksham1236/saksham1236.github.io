@@ -16,7 +16,7 @@ export default function Error({
   }, [error])
 
   return (
-    <section className="flex min-h-[99vh] flex-col items-start gap-3 px-2 py-8">
+    <section className="flex min-h-[99vh] flex-col items-center justify-center gap-3 px-2 py-8">
       <div>
         <h2 className="text-5xl font-bold">Oops!</h2>
         <p className="text-muted-foreground">Something went wrong!</p>

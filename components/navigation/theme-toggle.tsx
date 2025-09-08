@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { useTheme } from "next-themes"
-import { FiMoon, FiSun } from "react-icons/fi"
+import { FluentEmojiSun, FluentEmojiCresentMoon } from "../ui/icons/icons"
 
 import { Button } from "@/components/ui/button"
 
@@ -19,9 +19,10 @@ export function ModeToggle() {
       size="icon"
       onClick={toggleTheme}
       className="size-12 cursor-pointer"
-    >
-      <FiSun className="h-2 w-2 scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
-      <FiMoon className="absolute h-[1.1rem] w-[1.1rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
+    ><span className="flex flex-col contain-paint relative h-full w-full">
+        <FluentEmojiSun className="absolute top-[25%] left-[25%] size-6 transform-gpu transition-all ease-in-out duration-500 dark:top-[-200%]" />
+        <FluentEmojiCresentMoon className="absolute top-[200%] left-[25%] transform-gpu size-6 transition-all ease-in-out duration-500 dark:top-[25%]" />
+      </span>
       <span className="sr-only">Toggle theme</span>
     </Button>
   )

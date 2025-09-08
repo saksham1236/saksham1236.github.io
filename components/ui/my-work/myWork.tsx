@@ -37,7 +37,7 @@ export default function MyWork() {
       <CardGrid className="!grid-cols-1">
         <Card
           className="fade-up-card bg-gradient-to-br from-[#06D6A0] to-[#007E5D]"
-          title="Bounce Back Coin"
+          title="Bounce Back Learning App"
           subtitle="UX Design, EdTech"
           description="Bounce Back Coin Learning platform, an LMS where users earn crypto via education, manage their crypto portfolios via a wallet dashboard, and access discussion boards/messaging."
           cta="View Project"

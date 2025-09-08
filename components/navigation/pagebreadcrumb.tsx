@@ -1,6 +1,6 @@
 import { Fragment } from "react"
 import { Link } from "lib/transition"
-import { LuHouse } from "react-icons/lu"
+import { MaterialSymbolsHomeOutlineRounded } from "../ui/icons/icons"
 
 import {
   Breadcrumb,
@@ -19,8 +19,8 @@ export default function PageBreadcrumb({ paths }: { paths: string[] }) {
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink asChild>
-              <Link href="/docs/recent-work">
-                <LuHouse className="h-4" />
+              <Link href="/">
+                <MaterialSymbolsHomeOutlineRounded className="size-6" />
               </Link>
             </BreadcrumbLink>
           </BreadcrumbItem>
