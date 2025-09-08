@@ -5,11 +5,11 @@ import { Emoji, RiBehanceFill, RiGithubFill, RiLinkedinFill } from '../icons/ico
 import { UnicornContact } from '../unicornViewer'
 export default function ContactForm() {
     return (
-        <div className="contact-bg relative flex flex-col gap-6 form contain-paint p-6 md:p-16 rounded-[48px]">
-            <div className='hidden gap-4 md:flex md:flex-col'>
+        <div className="dark contact-bg relative flex flex-col gap-6 form contain-paint p-6 md:p-16 rounded-[48px]">
+            <div className='!text-white hidden gap-4 md:flex md:flex-col'>
                 <h2 className="flex items-center gap-4 text-3xl font-medium md:text-5xl leading-snug">Let’s Work Together on</h2><h2 className='-mt-8 flex items-center gap-4 text-3xl font-medium md:text-5xl leading-relaxed md:leading-snug'>Something Great<Emoji className="size-12 lg:size-18" emoji="🤙" /></h2>
             </div>
-            <div className='flex flex-col gap-4 md:hidden'>
+            <div className='!text-white  flex flex-col gap-4 md:hidden'>
                 <Emoji className="size-12 lg:size-18" emoji="🤙" />
                 <h2 className="flex items-center gap-4 text-3xl font-medium md:text-5xl leading-snug">Let’s Work Together on Something Great</h2>
             </div>

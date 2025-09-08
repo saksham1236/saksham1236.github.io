@@ -29,7 +29,7 @@ export default function UnicornView() {
   }
 }
 
-export async function UnicornContact() {
+export function UnicornContact() {
     return (
       <UnicornScene
         jsonFilePath="/images/scene/sceneContact.json"
