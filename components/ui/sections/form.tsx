@@ -23,9 +23,9 @@ export default function ContactForm() {
                 <div className='flex flex-col md:flex-row gap-6'>
                     <Button href="mailto:s9tandon@uwaterloo.ca">Contact Me</Button>
                     <div className='hidden md:flex gap-4'>
-                        <Link className='cursor-pointer' href="https://www.linkedin.com/in/s9tandon/"><PrimButton className="!px-4 text-white bg-sky-400 hover:bg-sky-600" variant={"secondary"}><RiLinkedinFill className='size-8' /></PrimButton></Link>
-                        <Link className='cursor-pointer' href="https://www.behance.net/s9tandon"><PrimButton className="!px-4 text-white bg-blue-500" variant={"secondary"}><RiBehanceFill className='size-8' /></PrimButton></Link>
-                        <Link className='cursor-pointer' href="https://github.com/saksham1236"><PrimButton className="!px-3 text-white bg-black" variant={"secondary"}><RiGithubFill className='size-10' /></PrimButton></Link>
+                        <Link href="https://www.linkedin.com/in/s9tandon/"><PrimButton className="!px-4 text-white bg-sky-400 hover:bg-sky-600 cursor-pointer" variant={"secondary"}><RiLinkedinFill className='size-8' /></PrimButton></Link>
+                        <Link href="https://www.behance.net/s9tandon"><PrimButton className="!px-4 text-white bg-blue-500 cursor-pointer" variant={"secondary"}><RiBehanceFill className='size-8' /></PrimButton></Link>
+                        <Link href="https://github.com/saksham1236"><PrimButton className="!px-3 text-white bg-black cursor-pointer" variant={"secondary"}><RiGithubFill className='size-10' /></PrimButton></Link>
                     </div>
                 </div>
                 <div className="unicorn absolute top-0 left-0 z-[-1] h-full w-full mix-blend-screen">

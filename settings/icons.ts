@@ -5,7 +5,7 @@ import {
   FiArrowUpRight,
 } from "react-icons/fi"
 import { LuBrush } from "react-icons/lu"
-import { MaterialIconThemeFigma, MingcuteGithubFill, RiLinkedinFill, Icons8Github } from "@/components/ui/icons/icons"
+import { MaterialIconThemeFigma, MdiGithub, RiLinkedinFill } from "@/components/ui/icons/icons"
 
 export const iconMap = {
   alignJustify: FiAlignJustify,
@@ -13,7 +13,7 @@ export const iconMap = {
   arrowRight: FiArrowRight,
   linkedin: RiLinkedinFill,
   behance: FaBehance,
-  github: MingcuteGithubFill,
+  github: MdiGithub,
   brush: LuBrush,
   figma: MaterialIconThemeFigma,
 }

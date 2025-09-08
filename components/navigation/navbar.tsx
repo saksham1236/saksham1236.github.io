@@ -9,9 +9,10 @@ import { ModeToggle } from "@/components/navigation/theme-toggle"
 
 import {
   MaterialSymbolsArrowOutwardRounded,
-  MingcuteGithubFill,
+  RiGithubFill,
   RiLinkedinFill,
 } from "../ui/icons/icons"
+import { cn } from "@/lib/utils"
 
 export function Navbar() {
   return (
@@ -73,22 +74,22 @@ export function SocialLinks({ }) {
         {GitHubLink.href && (
           <Link
             href={GitHubLink.href}
-            className={buttonVariants({ variant: "outline", size: "icon" })}
+            className={cn(buttonVariants({ variant: "outline", size: "icon" }))}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="View the repository on GitHub"
           >
-            <MingcuteGithubFill className="size-5" />
+            <RiGithubFill className="size-8" />
           </Link>
         )}
         <Link
           href={LinkedinLink.href}
-          className={buttonVariants({ variant: "outline", size: "icon" })}
+          className={cn(buttonVariants({ variant: "outline", size: "icon" }))}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="View my Linkekin"
         >
-          <RiLinkedinFill className="size-5" />
+          <RiLinkedinFill className="size-6" />
         </Link>
         <ModeToggle />
       </div>

@@ -15,8 +15,7 @@ export const Navigations = [
   },
   {
     title: "Contact Me",
-    href: "https://www.linkedin.com/in/s9tandon",
-    external: true,
+    href: "/#contact",
   },
 ]
 

@@ -77,7 +77,7 @@ export default function Home() {
         <div className="experience">
           <MyExperience />
         </div>
-        <div className="form fade-up">
+        <div id = "contact" className="form fade-up">
           <ContactForm/>
         </div>
       </main>
