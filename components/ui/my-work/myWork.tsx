@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react"
 import Card from "./card"
 import Image from "next/image"
 import { Emoji } from "../icons/icons"
+import { Button } from "../atoms/button"
 gsap.registerPlugin(useGSAP);
 
 export default function MyWork() {
@@ -29,7 +30,10 @@ export default function MyWork() {
     })
   return (
     <div className="flex flex-col gap-6" ref={container}>
-      <h2 className="flex items-center gap-4 text-muted text-3xl font-medium md:text-5xl">Featured Work<Emoji className="size-12 lg:size-18" emoji="🚀" /></h2>
+      <div className="flex flex-col md:flex-row justify-between">
+        <h2 className="flex items-center gap-4 text-muted text-3xl font-medium md:text-5xl">Featured Work<Emoji className="size-12 lg:size-18" emoji="🚀" /></h2>
+        <Button href ="/docs/about" className="hidden md:flex bg-transparent hover:bg-transparent text-primary">View all my Work</Button>
+      </div>
       <CardGrid className="!grid-cols-1">
         <Card
           className="fade-up-card bg-gradient-to-br from-[#06D6A0] to-[#007E5D]"
@@ -62,6 +66,7 @@ export default function MyWork() {
         >
           <Image className="w-full h-full lg:object-top-left" alt="Bounce Back Coin" src="/images/bb-digital-branding/thumb-new.png" width={1200} height={800} />
         </Card>
+        <Button href ="/docs/about" className="flex md:hidden p-0 bg-transparent hover:bg-transparent text-primary">View all my Work</Button>
       </CardGrid>
     </div>
   )

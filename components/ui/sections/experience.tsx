@@ -4,7 +4,10 @@ import Image from "next/image";
 export default function MyExperience() {
     return (
         <div className="flex flex-col gap-6 md:gap-12">
-            <h2 className="flex items-center gap-4 text-muted text-3xl font-medium md:text-5xl">My Design Journey<Emoji className="size-12 lg:size-18" emoji={`🐣`}/></h2>
+            <div className="flex flex-col md:flex-row justify-between">
+                <h2 className="flex items-center gap-4 text-muted text-3xl font-medium md:text-5xl">My Design Journey<Emoji className="size-12 lg:size-18" emoji={`🐣`} /></h2>
+                <Button href="/docs/recent-work" className="hidden md:flex bg-transparent hover:bg-transparent text-primary">More About Me</Button>
+            </div>
             <div className="experience flex flex-col gap-4 md:flex-row pb-8 border-b-1 fade-up">
                 <div className="flex flex-col gap-2 md:flex-1/3">
                     <h3 className="text-4xl font-semibold">
@@ -25,7 +28,7 @@ export default function MyExperience() {
                         To further streamline design workflows, I built a Figma plugin that automates layer renaming with tokens and conditional rules. I continue to develop innovative tools to enhance efficiency and collaboration for designers.
                     </p>
                     <Button className="bg-accent/50 hover:bg-accent text-primary" href="https://www.figma.com/community/plugin/1499494471654319987/re-layer">
-                        <Image className="rounded-md size-8 mr-3" src = "/images/re-layer/icon.png" alt = "re-layer-icon" width={200} height = {300}/>
+                        <Image className="rounded-md size-8 mr-3" src="/images/re-layer/icon.png" alt="re-layer-icon" width={200} height={300} />
                         Checkout my Figma Plugin
                     </Button>
                 </div>
