@@ -48,7 +48,7 @@ export function Card({
   linkClassName,
   titleHidden,
 }: CardProps) {
-  const IconComponent = icon ? iconMap[icon] : null
+  const IconComponent = icon ? iconMap[icon] : icon
 
   const content = (
     <div

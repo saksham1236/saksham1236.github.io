@@ -7,6 +7,7 @@ import {
   FiLinkedin,
 } from "react-icons/fi"
 import { LuBrush } from "react-icons/lu"
+import { MaterialIconThemeFigma } from "@/components/ui/icons/icons"
 
 export const iconMap = {
   alignJustify: FiAlignJustify,
@@ -16,4 +17,5 @@ export const iconMap = {
   behance: FaBehance,
   github: FiGithub,
   brush: LuBrush,
+  figma: MaterialIconThemeFigma,
 }
