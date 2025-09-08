@@ -73,7 +73,7 @@ export function SkillCarousel({ children }: PropsWithChildren) {
                     </CarouselItem>
                 ))}
             </CarouselContent>
-            {/* <div className="flex flex-row absolute w-full justify-end px-4 bottom-[16px]">
+            <div className="sr-only flex flex-row absolute w-full justify-end px-4 bottom-[16px]">
                 <div className=" flex items-center gap-2 p-2 bg-nav-noise rounded-full contain-paint shadow-lg">
                     {Array.from({ length: count }).map((_, index) => (
                         <button
@@ -85,7 +85,7 @@ export function SkillCarousel({ children }: PropsWithChildren) {
                         />
                     ))}
                 </div>
-            </div> */}
+            </div>
         </Carousel>
     )
 }
