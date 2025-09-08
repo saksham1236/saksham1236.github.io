@@ -2,7 +2,7 @@ import React from "react"
 import type { SVGProps } from "react"
 import { FluentEmoji } from '@lobehub/fluent-emoji';
 import { EmojiType } from "@lobehub/fluent-emoji/es/getFluentEmojiCDN/utils";
-import Image, { ImageProps } from "next/image";
+import Image from "next/image";
 
 export function MaterialSymbolsArrowUpwardRounded(
   props: SVGProps<SVGSVGElement>
@@ -775,13 +775,13 @@ export function MingcuteGithubFill(props: SVGProps<SVGSVGElement>) {
 
 export function FluentEmojiSun({className}:{className?:string}) {
 	return (
-    <Image alt="Fluent Emoji Sun" src="/images/icons/FluentEmojiSun.png" width={24} height={24} className=""/>
+    <Image alt="Fluent Emoji Sun" src="/images/icons/FluentEmojiSun.png" width={24} height={24} className={className}/>
   );
 }
 
 export function FluentEmojiCresentMoon({className}:{className?:string}) {
 	return (
-    <Image alt="Fluent Emoji Sun" src="/images/icons/FluentEmojiCresentMoon.png" width={24} height={24} className=""/>
+    <Image alt="Fluent Emoji Sun" src="/images/icons/FluentEmojiCresentMoon.png" width={24} height={24} className={className}/>
   );
 }
 
