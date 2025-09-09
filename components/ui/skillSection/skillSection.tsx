@@ -66,7 +66,7 @@ export function SkillCarousel({ children }: PropsWithChildren) {
             <CarouselContent className="h-16 md:h-24 rounded-2xl md:rounded-4xl">
                 {(Array.isArray(children) ? children : []).map((child, index) => (
                     <CarouselItem
-                        className={cn("group h-full cursor-grab min-w-fit shrink grow-0")}
+                        className={cn("group h-full cursor-grab min-w-fit shrink grow-0 pl-3 md:pl-4")}
                         key={index}
                     >
                         {child}
@@ -89,25 +89,11 @@ export function SkillCarousel({ children }: PropsWithChildren) {
         </Carousel>
     )
 }
-// export default function SkillSection() {
-//     return (
-//         <div className='flex flex-col gap-6 w-full'>
-//             <h2 className="flex items-center gap-4 text-muted text-3xl font-medium md:text-5xl">What I do...<Emoji className="size-12 lg:size-18" emoji="✍️" /></h2>
-//             <SkillCarousel>
-//                 <SkillCard text="UX Design"><LottiePlayer className="flex h-full w-auto" /></SkillCard>
-//                 <SkillCard text="Web Development" />
-//                 <SkillCard text="Branding" />
-//                 <SkillCard text="Scientific Illustration" />
-//                 <SkillCard text="Motion Design" src="/images/skills/motion-design.gif" />
-//             </SkillCarousel>
-//         </div>
-//     )
-// }
 
 export default function SkillSection() {
     return (
         <div className='flex flex-col gap-6 w-full'>
-            <h2 className="flex items-center gap-4 text-muted text-4xl font-medium md:text-5xl">What I do...<Emoji className="size-12 lg:size-18" emoji="✍️" /></h2>
+            <h2 className="flex items-center gap-4 text-muted text-3xl font-medium md:text-5xl">What I do...<Emoji className="size-12 lg:size-18" emoji="✍️" /></h2>
             <SkillCarousel>
                 <SkillCard text="UX/UI Design"><FluentColorClipboardTextEdit32 className='size-10 md:size-16' /></SkillCard>
                 <SkillCard text="Web Development"><FluentColorCode24 className='size-10 md:size-16' /></SkillCard>

@@ -22,7 +22,7 @@
   --primary-foreground: #fff;
   --secondary: #f7f7f7;
   --secondary-foreground: #002a69;
-  --muted: #bebebe;
+  --muted: #a2a2a2;
   --muted-foreground: #536a8d;
   --accent: #fff;
   --accent-foreground: #002a69;
@@ -153,7 +153,7 @@
 }
 
 .typography {
-  @apply prose prose-lg prose-p:text-primary prose-headings:text-primary prose-headings:scroll-m-20 prose-code:rounded-md prose-code:p-1 prose-code:leading-6 prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:bg-neutral-100;
+  @apply prose prose-lg prose-p:text-primary/80 prose-headings:text-primary prose-headings:scroll-m-20 prose-code:rounded-md prose-code:p-1 prose-code:leading-6 prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:bg-neutral-100;
   @apply prose-code:text-xs w-[85vw] !min-w-full pt-2 sm:mx-auto sm:w-full;
   @apply dark:prose-invert prose-code:text-neutral-800 dark:prose-code:bg-neutral-900 dark:prose-code:text-white dark:prose-pre:bg-neutral-900;
 }

@@ -22,10 +22,10 @@ export default function MyExperience() {
                 </div>
                 <div className="flex flex-col gap-4 text-xl md:text-3xl md:flex-2/3 leading-relaxed md:leading-snug">
                     <p>
-                        I specialize in creating responsive webpage layouts for {`CDW.ca’s`} landing pages using Adobe Experience Manager, HubSpot, HTML, CSS, and JavaScript. My strategic approach to content planning and design implementation has driven significant results, including a 193% year-over-year increase in Research Hub article views and a 93% boost in partner showcase page traffic.
+                        I specialize in creating responsive webpage layouts for {`CDW.ca’s`} landing pages using Adobe Experience Manager, HubSpot, HTML, CSS, and JavaScript. My strategic approach to content planning and design implementation has driven significant results, including a <b>193% year-over-year increase in Research Hub article views</b> and a <b>93% boost in partner showcase page traffic.</b>
                     </p>
                     <p>
-                        To further streamline design workflows, I built a Figma plugin that automates layer renaming with tokens and conditional rules. I continue to develop innovative tools to enhance efficiency and collaboration for designers.
+                        To further streamline design workflows, <b>I built a Figma plugin that automates layer renaming with tokens and conditional rules.</b> I continue to develop innovative tools to enhance efficiency and collaboration for designers.
                     </p>
                     <Button className="bg-accent/50 hover:bg-accent text-primary" href="https://www.figma.com/community/plugin/1499494471654319987/re-layer">
                         <Image className="rounded-md size-8 mr-3" src="/images/re-layer/icon.png" alt="re-layer-icon" width={200} height={300} />

@@ -25,7 +25,7 @@ export default async function Pages({ params }: PageProps) {
     return (
       <div className="mt-2 inline-flex flex-row flex-wrap items-center gap-2">
         {frontmatter.timeline && (
-          <span className="w-fit md:text-2xl font-bold text-muted">
+          <span className="w-fit font-medium text-muted">
             {frontmatter.timeline}
           </span>
         )}
@@ -35,13 +35,13 @@ export default async function Pages({ params }: PageProps) {
 
   return (
     <div className="flex justify-between gap-6">
-      <section className="flex-[3] pt-4">
+      <section className="flex-[3] pt-4 md:max-w-[75%]">
         <PageBreadcrumb paths={slug} />
-        <hr/>
-        <Typography className = "mt-4">
+        <Separator />
+        <Typography className="mt-4">
           {(frontmatter.timeline || frontmatter.tags) && <Timeline />}
-          <h1 className="!mb-2 !text-3xl sm:!text-5xl !font-bold">{frontmatter.title}</h1>
-          <p className="-mt-4 text-lg">{frontmatter.description}</p>
+            <h1 className="!mb-2 pt-3 md:pt-5 md:!text-7xl !font-semibold flex-1/3">{frontmatter.title}</h1>
+            <p className="text-2xl leading-relaxed flex-2/3 !text-primary/75">{frontmatter.description}</p>
           <Separator className="my-6" />
           <section
             className="mobile-toc mb-4 overflow-hidden xl:hidden [&>*]:box-border [&>*]:max-h-75"

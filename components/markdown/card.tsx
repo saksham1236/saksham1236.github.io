@@ -69,7 +69,7 @@ export function Card({
           width={400}
           height={400}
           className={clsx(
-            "!m-0 w-full aspect-3/2 rounded-4xl object-cover object-center",
+            "!m-0 w-full aspect-3/2 rounded-4xl object-cover object-center border-1",
             imgClassName
           )}
         />
@@ -77,7 +77,7 @@ export function Card({
       <div className={cn("flex flex-col flex-grow gap-4", image ? "" : "pt-2")}>
         <div className="flex flex-col gap-2">
           {subtitle && (variant === "normal" || variant === "image") && (
-            <span className={cn("flex flex-row text-md lg:text-lg font-bold text-primary opacity-75 items-center gap-2")}>
+            <span className={cn("flex flex-row text-md lg:text-lg font-bold text-muted items-center gap-2")}>
               {subtitle}
               {IconComponent && (
                 <IconComponent />
