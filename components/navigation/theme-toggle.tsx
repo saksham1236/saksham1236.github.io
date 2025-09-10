@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { useTheme } from "next-themes"
-import { FluentEmojiSun, FluentEmojiCresentMoon } from "../ui/icons/icons"
+import { FluentEmojiSun, FluentEmojiCresentMoon, MaterialSymbolsLightModeRounded, MaterialSymbolsDarkModeRounded } from "../ui/icons/icons"
 import { Button } from "@/components/ui/button"
 
 export function ModeToggle() {
@@ -19,8 +19,8 @@ export function ModeToggle() {
       onClick={toggleTheme}
       className="size-12 cursor-pointer"
     ><span className="flex flex-col contain-paint relative h-full w-full">
-        <FluentEmojiSun className="absolute top-[25%] left-[25%] size-6 transform-gpu transition-all ease-in-out duration-500 dark:top-[-200%]" />
-        <FluentEmojiCresentMoon className="absolute top-[200%] left-[25%] transform-gpu size-6 transition-all ease-in-out duration-500 dark:top-[25%]" />
+        <MaterialSymbolsLightModeRounded className="absolute top-[20%] left-[20%] size-7 transform-gpu transition-all ease-in-out duration-500 dark:top-[-200%]"/>
+        <MaterialSymbolsDarkModeRounded className="absolute top-[200%] left-[20%] transform-gpu size-7 transition-all ease-in-out duration-500 dark:top-[20%]" />
       </span>
       <span className="sr-only">Toggle theme</span>
     </Button>

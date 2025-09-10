@@ -84,6 +84,8 @@ function removeCustomComponents() {
     "FileTree",
     "Folder",
     "File",
+    "Button",
+    "ImageViewer"
   ]
 
   return (tree: Node) => {

@@ -15,6 +15,7 @@ import Note from "@/components/markdown/note"
 import { Step, StepItem } from "@/components/markdown/step"
 import Tag from "@/components/markdown/tag"
 import VideoPlayer from "@/components/markdown/videoPlayer/videoPlayer"
+import ContactForm from "@/components/ui/sections/form"
 
 export const components = {
   a: RoutedLink,

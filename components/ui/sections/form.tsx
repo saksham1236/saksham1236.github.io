@@ -1,3 +1,5 @@
+"use client"
+
 import Link from 'next/link'
 import { Button } from '../atoms/button'
 import { Button as PrimButton } from '../button'
