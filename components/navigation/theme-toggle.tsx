@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { useTheme } from "next-themes"
-import { FluentEmojiSun, FluentEmojiCresentMoon, MaterialSymbolsLightModeRounded, MaterialSymbolsDarkModeRounded } from "../ui/icons/icons"
+import { MaterialSymbolsLightModeRounded, MaterialSymbolsDarkModeRounded } from "../ui/icons/icons"
 import { Button } from "@/components/ui/button"
 
 export function ModeToggle() {
