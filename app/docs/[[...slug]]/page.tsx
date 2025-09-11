@@ -22,7 +22,7 @@ export default async function Pages({ params }: PageProps) {
 
   const { frontmatter, content, tocs } = res
 
-  function Timeline({className}: {className?: string}) {
+  function Timeline() {
     return (
       <div className="mt-2 inline-flex flex-row flex-wrap items-center gap-2 !text-[16px] md:!text-xl">
         {frontmatter.timeline && (

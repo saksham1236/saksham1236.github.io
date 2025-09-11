@@ -12,7 +12,6 @@ import { useRef } from 'react';
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react";
 import Introduction from "@/components/ui/sections/intro"
-import { Emoji } from "@/components/ui/icons/icons"
 import SKillSection from "@/components/ui/skillSection/skillSection"
 import MyExperience from "@/components/ui/sections/experience"
 import ContactForm from "@/components/ui/sections/form"
