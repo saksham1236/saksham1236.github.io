@@ -50,15 +50,12 @@ export default function Home() {
   return (
     <>
       <div className="sm:min-w-swh flex min-h-[calc(100svh-80px)] flex-col items-center justify-around gap-2 sm:min-h-[calc(100svh-96px)] sm:gap-8 lg:pt-16 lg:pb-16 mb-16" ref={main}>
-        <div className="unicorn absolute top-0 left-0 z-[-1] h-[100svh] w-[99dvw] opacity-50 dark:opacity-25">
+        <div className="unicorn absolute top-0 left-0 z-[-1] h-[100svh] w-[99dvw] mix-blend-plus-darker">
           <UnicornView />
-        </div>
-        <div className="flex flex-row flex-wrap gap-4 justify-center items-center">
-          <h2 className="flex items-center gap-2 text-xl lg:text-3xl"><Emoji className="size-12 lg:size-18" emoji ="👋"/>Hi I am Saksham.</h2>
         </div>
         <Hero />
         <Link className="group" href="#intro">
-          <div className="text-muted-foreground flex flex-col items-center justify-center text-lg">
+          <div className="text-white/65 flex flex-col items-center justify-center text-lg">
             Scroll Down
             <MaterialSymbolsArrowDownwardAltRounded className="size-8 group-hover:-translate-y-1 transition-transform" />
           </div>

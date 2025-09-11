@@ -31,8 +31,8 @@ export default function ImageViewer({
               src={imageUrl}
               alt={altText}
               className="w-full rounded-3xl md:rounded-4xl"
-              width={500}
-              height={500}
+              width={1200}
+              height={1200}
               onContextMenu={(e) => {
                 e.preventDefault()
               }}

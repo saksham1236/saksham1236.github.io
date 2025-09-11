@@ -22,9 +22,9 @@ export default async function Pages({ params }: PageProps) {
 
   const { frontmatter, content, tocs } = res
 
-  function Timeline() {
+  function Timeline({className}: {className?: string}) {
     return (
-      <div className="mt-2 inline-flex flex-row flex-wrap items-center gap-2">
+      <div className="mt-2 inline-flex flex-row flex-wrap items-center gap-2 !text-[16px] md:!text-xl">
         {frontmatter.timeline && (
           <span className="w-fit font-medium text-muted">
             {frontmatter.timeline}
@@ -36,13 +36,13 @@ export default async function Pages({ params }: PageProps) {
 
   return (
     <div className="flex justify-between gap-6">
-      <section className="flex-[3] pt-4 md:max-w-[75%]">
+      <section className="flex-[3] pt-4 md:pl-12 md:max-w-[80%]">
         <PageBreadcrumb paths={slug} />
         <Separator />
         <Typography className="mt-4">
-          {(frontmatter.timeline || frontmatter.tags) && <Timeline />}
-          <h1 className="!mb-2 pt-3 md:pt-5 md:!text-7xl !font-semibold flex-1/3">{frontmatter.title}</h1>
-          <p className="text-2xl leading-relaxed flex-2/3 !text-primary/75">{frontmatter.description}</p>
+          {(frontmatter.timeline || frontmatter.tags) && <Timeline/>}
+          <h1 className="!mb-2 pt-2 md:pt-5 !text-4xl md:!text-6xl !font-semibold">{frontmatter.title}</h1>
+          <p className="text-xl md:text-2xl leading-relaxed !text-primary/75">{frontmatter.description}</p>
           <Separator className="my-6" />
           <section
             className="mobile-toc mb-4 overflow-hidden xl:hidden [&>*]:box-border [&>*]:max-h-75"

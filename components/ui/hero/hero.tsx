@@ -1,7 +1,7 @@
-import { Flower_9, Misc_8, Moon_13, Moon_9, Star_8, Triangle_6, Triangle_8, Wheel_5 } from "../icons/icons";
-import styles from "./hero.module.css";
-import { cn } from "@/lib/utils";
-// import Emoji from "../emoji";
+// import { Flower_9, Misc_8, Moon_13, Moon_9, Star_8, Triangle_6, Triangle_8, Wheel_5 } from "../icons/icons";
+// import styles from "./hero.module.css";
+// import { cn } from "@/lib/utils";
+import { Emoji } from "../icons/icons"
 export default function Hero() {
   return (
     // <div className="flex">
@@ -49,26 +49,33 @@ export default function Hero() {
     // </div>
 
 
-    <div className="flex flex-row flex-wrap w-full gap-2 justify-center items-center">
-      <h1 className="sr-only">Hi I am Saksham. I can help you with Branding, UX Design & Web Development</h1>
-      <h2 className="sr-only"> Building enganging experiences, Developing Websites to deliver impact.</h2>
-      <div className="flex flex-row flex-wrap items-center justify-start p-0 sm:px-8 md:px-16 text-[28px] sm:text-3xl lg:text-8xl gap-y-2 gap-x-2 lg:gap-x-4">
-        <span>Building</span>
-        <Star_8 className="size-10 lg:size-34" />
-        <span className={cn("text-white italic px-1 py-0.5 lg:px-8 lg:py-4 rounded-full flex flex-grow justify-center", styles.orange)}>Experiences</span>
-        <Moon_9 className="size-10 lg:size-32 hue-rotate-180" />
-        <span className={cn("text-white px-1 py-0.5 lg:px-8 lg:py-4 rounded-full flex flex-grow justify-center", styles.green)}>Crafting</span>
-        <Misc_8 className="size-12 lg:size-38 rotate-90" />
-        <Moon_13 className="size-10 lg:size-28" />
-        <span>Websites</span><Triangle_6 className="flex lg:hidden size-8 rotate-90" />
-        <span className="flex flex-row items-center justify-center gap-2 lg:gap-4">
-          <span className="hidden lg:block"><Triangle_8 className="size-28 rotate-90" /></span>
-          <span>to Deliver</span>
-        </span>
-          <Flower_9 className="size-10 lg:size-28" />
-          <span className={cn("text-white font-bold  px-1 py-0.5 lg:px-8 lg:py-4 rounded-full flex flex-grow justify-center", styles.blue)}>impact
-            </span>
-            <Wheel_5 className="size-12 lg:size-32 rotate-25" />
+    // <div className="flex flex-row flex-wrap w-full gap-2 justify-center items-center">
+    //   <h1 className="sr-only">Hi I am Saksham. I can help you with Branding, UX Design & Web Development</h1>
+    //   <h2 className="sr-only"> Building enganging experiences, Developing Websites to deliver impact.</h2>
+    //   <div className="flex flex-row flex-wrap items-center justify-start p-0 sm:px-8 md:px-16 text-[28px] sm:text-3xl lg:text-8xl gap-y-2 gap-x-2 lg:gap-x-4">
+    //     <span>Building</span>
+    //     <Star_8 className="size-10 lg:size-34" />
+    //     <span className={cn("text-white italic px-1 py-0.5 lg:px-8 lg:py-4 rounded-full flex flex-grow justify-center", styles.orange)}>Experiences</span>
+    //     <Moon_9 className="size-10 lg:size-32 hue-rotate-180" />
+    //     <span className={cn("text-white px-1 py-0.5 lg:px-8 lg:py-4 rounded-full flex flex-grow justify-center", styles.green)}>Crafting</span>
+    //     <Misc_8 className="size-12 lg:size-38 rotate-90" />
+    //     <Moon_13 className="size-10 lg:size-28" />
+    //     <span>Websites</span><Triangle_6 className="flex lg:hidden size-8 rotate-90" />
+    //     <span className="flex flex-row items-center justify-center gap-2 lg:gap-4">
+    //       <span className="hidden lg:block"><Triangle_8 className="size-28 rotate-90" /></span>
+    //       <span>to Deliver</span>
+    //     </span>
+    //       <Flower_9 className="size-10 lg:size-28" />
+    //       <span className={cn("text-white font-bold  px-1 py-0.5 lg:px-8 lg:py-4 rounded-full flex flex-grow justify-center", styles.blue)}>impact
+    //         </span>
+    //         <Wheel_5 className="size-12 lg:size-32 rotate-25" />
+    //   </div>
+    // </div>
+
+    <div className="flex flex-row flex-wrap w-full gap-2 justify-center items-start md:py-24 !text-white">
+      <div className="flex flex-col gap-4">
+        <h1 className="flex items-center gap-2 text-xl md:text-5xl">Hi I am Saksham.<Emoji className="size-12 md:size-18" emoji="👋" /></h1>
+        <h2 className="text-4xl md:text-8xl leading-tight">I build enganging <b>Experiences</b>,<br />to deliver <b>impact.</b></h2> 
       </div>
     </div>
 
