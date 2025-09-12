@@ -93,7 +93,7 @@ export function SkillCarousel({ children }: PropsWithChildren) {
 export default function SkillSection() {
     return (
         <div className='flex flex-col gap-6 w-full'>
-            <h2 className="flex items-center gap-4 text-muted text-3xl font-medium md:text-5xl">What I do...<Emoji className="size-12 lg:size-18" emoji="✍️" /></h2>
+            <h2 className="flex items-center gap-4 text-muted text-3xl font-medium md:text-5xl select-none">What I do...<Emoji className="size-12 lg:size-18" emoji="✍️" /></h2>
             <SkillCarousel>
                 <SkillCard text="UX/UI Design"><FluentColorClipboardTextEdit32 className='size-10 md:size-16' /></SkillCard>
                 <SkillCard text="Web Development"><FluentColorCode24 className='size-10 md:size-16' /></SkillCard>

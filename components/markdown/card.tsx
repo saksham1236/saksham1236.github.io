@@ -8,6 +8,7 @@ import { LineMdArrowRight, LineMdMinus } from "../ui/icons/icons"
 import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
 
+
 type CardProps = PropsWithChildren & {
   subtitle?: string
   title: string
@@ -50,6 +51,7 @@ export function Card({
 }: CardProps) {
   const IconComponent = icon ? iconMap[icon] : icon
 
+
   const content = (
     <div
       className={clsx(
@@ -77,7 +79,7 @@ export function Card({
       <div className={cn("flex flex-col flex-grow gap-4", image ? "" : "pt-2")}>
         <div className="flex flex-col gap-2">
           {subtitle && (variant === "normal" || variant === "image") && (
-            <span className={cn("flex flex-row text-md lg:text-lg font-bold text-muted items-center gap-2")}>
+            <span className={cn("flex flex-row !text-md lg:!text-lg font-bold text-muted items-center gap-2")}>
               {subtitle}
               {IconComponent && (
                 <IconComponent />
