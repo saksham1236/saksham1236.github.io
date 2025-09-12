@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react";
 import SplitType from "split-type"
 import { cn } from "@/lib/utils";
+import styles from "./hero.module.css"
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -13,11 +14,10 @@ export default function Hero() {
   const headline = useRef<HTMLDivElement>(null);
   useGSAP(
     () => {
-      const text = new SplitType(".headline", {types: "chars,lines"})
-      gsap.fromTo(text.chars, {
-        y: "100%",
-        opacity: 0,
-      },
+      gsap.set(".headline", { visibility: "visible" });
+      const text = new SplitType(".headline", {types: "chars"})
+      gsap.set(text.chars, {y: "100%", opacity: 0, autoAlpha: 0,})
+      gsap.to(text.chars,
       {
         y: "0",
         opacity: 1,
@@ -33,10 +33,8 @@ export default function Hero() {
     <div className="flex flex-row flex-wrap w-full gap-2 justify-center items-start md:py-24 !text-white" ref={headline}>
       <div className="flex flex-col gap-4">
         <h1 className="flex items-center gap-2 text-xl md:text-5xl fade-in-translate-full">Hi I am Saksham.<Emoji className="size-12 md:size-18" emoji="👋" /></h1>
-        <h2 className={cn("headline text-4xl md:text-8xl leading-tight")}>I build enganging <b>Experiences</b>,<br/>to deliver <b>impact.</b></h2>
+        <h2 className={cn("headline text-4xl md:text-8xl leading-tight invisible")}>I build enganging <b>Experiences</b>,<br/>to deliver <b>impact.</b></h2>
       </div>
     </div>
   )
 }
-
-
