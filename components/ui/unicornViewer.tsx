@@ -7,7 +7,7 @@ export default function UnicornView() {
         width="100%"
         height="100%"
         scale={1}
-        dpi={1.5}
+        dpi={2}
         className="contain-paint"
       />
     )
