@@ -30,9 +30,9 @@ export default function Hero() {
     }
   )
   return (
-    <div className="flex flex-row flex-wrap w-full gap-2 justify-center items-start md:py-24 !text-white" ref={headline}>
-      <div className="flex flex-col gap-4">
-        <h1 className="flex items-center gap-2 text-xl md:text-5xl fade-in-translate-full">Hi I am Saksham.<Emoji className="size-12 md:size-18" emoji="👋" /></h1>
+    <div className="flex flex-row flex-wrap w-full gap-2 justify-center items-center md:py-24 !text-white" ref={headline}>
+      <div className="flex flex-col gap-12 md:gap-6 items-center md:items-start">
+        <h1 className="flex fade-up items-center gap-2 text-xl md:text-5xl fade-in-translate-full">Hi I am Saksham.<Emoji className="size-12 md:size-18" emoji="👋" /></h1>
         <h2 className={cn("headline text-4xl md:text-8xl leading-tight invisible")}>I build enganging <b>Experiences</b>,<br/>to deliver <b>impact.</b></h2>
       </div>
     </div>

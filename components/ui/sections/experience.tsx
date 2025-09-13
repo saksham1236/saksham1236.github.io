@@ -20,12 +20,12 @@ export default function MyExperience() {
                         Full-Time | 2022 — Present
                     </span>
                 </div>
-                <div className="flex flex-col gap-4 text-xl md:text-3xl md:flex-2/3 leading-relaxed md:leading-snug">
+                <div className="flex text-neutral-invert flex-col gap-4 text-xl md:text-2xl md:flex-2/3 leading-relaxed">
                     <p>
                         I specialize in creating responsive webpage layouts for {`CDW.ca’s`} landing pages using Adobe Experience Manager, HubSpot, HTML, CSS, and JavaScript. My strategic approach to content planning and design implementation has driven significant results, including a <b>193% year-over-year increase in Research Hub article views</b> and a <b>93% boost in partner showcase page traffic.</b>
                     </p>
                     <p>
-                        To further streamline design workflows, <b>I built a Figma plugin that automates layer renaming with tokens and conditional rules.</b> I continue to develop innovative tools to enhance efficiency and collaboration for designers.
+                        To improve efficiency for designers, I developed custom <b>Figma plugins—one that automates layer renaming with tokens and conditional rules</b>, and another <b>plugin that converts CDW product search results directly into Figma frames.</b> I continue to build innovative tools that streamline workflows and strengthen collaboration across teams.
                     </p>
                     <Button className="bg-accent/50 hover:bg-accent text-primary" href="https://www.figma.com/community/plugin/1499494471654319987/re-layer">
                         <Image className="rounded-md size-8 mr-3" src="/images/re-layer/icon.png" alt="re-layer-icon" width={200} height={300} />
@@ -45,7 +45,7 @@ export default function MyExperience() {
                         Full-Time | 2021 — 2022
                     </span>
                 </div>
-                <div className="flex flex-col gap-4 text-xl md:text-3xl md:flex-2/3 leading-relaxed md:leading-snug">
+                <div className="flex text-neutral-invert flex-col gap-4 text-xl md:md:text-2xl md:flex-2/3 leading-relaxed">
                     <p>
                         Led UX Design, branding, and visual design efforts for the EdTech and FinTech startup, including the Bounce Back Digital Learning Platform and Bounce Back Coin, establishing a distinct digital brand identity.
                     </p>
@@ -66,7 +66,7 @@ export default function MyExperience() {
                         {`University of Hawai'i`} | 2020 — 2021
                     </h4>
                 </div>
-                <div className="flex flex-col gap-4 text-xl md:text-3xl md:flex-2/3 leading-relaxed md:leading-snug">
+                <div className="flex text-neutral-invert flex-col gap-4 text-xl md:text-2xl md:flex-2/3 leading-relaxed">
                     <p>
                         Designed scientific illustrations and journal covers enhancing research papers and presentations, including a published cover for the prestigious Biophysical journal..
                     </p>

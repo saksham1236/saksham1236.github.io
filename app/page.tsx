@@ -48,12 +48,12 @@ export default function Home() {
 
   return (
     <>
-      <div className="sm:min-w-swh flex min-h-[calc(100svh-80px)] flex-col items-center justify-center gap-2 sm:min-h-[calc(100svh-96px)] sm:gap-8 lg:pt-16 lg:pb-16 mb-16" ref={main}>
+      <div className="sm:min-w-swh flex min-h-[calc(100svh-80px)] flex-col items-center justify-center gap-12 sm:min-h-[calc(100svh-96px)] sm:gap-8 lg:pt-16 lg:pb-16 mb-16" ref={main}>
         <div className="unicorn absolute top-0 left-0 z-[-1] h-[100svh] w-[100svw] md:w-[99svw] mix-blend-plus-darker overflow-hidden contain-paint">
           <UnicornView />
         </div>
         <Hero />
-        <Link className="group mt-6" href="#intro">
+        <Link className="group" href="#intro">
           <div className="text-white/65 flex flex-col items-center justify-center text-lg">
             Scroll Down
             <MaterialSymbolsArrowDownwardAltRounded className="size-8 group-hover:-translate-y-1 transition-transform" />
