@@ -1,0 +1,43 @@
+var __rest = (this && this.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+import * as React from "react";
+import { Slot } from "@radix-ui/react-slot";
+import { cva } from "class-variance-authority";
+import { cn } from "@/lib/utils";
+const buttonVariants = cva("inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-xl font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive", {
+    variants: {
+        variant: {
+            default: "bg-primary/90 text-primary-foreground hover:bg-primary hover:outline-2 hover:outline-offset-2 hover:outline-solid",
+            destructive: "bg-destructive/90 text-white hover:bg-destructive focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+            outline: "border bg-background hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
+            secondary: "bg-secondary/50 text-secondary-foreground hover:bg-secondary/80",
+            ghost: "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
+            link: "text-primary underline-offset-4 hover:underline hover:brightness-125",
+        },
+        size: {
+            default: "h-16 px-6 py-4 has-[>svg]:px-6",
+            sm: "h-8 rounded-full gap-1.5 px-3 has-[>svg]:px-2.5",
+            lg: "h-10 rounded-full px-6 has-[>svg]:px-4",
+            icon: "size-12",
+        },
+    },
+    defaultVariants: {
+        variant: "default",
+        size: "default",
+    },
+});
+function Button(_a) {
+    var { className, variant, size, asChild = false } = _a, props = __rest(_a, ["className", "variant", "size", "asChild"]);
+    const Comp = asChild ? Slot : "button";
+    return (<Comp data-slot="button" className={cn(buttonVariants({ variant, size, className }))} {...props}/>);
+}
+export { Button, buttonVariants };
