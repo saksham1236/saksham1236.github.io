@@ -24,15 +24,24 @@ export default function Home() {
       const unicornTl = gsap.timeline();
       unicornTl
         .set(".unicorn", {visibility: "visible"})
-        .to(".unicorn", {autoAlpha: 1, opacity: 1, duration: 0.4, delay: 1});
+        .to(".unicorn", {autoAlpha: 1, opacity: 1, duration: 0.8, delay: 1});
 
-      gsap.to(".unicorn", {
+        gsap.fromTo(".unicorn", {
+        scrollTrigger: {
+          trigger: ".intro",
+          toggleActions: "play reverse play reverse"
+        },
+        opacity: 1,
+        autoAlpha: 1,
+        duration: 0.5,
+      }, {
         scrollTrigger: {
           trigger: ".intro",
           toggleActions: "play reverse play reverse"
         },
         opacity: 0,
-        duration: 0.5,
+        autoAlpha: 0,
+        duration: 0.5
       })
 
       const elements = document.querySelectorAll(".fade-up");
