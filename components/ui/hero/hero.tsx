@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react";
 import SplitType from "split-type"
 import { cn } from "@/lib/utils";
+import styles from "./hero.module.css"
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
