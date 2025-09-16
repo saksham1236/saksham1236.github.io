@@ -377,6 +377,9 @@ video {
     margin-top: 0.25rem;
     padding-top: 0;
   }
+  p {
+    @apply text-xl mb-2;
+  }
 }
 .video-player {
   .media-controls-layer {

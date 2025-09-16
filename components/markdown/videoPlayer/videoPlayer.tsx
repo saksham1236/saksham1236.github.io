@@ -40,7 +40,7 @@ export default function VideoPlayer({
   return (
     <MediaPlayer
       className={cn(
-        "video-player ring-media-focus aspect-video w-full overflow-hidden rounded-lg bg-slate-900 font-sans text-white data-[focus]:ring-4",
+        "video-player ring-media-focus aspect-video w-full overflow-hidden rounded-3xl md:rounded-4xl bg-slate-900 font-sans text-primary data-[focus]:ring-4",
         className
       )}
       onProviderChange={onProviderChange}
