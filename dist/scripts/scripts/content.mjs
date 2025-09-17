@@ -68,6 +68,8 @@ function removeCustomComponents() {
         "FileTree",
         "Folder",
         "File",
+        "Button",
+        "ImageViewer"
     ];
     return (tree) => {
         visit(tree, "mdxJsxFlowElement", (node, index, parent) => {

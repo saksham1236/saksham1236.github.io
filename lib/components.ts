@@ -1,7 +1,6 @@
 import Image from "next/image"
 import { Icon } from "@iconify-icon/react"
 import { GiWheat } from "react-icons/gi"
-
 import Pre from "@/components/ui/pre"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardGrid } from "@/components/markdown/card"
@@ -15,6 +14,7 @@ import Note from "@/components/markdown/note"
 import { Step, StepItem } from "@/components/markdown/step"
 import Tag from "@/components/markdown/tag"
 import VideoPlayer from "@/components/markdown/videoPlayer/videoPlayer"
+import CarouselView from "@/components/markdown/carouselView"
 
 export const components = {
   a: RoutedLink,
@@ -39,4 +39,5 @@ export const components = {
   Iframe,
   VideoPlayer,
   GiWheat,
+  CarouselView,
 }

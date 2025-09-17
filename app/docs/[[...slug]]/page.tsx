@@ -35,8 +35,8 @@ export default async function Pages({ params }: PageProps) {
   }
 
   return (
-    <div className="flex justify-between gap-6">
-      <section className="flex-[3] pt-4 md:pl-12 md:max-w-[80%]">
+    <div className="flex justify-center lg:justify-between gap-6">
+      <section className="flex-[3] pt-4 md:px-12">
         <PageBreadcrumb paths={slug} />
         <Separator />
         <Typography className="mt-4">

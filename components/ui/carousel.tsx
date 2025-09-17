@@ -213,7 +213,7 @@ function CarouselNext({
       variant={variant}
       size={size}
       className={cn(
-        "rounded-full",
+        "rounded-full bg-primary-foreground",
         orientation === "horizontal"
           ? "top-1/2 -right-12"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",

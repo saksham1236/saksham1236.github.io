@@ -60,7 +60,7 @@
 .dark {
   --background: #262626;
   --foreground: #fafafa;
-  --card: #262626;
+  --card: #000;
   --card-foreground: #fafafa;
   --popover: #262626;
   --popover-foreground: #fafafa;
@@ -159,6 +159,7 @@
   @apply prose prose-xl prose-p:text-primary/80 prose-headings:text-primary prose-headings:scroll-m-20 prose-code:rounded-md prose-code:p-1 prose-code:leading-6 prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:bg-neutral-100;
   @apply prose-code:text-xs w-[85vw] !min-w-full pt-2 sm:mx-auto sm:w-full;
   @apply dark:prose-invert prose-code:text-neutral-800 dark:prose-code:bg-neutral-900 dark:prose-code:text-white dark:prose-pre:bg-neutral-900;
+  @apply prose-h2:mt-16;
 }
 
 .prose {
@@ -374,8 +375,7 @@ video {
 }
 .note {
   *:is(h1, h2, h3, h4, h5, h6) {
-    margin-top: 0.25rem;
-    padding-top: 0;
+    @apply mt-2;
   }
   p {
     @apply text-xl mb-2;
@@ -523,6 +523,10 @@ table {
   .ahS2Le {
     display: none !important;
   }
+}
+
+.cover-image {
+ aspect-ratio: 5/1;
 }
 
 .contact-bg {

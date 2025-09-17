@@ -1,6 +1,6 @@
 import clsx from "clsx"
-
 import { cn } from "@/lib/utils"
+import { Badge } from "../ui/badge"
 
 type TagProps = React.PropsWithChildren & {
   type?: "sm" | "lg"
@@ -14,7 +14,7 @@ export default function Tag({ children, type }: TagProps) {
   return (
     <span
       className={cn(
-        "tag bg-sheet-primary !text-primary mr-2 mb-2 inline-flex h-12 flex-row items-center gap-1.5 rounded-xl px-3 font-semibold",
+        "tag bg-primary-foreground !text-primary mr-2 mb-2 inline-flex h-16 flex-row items-center gap-1.5 rounded-xl px-6 not-prose",
         tagClassNames
       )}
     >

@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import { FiMaximize2, FiX } from "react-icons/fi"
-
+import { cn } from "@/lib/utils"
 import {
   Dialog,
   DialogClose,
@@ -15,9 +15,11 @@ import {
 export default function ImageViewer({
   imageUrl,
   altText,
+  className
 }: {
   imageUrl: string
   altText: string
+  className: string
 }) {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -26,11 +28,11 @@ export default function ImageViewer({
       {/* Trigger to open the dialog */}
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger asChild>
-          <div className="group relative cursor-pointer transition-opacity duration-200 hover:opacity-80">
+          <div className={cn(`group relative cursor-pointer transition-opacity duration-200 hover:opacity-80`)}>
             <Image
               src={imageUrl}
               alt={altText}
-              className="w-full rounded-3xl md:rounded-4xl"
+              className={cn("w-full rounded-3xl md:rounded-4xl object-cover", className)}
               width={1200}
               height={1200}
               onContextMenu={(e) => {
