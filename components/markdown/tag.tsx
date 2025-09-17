@@ -1,6 +1,5 @@
 import clsx from "clsx"
 import { cn } from "@/lib/utils"
-import { Badge } from "../ui/badge"
 
 type TagProps = React.PropsWithChildren & {
   type?: "sm" | "lg"

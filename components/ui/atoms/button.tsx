@@ -1,5 +1,4 @@
 import { PropsWithChildren } from "react";
-import { Link } from "@/lib/transition";
 import Anchor from "@/components/navigation/anchor";
 import { Button as ButtonPrim } from "../button";
 import { LineMdArrowRight, LineMdMinus } from "../icons/icons";
