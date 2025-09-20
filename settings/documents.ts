@@ -24,6 +24,12 @@ export const Documents: Paths[] = [
           {
             title: "Lynk",
             href: "/lynk",
+            items: [
+              {
+                title: "Lynk Case Study",
+                href: "/lynk-full"
+              }
+            ]
           },
           {
             title: "Mind Games",
