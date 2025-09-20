@@ -36,8 +36,8 @@ export default function Note({
         className
       )}
     >
-      {title && <h3 className="-mb-3 !text-base font-bold !text-muted">{title}:</h3>}
-      <p className="not-prose !text-primary">{children}</p>
+      {title && <h3 className="-mb-3 !text-base !font-bold !text-muted">{title}:</h3>}
+      <p className="!text-primary">{children}</p>
     </div>
   )
 }
