@@ -18,13 +18,13 @@ export function Navbar() {
   return (
     <nav className="sticky top-0 z-50 h-20 w-full px-2 md:h-24 md:px-4">
       <div className="[&>*]:bg-primary-foreground/65 mx-auto flex h-full max-w-392 items-center justify-between p-1 sm:p-3 md:gap-2 [&:*]:rounded-full [&>*]:shadow-xl">
-        <div className="bg-nav-noise flex rounded-full p-1 md:p-2 pr-4 border">
+        <div className="bg-nav-noise flex rounded-full p-1 md:p-2 border">
           <Logo />
         </div>
-        <div className="text-muted-foreground bg-nav-noise hidden items-center gap-2 rounded-full p-2 md:flex">
+        <div className="text-muted-foreground bg-nav-noise hidden items-center gap-2 rounded-full p-2 md:flex border">
           <NavMenu />
         </div>
-        <div className="bg-nav-noise hidden rounded-full md:flex">
+        <div className="bg-nav-noise hidden rounded-full md:flex border">
           <SocialLinks />
         </div>
         <SheetLeft />

@@ -1,9 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import { iconMap } from "@/settings/icons"
-
 import { Company } from "@/lib/meta"
-
+import { DioraDesignLogo } from "../ui/icons/icons"
 const ExtIcon = iconMap["arrowUpRight"]
 
 export function Footer() {
@@ -31,11 +30,8 @@ export function Footer() {
         </p>
         {Company.branding !== false && (
           <div className="hidden text-center md:block">
-            <Image
-              src="/icon.png"
-              alt="Froto Design Logo"
-              width={30}
-              height={30}
+            <DioraDesignLogo
+            className="size-16"
             />
           </div>
         )}
