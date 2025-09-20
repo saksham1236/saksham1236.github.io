@@ -28,11 +28,11 @@ export default function ImageViewer({
       {/* Trigger to open the dialog */}
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger asChild>
-          <div className={cn(`group relative cursor-pointer transition-opacity duration-200 hover:opacity-80`)}>
+          <div className={cn(`group relative h-full cursor-pointer shrink transition-opacity duration-200 hover:opacity-80`)}>
             <Image
               src={imageUrl}
               alt={altText}
-              className={cn("w-full rounded-3xl md:rounded-4xl object-cover", className)}
+              className={cn("w-full h-full rounded-3xl md:rounded-4xl object-cover", className)}
               width={1200}
               height={1200}
               onContextMenu={(e) => {

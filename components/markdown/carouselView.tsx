@@ -8,13 +8,22 @@ import {
     CarouselPrevious,
     type CarouselApi,
 } from "@/components/ui/carousel";
-import { PropsWithChildren } from "react";
-import { useEffect, useState } from "react";
+import { PropsWithChildren, useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 export default function CarouselView({ children }: PropsWithChildren) {
     const [api, setApi] = useState<CarouselApi>()
     const [current, setCurrent] = useState(0)
     const [count, setCount] = useState(0)
+    const containerRef = useRef<HTMLDivElement | null>(null)
+    const debounceRef = useRef<number | null>(null)
+    const [mountKey, setMountKey] = useState(0)
+    const DEBOUNCE_MS = 200
+
     useEffect(() => {
         if (!api) {
             return
@@ -25,21 +34,54 @@ export default function CarouselView({ children }: PropsWithChildren) {
             setCurrent(api.selectedScrollSnap() + 1)
         })
     }, [api])
+
+    useEffect(() => {
+        const root = containerRef.current
+        if (!root) return
+
+        const doRemount = () => {
+            if (debounceRef.current) {
+                window.clearTimeout(debounceRef.current)
+                debounceRef.current = null
+            }
+            debounceRef.current = window.setTimeout(() => {
+                setMountKey((k) => k + 1)
+                debounceRef.current = null
+            }, DEBOUNCE_MS)
+        }
+
+        const st = ScrollTrigger.create({
+            trigger: root,
+            start: "top 80%",
+            onEnter: doRemount,
+            onEnterBack: doRemount,
+        })
+
+        return () => {
+            if (st && typeof st.kill === "function") st.kill()
+            if (debounceRef.current) {
+                window.clearTimeout(debounceRef.current)
+                debounceRef.current = null
+            }
+        }
+    }, [containerRef])
+
     return (
-        <div className="flex aspect-auto lg:aspect-none lg:h-full flex-grow items-center justify-center carousel">
+        <div ref={containerRef} className="flex aspect-auto h-full items-center justify-center carousel">
             {((Array.isArray(children))) ? (
-                < Carousel
-                    className="carousel lg:h-full"
+                <Carousel
+                    key={mountKey}
+                    className="carousel h-full"
                     setApi={setApi}
                     plugins={[]}
                 >
                     <CarouselContent className="h-full rounded-4xl">
                         {(Array.isArray(children) ? children : []).map((child, index) => (
                             <CarouselItem
-                                className={cn("not-prose h-full cursor-grab min-w-fit shrink grow-0 pl-3 md:pl-4")}
+                                className="carousel-item basis-auto max-h-full max-w-fit"
                                 key={index}
                             >
-                                <div className="h-full w-full rounded-4xl contain-paint">
+                                <div className="not-prose h-full rounded-4xl contain-paint shrink">
                                     {child}
                                 </div>
                             </CarouselItem>

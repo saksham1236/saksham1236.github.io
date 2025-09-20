@@ -519,6 +519,13 @@ table {
   }
 }
 
+.carousel-item {
+  div {
+    height: fit-content;
+    width: fit-content;
+  }
+}
+
 .form .google-form-embed {
   .ahS2Le {
     display: none !important;
