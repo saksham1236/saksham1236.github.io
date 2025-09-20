@@ -51,10 +51,10 @@
   --media-focus: 78 156 246;
   --nav-bar: #404040;
   --nav-active: #0095e2;
+  --neutral-invert: #000;
   --nav-background:
     url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='1' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='1'/></svg>"),
     rgba(255, 255, 255, 0.35);
-  --neutral-invert: #000;
 }
 
 .dark {
@@ -90,13 +90,13 @@
   --sidebar-accent-foreground: #fafafa;
   --sidebar-border: #444444;
   --sidebar-ring: #707070;
+  --neutral-invert: #fff;
   --tw-prose-body: var(--primary);
   --sheet-primary: #ffffff10;
   --hover-b: oklch(90.815% 0.04635 285.417 / 0.127);
   --nav-background:
     url("data:image/svg+xml;utf8,<svg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='1' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='0.65'/></svg>"),
     rgba(0, 0, 0, 0.5);
-  --neutral-invert: #fff;
 }
 
 @theme inline {
@@ -156,7 +156,7 @@
 }
 
 .typography {
-  @apply prose prose-xl prose-p:text-primary/80 prose-headings:text-primary prose-headings:scroll-m-20 prose-code:rounded-md prose-code:p-1 prose-code:leading-6 prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:bg-neutral-100;
+  @apply prose prose-xl prose-p:text-neutral-invert/50 prose-headings:text-primary prose-headings:scroll-m-20 prose-code:rounded-md prose-code:p-1 prose-code:leading-6 prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:bg-neutral-100;
   @apply prose-code:text-xs w-[85vw] !min-w-full pt-2 sm:mx-auto sm:w-full;
   @apply dark:prose-invert prose-code:text-neutral-800 dark:prose-code:bg-neutral-900 dark:prose-code:text-white dark:prose-pre:bg-neutral-900;
   @apply prose-h2:mt-16;

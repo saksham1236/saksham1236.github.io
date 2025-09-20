@@ -1,7 +1,7 @@
 ---
 title: Bounce Back Learning
 description: Bounce Back Coin Learning platform, an LMS where users earn crypto via education, manage their crypto portfolios via a wallet dashboard, and access discussion boards/messaging.
-timeline: September 2020 - December - 2020
+timeline: January 2022 - June 2022
 tags: [UX-Design, Web-Design]
 ---
 <CardGrid>
@@ -12,11 +12,11 @@ tags: [UX-Design, Web-Design]
         Saksham Tandon, Samridh Arora
     </Note>
     <Note title ="Delivery Timeline">
-        4 Months
+        6 Months
     </Note>
 </CardGrid>
 <ImageViewer imageUrl="/images/bb-learning/hero.png" alt="Bounce Back Learning App - Hero"  className = "aspect-[21/9]"/>
-<ImageViewer imageUrl="/images/bb-learning/site-map.png" alt="Bounce Back Learning - Login" />
+
 ## 📝 Summary
 Bounce Back Coin Learning Platform was a learning management system (LMS) that aimed to combine education with cryptocurrency incentives. The platform allowed users to earn crypto by watching educational videos and completing quizzes, encouraging continued learning through direct rewards. It offered a range of content, focusing on STEM subjects such as coding, mathematics, and science, as well as language learning.
 
@@ -40,13 +40,31 @@ While I was developing the branding, the co-founders had already started sketchi
         <ImageViewer imageUrl="/images/bb-learning/starter-05.png" alt="Bounce Back Learning - Initial Ideas" />
     </CarouselView>
 ### First Steps - The Bounce Back Design System
-To start building such a complex system, I first created the Bounce Back Design System, providing a clear foundation and guide to ensure consistency across the app. Its philosophy, drawn from the branding guide, emphasized being colorful, playful and engaging.
+To tackle the complexity of the platform, I began by creating what was less a design system and more a component library that could be reused anywhere in the app. It started with simple primitives like buttons, cards, text fields, and forms, but then expanded to include more advanced elements such as charts, replies, audio player, toolbars, and even a code editor.
 <ImageViewer imageUrl="/images/bb-learning/bb-design-system.png" alt="Bounce Back Learning - Design System" />
-## Mockups
-<ImageViewer imageUrl="/images/bb-learning/Login.png" alt="Bounce Back Learning - Login" />
-<ImageViewer imageUrl="/images/bb-learning/Home.png" alt="Home" />
-<ImageViewer imageUrl="/images/bb-learning/learning-dashboard.png" alt="Bounce Back Learning - Learning Dashboard" />
-<ImageViewer imageUrl="/images/bb-learning/Learning.png" alt="Bounce Back Learning - Course Page" />
-<ImageViewer imageUrl="/images/bb-learning/Exchange.png" alt="Bounce Back Learning - Exchange" />
-<ImageViewer imageUrl="/images/bb-learning/Wallet.png" alt="Bounce Back Learning - Wallet" />
-<ImageViewer imageUrl="/images/bb-learning/Messenger.png" alt="Bounce Back Learning - Messenger" />
+### Initial Designs
+"In the initial design phases, there was little time for exploration, but here’s a snippet from the early idea for the dashboard. I wish I had the time to document the rest of the process. Funny enough, most of the feedback was just 'a certain feature is missing' or 'make it nicer.' (I even paid for Figma Professional to get this screenshot 😩)"
+<ImageViewer imageUrl="/images/bb-learning/early-designs-1.png" alt="Bounce Back Learning - Messenger" />
+### Final Product and Learnings
+The final product brought together all parts of the platform into a single experience — courses, quizzes, rewards, wallet management, and peer-to-peer discussions. Working alongside another designer while managing other initiatives, delivering an MVP was a race against time. This experience taught me how to prioritize features effectively and decide what to defer under tight deadlines.
+- **A Design System? A Component Library?** As I built more and collaborated with developers, it became clearer — this was a component library with a style guide. A true design system would have included more thorough documentation, better reasoning for decisions, and would have made the developer’s job easier, reducing the need for assumptions about how or where to use a component.
+- **Designing for others.** This was my first time building a system where I had to think beyond my own use of components — considering how other designers would use them and how the system would need to scale as the project’s scope grew. I also made sure to keep components flexible enough so other designers could adapt them to their unique use cases without drifting too far from the brand.
+- **Balance is key.** It was challenging to combine education, finance, and game-like mechanics without overwhelming the user. Clear navigation and a consistent visual style helped keep things approachable.
+- **Collaboration matters.** The co-founders’ early sketches provided direction, and working closely with them helped translate their vision into a working design system. I also had to think about design documentation and developer handoff to make sure the system could be implemented smoothly.
+
+    <ImageViewer imageUrl="/images/bb-learning/site-map.png" alt="Bounce Back Learning - SiteMap" />
+    <ImageViewer imageUrl="/images/bb-learning/Login.png" alt="Bounce Back Learning - Login" />
+    <ImageViewer imageUrl="/images/bb-learning/Home.png" alt="Home" />
+    <ImageViewer imageUrl="/images/bb-learning/learning-dashboard.png" alt="Bounce Back Learning - Learning Dashboard" />
+    <ImageViewer imageUrl="/images/bb-learning/Learning.png" alt="Bounce Back Learning - Course Page" />
+    <ImageViewer imageUrl="/images/bb-learning/Exchange.png" alt="Bounce Back Learning - Exchange" />
+    <ImageViewer imageUrl="/images/bb-learning/Wallet.png" alt="Bounce Back Learning - Wallet" />
+    <ImageViewer imageUrl="/images/bb-learning/Messenger.png" alt="Bounce Back Learning - Messenger" />
+
+## 🔮 Future Improvements
+
+- **Learn-to-Earn Crypto Flow:** I wanted to research and create the complete user journey for earning crypto through learning, ensuring a clear and engaging experience.
+- **Enhanced Code Editor:** Planned to add advanced features such as AI-assisted coding, autocompletion, and collaborative editing.
+- **Educator Tools:** Aimed to develop a more comprehensive flow for educators to create, manage, and track educational materials efficiently.
+- **Onboarding for crypto beginners:** Worked on simplifying the wallet and reward flows to make them more approachable for users new to cryptocurrency.
+- **More gamification:** Intended to add features like leaderboards, streaks, badges, or challenges to increase engagement.
