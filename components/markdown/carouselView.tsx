@@ -75,7 +75,7 @@ export default function CarouselView({ children }: PropsWithChildren) {
                     setApi={setApi}
                     plugins={[]}
                 >
-                    <CarouselContent className="h-full rounded-4xl">
+                    <CarouselContent className="h-full rounded-4xl aspect-video">
                         {(Array.isArray(children) ? children : []).map((child, index) => (
                             <CarouselItem
                                 className="carousel-item basis-auto max-h-full max-w-fit"

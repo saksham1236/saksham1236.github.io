@@ -521,7 +521,7 @@ table {
 
 .carousel-item {
   div {
-    height: fit-content;
+    height: 100%;
     width: fit-content;
   }
 }
