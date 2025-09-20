@@ -36,7 +36,7 @@ export default function CarouselView({ children }: PropsWithChildren) {
                     <CarouselContent className="h-full rounded-4xl">
                         {(Array.isArray(children) ? children : []).map((child, index) => (
                             <CarouselItem
-                                className={cn("not-prose h-full cursor-grab min-w-fit pl-3 md:pl-4")}
+                                className={cn("not-prose h-full cursor-grab min-w-fit shrink grow-0 pl-3 md:pl-4")}
                                 key={index}
                             >
                                 <div className="h-full w-full rounded-4xl contain-paint">
