@@ -10,8 +10,10 @@ import {
 } from "@/components/ui/carousel";
 import { PropsWithChildren, useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-
-export default function CarouselView({ children }: PropsWithChildren) {
+type CarouselProps = PropsWithChildren & {
+    aspect: String
+}
+export default function CarouselView({ aspect, children }: CarouselProps) {
     const [api, setApi] = useState<CarouselApi>()
     const [current, setCurrent] = useState(0)
     const [count, setCount] = useState(0)
@@ -35,7 +37,7 @@ export default function CarouselView({ children }: PropsWithChildren) {
                     setApi={setApi}
                     plugins={[]}
                 >
-                    <CarouselContent className="h-full rounded-4xl aspect-video">
+                    <CarouselContent className={cn("h-full rounded-4xl aspect-video", aspect)}>
                         {(Array.isArray(children) ? children : []).map((child, index) => (
                             <CarouselItem
                                 className="carousel-item basis-auto max-h-full max-w-fit"

@@ -29,18 +29,6 @@ export const Documents = [
                     },
                 ],
             },
-            {
-                title: "Scientific Illustration Work",
-                href: "#scientific-illustration-work",
-            },
-            {
-                title: "Dev Work",
-                href: "#dev-work",
-            },
         ],
-    },
-    {
-        title: "About Me",
-        href: "/about",
     },
 ];

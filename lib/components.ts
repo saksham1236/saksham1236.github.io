@@ -15,6 +15,7 @@ import { Step, StepItem } from "@/components/markdown/step"
 import Tag from "@/components/markdown/tag"
 import VideoPlayer from "@/components/markdown/videoPlayer/videoPlayer"
 import CarouselView from "@/components/markdown/carouselView"
+import { Button } from "@/components/ui/atoms/button"
 
 export const components = {
   a: RoutedLink,
@@ -40,4 +41,5 @@ export const components = {
   VideoPlayer,
   GiWheat,
   CarouselView,
+  Button,
 }
