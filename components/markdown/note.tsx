@@ -37,7 +37,7 @@ export default function Note({
       )}
     >
       {title && <h3 className="-mb-3 !text-base !font-bold !text-muted">{title}:</h3>}
-      <p className="!text-primary">{children}</p>
+      <p className="prose-p:!text-neutral-invert">{children}</p>
     </div>
   )
 }
