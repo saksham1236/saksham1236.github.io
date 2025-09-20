@@ -9,20 +9,12 @@ import {
     type CarouselApi,
 } from "@/components/ui/carousel";
 import { PropsWithChildren } from "react";
-import { useEffect, useState, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 export default function CarouselView({ children }: PropsWithChildren) {
     const [api, setApi] = useState<CarouselApi>()
     const [current, setCurrent] = useState(0)
     const [count, setCount] = useState(0)
-    const [mountKey, setMountKey] = useState(0)
-    const containerRef = useRef<HTMLDivElement | null>(null)
-    const debounceRef = useRef<number | null>(null)
-
     useEffect(() => {
         if (!api) {
             return
@@ -33,41 +25,10 @@ export default function CarouselView({ children }: PropsWithChildren) {
             setCurrent(api.selectedScrollSnap() + 1)
         })
     }, [api])
-
-    useEffect(() => {
-        const el = containerRef.current
-        if (!el) return
-
-        const DEBOUNCE_MS = 200
-
-        const doRemount = () => {
-            if (debounceRef.current) window.clearTimeout(debounceRef.current)
-            debounceRef.current = window.setTimeout(() => {
-                setMountKey((k) => k + 1)
-                debounceRef.current = null
-            }, DEBOUNCE_MS)
-        }
-
-        const st = ScrollTrigger.create({
-            trigger: el,
-            start: "top 80%",
-            onEnter: () => doRemount(),
-            onEnterBack: () => doRemount(),
-        })
-
-        return () => {
-            st?.kill?.()
-            if (debounceRef.current) {
-                window.clearTimeout(debounceRef.current)
-                debounceRef.current = null
-            }
-        }
-    }, [])
     return (
-        <div ref={containerRef} className="flex aspect-auto lg:aspect-none lg:h-full flex-grow items-center justify-center carousel">
+        <div className="flex aspect-auto lg:aspect-none lg:h-full flex-grow items-center justify-center carousel">
             {((Array.isArray(children))) ? (
                 < Carousel
-                    key={mountKey}
                     className="carousel lg:h-full"
                     setApi={setApi}
                     plugins={[]}
@@ -75,10 +36,10 @@ export default function CarouselView({ children }: PropsWithChildren) {
                     <CarouselContent className="h-full rounded-4xl">
                         {(Array.isArray(children) ? children : []).map((child, index) => (
                             <CarouselItem
-                                className="not-prose h-full cursor-grab min-w-fit shrink grow-0 pl-3 md:pl-4"
+                                className={cn("not-prose h-full cursor-grab min-w-fit pl-3 md:pl-4")}
                                 key={index}
                             >
-                                <div className="flex shrink h-fit rounded-4xl contain-paint">
+                                <div className="h-full w-full rounded-4xl contain-paint">
                                     {child}
                                 </div>
                             </CarouselItem>
