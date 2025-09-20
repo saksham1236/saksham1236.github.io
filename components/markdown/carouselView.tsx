@@ -8,21 +8,13 @@ import {
     CarouselPrevious,
     type CarouselApi,
 } from "@/components/ui/carousel";
-import { PropsWithChildren, useEffect, useRef, useState } from "react";
+import { PropsWithChildren, useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function CarouselView({ children }: PropsWithChildren) {
     const [api, setApi] = useState<CarouselApi>()
     const [current, setCurrent] = useState(0)
     const [count, setCount] = useState(0)
-    const containerRef = useRef<HTMLDivElement | null>(null)
-    const debounceRef = useRef<number | null>(null)
-    const [mountKey, setMountKey] = useState(0)
-    const DEBOUNCE_MS = 200
 
     useEffect(() => {
         if (!api) {
@@ -35,42 +27,10 @@ export default function CarouselView({ children }: PropsWithChildren) {
         })
     }, [api])
 
-    useEffect(() => {
-        const root = containerRef.current
-        if (!root) return
-
-        const doRemount = () => {
-            if (debounceRef.current) {
-                window.clearTimeout(debounceRef.current)
-                debounceRef.current = null
-            }
-            debounceRef.current = window.setTimeout(() => {
-                setMountKey((k) => k + 1)
-                debounceRef.current = null
-            }, DEBOUNCE_MS)
-        }
-
-        const st = ScrollTrigger.create({
-            trigger: root,
-            start: "top 80%",
-            onEnter: doRemount,
-            onEnterBack: doRemount,
-        })
-
-        return () => {
-            if (st && typeof st.kill === "function") st.kill()
-            if (debounceRef.current) {
-                window.clearTimeout(debounceRef.current)
-                debounceRef.current = null
-            }
-        }
-    }, [containerRef])
-
     return (
-        <div ref={containerRef} className="flex aspect-auto h-full items-center justify-center carousel">
+        <div className="flex aspect-auto h-full items-center justify-center carousel">
             {((Array.isArray(children))) ? (
                 <Carousel
-                    key={mountKey}
                     className="carousel h-full"
                     setApi={setApi}
                     plugins={[]}
