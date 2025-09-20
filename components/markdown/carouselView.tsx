@@ -11,7 +11,7 @@ import {
 import { PropsWithChildren, useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 type CarouselProps = PropsWithChildren & {
-    aspect: String
+    aspect: string
 }
 export default function CarouselView({ aspect, children }: CarouselProps) {
     const [api, setApi] = useState<CarouselApi>()
