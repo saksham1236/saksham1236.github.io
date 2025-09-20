@@ -56,11 +56,7 @@ export default function CarouselView({ children }: PropsWithChildren) {
         })
 
         return () => {
-            try {
-                st.kill()
-            } catch (e) {
-                /* ignore */
-            }
+            st?.kill?.()
             if (debounceRef.current) {
                 window.clearTimeout(debounceRef.current)
                 debounceRef.current = null
