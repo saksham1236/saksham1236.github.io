@@ -17,7 +17,7 @@ export default function VideoLayout() {
       <Gestures />
       <Controls.Root className="media-controls-layer !text-primary absolute inset-0 z-10 flex h-full w-full flex-col bg-gradient-to-t from-black/10 to-transparent transition-opacity">
         <Tooltip.Provider>
-          <Controls.Group className="text-md bg-nav-noise absolute top-4 left-4 z-10 flex items-center justify-center rounded-full px-6 py-2 shadow-md backdrop-blur-lg">
+          <Controls.Group className="text-md bg-nav-noise absolute top-4 left-4 z-10 flex items-center justify-center rounded-full px-4 py-2 shadow-md backdrop-blur-lg">
             <VideoTitle />
           </Controls.Group>
           <div className="flex-1" />
