@@ -30,7 +30,7 @@ export default function Hero() {
     }
   )
   return (
-    <div className="flex flex-row flex-wrap w-full gap-2 justify-center items-center md:py-24 !text-white mt-auto" ref={headline}>
+    <div className="flex flex-row flex-wrap w-full gap-2 justify-center items-center md:py-24 !text-white mt-auto mb-auto" ref={headline}>
       <div className="flex flex-col gap-24 md:gap-6 items-center md:items-start">
         <div className="flex flex-col-reverse lg:flex-row w-full justify-between items-center">
            <h1 className="flex invisible greeting fade-up items-center gap-2 text-xl md:text-5xl fade-in-translate-full">Hi I am Saksham.<Emoji className="size-8 md:size-18" emoji="👋" /></h1>
