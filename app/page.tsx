@@ -67,7 +67,7 @@ export default function Home() {
           <UnicornView />
         </div>
         <Hero />
-        <Link className="group" href="#intro">
+        <Link className="group pb-4 mt-auto" href="#intro">
           <div className="text-white/65 flex flex-col items-center justify-center text-lg">
             Scroll Down
             <MaterialSymbolsArrowDownwardAltRounded className="size-8 group-hover:-translate-y-1 transition-transform" />
