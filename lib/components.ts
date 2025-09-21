@@ -16,7 +16,7 @@ import Tag from "@/components/markdown/tag"
 import VideoPlayer from "@/components/markdown/videoPlayer/videoPlayer"
 import CarouselView from "@/components/markdown/carouselView"
 import { Button } from "@/components/ui/atoms/button"
-
+import { LineMdHazardLightsOffLoop } from "@/components/ui/icons/icons"
 export const components = {
   a: RoutedLink,
   Card,
@@ -42,4 +42,5 @@ export const components = {
   GiWheat,
   CarouselView,
   Button,
+  LineMdHazardLightsOffLoop
 }

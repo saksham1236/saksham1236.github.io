@@ -6,9 +6,10 @@ import { cn } from "@/lib/utils";
 type buttonProps = PropsWithChildren & {
     href?: string
     className?: string
+    icon?: React.ReactNode
 }
 
-export function Button({ children, href, className }: buttonProps) {
+export function Button({ children, href, icon, className }: buttonProps) {
     if (href) {
         return (
             <ButtonPrim asChild className={cn("w-full lg:w-fit group cursor-pointer", className)} variant="default">
@@ -16,7 +17,8 @@ export function Button({ children, href, className }: buttonProps) {
                     {children}
                     <div className="relative flex flex-row size-6 overflow-clip">
                         <LineMdMinus className="absolute size-6 left-[0%] group-hover:left-[100%] transition-all duration-200 ease-in-out" />
-                        <LineMdArrowRight className="absolute size-6 left-[-100%] group-hover:left-[0%] transition-all duration-200 ease-in-out" />
+                        {icon ? <span className="flex absolute size-6 left-[-100%] group-hover:left-[0%] transition-all duration-200 ease-in-out">{icon}</span> :
+                            <LineMdArrowRight className="absolute size-6 left-[-100%] group-hover:left-[0%] transition-all duration-200 ease-in-out" />}
                     </div>
                 </Anchor>
             </ButtonPrim>
@@ -27,7 +29,8 @@ export function Button({ children, href, className }: buttonProps) {
                 {children}
                 <div className="relative flex flex-row size-6 overflow-clip">
                     <LineMdMinus className="absolute size-6 left-[0%] group-hover:left-[100%] transition-all duration-200 ease-in-out" />
-                    <LineMdArrowRight className="absolute size-6 left-[-100%] group-hover:left-[0%] transition-all duration-200 ease-in-out" />
+                    {icon ? <span className="absolute size-6 left-[-100%] group-hover:left-[0%] transition-all duration-200 ease-in-out">{icon}</span> :
+                        <LineMdArrowRight className="absolute size-6 left-[-100%] group-hover:left-[0%] transition-all duration-200 ease-in-out" />}
                 </div>
             </ButtonPrim>
         )

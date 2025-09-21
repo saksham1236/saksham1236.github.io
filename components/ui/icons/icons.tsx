@@ -802,6 +802,14 @@ export function DioraDesignLogo(props: SVGProps<SVGSVGElement>) {
   )
 }
 
+export function LineMdLoadingTwotoneLoop(props: SVGProps<SVGSVGElement>) {
+	return (<svg xmlns="http://www.w3.org/2000/svg" width={128} height={128} viewBox="0 0 24 24" {...props}><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}><path strokeDasharray={16} strokeDashoffset={16} d="M12 3c4.97 0 9 4.03 9 9"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="16;0"></animate><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"></animateTransform></path><path strokeDasharray={64} strokeDashoffset={64} strokeOpacity={0.3} d="M12 3c4.97 0 9 4.03 9 9c0 4.97 -4.03 9 -9 9c-4.97 0 -9 -4.03 -9 -9c0 -4.97 4.03 -9 9 -9Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.2s" values="64;0"></animate></path></g></svg>);
+}
+
+export function LineMdHazardLightsOffLoop(props: SVGProps<SVGSVGElement>) {
+	return (<svg xmlns="http://www.w3.org/2000/svg" width={128} height={128} viewBox="0 0 24 24" {...props}><mask id="SVGGyxhkd9y"><g fill="none" stroke="#fff" strokeLinecap="round" strokeWidth={2}><path strokeDasharray={28} strokeDashoffset={28} d="M12 10l4 7h-8Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="28;0"></animate></path><path d="M12 10l4 7h-8Z" opacity={0}><animate attributeName="d" begin="0.4s" dur="0.8s" keyTimes="0;0.25;1" repeatCount="indefinite" values="M12 10l4 7h-8Z;M12 4l9.25 16h-18.5Z;M12 4l9.25 16h-18.5Z"></animate><animate attributeName="opacity" begin="0.4s" dur="0.8s" keyTimes="0;0.1;0.75;1" repeatCount="indefinite" values="0;1;1;0"></animate></path><path stroke="#000" strokeDasharray={28} strokeDashoffset={28} d="M0 11h26" transform="rotate(45 12 12)"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.4s" values="28;0"></animate></path><path strokeDasharray={28} strokeDashoffset={28} d="M0 13h26" transform="rotate(45 12 12)"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.4s" values="28;0"></animate></path></g></mask><rect width={24} height={24} fill="currentColor" mask="url(#SVGGyxhkd9y)"></rect></svg>);
+}
+
 type emojiProps = {
   emoji: string
   className?: string
