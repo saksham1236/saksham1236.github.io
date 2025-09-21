@@ -1,5 +1,5 @@
 "use client"
-import { DioraDesignLogo, Emoji } from "../icons/icons"
+import { DioraDesignLogoWithText, Emoji } from "../icons/icons"
 import gsap from 'gsap';
 import { useRef } from 'react';
 import { ScrollTrigger } from "gsap/ScrollTrigger"
@@ -31,10 +31,12 @@ export default function Hero() {
   )
   return (
     <div className="flex flex-row flex-wrap w-full gap-2 justify-center items-center md:py-24 !text-white" ref={headline}>
-      <div className="flex flex-col gap-12 md:gap-6 items-center md:items-start">
-        <DioraDesignLogo className="invisible greeting fade-up w-32 h-auto text-white opacity-50 mb-4"/>
-        <h1 className="flex invisible greeting fade-up items-center gap-2 text-xl md:text-5xl fade-in-translate-full">Hi I am Saksham.<Emoji className="size-12 md:size-18" emoji="👋" /></h1>
-        <h2 className={cn("headline text-4xl md:text-8xl leading-tight invisible")}>I build engaging <b>Experiences</b>,<br/>to deliver <b>impact.</b></h2>
+      <div className="flex flex-col gap-8 md:gap-6 items-center md:items-start">
+        <div className="flex flex-col-reverse lg:flex-row w-full justify-between items-center">
+           <h1 className="flex invisible greeting fade-up items-center gap-2 text-xl md:text-5xl fade-in-translate-full">Hi I am Saksham.<Emoji className="size-12 md:size-18" emoji="👋" /></h1>
+           <DioraDesignLogoWithText className="invisible greeting fade-up w-24 h-auto text-white opacity-50 mb-4"/>
+        </div>
+        <div className={cn("flex items-center md:items-start text-4xl md:text-8xl leading-tight invisible")}><h2 className="headline text-center md:text-left">I build engaging <b>Experiences</b>,<br/>to deliver <b>impact.</b></h2></div>
       </div>
     </div>
   )
