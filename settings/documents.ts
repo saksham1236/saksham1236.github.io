@@ -38,5 +38,8 @@ export const Documents: Paths[] = [
         ],
       },
     ],
-  },
+  },{
+    title: "About Me",
+    href: "/about"
+  }
 ]
