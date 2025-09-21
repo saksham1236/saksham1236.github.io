@@ -38,6 +38,7 @@ export default function ImageViewer({
               className={cn("w-full h-full rounded-3xl md:rounded-4xl object-cover", className)}
               width={1200}
               height={1200}
+              lazyBoundary=""
               onContextMenu={(e) => {
                 e.preventDefault()
               }}

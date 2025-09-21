@@ -8,20 +8,30 @@ import {
     CarouselPrevious,
     type CarouselApi,
 } from "@/components/ui/carousel";
-import { PropsWithChildren, useEffect, useState } from "react";
+import { PropsWithChildren, useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 type CarouselProps = PropsWithChildren & {
     aspect: string
 }
+
 export default function CarouselView({ aspect, children }: CarouselProps) {
     const [api, setApi] = useState<CarouselApi>()
     const [current, setCurrent] = useState(0)
     const [count, setCount] = useState(0)
 
+    // remount key + refs for GSAP ScrollTrigger + debounce
+    const containerRef = useRef<HTMLDivElement | null>(null)
+    const debounceRef = useRef<number | null>(null)
+    const [mountKey, setMountKey] = useState(0)
+    const DEBOUNCE_MS = 200
+
     useEffect(() => {
-        if (!api) {
-            return
-        }
+        if (!api) return
         setCount(api.scrollSnapList().length)
         setCurrent(api.selectedScrollSnap() + 1)
         api.on("select", () => {
@@ -29,10 +39,42 @@ export default function CarouselView({ aspect, children }: CarouselProps) {
         })
     }, [api])
 
+    useEffect(() => {
+        const root = containerRef.current
+        if (!root) return
+
+        const doRemount = () => {
+            if (debounceRef.current) {
+                window.clearTimeout(debounceRef.current)
+                debounceRef.current = null
+            }
+            debounceRef.current = window.setTimeout(() => {
+                setMountKey(k => k + 1)
+                debounceRef.current = null
+            }, DEBOUNCE_MS)
+        }
+
+        const st = ScrollTrigger.create({
+            trigger: root,
+            start: "top 80%",
+            onEnter: doRemount,
+            onEnterBack: doRemount,
+        })
+
+        return () => {
+            if (st && typeof st.kill === "function") st.kill()
+            if (debounceRef.current) {
+                window.clearTimeout(debounceRef.current)
+                debounceRef.current = null
+            }
+        }
+    }, []) // run once on mount
+
     return (
-        <div className="flex aspect-auto h-full items-center justify-center carousel">
+        <div ref={containerRef} className="flex aspect-auto h-full items-center justify-center carousel">
             {((Array.isArray(children))) ? (
                 <Carousel
+                    key={mountKey}
                     className="carousel h-full"
                     setApi={setApi}
                     plugins={[]}
