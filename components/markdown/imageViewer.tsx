@@ -26,7 +26,7 @@ export default function ImageViewer({
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className = "imageViewer not-prose not-prose-p:text-primary not-prose-img:my-10">
+    <div className = "imageViewer">
       {/* Trigger to open the dialog */}
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger asChild className="relative">
