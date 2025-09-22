@@ -26,7 +26,7 @@ export default function ImageViewer({
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className = "imageViewer">
+    <div className = "imageViewer prose-p:!text-primary">
       {/* Trigger to open the dialog */}
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger asChild className="relative">
@@ -35,7 +35,7 @@ export default function ImageViewer({
             <Image
               src={imageUrl}
               alt={altText}
-              className={cn("w-full h-full rounded-3xl md:rounded-4xl object-cover", className)}
+              className={cn("w-full h-full rounded-3xl md:rounded-4xl object-cover border", className)}
               width={1200}
               height={1200}
               lazyBoundary=""
