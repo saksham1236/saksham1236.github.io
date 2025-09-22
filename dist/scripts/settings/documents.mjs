@@ -36,5 +36,8 @@ export const Documents = [
                 ],
             },
         ],
-    },
+    }, {
+        title: "About Me",
+        href: "/about"
+    }
 ];

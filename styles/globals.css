@@ -524,6 +524,10 @@ table {
     height: 100%;
     width: fit-content;
   }
+  .video-player div {
+    height: auto;
+    width: auto;
+  }
 }
 
 
