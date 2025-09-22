@@ -26,12 +26,12 @@ export default function ImageViewer({
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className = "imageViewer">
+    <div className = "imageViewer not-prose not-prose-p:text-primary not-prose-img:my-10">
       {/* Trigger to open the dialog */}
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger asChild className="relative">
           <div className={cn(`group relative h-full cursor-pointer shrink transition-opacity duration-200 hover:opacity-80`)}>
-            {title && <div className="absolute py-2 px-4 bg-nav-noise bottom-4 left-4 max-h-fit rounded-full text-sm">{title}</div>}
+            {title && <div className="absolute py-2 px-4 bg-nav-noise bottom-4 left-4 max-h-fit rounded-full text-sm shadow-lg">{title}</div>}
             <Image
               src={imageUrl}
               alt={altText}

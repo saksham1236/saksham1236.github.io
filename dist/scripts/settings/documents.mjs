@@ -14,6 +14,10 @@ export const Documents = [
                     {
                         title: "Bounce Back Coin Branding",
                         href: "/bounce-back-coin-branding",
+                        items: [{
+                                title: "Bounce Back Coin Full",
+                                href: "/bounce-back-coin-branding-full"
+                            }]
                     },
                     {
                         title: "Bounce Back Digital Branding",
