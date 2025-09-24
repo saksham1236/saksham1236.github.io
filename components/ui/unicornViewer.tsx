@@ -8,8 +8,9 @@ export default function UnicornView() {
         width="100%"
         height="100%"
         scale={1}
-        dpi={1.8}
-        fps = {30}
+        dpi={1.5}
+        fps ={24}
+
         className="contain-paint"
       />
     )

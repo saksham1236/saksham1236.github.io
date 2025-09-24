@@ -61,7 +61,7 @@ export default function MyWork() {
           subtitle="Branding"
           description="Bounce Back Digital, a digital agency and fintech startup that focuses on providing innovative solutions in the digital space."
           cta="View Project"
-          link="/docs/recent-work/bounce-back-learning"
+          link="/docs/recent-work/bounce-back-digital-branding"
           dark
         >
           <Image className="w-full h-full lg:object-top-left" alt="Bounce Back Coin" src="/images/bb-digital-branding/thumb-new.png" width={1200} height={800} />

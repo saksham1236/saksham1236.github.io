@@ -156,10 +156,10 @@
 }
 
 .typography {
-  @apply prose prose-xl prose-p:text-neutral-invert/60 prose-headings:text-primary prose-headings:scroll-m-20 prose-code:rounded-md prose-code:p-1 prose-code:leading-6 prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:bg-neutral-100;
+  @apply prose prose-xl prose-p:text-neutral-invert/60 prose-p:leading-relaxed prose-headings:text-primary prose-headings:scroll-m-20 prose-headings:mt-8 prose-code:rounded-md prose-code:p-1 prose-code:leading-6 prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:bg-neutral-100;
   @apply prose-code:text-xs w-[85vw] !min-w-full pt-2 sm:mx-auto sm:w-full;
   @apply dark:prose-invert prose-code:text-neutral-800 dark:prose-code:bg-neutral-900 dark:prose-code:text-white dark:prose-pre:bg-neutral-900;
-  @apply prose-h2:mt-16;
+  @apply prose-h2:mt-12;
 }
 
 .prose {

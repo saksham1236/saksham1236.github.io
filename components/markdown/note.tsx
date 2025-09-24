@@ -8,6 +8,7 @@ type NoteProps = PropsWithChildren & {
   title?: string
   type?: "note" | "success" | "warning" | "danger" | "info"
   className?: ClassNameValue
+  titleClassName?: ClassNameValue
 }
 
 export default function Note({
@@ -15,6 +16,7 @@ export default function Note({
   title,
   type = "note",
   className,
+  titleClassName,
 }: NoteProps) {
   const noteClassNames = clsx({
     "bg-primary-foreground text-primary": type == "note",
@@ -36,8 +38,8 @@ export default function Note({
         className
       )}
     >
-      {title && <h3 className="-mb-3 !text-base !font-bold !text-muted">{title}:</h3>}
-      <div className="prose-p:!text-neutral-invert">{children}</div>
+      {title && <h3 className={cn("-mb-3 !text-base !font-bold !text-muted !mx-0", titleClassName)}>{title}:</h3>}
+      <div className="prose-p:!text-neutral-invert prose-p:!mx-0">{children}</div>
     </div>
   )
 }

@@ -8,18 +8,22 @@ import {
     CarouselPrevious,
     type CarouselApi,
 } from "@/components/ui/carousel";
-import { PropsWithChildren, useEffect, useRef, useState } from "react";
+import { PropsWithChildren, useEffect, useMemo, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import AutoScroll from "embla-carousel-auto-scroll";
 
 gsap.registerPlugin(ScrollTrigger);
 
 type CarouselProps = PropsWithChildren & {
-    aspect: string
+    aspect?: string
+    autoscroll?: boolean
+    drag?: boolean
+    infinite?: boolean
 }
 
-export default function CarouselView({ aspect, children }: CarouselProps) {
+export default function CarouselView({ aspect, autoscroll = false, drag = false, infinite = false, children }: CarouselProps) {
     const [api, setApi] = useState<CarouselApi>()
     const [current, setCurrent] = useState(0)
     const [count, setCount] = useState(0)
@@ -70,6 +74,19 @@ export default function CarouselView({ aspect, children }: CarouselProps) {
         }
     }, []) // run once on mount
 
+    const autoScrollPlugin = useMemo(() => {
+        return autoscroll
+            ? AutoScroll({
+                playOnInit: true,
+                stopOnInteraction: false,
+                stopOnFocusIn: false,
+                startDelay: 100,
+            })
+            : undefined;
+    }, [autoscroll]);
+
+    const plugins = autoScrollPlugin ? [autoScrollPlugin] : [];
+
     return (
         <div ref={containerRef} className="flex aspect-auto h-full items-center justify-center carousel">
             {((Array.isArray(children))) ? (
@@ -77,7 +94,11 @@ export default function CarouselView({ aspect, children }: CarouselProps) {
                     key={mountKey}
                     className="carousel h-full"
                     setApi={setApi}
-                    plugins={[]}
+                    plugins={plugins}
+                    opts={{
+                        dragFree: drag,
+                        loop: infinite,
+                    }}
                 >
                     <CarouselContent className={cn("h-full rounded-3xl md:rounded-4xl aspect-video", aspect)}>
                         {(Array.isArray(children) ? children : []).map((child, index) => (
