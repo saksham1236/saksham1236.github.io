@@ -63,7 +63,7 @@ export default function Home() {
   return (
     <>
       <div className="sm:min-w-swh flex min-h-[calc(100svh-80px)] flex-col items-center justify-center gap-8 sm:min-h-[calc(100svh-96px)] sm:gap-8 lg:pt-8 lg:pb-8 mb-8" ref={main}>
-        <div className="unicorn invisible opacity-0 absolute top-0 left-0 z-[-2] h-[100svh] w-[100svw] md:w-[99svw] overflow-hidden contain-paint">
+        <div className="unicorn hero-fallback invisible opacity-0 absolute top-0 left-0 z-[-2] h-[100svh] w-[100svw] md:w-[99svw] overflow-hidden contain-paint">
           <UnicornView />
         </div>
         <Hero />

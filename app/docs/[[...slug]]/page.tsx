@@ -9,7 +9,7 @@ import PageBreadcrumb from "@/components/navigation/pagebreadcrumb"
 import Pagination from "@/components/navigation/pagination"
 import Toc from "@/components/navigation/toc"
 import ContactForm from "@/components/ui/sections/form"
-
+import { cn } from "@/lib/utils"
 type PageProps = {
   params: Promise<{ slug: string[] }>
 }
@@ -35,14 +35,14 @@ export default async function Pages({ params }: PageProps) {
   }
 
   return (
-    <div className="flex justify-center lg:justify-between gap-6">
-      <section className="flex-[3] pt-4 md:px-32">
+    <div className="flex justify-center lg:justify-between gap-16">
+      <section className="flex-3/4 pt-4">
         <PageBreadcrumb paths={slug} />
-        <Separator />
+        <Separator/>
         <Typography className="mt-4">
           {(frontmatter.timeline || frontmatter.tags) && <Timeline/>}
           <h1 className="!mb-2 pt-2 md:pt-5 !text-4xl md:!text-6xl !font-semibold !mt-0">{frontmatter.title}</h1>
-          <p className="!text-xl md:!text-2xl leading-relaxed !text-primary/75">{frontmatter.description}</p>
+          <p className="!text-xl leading-relaxed !text-primary/75">{frontmatter.description}</p>
           <Separator className="my-6" />
           <section
             className="mobile-toc mb-4 overflow-hidden xl:hidden [&>*]:box-border [&>*]:max-h-75"
@@ -50,7 +50,7 @@ export default async function Pages({ params }: PageProps) {
           >
             {Settings.toc && <Toc tocs={tocs} />}
           </section>
-          <section>{content}</section>
+          <section className={cn("reader-content", pathName.split("/").length >= 2 && "prose-h2:!mt-24 prose-h2:!border-b prose-h2:!pb-6")}>{content}</section>
         </Typography>
         <ContactForm />
         <Pagination pathname={pathName} />
@@ -58,7 +58,7 @@ export default async function Pages({ params }: PageProps) {
       <BackToTop className=" bg-nav-noise text-primary fixed right-4 bottom-4 z-40 mt-6 self-start rounded-full p-3 text-md shadow-lg backdrop-blur-lg xl:hidden"/>
       {Settings.rightbar && (
         <aside
-          className="toc sticky top-16 hidden h-[94.5vh] w-[230px] gap-3 py-8 xl:flex xl:flex-col"
+          className="toc sticky top-16 hidden h-[94.5vh] gap-3 py-8 xl:flex xl:flex-col xl:flex-1/4"
           aria-label="Table of contents"
         >
           {Settings.toc && <Toc tocs={tocs} />}

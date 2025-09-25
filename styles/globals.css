@@ -156,10 +156,9 @@
 }
 
 .typography {
-  @apply prose prose-xl prose-p:text-neutral-invert/60 prose-p:leading-relaxed prose-headings:text-primary prose-headings:scroll-m-20 prose-headings:mt-8 prose-code:rounded-md prose-code:p-1 prose-code:leading-6 prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:bg-neutral-100;
+  @apply prose prose-xl prose-p:text-neutral-invert/60 prose-p:text-lg prose-p:leading-relaxed prose-headings:text-primary prose-headings:scroll-m-20 prose-headings:mt-8 prose-code:rounded-md prose-code:p-1 prose-code:leading-6 prose-code:before:content-none prose-code:after:content-none prose-pre:border prose-pre:bg-neutral-100;
   @apply prose-code:text-xs w-[85vw] !min-w-full pt-2 sm:mx-auto sm:w-full;
   @apply dark:prose-invert prose-code:text-neutral-800 dark:prose-code:bg-neutral-900 dark:prose-code:text-white dark:prose-pre:bg-neutral-900;
-  @apply prose-h2:mt-12;
 }
 
 .prose {
@@ -170,15 +169,31 @@
   color: #002a69;
 }
 
+/* .prose .reader-showcase {
+  @apply prose-h2:!mt-24 prose-h2:!border-b prose-h2:!pb-6;
+} */
+
 .dark .prose ul > li::marker {
   color: hsl(0, 0%, 79%);
 }
+
+/* .typography .reader-content > :is(h3, h4, h5, h6):has(+ :is(h3, h4, h5, h6, p, ul, ol, .tag-group)), .typography .reader-content > :is(h2, h3, h4, h5, h6, p) + :is(p, ul, ol, .tag-group){
+  @apply px-32;
+} */
+
+
+.typography .reader-content > :is(.carousel, .imageViewer) + :is(h2, h3, h4, h5, h6) {
+  @apply mt-16;
+}
+
 
 .prose :where([class~="not-prose"] ul > li)::marker,
 .prose :where([class~="not-prose"] ul > li)::marker * {
   color: inherit;
 }
-
+/* .typography .reader-content > :is(p, h3, h4, h5, h6, ul, ol, .tag-group) {
+  @apply md:mx-24;
+} */
 .prose
   :where(ul > li):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
   padding-inline-start: 0;
@@ -544,5 +559,11 @@ table {
 .contact-bg {
  background-color: hsla(359, 100%, 50%, 1);
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1746 1746' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"), radial-gradient(circle at 0% 99%, hsla(11, 100%, 50%, 1) 0%, transparent 67%), radial-gradient(circle at 46% 94%, hsla(177, 100%, 50%, 1) 0%, transparent 81%), radial-gradient(circle at 89% 8%, rgb(52, 2, 59) 0%, transparent 150%), radial-gradient(circle at 89% 8%, rgb(50, 166, 255) 0%, transparent 150%), radial-gradient(circle at 93% 95%, hsla(236, 100%, 23%, 1) 0%, transparent 66%), radial-gradient(circle at 89% 8%, hsla(0, 100%, 99%, 1) 0%, transparent 150%), radial-gradient(circle at 89% 8%, hsla(55, 94%, 54%, 1) 0%, transparent 150%);
+    background-blend-mode: overlay, normal, normal, normal, normal, normal, normal, normal;
+}
+
+.hero-fallback {
+   background-color: hsla(359, 100%, 50%, 1);
+    background-image: radial-gradient(circle at 0% 99%, hsla(11, 100%, 50%, 1) 0%, transparent 67%), radial-gradient(circle at 46% 94%, hsla(177, 100%, 50%, 1) 0%, transparent 81%), radial-gradient(circle at 89% 8%, rgb(52, 2, 59) 0%, transparent 150%), radial-gradient(circle at 89% 8%, rgb(50, 166, 255) 0%, transparent 150%), radial-gradient(circle at 93% 95%, hsla(236, 100%, 23%, 1) 0%, transparent 66%), radial-gradient(circle at 89% 8%, hsla(0, 100%, 99%, 1) 0%, transparent 150%), radial-gradient(circle at 89% 8%, hsla(55, 94%, 54%, 1) 0%, transparent 150%);
     background-blend-mode: overlay, normal, normal, normal, normal, normal, normal, normal;
 }

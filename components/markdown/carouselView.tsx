@@ -21,9 +21,11 @@ type CarouselProps = PropsWithChildren & {
     autoscroll?: boolean
     drag?: boolean
     infinite?: boolean
+    className?: string,
+    controls?: boolean,
 }
 
-export default function CarouselView({ aspect, autoscroll = false, drag = false, infinite = false, children }: CarouselProps) {
+export default function CarouselView({ aspect, autoscroll = false, drag = false, infinite = false, controls = true, className, children }: CarouselProps) {
     const [api, setApi] = useState<CarouselApi>()
     const [current, setCurrent] = useState(0)
     const [count, setCount] = useState(0)
@@ -78,7 +80,7 @@ export default function CarouselView({ aspect, autoscroll = false, drag = false,
         return autoscroll
             ? AutoScroll({
                 playOnInit: true,
-                stopOnInteraction: false,
+                stopOnInteraction: true,
                 stopOnFocusIn: false,
                 startDelay: 100,
             })
@@ -88,7 +90,7 @@ export default function CarouselView({ aspect, autoscroll = false, drag = false,
     const plugins = autoScrollPlugin ? [autoScrollPlugin] : [];
 
     return (
-        <div ref={containerRef} className="flex aspect-auto h-full items-center justify-center carousel">
+        <div ref={containerRef} className={`flex aspect-auto h-full items-center justify-center carousel ${className}`}>
             {((Array.isArray(children))) ? (
                 <Carousel
                     key={mountKey}
@@ -100,7 +102,7 @@ export default function CarouselView({ aspect, autoscroll = false, drag = false,
                         loop: infinite,
                     }}
                 >
-                    <CarouselContent className={cn("h-full rounded-3xl md:rounded-4xl aspect-video", aspect)}>
+                    <CarouselContent className={cn("h-full rounded-3xl md:rounded-4xl aspect-32/9", aspect)}>
                         {(Array.isArray(children) ? children : []).map((child, index) => (
                             <CarouselItem
                                 className="carousel-item basis-auto max-h-full max-w-fit"
@@ -114,7 +116,7 @@ export default function CarouselView({ aspect, autoscroll = false, drag = false,
                     </CarouselContent>
                     <div className="flex flex-row absolute w-full justify-end px-4 top-[16px]">
                         <div className=" flex items-center gap-2 p-2 bg-nav-noise rounded-full contain-paint shadow-lg">
-                            <CarouselPrevious className="hidden lg:flex size-8" />
+                            <CarouselPrevious className={cn("hidden size-8", controls && "lg:flex")} />
                             {Array.from({ length: count }).map((_, index) => (
                                 <button
                                     key={index}
@@ -124,7 +126,7 @@ export default function CarouselView({ aspect, autoscroll = false, drag = false,
                                     })}
                                 />
                             ))}
-                            <CarouselNext className="hidden lg:flex size-8" />
+                            <CarouselNext className={cn("hidden size-8", controls && "lg:flex")} />
                         </div>
                     </div>
                 </Carousel>

@@ -13,7 +13,7 @@ export default function Tag({ children, type }: TagProps) {
   return (
     <span
       className={cn(
-        "tag bg-primary-foreground !text-primary mr-2 mb-2 inline-flex h-16 flex-row items-center gap-1.5 rounded-xl px-6 not-prose",
+        "tag bg-card !text-primary mr-2 mb-2 inline-flex h-16 flex-row items-center gap-1.5 rounded-xl px-6 not-prose",
         tagClassNames
       )}
     >

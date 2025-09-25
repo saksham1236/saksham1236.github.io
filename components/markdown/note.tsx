@@ -19,7 +19,7 @@ export default function Note({
   titleClassName,
 }: NoteProps) {
   const noteClassNames = clsx({
-    "bg-primary-foreground text-primary": type == "note",
+    "bg-card text-primary": type == "note",
     "dark:bg-green-950 bg-green-100 border-green-300 dark:border-green-900":
       type === "success",
     "dark:bg-yellow-950 bg-orange-100 border-orange-300 dark:border-orange-900":
