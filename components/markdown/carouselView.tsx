@@ -102,7 +102,7 @@ export default function CarouselView({ aspect, autoscroll = false, drag = false,
                         loop: infinite,
                     }}
                 >
-                    <CarouselContent className={cn("h-full rounded-3xl md:rounded-4xl aspect-32/9", aspect)}>
+                    <CarouselContent className={cn("h-full rounded-3xl md:rounded-4xl aspect-21/9 md:aspect-32/9", aspect)}>
                         {(Array.isArray(children) ? children : []).map((child, index) => (
                             <CarouselItem
                                 className="carousel-item basis-auto max-h-full max-w-fit"
