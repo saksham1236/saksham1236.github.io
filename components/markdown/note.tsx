@@ -33,7 +33,7 @@ export default function Note({
   return (
     <div
       className={cn(
-        "note mb-3 rounded-3xl p-6 text-sm tracking-wide",
+        "note mb-3 rounded-3xl p-6 text-sm tracking-wide border",
         noteClassNames,
         className
       )}

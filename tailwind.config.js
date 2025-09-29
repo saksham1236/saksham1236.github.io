@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}", // Include all files in the app directory
@@ -10,6 +11,9 @@ module.exports = {
         "media-brand": "rgb(var(--media-brand) / <alpha-value>)",
         "media-focus": "rgb(var(--media-focus) / <alpha-value>)",
       },
+      screens: {
+        'uhd': '1200px'
+      }
     },
   },
   plugins: [

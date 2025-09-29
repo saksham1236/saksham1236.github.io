@@ -3,118 +3,161 @@ title: Lynk Event Organizer
 author: Saksham Tandon
 description: Lynk is a platform designed to combat social isolation by connecting individuals with local activities and communities.
 tags: [UX-Design, Product-Design]
-timeline: Jaunary 2021 - April 2021
+timeline: January 2021 - April 2021
 ---
+
 <CardGrid>
-    <Note title ="My Roles">
+    <Note title="My Roles">
         UX Researcher, Visual Designer & Business Analyst
     </Note>
-    <Note title ="The Team">
+    <Note title="The Team">
         [Baber Ali](https://www.linkedin.com/in/baber-ali-2ba9a9154/), [Saksham Tandon](https://www.linkedin.com/in/s9tandon/), [Youssef Bhagat](https://www.linkedin.com/in/youssefbahgat/), [Ashutosh Khandelwal](https://www.linkedin.com/in/ashutosh-khandelwal/), Sehyun Lim
     </Note>
-    <Note title ="Delivery Timeline">
+    <Note title="Delivery Timeline">
         4 Months
     </Note>
 </CardGrid>
-<ImageViewer imageUrl="/images/lynk/lynk-hero-showcase.png" alt="Lynk - Hero" title="Hero showcase" className = "aspect-[32/9]"/>
-## 📝 Summary
-Lynk was a social platform designed to reduce isolation among young adults by making it easier to connect with local communities, organize activities, and attend events. The project was based on the insight that individuals entering new environments — whether school, work, or a new city — often struggled to build meaningful connections, which negatively affected their mental and physical health.
 
-The app’s main features allowed users to create or join communities, host events, and participate in activities that matched their interests. Users could browse local groups, view attendee lists before committing, and take part in activities that encouraged healthier routines.
+<ImageViewer imageUrl="/images/lynk/lynk-hero-showcase.png" alt="Lynk - Hero" title="Hero showcase" className="aspect-[32/9]"/>
 
-The product went through three rounds of usability testing and iterative refinement. Updates included simplifying event creation flows, adding breadcrumbs and horizontal navigation, incorporating COVID-safety considerations, refining the visual hierarchy, and implementing payment and confirmation pop-ups to reduce uncertainty.
+## Overview
+Lynk is a platform designed to reduce social isolation among young adults by connecting them to local communities and events. Users can browse groups, join activities, and host events. Through three rounds of testing, we refined navigation, activity creation, COVID-safety measures, and payment flows. The final product simplified access to meaningful connections and promoted well-being.
 
-By its final iteration, Lynk enabled users to engage with local communities in a structured and supportive way, making it easier to attend events and form connections in new environments.
-## 🛠️ What did I do?
-<div className='tag-group'>
-  <Tag>UX Research</Tag>
-  <Tag>User Flows</Tag>
-  <Tag>Usability Testing</Tag>
-  <Tag>Interaction Design</Tag>
-  <Tag>High-Fidelity Prototype</Tag>
-  <Tag>Business Analysis</Tag>
-  <Tag>Product Strategy</Tag>
-</div>
-## 🧩 The Problem
-<CardGrid className = "lg:!grid-cols-2 gap-16 prose-p:!mb-0 prose-headings:!mt-0">
-  <div>
-    ### Social Isolation Among Young Adults
-      When young adults move to a new city for work or school, they often leave behind familiar routines, friends, and support networks. This sudden change can make them feel disconnected and lonely, even if they are surrounded by people. The COVID-19 pandemic further intensified this isolation, limiting opportunities for in-person social interactions and creating additional barriers to meeting new people. Over time, this combination of relocation and pandemic-related restrictions can lead to stress, anxiety, and decreased motivation to engage in daily activities, affecting both mental and physical health.
-  </div>
-<div>
-  <CarouselView aspect = "aspect-auto h-full">
-    <ImageViewer imageUrl="/images/lynk/target-audience-mood-board-1.jpg" alt ="Target Audience Mood Board" title="Mood board — 1"/>
-    <ImageViewer imageUrl="/images/lynk/target-audience-mood-board-2.jpg" alt ="Target Audience Mood Board" title="Mood board — 2"/>
-    <ImageViewer imageUrl="/images/lynk/target-audience-mood-board-3.jpg" alt ="Target Audience Mood Board" title="Mood board — 3"/>
-  </CarouselView>
-</div>
+## The Problem
+<Note type='danger'>
+<span className='text-2xl'>How can we effectively connect young adults in new environments to local activities and people to combat social isolation and its negative health impacts?</span>
+</Note>
+### Social Isolation Among Young Adults
+Young adults moving to a new city often experience loneliness and disconnection. COVID-19 worsened this by limiting in-person interactions, causing stress and reducing motivation.
+
+<CarouselView aspect="h-full">
+      <ImageViewer imageUrl="/images/lynk/target-audience-mood-board-1.jpg" alt="Target Audience Mood Board" title="Mood board — 1"/>
+      <ImageViewer imageUrl="/images/lynk/target-audience-mood-board-2.jpg" alt="Target Audience Mood Board" title="Mood board — 2"/>
+      <ImageViewer imageUrl="/images/lynk/target-audience-mood-board-3.jpg" alt="Target Audience Mood Board" title="Mood board — 3"/>
+</CarouselView>
+<span className = "text-xs italic">We asked university students and working professionals to illustrate their experiences with social isolation by contributing to online Google Boards, helping us capture their thoughts and emotions visually.</span>
+
+### Gaps in Existing Platforms
+Platforms like Meetup or Eventbrite were limited in supporting emotional readiness and accessibility. Users needed a platform that was easy to navigate, encouraged social interaction, and prioritized safety and well-being.
+
+## Research & Insights
+To understand the needs of young adults experiencing social isolation—especially those moving to new cities for school or work—we combined first-hand experiences with user interviews and surveys. Our goal was to uncover what helps individuals feel supported, connected, and motivated to participate in community activities.
+<CardGrid className="lg:!grid-cols-2">
+<Note title = "Target Audience" className = "text-xl text-neutral-invert leading-relaxed bg-card border">
+Our focus was on Ontario-based young adults ages 20–28 who are relocating to new environments, including both graduates and non-graduates. These users often face challenges like stress, loneliness, and difficulty establishing routines while seeking meaningful social connections.
+</Note>
+<Note title = "Competitive Landscape" className = "text-xl text-neutral-invert leading-relaxed bg-card border">
+We analyzed platforms like **Meetup, Eventbrite, Citysocializer, Nextdoor, Wine For The People, and Clozette.** While these platforms support social connections and events, they lack focus on emotional wellness, mental health, and accessibility.
+</Note>
 </CardGrid>
-### Key Gaps in Existing Platforms
-While platforms like Meetup, Eventbrite, and Nextdoor help users connect in different ways, they don’t fully address the emotional readiness, mental health, and accessibility needs of young adults facing social isolation. This revealed a clear gap: users need a platform that reduces social friction, supports emotional well-being, and encourages a gentle return to social life, especially after long periods of isolation.
+### About our Users
+<Note className="note-bevel relative border">
+  <GiWheat className = "relative lg:absolute h-16 w-16 lg:top-6 lg:right-6 bg-[#8e58fc] rounded-lg border-1 p-1 text-white mb-3"/>
+  <h5 className="text-3xl text-[#8e58fc] font-bold my-3 flex items-center gap-1">Demeter<span className='text-sm font-normal pt-0.5'>• ∆ημήτηρ</span></h5>
+  <span className='italic  text-sm'>“Goddess of grain, agriculture, harvest, growth, and nourishment.”</span>
 
-## 🚀 The Solution
-### Building a Safe and Supportive Platform
-To tackle the challenges of social isolation, Lynk was designed as an event organizing platform that fosters real-world connections. The focus was on creating low-pressure, emotionally supportive experiences, enabling users to safely participate in local activities while rebuilding routines and forming new social bonds. Wellness-oriented, outdoor, and group activities were prioritized to promote both mental and physical health, with features like activity categorization, attendee lists, and optional anonymity giving users control over their social interactions.
+  The person is looking for opportunities to grow. They are willing to take most opportunities that offer a path for personal development. They regularly venture out to new place in search of opportunities like better working conditions, better salary, better living standards etc.
 
-## The Approach
-Lynk’s design followed an iterative, three-iteration process, improving with feedback from each stage to create a platform that supports social connections and emotional well-being.
+  Their motivation generally comes from living in either sub-par conditions and want to grow out of it or have connections to other people who grew out of those kind conditions and want to follow their lead.
 
-### The Foundation
-We began with low-fidelity prototypes to map the app’s core structure. Early testing revealed that users were overwhelmed by too much information and needed clearer guidance to navigate and join activities.
-  <CarouselView aspect = "aspect-21/9 h-full">
-    <ImageViewer imageUrl="/images/lynk/wireframe-iteration-1.png" alt="Prototype for Iteration 1" title="Wireframe — desktop"/>
-    <ImageViewer imageUrl="/images/lynk/wireframe-mobile-iteration-1.png" alt="Prototype for Iteration 1" title="Wireframe — mobile"/>
-  </CarouselView>
-<div className='py-8'>
-<CardGrid className = "lg:!grid-cols-2 gap-16 prose-p:!mb-0 prose-headings:!mt-0 items-center py-8">
-  <div>
-### Building the Community: Mid-Fidelity and Branding
-      In the second iteration, we developed mid-fidelity prototypes with defined branding and a clear user flow for joining activities. Features like an attendee list addressed COVID-19 safety concerns, while user feedback guided improvements to button design, layout, and navigation clarity.
-  </div>
-  <div className='flex max-h-full'>
-    <VideoPlayer src="/images/lynk/joining-activity-workflow.mp4" title = "Joining Activities Preview" autoplay={true} loop={true}/>
-  </div>
-</CardGrid>
-  <CarouselView aspect = "aspect-video h-full">
-    <ImageViewer imageUrl="/images/lynk/branding.png" alt="Lynk Branding" title="Branding"/>
-    <ImageViewer imageUrl="/images/lynk/mockup-iteration-2.png" alt="Lynk Midfidelity" title="Mid-fidelity mockup"/>
-    <ImageViewer imageUrl="/images/lynk/attending-list.png" alt="List Attendees" title="Attendee list"/>
-  </CarouselView>
-</div>
-<CardGrid className = "lg:!grid-cols-2 gap-16 prose-p:!mb-0 prose-headings:!mt-0 items-center py-8">
-  <div>
-### Creating and Participating: Improving the Activity Creation Process
-      The third iteration focused on refining the activity creation process. Moderated testing revealed confusion over form steps and horizontal scrolling. We addressed this by splitting flows into multiple pages, adding breadcrumbs, tooltips, and vertical layouts, and updating the navbar and payment pop-up.
-  </div>
-<div className='flex max-h-full'>
-<VideoPlayer src="/images/lynk/expanded-creating-activity-workflow.mp4" title = "Improved Creating Activities Preview" autoplay={true} loop={true}/>
-</div>
-</CardGrid>
+  They are often independent when it comes to living and are financially stable conditions. They also show occasional interests in passions with main focus on activities that can help them grow.
+  <CardGrid className = "mb-4">
+    <div className = "bevel px-3 dark:bg-neutral-900 bg-neutral-50 rounded-lg">
+      **How has COVID-19 impacted your lifestyle ?**
 
-<CardGrid className = "!grid-cols-1 gap-16 prose-p:!mb-0 prose-headings:!mt-0 items-center py-8">
-  <div>
-### Final Steps: Preparing for MVP
-      In the final iteration, we implemented last refinements before the MVP release. This included updating the navbar layout to horizontal, adding breadcrumbs for multi-step flows, clarifying tooltips and tag information, and improving the payment confirmation pop-up.
-  </div>
-<div className='flex max-h-full'>
-  <CarouselView aspect = "aspect-auto h-full">
-    <ImageViewer className = "!aspect-square" imageUrl="/images/lynk/nav-after.png" alt="Navbar Horizontal" title="Navbar (after)"/>
-    <ImageViewer imageUrl="/images/lynk/breadcrumbs-after.png" alt="breadcrumbs-after" title="Breadcrumbs (after)"/>
-    <ImageViewer imageUrl="/images/lynk/pay-popup-after.png" alt="Payment Popup" title="Payment popup"/>
-    <ImageViewer imageUrl="/images/lynk/tooltip-after.png" alt="Tag Tooltip" title="Tag tooltip"/>
-  </CarouselView>
-</div>
-</CardGrid>
-
-## Final Product and Key Learnings
-This was my second experience taking a product design idea from a problem statement to a business concept and then to an MVP. It was a valuable opportunity to strengthen my design skills, learn how to prioritize features, and refine user flows based on real feedback. Here is what I learned.
-
-- **Bringing it all together:** The final prototype brought together all aspects of the platform — joining and creating activities, attendee lists, tooltips, breadcrumbs, payment pop-ups, and the hero screen. Iteratively refining each element while responding to user feedback taught me how to prioritize features, decide what could be deferred, and continuously improve usability and support for emotional well-being.
-
-- **Designing for clarity:** Early testing revealed that too much information and unclear navigation overwhelmed users. This experience reinforced the importance of step-by-step guidance, intuitive layouts, and clear visual cues to help users confidently engage with the platform.
-
-- **Safety and trust:** Features like anonymous participation and attendee lists were essential for user comfort, particularly during COVID-19. Incorporating these considerations taught me how design decisions impact user trust and emotional well-being.
-
+        “Covid has a caused a major overhaul to the way we approached finding jobs and other  activities. It has certainly caused a decrease in number of opportunities.”
+    </div>
+    <div className = "bevel px-3 dark:bg-neutral-900 bg-neutral-50 rounded-lg">
+      **What are your future plans ?**
+      
+        “Covid has a caused a major overhaul to the way we approached finding jobs and other  activities. It has certainly caused a decrease in number of opportunities.”
+    </div>
+    <div className = "bevel px-3 dark:bg-neutral-900 bg-neutral-50 rounded-lg">
+      **How do you deal with stress ?**
+      
+        Stress is part of life, I work then I also like to do leisure activities like gaming and going on long drives”
+    </div>
+  </CardGrid>
+  <span className = "text-xs">The card styling was inspired by the Neumorphic style trending at that time. User Persona inspired by this study here [https://www.carolinapizatto.com/reviving-personas](https://www.carolinapizatto.com/reviving-personas)</span>
+</Note>
+### User Journey
+We first conducted a Kano model survey to determine which features were most valued by users. Using these insights, we then developed a user journey informed by requirements highlighted during a UX heuristics evaluation.
 <ImageViewer imageUrl="/images/lynk/user-flow-final.png" alt="Final User Flow" title="Final user flow"/>
-<ImageViewer imageUrl="/images/lynk/final-prototype.png" alt="Final Prototype" title="Final prototype"/>
+## Design Process
+
+### Iteration 1 – Foundation
+ - Developed low-fidelity wireframes to map core flows.
+ - Early testing revealed users felt overwhelmed; navigation needed simplification.
+
+<CarouselView aspect="md:aspect-21/9 h-full">
+  <ImageViewer imageUrl="/images/lynk/wireframe-iteration-1.png" alt="Prototype for Iteration 1" title="Wireframe — desktop"/>
+  <ImageViewer imageUrl="/images/lynk/wireframe-mobile-iteration-1.png" alt="Prototype for Iteration 1" title="Wireframe — mobile"/>
+</CarouselView>
+
+### Iteration 2 – Mid-Fidelity & Branding
+- Introduced branding, clearer flows, and attendee lists.
+- Refined buttons, layout, and navigation based on feedback.
+- Addressed COVID-19 safety concerns in activity participation.
+
+<CarouselView aspect="md:aspect-21/9 h-full">
+  <VideoPlayer src="/images/lynk/joining-activity-workflow.mp4" title="Joining Activities Preview" autoplay loop/>
+  <ImageViewer imageUrl="/images/lynk/attending-list.png" alt="List Attendees" title="Attendee list"/>
+</CarouselView>
+<div className='carousel mt-8'>
+<CarouselView aspect="h-full">
+  <ImageViewer imageUrl="/images/lynk/branding.png" alt="Lynk Midfidelity" title="Branding"/>
+  <ImageViewer imageUrl="/images/lynk/home-iter-2.png" alt="Lynk Midfidelity" title="Mid-fidelity mockup"/>
+  <ImageViewer imageUrl="/images/lynk/create-iter-2.png" alt="Lynk Midfidelity" title="Mid-fidelity mockup"/>
+  <ImageViewer imageUrl="/images/lynk/other-iter-2.png" alt="Lynk Midfidelity" title="Mid-fidelity mockup"/>
+</CarouselView>
+</div>
+
+### Iteration 3 – Activity Creation
+- Redesigned the activity creation form with multi-step layout
+<CarouselView aspect="md:aspect-21/9 h-full">
+  <VideoPlayer src="/images/lynk/expanded-creating-activity-workflow.mp4" title="Improved Creating Activities Preview" autoplay loop/>
+  <ImageViewer imageUrl="/images/lynk/pay-popup-after.png" alt="Payment Popup" title="Payment popup"/>
+  <ImageViewer imageUrl="/images/lynk/tooltip-after.png" alt="Tag Tooltip" title="Tag tooltip"/>
+</CarouselView>
+
+### Final MVP
+- Polished horizontal navbar, breadcrumbs, tooltips, and payment confirmations.
+- Final prototype integrated activity flows, attendee lists, and onboarding guidance.
+ 
+<CarouselView aspect="md:aspect-21/9 h-full">
+  <ImageViewer imageUrl="/images/lynk/pay-popup-after.png" alt="Payment Popup" title="Payment popup"/>
+  <ImageViewer imageUrl="/images/lynk/tooltip-after.png" alt="Tag Tooltip" title="Tag tooltip"/>
+</CarouselView>
+
+#### Updated Breadcrumbs
+
+<CarouselView aspect = "h-full">
+  <ImageViewer imageUrl="/images/lynk/breadcrumbs-before.png" alt="Navbar Vertical" title="Before"/>
+  <ImageViewer imageUrl="/images/lynk/breadcrumbs-after.png" alt="Navbar Horizontal" title = "After"/>
+</CarouselView>
+ 
+#### Updated Navigation Bar
+
+<div className='carousel mt-8'>
+<CarouselView className = "!w-full" aspect="h-full !w-full">
+    <ImageViewer className = "aspect-16/9 object-top w-150" imageUrl="/images/lynk/nav-before.png" alt="Navbar Vertical" title="Before"/>
+    <ImageViewer className = "aspect-16/9 object-top w-150" imageUrl="/images/lynk/nav-after.png" alt="Navbar Horizontal" title = "After"/>
+</CarouselView>
+</div>
+
+## Final Screens
+<ImageViewer imageUrl="/images/lynk/final-prototype.png" alt="Final Prototype"/>
+
+## Key Learnings
+
+- **End-to-end delivery:** Taking a product from concept to MVP highlighted the importance of prioritization and iteration.
+
+- **Clarity through design:** Step-by-step guidance, visual cues, and clear layouts improved user confidence.
+
+- **Safety & trust:** Features like anonymous participation and attendee lists built trust, particularly during COVID-19.
+<Separator/>
+
+
+
+
 [Read the full Lynk case study here](/docs/recent-work/lynk/lynk-full)

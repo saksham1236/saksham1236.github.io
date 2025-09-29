@@ -81,7 +81,7 @@ export default function Home() {
         <div className="skills fade-up">
           <SKillSection />
         </div>
-        <div className="myWork">
+        <div id = "work" className="myWork">
           <MyWork />
         </div>
         <div className="experience">

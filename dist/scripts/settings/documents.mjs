@@ -12,26 +12,28 @@ export const Documents = [
                         href: "/bounce-back-learning",
                     },
                     {
-                        title: "Bounce Back Coin Branding",
-                        href: "/bounce-back-coin-branding",
-                        items: [{
-                                title: "Bounce Back Coin Full",
-                                href: "/bounce-back-coin-branding-full"
-                            }]
-                    },
-                    {
-                        title: "Bounce Back Digital Branding",
-                        href: "/bounce-back-digital-branding",
-                    },
-                    {
                         title: "Lynk",
                         href: "/lynk",
                         items: [
                             {
                                 title: "Lynk Case Study",
-                                href: "/lynk-full"
-                            }
-                        ]
+                                href: "/lynk-full",
+                            },
+                        ],
+                    },
+                    {
+                        title: "Bounce Back Coin Branding",
+                        href: "/bounce-back-coin-branding",
+                        items: [
+                            {
+                                title: "Bounce Back Coin Full",
+                                href: "/bounce-back-coin-branding-full",
+                            },
+                        ],
+                    },
+                    {
+                        title: "Bounce Back Digital Branding",
+                        href: "/bounce-back-digital-branding",
                     },
                     {
                         title: "Mind Games",
@@ -40,8 +42,9 @@ export const Documents = [
                 ],
             },
         ],
-    }, {
+    },
+    {
         title: "About Me",
-        href: "/about"
-    }
+        href: "/about",
+    },
 ];

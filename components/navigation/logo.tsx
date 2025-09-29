@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Link } from "lib/transition"
-
+import { DioraDesignLogoWithText } from "../ui/icons/icons"
 import { Settings } from "@/lib/meta"
 
 export function Logo() {

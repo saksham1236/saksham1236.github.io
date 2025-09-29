@@ -181,9 +181,13 @@
   @apply px-32;
 } */
 
+/* .typography .reader-content > :is(h2, h3, h4, h5, h6, p) + :is(p, ul, ol, .tag-group) {
+  @apply md:w-[75%];
+} */
+
 
 .typography .reader-content > :is(.carousel, .imageViewer) + :is(h3, h4, h5, h6, p, ul, ol) {
-  @apply mt-24;
+  @apply mt-16;
 }
 
 
@@ -391,7 +395,7 @@ video {
     @apply mt-2;
   }
   p {
-    @apply text-xl mb-2;
+    @apply text-base mb-2;
   }
 }
 .video-player {

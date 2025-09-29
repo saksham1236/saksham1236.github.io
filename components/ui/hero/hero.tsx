@@ -15,7 +15,7 @@ export default function Hero() {
     () => {
       gsap.set(".headline", { visibility: "visible" });
       gsap.set(".greeting", {visibility: "visible"});
-      const text = new SplitType(".headline", {types: "chars"})
+      const text = new SplitType(".headline", {types: "words,chars"})
       gsap.set(text.chars, {y: "100%", opacity: 0, autoAlpha: 0,})
       gsap.to(text.chars,
       {
@@ -36,7 +36,7 @@ export default function Hero() {
            <h1 className="flex invisible greeting fade-up items-center gap-2 text-xl md:text-5xl fade-in-translate-full">Hi I am Saksham.<Emoji className="size-8 md:size-18" emoji="👋" /></h1>
            <DioraDesignLogoWithText className="invisible greeting fade-up w-24 h-auto text-white opacity-50 mb-4"/>
         </div>
-        <div className={cn("flex items-center md:items-start text-4xl md:text-8xl leading-tight invisible")}><h2 className="headline text-center md:text-left">I build engaging <b>Experiences</b>,<br/>to deliver <b>impact.</b></h2></div>
+        <div className={cn("flex items-center md:items-start text-4xl md:text-8xl leading-tight invisible")}><h2 className="headline text-center md:text-left">Building engaging <b>Experiences</b> <br/>and tools that streamline <br/><b>Design Workflows.</b></h2></div>
       </div>
     </div>
   )

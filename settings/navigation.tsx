@@ -7,7 +7,7 @@ export const Navigations = [
   },
   {
     title: "My Work",
-    href: "/docs/recent-work",
+    href: "/#work",
   },
   {
     title: "About Me",

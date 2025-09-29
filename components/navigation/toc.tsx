@@ -76,7 +76,7 @@ export default function Toc({ tocs }: TocProps) {
               scroll={false}
               onClick={(e) => handleSmoothScroll(e, href)}
               className={cn("flex flex-row items-center gap-2", clsx({
-                "l2 py-2 no-underline saturate-50 text-primary/50": level == 2,
+                "l2 py-1 not-last:border-b no-underline saturate-50 text-primary/50": level == 2,
                 "l3 py-1 no-underline !text-sm saturate-50 text-primary/50": level == 3,
                 "l4 py-1 opacity-80 !text-sm no-underline saturate-50 text-primary/50": level == 4,
                 "text-primary/100 font-bold saturate-100": activeId === href.slice(1),
