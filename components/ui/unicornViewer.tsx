@@ -1,13 +1,6 @@
-"use client"
-
-import React, { useEffect, useState } from "react"
 import UnicornScene from "unicornstudio-react"
 
 export default function UnicornView() {
-  // Use Tailwind responsive utilities to show the appropriate scene
-  // Desktop scene is hidden below `lg` and shown at `lg` and up.
-  // Mobile scene is shown below `lg` and hidden at `lg` and up.
-  // Both scenes use `lazyLoad` so the renderer shouldn't fetch the JSON until visible.
   return (
     <>
       <UnicornScene
