@@ -1,0 +1,41 @@
+"use client";
+import { useState } from "react";
+import Image from "next/image";
+import { FiMaximize2, FiX } from "react-icons/fi";
+import { cn } from "@/lib/utils";
+import { Dialog, DialogClose, DialogContent, DialogTitle, DialogTrigger, } from "@/components/ui/dialog";
+export default function ImageViewer({ imageUrl, altText, className, title, }) {
+    const [isOpen, setIsOpen] = useState(false);
+    return (<div className="imageViewer prose-p:!text-primary">
+      {/* Trigger to open the dialog */}
+      <Dialog open={isOpen} onOpenChange={setIsOpen}>
+        <DialogTrigger asChild className="relative">
+          <div className={cn(`group relative h-full cursor-pointer shrink transition-opacity duration-200 hover:opacity-80`)}>
+            {title && <div className="absolute py-2 px-4 bg-nav-noise bottom-4 left-4 max-h-fit rounded-full text-sm shadow-lg">{title}</div>}
+            <Image src={imageUrl} alt={altText} className={cn("w-full h-full rounded-3xl md:rounded-4xl object-cover border", className)} width={1200} height={1200} lazyBoundary="" onContextMenu={(e) => {
+            e.preventDefault();
+        }}/>
+            <button className="bg-nav-noise animate-in fade-in absolute right-2 bottom-2 lg:right-4 lg:bottom-4 rounded-full p-2 shadow-lg backdrop-blur-lg focus:outline-none">
+              <span className="sr-only">Open image</span>
+              <FiMaximize2 className="h-6 w-6"/>
+            </button>
+          </div>
+        </DialogTrigger>
+
+        {/* Dialog content */}
+        <DialogContent className="group w-88vh flex touch-auto items-center justify-center overflow-y-auto p-0">
+          {/* Accessible title */}
+          <DialogTitle className="sr-only">{altText}</DialogTitle>
+          <div className="justify-top max-h-[95svh] w-fit overflow-auto">
+            <Image src={imageUrl} alt={altText} className="w-full rounded-md" width={1200} height={1200} onContextMenu={(e) => {
+            e.preventDefault();
+        }}/>
+          </div>
+            <DialogClose className="bg-nav-noise animate-in fade-in absolute top-4 right-4 cursor-pointer rounded-full p-1 shadow-lg backdrop-blur-lg focus:outline-none">
+              <span className="sr-only">Close</span>
+              <FiX className="h-6 w-6"/>
+            </DialogClose>
+        </DialogContent>
+      </Dialog>
+    </div>);
+}
