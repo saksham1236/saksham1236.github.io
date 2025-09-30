@@ -16,7 +16,15 @@ import { cn } from "@/lib/utils"
 
 export function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 h-20 w-full px-2 md:h-24 md:px-4">
+    <nav className="navbar sticky top-0 z-50 h-20 w-full px-2 md:h-24 md:px-4">
+      <div className="gradient-blur h-full w-full absolute top-0 left-0 right-0 bottom-0">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
       <div className="[&>*]:bg-primary-foreground/65 mx-auto flex h-full max-w-392 items-center justify-between p-1 sm:p-3 md:gap-2 [&:*]:rounded-full [&>*]:shadow-xl">
         <div className="bg-nav-noise flex rounded-full p-1 md:p-2 border">
           <Logo />

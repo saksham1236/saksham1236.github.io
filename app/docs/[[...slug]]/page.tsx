@@ -53,7 +53,7 @@ export default async function Pages({ params }: PageProps) {
         <section className="flex-3/4">
           <Typography className="mt-4">
             {(frontmatter.timeline || frontmatter.tags) && <Timeline />}
-            <h1 className="!mb-2 pt-2 md:pt-5 !text-4xl md:!text-6xl !font-semibold !mt-0">{frontmatter.title}</h1>
+            <h1 className="!mb-2 pt-2 md:pt-5 !text-4xl md:!text-6xl !font-bold !mt-0">{frontmatter.title}</h1>
             <p className="!text-xl leading-relaxed !text-primary/75">{frontmatter.description}</p>
             <Separator className="my-6" />
             <section
