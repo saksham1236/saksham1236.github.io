@@ -26,13 +26,13 @@ export function Navbar() {
         <div></div>
       </div>
       <div className="[&>*]:bg-primary-foreground/65 mx-auto flex h-full max-w-392 items-center justify-between p-1 sm:p-3 md:gap-2 [&:*]:rounded-full [&>*]:shadow-xl">
-        <div className="bg-nav-noise flex rounded-full p-1 md:p-2 border">
+        <div className="bg-nav-noise flex rounded-full p-1 md:p-2 border hover:scale-110 transition-all ease-[cubic-bezier(0.75,-1.0,0.25,2.0)] duration-300">
           <Logo />
         </div>
-        <div className="text-muted-foreground bg-nav-noise hidden items-center gap-2 rounded-full p-2 md:flex border">
+        <div className="text-muted-foreground bg-nav-noise hidden items-center gap-2 rounded-full p-2 md:flex border hover:scale-110 transition-all ease-[cubic-bezier(0.75,-1.0,0.25,2.0)] duration-300">
           <NavMenu />
         </div>
-        <div className="bg-nav-noise hidden rounded-full md:flex border">
+        <div className="bg-nav-noise hidden rounded-full md:flex border hover:scale-110 transition-all ease-[cubic-bezier(0.75,-1.0,0.25,2.0)] duration-300">
           <SocialLinks />
         </div>
         <SheetLeft />

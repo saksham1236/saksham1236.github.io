@@ -16,7 +16,7 @@ import Tag from "@/components/markdown/tag"
 import VideoPlayer from "@/components/markdown/videoPlayer/videoPlayer"
 import CarouselView from "@/components/markdown/carouselView"
 import { Button } from "@/components/ui/atoms/button"
-import { LineMdHazardLightsOffLoop } from "@/components/ui/icons/icons"
+import { LineMdHazardLightsOffLoop, MaterialSymbolsHistoryEduOutline,  MaterialSymbolsOwlOutline} from "@/components/ui/icons/icons"
 import { Separator } from "@/components/ui/separator"
 export const components = {
   a: RoutedLink,
@@ -45,4 +45,6 @@ export const components = {
   Button,
   LineMdHazardLightsOffLoop,
   Separator,
+  MaterialSymbolsHistoryEduOutline,
+  MaterialSymbolsOwlOutline,
 }
