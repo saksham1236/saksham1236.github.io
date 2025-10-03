@@ -2,10 +2,6 @@ import { PageRoutes } from "@/lib/pageroutes"
 
 export const Navigations = [
   {
-    title: "Home",
-    href: "/",
-  },
-  {
     title: "My Work",
     href: "/#work",
   },
