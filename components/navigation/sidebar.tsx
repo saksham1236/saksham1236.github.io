@@ -30,7 +30,7 @@ export function SheetLeft() {
       <SheetTrigger asChild>
         <Button
           variant="outline"
-          className="bg-primary-foreground bg-nav-noise flex size-14 cursor-pointer md:hidden"
+          className="bg-primary-foreground bg-nav-noise flex size-14 cursor-pointer md:hidden hover:scale-110 transition-all ease-[cubic-bezier(0.25,-1.0,0.25,2.0)] duration-300"
         >
           <LuAlignLeft className="!size-6" />
         </Button>

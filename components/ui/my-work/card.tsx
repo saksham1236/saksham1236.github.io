@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 import { Button } from "../atoms/button"
-import { LineMdArrowRight, LineMdMinus } from "../icons/icons"
 import { cn } from "@/lib/utils"
 import {
   Carousel,
