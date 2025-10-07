@@ -8,7 +8,7 @@ import Card from "./card"
 import Image from "next/image"
 import { Emoji } from "../icons/icons"
 import { Button } from "../atoms/button"
-import { AutoTextSize } from 'auto-text-size'
+// import { AutoTextSize } from 'auto-text-size'
 import { MaterialSymbolsAlternateEmailRounded } from "../icons/icons"
 gsap.registerPlugin(useGSAP);
 
@@ -57,8 +57,8 @@ export default function MyWork() {
           link="/docs/recent-work/bounce-back-learning"
         >
           <Image className="w-full h-full lg:object-left" alt="Bounce Back Coin" src="/images/bb-learning/thumb-new.png" width={1200} height={800} />
-          <div className="w-full h-full flex flex-col gap-4 p-4 md:p-12 bg-card/50 overflow-y-auto
-          "><h2 className="text-xl md:text-3xl font-bold">Summary</h2><AutoTextSize className="h-full" mode="box">Bounce Back Learning was an experimental LMS that blended education with crypto rewards, letting users earn coins through courses and quizzes, manage portfolios with a wallet dashboard, and engage in peer discussions. I led UX/UI design, building a reusable component library, shaping the visual system, and refining features under tight deadlines. The final product combined learning, earning, and community tools into one platform, teaching me how to balance complexity, collaborate effectively, and prioritize features.</AutoTextSize></div>
+          {/* <div className="w-full h-full flex flex-col gap-4 p-4 md:p-12 bg-card/50 overflow-y-auto
+          "><h2 className="text-xl md:text-3xl font-bold">Summary</h2><AutoTextSize className="h-full" mode="box">Bounce Back Learning was an experimental LMS that blended education with crypto rewards, letting users earn coins through courses and quizzes, manage portfolios with a wallet dashboard, and engage in peer discussions. I led UX/UI design, building a reusable component library, shaping the visual system, and refining features under tight deadlines. The final product combined learning, earning, and community tools into one platform, teaching me how to balance complexity, collaborate effectively, and prioritize features.</AutoTextSize></div> */}
         </Card>
         <Card
           className="fade-up-card bg-gradient-to-br from-[#63b1ff] to-[#1f7cda]"
