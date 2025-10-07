@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Button } from "../button"
+import { Button } from "../atoms/button"
 import { LineMdArrowRight, LineMdMinus } from "../icons/icons"
 import { cn } from "@/lib/utils"
 import {
@@ -22,6 +22,7 @@ type cardProps = {
   link: string
   children?: React.ReactNode[] | React.ReactNode
   dark?: boolean
+  icon?:React.ReactNode
 }
 export default function Card({
   title,
@@ -32,6 +33,7 @@ export default function Card({
   link,
   children,
   dark,
+  icon,
 }: cardProps) {
   const [api, setApi] = useState<CarouselApi>()
   const [current, setCurrent] = useState(0)
@@ -59,13 +61,8 @@ export default function Card({
         </div>
         {cta && (
           <Link href={link}>
-            <Button className="w-full lg:w-fit group cursor-pointer" variant="default">
-              {cta}
-              <div className="relative flex flex-row size-6 overflow-clip">
-                <LineMdMinus className="absolute size-6 left-[0%] group-hover:left-[100%] transition-all duration-200 ease-in-out" />
-                <LineMdArrowRight className="absolute size-6 left-[-100%] group-hover:left-[0%] transition-all duration-200 ease-in-out" />
-              </div>
-            </Button>
+
+            <Button icon = {icon}>{cta}</Button>
           </Link>
         )}
       </div>

@@ -9,6 +9,7 @@ import Image from "next/image"
 import { Emoji } from "../icons/icons"
 import { Button } from "../atoms/button"
 import { AutoTextSize } from 'auto-text-size'
+import { MaterialSymbolsAlternateEmailRounded } from "../icons/icons"
 gsap.registerPlugin(useGSAP);
 
 export default function MyWork() {
@@ -36,6 +37,17 @@ export default function MyWork() {
         <Button href ="/docs/recent-work" className="hidden md:flex bg-transparent hover:bg-transparent text-primary">View all my Work</Button>
       </div>
       <CardGrid className="!grid-cols-1">
+        <Card
+          className="fade-up-card bg-gradient-to-br from-[#ef5c5c] to-[#cc0000]"
+          title="CDW Canada"
+          subtitle="UX Design, Web Dev, IT Solutions"
+          description="Delivered high-impact web designs and automated internal tools to boost team efficiency."
+          cta="Request Work"
+          link="mailto:s9tandon@uwaterloo.ca"
+          icon = {<MaterialSymbolsAlternateEmailRounded className="size-6"/>}
+        >
+        <Image className="w-full h-full lg:object-left" alt="Bounce Back Coin" src="/images/cdw-canada/thumb.png" width={1200} height={800} />
+        </Card>
         <Card
           className="fade-up-card bg-gradient-to-br from-[#06D6A0] to-[#007E5D]"
           title="Bounce Back Learning App"

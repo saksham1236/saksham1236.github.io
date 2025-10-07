@@ -839,6 +839,14 @@ export function MaterialSymbolsHistoryEduOutline(props: SVGProps<SVGSVGElement>)
 	return (<svg xmlns="http://www.w3.org/2000/svg" width={128} height={128} viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M8 20q-.825 0-1.412-.587T6 18v-3h3v-2.25q-.875-.05-1.662-.387T5.9 11.35v-1.1H4.75L1.5 7q.9-1.15 2.225-1.625T6.4 4.9q.675 0 1.313.1T9 5.375V4h12v13q0 1.25-.875 2.125T18 20zm3-5h6v2q0 .425.288.713T18 18t.713-.288T19 17V6h-8v.6l6 6V14h-1.4l-2.85-2.85l-.2.2q-.35.35-.737.625T11 12.4zM5.6 8.25h2.3v2.15q.3.2.625.275t.675.075q.575 0 1.038-.175t.912-.625l.2-.2l-1.4-1.4q-.725-.725-1.625-1.088T6.4 6.9q-.5 0-.95.075t-.9.225zM15 17H8v1h7.15q-.075-.225-.112-.475T15 17m-7 1v-1z"></path></svg>);
 }
 
+export function MaterialSymbolsAlternateEmailRounded(props: SVGProps<SVGSVGElement>) {
+	return (<svg xmlns="http://www.w3.org/2000/svg" width={128} height={128} viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12v1.45q0 1.475-1.012 2.513T18.5 17q-.875 0-1.65-.375t-1.3-1.075q-.725.725-1.638 1.088T12 17q-2.075 0-3.537-1.463T7 12t1.463-3.537T12 7t3.538 1.463T17 12v1.45q0 .65.425 1.1T18.5 15t1.075-.45t.425-1.1V12q0-3.35-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20h4q.425 0 .713.288T17 21t-.288.713T16 22zm0-7q1.25 0 2.125-.875T15 12t-.875-2.125T12 9t-2.125.875T9 12t.875 2.125T12 15"></path></svg>);
+}
+
+export function MaterialSymbolsAttachEmailOutlineRounded(props: SVGProps<SVGSVGElement>) {
+	return (<svg xmlns="http://www.w3.org/2000/svg" width={128} height={128} viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M3 18q-.825 0-1.412-.587T1 16V4q0-.825.588-1.412T3 2h16q.825 0 1.413.588T21 4v4q0 .425-.288.713T20 9t-.712-.288T19 8V6l-7.475 4.675q-.125.075-.262.113t-.263.037t-.262-.037t-.263-.113L3 6v10h9q.425 0 .713.288T13 17t-.288.713T12 18zm8-9l8-5H3zM3 6v.25v-1.475v.025V4v.8v-.025V6.25zv10zm16 16q-1.65 0-2.825-1.175T15 18v-4.5q0-1.05.725-1.775T17.5 11t1.775.725T20 13.5V17q0 .425-.288.713T19 18t-.712-.288T18 17v-3.5q0-.2-.15-.35T17.5 13t-.35.15t-.15.35V18q0 .825.588 1.413T19 20t1.413-.587T21 18v-3q0-.425.288-.712T22 14t.713.288T23 15v3q0 1.65-1.175 2.825T19 22"></path></svg>);
+}
+
 type emojiProps = {
   emoji: string
   className?: string
