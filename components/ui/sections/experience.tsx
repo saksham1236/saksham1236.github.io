@@ -6,7 +6,7 @@ export default function MyExperience() {
         <div className="flex flex-col gap-6 md:gap-12">
             <div className="flex flex-col md:flex-row justify-between">
                 <h2 className="flex items-center gap-4 text-muted text-3xl font-medium md:text-5xl">My Design Journey<Emoji className="size-12 lg:size-18" emoji={`🐣`} /></h2>
-                <Button href="/docs/recent-work" className="hidden md:flex bg-transparent hover:bg-transparent text-primary">More About Me</Button>
+                <Button href="/docs/about" className="hidden md:flex bg-transparent hover:bg-transparent text-primary">More About Me</Button>
             </div>
             <div className="experience flex flex-col gap-4 md:flex-row pb-8 border-b-1 fade-up">
                 <div className="flex flex-col gap-2 md:flex-1/3">
