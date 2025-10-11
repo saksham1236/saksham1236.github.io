@@ -3,7 +3,7 @@ import { Button } from "../atoms/button"
 import Image from "next/image";
 export default function MyExperience() {
     return (
-        <div className="flex flex-col gap-6 md:gap-12">
+        <div className="experience flex flex-col gap-6 md:gap-12">
             <div className="flex flex-col md:flex-row justify-between">
                 <h2 className="flex items-center gap-4 text-muted text-3xl font-medium md:text-5xl">My Design Journey<Emoji className="size-12 lg:size-18" emoji={`🐣`} /></h2>
                 <Button href="/docs/about" className="hidden md:flex bg-transparent hover:bg-transparent text-primary">More About Me</Button>
@@ -20,7 +20,7 @@ export default function MyExperience() {
                         Full-Time | 2022 — Present
                     </span>
                 </div>
-                <div className="flex text-neutral-invert flex-col gap-4 text-xl md:text-2xl md:flex-2/3 leading-relaxed">
+                <div className="flex text-neutral-invert/50 flex-col gap-4 text-xl md:text-2xl md:flex-2/3 leading-relaxed">
                     <p>
                         I specialize in creating responsive webpage layouts for {`CDW.ca’s`} landing pages using Adobe Experience Manager, HubSpot, HTML, CSS, and JavaScript. My strategic approach to content planning and design implementation has driven significant results, including a <b>193% year-over-year increase in Research Hub article views</b> and a <b>93% boost in partner showcase page traffic.</b>
                     </p>
@@ -45,13 +45,11 @@ export default function MyExperience() {
                         Full-Time | 2021 — 2022
                     </span>
                 </div>
-                <div className="flex text-neutral-invert flex-col gap-4 text-xl md:md:text-2xl md:flex-2/3 leading-relaxed">
+                <div className="flex text-neutral-invert/50 flex-col gap-4 text-xl md:md:text-2xl md:flex-2/3 leading-relaxed">
                     <p>
-                        Led UX Design, branding, and visual design efforts for the EdTech and FinTech startup, including the Bounce Back Digital Learning Platform and Bounce Back Coin, establishing a distinct digital brand identity.
+                        <b>Led the design and end-to-end branding</b> at Bounce Back Digital, <b>driving the development of the Bounce Back Digital Learning Platform as a proof-of-concept</b> where users earned cryptocurrency through courses, quizzes, and social engagement via wallets, rewards, and discussion boards, and <b>helping raise $300K in seed funding.</b>
                     </p>
-                    <p>
-                        Created promotional assets and dynamic motion graphics for LinkedIn, Instagram, Twitter, and other platforms.
-                    </p>
+
                 </div>
             </div>
             <div className="experience flex flex-col gap-4 md:flex-row fade-up">
@@ -66,9 +64,9 @@ export default function MyExperience() {
                         {`University of Hawai'i`} | 2020 — 2021
                     </h4>
                 </div>
-                <div className="flex text-neutral-invert flex-col gap-4 text-xl md:text-2xl md:flex-2/3 leading-relaxed">
+                <div className="flex text-neutral-invert/50 flex-col gap-4 text-xl md:text-2xl md:flex-2/3 leading-relaxed">
                     <p>
-                        Designed scientific illustrations and journal covers enhancing research papers and presentations, including a published cover for the prestigious Biophysical journal..
+                        Designed scientific illustrations and journal covers enhancing research papers and presentations, including a <b>published cover for the prestigious Biophysical journal.</b>
                     </p>
                 </div>
             </div>

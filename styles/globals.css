@@ -664,3 +664,7 @@ table {
     rgba(0, 0, 0, 1) 100%
   );
 }
+
+.experience b {
+  @apply text-neutral-invert;
+}

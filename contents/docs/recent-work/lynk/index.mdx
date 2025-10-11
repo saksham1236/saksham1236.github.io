@@ -18,7 +18,20 @@ timeline: January 2021 - April 2021
     </Note>
 </CardGrid>
 
-<ImageViewer imageUrl="/images/lynk/lynk-hero-showcase.png" alt="Lynk - Hero" title="Hero showcase" className="aspect-[32/9]"/>
+<CarouselView autoscroll infinite className="mt-8" aspect="h-full" controls={false}>
+    <ImageViewer imageUrl="/images/lynk/showcase-1.png" alt="Showcase"/>
+    <ImageViewer imageUrl="/images/lynk/showcase-2.png" alt="Showcase"/>
+    <ImageViewer imageUrl="/images/lynk/showcase-3.png" alt="Showcase"/>
+    <ImageViewer imageUrl="/images/lynk/showcase-4.png" alt="Showcase"/>
+    <ImageViewer imageUrl="/images/lynk/showcase-5.png" alt="Showcase"/>
+    <ImageViewer imageUrl="/images/lynk/showcase-6.png" alt="Showcase"/>
+    <ImageViewer imageUrl="/images/lynk/showcase-7.png" alt="Showcase"/>
+    <ImageViewer imageUrl="/images/lynk/showcase-8.png" alt="Showcase"/>
+    <ImageViewer imageUrl="/images/lynk/showcase-9.png" alt="Showcase"/>
+    <ImageViewer imageUrl="/images/lynk/showcase-10.png" alt="Showcase"/>
+    <ImageViewer imageUrl="/images/lynk/showcase-11.png" alt="Showcase"/>
+    <ImageViewer imageUrl="/images/lynk/showcase-12.png" alt="Showcase"/>
+</CarouselView>
 
 ## Overview
 Lynk is a platform designed to reduce social isolation among young adults by connecting them to local communities and events. Users can browse groups, join activities, and host events. Through three rounds of testing, we refined navigation, activity creation, COVID-safety measures, and payment flows. The final product simplified access to meaningful connections and promoted well-being.
@@ -86,8 +99,13 @@ We first conducted a Kano model survey to determine which features were most val
 ## Design Process
 
 ### Iteration 1 – Foundation
- - Developed low-fidelity wireframes to map core flows.
- - Early testing revealed users felt overwhelmed; navigation needed simplification.
+We built the initial foundation through market research, user flow mapping, and low-fidelity prototypes for both web and mobile. Usability testing with users aged 18–23 using unregulated Lo-Fi Figma mockups and a short feedback form showed that the overall experience felt dense and needed refinement.
+
+#### Feedback
+- Too much information on screen made the design feel overwhelming.  
+- Buttons were too small, and spacing was inconsistent.  
+- The interface needed a cleaner, more modern look.  
+- Users wanted clearer emphasis on safety and COVID-related measures.
 
 <CarouselView aspect="md:aspect-21/9 h-full">
   <ImageViewer imageUrl="/images/lynk/wireframe-iteration-1.png" alt="Prototype for Iteration 1" title="Wireframe — desktop"/>
@@ -95,9 +113,15 @@ We first conducted a Kano model survey to determine which features were most val
 </CarouselView>
 
 ### Iteration 2 – Mid-Fidelity & Branding
-- Introduced branding, clearer flows, and attendee lists.
-- Refined buttons, layout, and navigation based on feedback.
-- Addressed COVID-19 safety concerns in activity participation.
+
+In this iteration, we focused on defining the user persona and building a stronger brand identity while refining the product into a mid-fidelity prototype. An attendee list feature was added to help users gauge crowd size and maintain comfort during COVID-19, with optional anonymity for participants. Unregulated usability testing was conducted a short survey like the first iteration, where users were asked to sign up and create an activity, providing insights for further improvements.
+
+#### Feedback
+
+- Users liked the visual improvements but still found the interface overwhelming.  
+- Button hierarchy and differentiation between actions needed more clarity.   
+- Text clarity and phrasing needed improvement to reduce confusion. 
+- Suggested adding interest-based categories for activities and an onboarding tour
 
 <CarouselView aspect="md:aspect-21/9 h-full">
   <VideoPlayer src="/images/lynk/joining-activity-workflow.mp4" title="Joining Activities Preview" autoplay loop/>
@@ -113,7 +137,16 @@ We first conducted a Kano model survey to determine which features were most val
 </div>
 
 ### Iteration 3 – Activity Creation
-- Redesigned the activity creation form with multi-step layout
+This iteration focused on improving the usability of key flows, especially creating an activity. A high-fidelity desktop prototype was tested with users completing account creation, exploring activities, and creating events. The activity creation flow was split into multiple pages for clarity, and overall interactions were refined based on observed behavior.
+
+#### Feedback
+
+- Users found the activity creation process confusing and the steps too many.  
+- Lack of guidance, unclear labels, and horizontal scrolling disrupted flow.  
+- Suggested adding progress indicators, tooltips, and brief explanations for form sections.  
+- Navigation and button differentiation needed improvement.  
+- Payment confirmation should use a pop-up.  
+
 <CarouselView aspect="md:aspect-21/9 h-full">
   <VideoPlayer src="/images/lynk/expanded-creating-activity-workflow.mp4" title="Improved Creating Activities Preview" autoplay loop/>
   <ImageViewer imageUrl="/images/lynk/pay-popup-after.png" alt="Payment Popup" title="Payment popup"/>
@@ -121,8 +154,7 @@ We first conducted a Kano model survey to determine which features were most val
 </CarouselView>
 
 ### Final MVP
-- Polished horizontal navbar, breadcrumbs, tooltips, and payment confirmations.
-- Final prototype integrated activity flows, attendee lists, and onboarding guidance.
+For the final prototype, key improvements were made to enhance navigation and usability. The navbar was changed from vertical to horizontal with visible labels for clarity. Breadcrumbs and a labeled back button were added to the activity creation flow to indicate progress and simplify navigation. A payment confirmation pop-up was implemented, and tooltips were added to tags for better understanding.
  
 <CarouselView aspect="md:aspect-21/9 h-full">
   <ImageViewer imageUrl="/images/lynk/pay-popup-after.png" alt="Payment Popup" title="Payment popup"/>
