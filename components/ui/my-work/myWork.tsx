@@ -34,7 +34,7 @@ export default function MyWork() {
     <div className="flex flex-col gap-6" ref={container}>
       <div className="flex flex-col md:flex-row justify-between">
         <h2 className="flex items-center gap-4 text-muted text-3xl font-medium md:text-5xl">Featured Work<Emoji className="size-12 lg:size-18" emoji="🚀" /></h2>
-        <Button href ="/docs/recent-work" className="hidden md:flex bg-transparent hover:bg-transparent text-primary">View all my Work</Button>
+        <Button href ="/docs/recent-work" className="hidden md:flex">View all my Work</Button>
       </div>
       <CardGrid className="!grid-cols-1">
         <Card
